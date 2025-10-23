@@ -1,13 +1,16 @@
 from flask import Flask, jsonify, request, send_file
 from flask_cors import CORS
+from flask_smorest import Api, Blueprint, abort
 from gtts import gTTS
 import os
 import tempfile
-import hashlib
+import yaml
 from typing import Dict, Any
 
-# --- Data Structure ---
-# NOTE: The 'prononciation_standard' text is what gTTS will try to read.
+# Import the schema you created
+from schemas import LanguageInfoSchema
+
+# --- Data Structure (Keep this as is) ---
 alphabet_data: Dict[str, Dict[str, Dict[str, Any]]] = {
     "a": {
         "fr": {"lettre": "A", "prononciation_standard": "ah", "mot_exemple": "Arbre"},
@@ -34,53 +37,86 @@ app = Flask(__name__)
 # IMPORTANT: Activez CORS pour permettre à votre frontend React (qui est sur un autre port) de communiquer.
 CORS(app) 
 
-# --- Routes API ---
+# --- OpenAPI Configuration ---
+app.config["API_TITLE"] = "Polyglotte par excellence API"
+app.config["API_VERSION"] = "v1"
+app.config["OPENAPI_VERSION"] = "3.0.3" # OpenAPI 3 version
+app.config["OPENAPI_URL_PREFIX"] = "/" # Serve the spec at the root
+# The path for the interactive documentation (Swagger UI)
+app.config["OPENAPI_SWAGGER_UI_PATH"] = "/swagger-ui" 
+app.config["OPENAPI_SWAGGER_UI_URL"] = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
 
-@app.route('/lettre/<string:lettre>', defaults={'langue': None})
-@app.route('/lettre/<string:lettre>/<string:langue>')
-def get_lettre_info(lettre, langue):
+api = Api(app)
+
+# --- Define Blueprints ---
+# A Blueprint for your core letter endpoints
+blp = Blueprint(
+    "Lettre", __name__, url_prefix="/lettre", description="Operations on letters and languages"
+)
+
+# A Blueprint for the audio generation endpoint (since it's a file response)
+audio_blp = Blueprint(
+    "Audio", __name__, url_prefix="/generate_audio", description="Text-to-speech generation"
+)
+
+# --- Routes API using flask-smorest ---
+
+@blp.route("/<string:lettre>")
+@blp.route("/<string:lettre>/<string:langue>")
+@blp.response(200, LanguageInfoSchema(many=True), description="Returns information for all available languages for the letter.")
+@blp.response(200, LanguageInfoSchema, description="Returns information for the specific letter and language.")
+def get_lettre_info(lettre, langue=None):
+    """
+    Get detailed information about a letter in one or all languages.
+    ---
+    Returns the character, pronunciation, and example word for the given letter.
+    If no language is specified, returns data for all supported languages.
+    """
     lettre = lettre.lower()
     
     if lettre not in alphabet_data:
-        return jsonify({"message": f"Lettre '{lettre}' non trouvée."}), 404
+        # Use flask-smorest's abort for standardized error handling
+        abort(404, message=f"Lettre '{lettre}' non trouvée.")
 
     if langue:
         langue = langue.lower()
         if langue in alphabet_data[lettre]:
-            return jsonify(alphabet_data[lettre][langue])
+            return alphabet_data[lettre][langue]
         else:
-            return jsonify({"message": f"Lettre '{lettre}' trouvée, mais la langue '{langue}' n'est pas disponible."}), 404
+            abort(404, message=f"Langue '{langue}' non disponible pour la lettre '{lettre}'.")
     else:
-        # Retourne toutes les informations pour la lettre
-        return jsonify(alphabet_data[lettre])
+        # Note: flask-smorest expects a list/dict of Marshmallow fields, 
+        # so we return the dictionary of all languages.
+        # The schema definition in schemas.py is simplified to handle this.
+        return list(alphabet_data[lettre].values())
 
-@app.route('/generate_audio/<string:lang_code>/<path:text_to_speak>')
+
+# Note: The /generate_audio endpoint is tricky for auto-documentation 
+# because it returns a file (audio/mpeg) and not JSON. 
+# We'll keep the original flask route, but put it in its own Blueprint.
+
+@audio_blp.route('/<string:lang_code>/<path:text_to_speak>')
 def generate_audio(lang_code, text_to_speak):
     """
     Génère un fichier audio MP3 à partir du texte et du code de langue donnés
     en utilisant gTTS, puis le renvoie au client.
     """
     try:
-        # Nettoyage et encodage sécurisé pour gTTS
         clean_text = text_to_speak.replace('_', ' ').replace('/', '')
         lang_code = lang_code.lower()
 
-        # Liste de langues supportées par gTTS (ajustez si nécessaire)
         supported_languages = ['fr', 'en', 'es', 'ja', 'ko', 'ar', 'ru', 'zh-CN', 'de', 'it', 'pt']
         if lang_code not in supported_languages:
             return jsonify({"message": f"Code de langue '{lang_code}' non supporté pour la synthèse vocale."}), 400
 
-        # Utilisation de tempfile pour la gestion sécurisée des fichiers temporaires
         with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as temp_audio_file:
             file_path = temp_audio_file.name
 
         tts = gTTS(text=clean_text, lang=lang_code, slow=False)
         tts.save(file_path)
 
-        # Envoyer le fichier audio au client
         response = send_file(file_path, mimetype="audio/mpeg", as_attachment=False)
 
-        # Supprimer le fichier temporaire après l'envoi
         @response.call_on_close
         def cleanup():
             os.remove(file_path)
@@ -92,7 +128,18 @@ def generate_audio(lang_code, text_to_speak):
         return jsonify({"message": "Erreur interne du serveur lors de la synthèse vocale."}), 500
 
 
+# --- Register Blueprints with the API object ---
+api.register_blueprint(blp)
+api.register_blueprint(audio_blp)
+
 if __name__ == '__main__':
-    # Lancez votre API Flask
-    # Assurez-vous d'utiliser 'python app.py' après avoir activé votre venv
+    # You can also add a route to serve the raw YAML spec if desired
+    @app.route("/openapi.yaml")
+    def openapi_yaml():
+        spec = api.spec.to_dict()
+        return app.response_class(
+            yaml.dump(spec, default_flow_style=False),
+            mimetype="application/x-yaml"
+        )
+    
     app.run(debug=True)
