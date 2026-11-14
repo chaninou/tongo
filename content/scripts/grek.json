@@ -1,0 +1,327 @@
+{
+  "id": "grek",
+  "cased": true,
+  "groups": [
+    {
+      "id": "letters",
+      "name": {
+        "fr": "Lettres",
+        "en": "Letters",
+        "ar": "الحروف"
+      }
+    },
+    {
+      "id": "accented",
+      "name": {
+        "fr": "Voyelles accentuées",
+        "en": "Accented vowels",
+        "ar": "صوائت منبورة"
+      }
+    }
+  ],
+  "name": {
+    "fr": "Grec",
+    "en": "Greek",
+    "ar": "اليونانية"
+  },
+  "endonym": "Ελληνικό αλφάβητο",
+  "type": "alphabet",
+  "direction": "ltr",
+  "intro": {
+    "fr": "Né vers le VIIIᵉ siècle av. J.-C., c'est le premier alphabet à noter aussi les voyelles. Ses lettres servent encore en mathématiques et en sciences (π, Δ, Ω).",
+    "en": "Born around the 8th century BC, it was the first alphabet to write vowels too. Its letters are still used in maths and science (π, Δ, Ω).",
+    "ar": "نشأت نحو القرن الثامن قبل الميلاد، وهي أول أبجدية تكتب الصوائت أيضًا. ما زالت حروفها تُستعمل في الرياضيات والعلوم."
+  },
+  "sample": "α β γ ω",
+  "font": "Noto Sans",
+  "graphemes": [
+    {
+      "id": "alpha",
+      "char": "α",
+      "kind": "vowel",
+      "latin": "a",
+      "group": "letters",
+      "upper": "Α"
+    },
+    {
+      "id": "beta",
+      "char": "β",
+      "kind": "consonant",
+      "latin": "v",
+      "group": "letters",
+      "upper": "Β"
+    },
+    {
+      "id": "gamma",
+      "char": "γ",
+      "kind": "consonant",
+      "latin": "g",
+      "group": "letters",
+      "upper": "Γ"
+    },
+    {
+      "id": "delta",
+      "char": "δ",
+      "kind": "consonant",
+      "latin": "d",
+      "group": "letters",
+      "upper": "Δ"
+    },
+    {
+      "id": "epsilon",
+      "char": "ε",
+      "kind": "vowel",
+      "latin": "e",
+      "group": "letters",
+      "upper": "Ε"
+    },
+    {
+      "id": "zeta",
+      "char": "ζ",
+      "kind": "consonant",
+      "latin": "z",
+      "group": "letters",
+      "upper": "Ζ"
+    },
+    {
+      "id": "eta",
+      "char": "η",
+      "kind": "vowel",
+      "latin": "i",
+      "group": "letters",
+      "upper": "Η"
+    },
+    {
+      "id": "theta",
+      "char": "θ",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "letters",
+      "upper": "Θ"
+    },
+    {
+      "id": "iota",
+      "char": "ι",
+      "kind": "vowel",
+      "latin": "i",
+      "group": "letters",
+      "upper": "Ι"
+    },
+    {
+      "id": "kappa",
+      "char": "κ",
+      "kind": "consonant",
+      "latin": "k",
+      "group": "letters",
+      "upper": "Κ"
+    },
+    {
+      "id": "lambda",
+      "char": "λ",
+      "kind": "consonant",
+      "latin": "l",
+      "group": "letters",
+      "upper": "Λ"
+    },
+    {
+      "id": "mu",
+      "char": "μ",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "letters",
+      "upper": "Μ"
+    },
+    {
+      "id": "nu",
+      "char": "ν",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "letters",
+      "upper": "Ν"
+    },
+    {
+      "id": "xi",
+      "char": "ξ",
+      "kind": "consonant",
+      "latin": "x",
+      "group": "letters",
+      "upper": "Ξ"
+    },
+    {
+      "id": "omicron",
+      "char": "ο",
+      "kind": "vowel",
+      "latin": "o",
+      "group": "letters",
+      "upper": "Ο"
+    },
+    {
+      "id": "pi",
+      "char": "π",
+      "kind": "consonant",
+      "latin": "p",
+      "group": "letters",
+      "upper": "Π"
+    },
+    {
+      "id": "rho",
+      "char": "ρ",
+      "kind": "consonant",
+      "latin": "r",
+      "group": "letters",
+      "upper": "Ρ"
+    },
+    {
+      "id": "sigma",
+      "char": "σ",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "letters",
+      "upper": "Σ"
+    },
+    {
+      "id": "final-sigma",
+      "char": "ς",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "letters",
+      "upper": "Σ"
+    },
+    {
+      "id": "tau",
+      "char": "τ",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "letters",
+      "upper": "Τ"
+    },
+    {
+      "id": "upsilon",
+      "char": "υ",
+      "kind": "vowel",
+      "latin": "y",
+      "group": "letters",
+      "upper": "Υ"
+    },
+    {
+      "id": "phi",
+      "char": "φ",
+      "kind": "consonant",
+      "latin": "f",
+      "group": "letters",
+      "upper": "Φ"
+    },
+    {
+      "id": "chi",
+      "char": "χ",
+      "kind": "consonant",
+      "latin": "ch",
+      "group": "letters",
+      "upper": "Χ"
+    },
+    {
+      "id": "psi",
+      "char": "ψ",
+      "kind": "consonant",
+      "latin": "ps",
+      "group": "letters",
+      "upper": "Ψ"
+    },
+    {
+      "id": "omega",
+      "char": "ω",
+      "kind": "vowel",
+      "latin": "o",
+      "group": "letters",
+      "upper": "Ω"
+    },
+    {
+      "id": "alpha-tonos",
+      "char": "ά",
+      "kind": "vowel",
+      "latin": "á",
+      "group": "accented",
+      "upper": "Ά"
+    },
+    {
+      "id": "epsilon-tonos",
+      "char": "έ",
+      "kind": "vowel",
+      "latin": "é",
+      "group": "accented",
+      "upper": "Έ"
+    },
+    {
+      "id": "eta-tonos",
+      "char": "ή",
+      "kind": "vowel",
+      "latin": "í",
+      "group": "accented",
+      "upper": "Ή"
+    },
+    {
+      "id": "iota-tonos",
+      "char": "ί",
+      "kind": "vowel",
+      "latin": "í",
+      "group": "accented",
+      "upper": "Ί"
+    },
+    {
+      "id": "omicron-tonos",
+      "char": "ό",
+      "kind": "vowel",
+      "latin": "ó",
+      "group": "accented",
+      "upper": "Ό"
+    },
+    {
+      "id": "upsilon-tonos",
+      "char": "ύ",
+      "kind": "vowel",
+      "latin": "ý",
+      "group": "accented",
+      "upper": "Ύ"
+    },
+    {
+      "id": "omega-tonos",
+      "char": "ώ",
+      "kind": "vowel",
+      "latin": "ó",
+      "group": "accented",
+      "upper": "Ώ"
+    },
+    {
+      "id": "iota-dialytika",
+      "char": "ϊ",
+      "kind": "vowel",
+      "latin": "ï",
+      "group": "accented",
+      "upper": "Ϊ"
+    },
+    {
+      "id": "upsilon-dialytika",
+      "char": "ϋ",
+      "kind": "vowel",
+      "latin": "ÿ",
+      "group": "accented",
+      "upper": "Ϋ"
+    },
+    {
+      "id": "iota-dialytika-tonos",
+      "char": "ΐ",
+      "kind": "vowel",
+      "latin": "ḯ",
+      "group": "accented"
+    },
+    {
+      "id": "upsilon-dialytika-tonos",
+      "char": "ΰ",
+      "kind": "vowel",
+      "latin": "ÿ́",
+      "group": "accented"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

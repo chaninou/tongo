@@ -1,0 +1,798 @@
+{
+  "id": "de",
+  "iso639_3": "deu",
+  "name": {
+    "fr": "Allemand",
+    "en": "German",
+    "ar": "الألمانية"
+  },
+  "endonym": "Deutsch",
+  "scripts": [
+    "latn"
+  ],
+  "variants": [
+    {
+      "id": "de-DE",
+      "region": "DE",
+      "name": {
+        "fr": "Allemagne",
+        "en": "Germany",
+        "ar": "ألمانيا"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 135,
+  "intro": {
+    "fr": "L'allemand s'écrit de façon régulière avec l'alphabet latin, trois voyelles à tréma (ä, ö, ü) et le ß. Tous les noms communs prennent une majuscule.",
+    "en": "German is spelled regularly with the Latin alphabet, three umlaut vowels (ä, ö, ü) and ß. Every noun is capitalised.",
+    "ar": "تُكتب الألمانية بانتظام بالأبجدية اللاتينية مع ثلاثة صوائت بنقطتين والحرف ß. وتبدأ كل الأسماء بحرف كبير."
+  },
+  "letters": [
+    {
+      "grapheme": "latn:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Apfel",
+          "ipa": "apfəl",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:b",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Baum",
+          "ipa": "baum",
+          "meaning": {
+            "fr": "arbre",
+            "en": "tree",
+            "ar": "شجرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "note": {
+          "fr": "Rare seul ; ch se prononce comme un souffle (ich, Bach).",
+          "en": "Rare on its own; ch is a breathy sound (ich, Bach)."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:d",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Dach",
+          "ipa": "dax",
+          "meaning": {
+            "fr": "toit",
+            "en": "roof",
+            "ar": "سقف"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "note": {
+          "fr": "Se réduit souvent à un e muet en fin de mot.",
+          "en": "Often reduced to a schwa at the end of a word."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "See",
+          "ipa": "zeː",
+          "meaning": {
+            "fr": "lac",
+            "en": "lake",
+            "ar": "بحيرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:f",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Fisch",
+          "ipa": "fɪʃ",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:g",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Garten",
+          "ipa": "ɡaʁtən",
+          "meaning": {
+            "fr": "jardin",
+            "en": "garden",
+            "ar": "حديقة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:h",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "note": {
+          "fr": "Muet après une voyelle, qu'il allonge.",
+          "en": "Silent after a vowel, which it lengthens."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Haus",
+          "ipa": "haus",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Igel",
+          "ipa": "iːɡəl",
+          "meaning": {
+            "fr": "hérisson",
+            "en": "hedgehog",
+            "ar": "قنفذ"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:j",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ja",
+          "ipa": "jaː",
+          "meaning": {
+            "fr": "oui",
+            "en": "yes",
+            "ar": "نعم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:k",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Katze",
+          "ipa": "kat͡sə",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:l",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Licht",
+          "ipa": "lɪçt",
+          "meaning": {
+            "fr": "lumière",
+            "en": "light",
+            "ar": "ضوء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:m",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Mond",
+          "ipa": "moːnt",
+          "meaning": {
+            "fr": "lune",
+            "en": "moon",
+            "ar": "قمر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Nacht",
+          "ipa": "naxt",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Ohr",
+          "ipa": "oːɐ",
+          "meaning": {
+            "fr": "oreille",
+            "en": "ear",
+            "ar": "أذن"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:p",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Papier",
+          "ipa": "papiːɐ",
+          "meaning": {
+            "fr": "papier",
+            "en": "paper",
+            "ar": "ورق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:q",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "note": {
+          "fr": "Toujours suivi de u, prononcé kv.",
+          "en": "Always followed by u, read kv."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Quelle",
+          "ipa": "kvɛlə",
+          "meaning": {
+            "fr": "source",
+            "en": "spring",
+            "ar": "نبع"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:r",
+      "pronunciation": {
+        "sound": [
+          "ʁ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Rose",
+          "ipa": "ʁoːzə",
+          "meaning": {
+            "fr": "rose",
+            "en": "rose",
+            "ar": "وردة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:s",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "note": {
+          "fr": "Se prononce ch devant p et t en début de mot (Stein).",
+          "en": "Sounds like sh before p and t at the start of a word (Stein)."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Sonne",
+          "ipa": "zɔnə",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:t",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Tag",
+          "ipa": "taːk",
+          "meaning": {
+            "fr": "jour",
+            "en": "day",
+            "ar": "يوم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Uhr",
+          "ipa": "uːɐ",
+          "meaning": {
+            "fr": "horloge",
+            "en": "clock",
+            "ar": "ساعة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:v",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Vogel",
+          "ipa": "foːɡəl",
+          "meaning": {
+            "fr": "oiseau",
+            "en": "bird",
+            "ar": "طائر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:w",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Wasser",
+          "ipa": "vasɐ",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:x",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:y",
+      "pronunciation": {
+        "sound": [
+          "y"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:z",
+      "pronunciation": {
+        "sound": [
+          "t͡s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Zeit",
+          "ipa": "t͡sait",
+          "meaning": {
+            "fr": "temps",
+            "en": "time",
+            "ar": "وقت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:a-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Mädchen",
+          "ipa": "mɛːtçən",
+          "meaning": {
+            "fr": "fille",
+            "en": "girl",
+            "ar": "فتاة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "ø"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "schön",
+          "ipa": "ʃøːn",
+          "meaning": {
+            "fr": "beau",
+            "en": "beautiful",
+            "ar": "جميل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "y"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Tür",
+          "ipa": "tyːɐ",
+          "meaning": {
+            "fr": "porte",
+            "en": "door",
+            "ar": "باب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:sharp-s",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "note": {
+          "fr": "Un s dur, qui suit une voyelle longue.",
+          "en": "A hard s, after a long vowel."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "Straße",
+          "ipa": "ʃtʁaːsə",
+          "meaning": {
+            "fr": "rue",
+            "en": "street",
+            "ar": "شارع"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/de.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "a",
+      "ä",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "ö",
+      "p",
+      "q",
+      "r",
+      "s",
+      "ß",
+      "t",
+      "u",
+      "ü",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z"
+    ],
+    "auxiliary": [
+      "á",
+      "à",
+      "ă",
+      "â",
+      "å",
+      "ã",
+      "ā",
+      "æ",
+      "ç",
+      "é",
+      "è",
+      "ĕ",
+      "ê",
+      "ë",
+      "ē",
+      "ğ",
+      "í",
+      "ì",
+      "ĭ",
+      "î",
+      "ï",
+      "İ",
+      "ī",
+      "ı",
+      "ñ",
+      "ó",
+      "ò",
+      "ŏ",
+      "ô",
+      "ø",
+      "ō",
+      "œ",
+      "ş",
+      "ú",
+      "ù",
+      "ŭ",
+      "û",
+      "ū",
+      "ÿ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/de.xml"
+    }
+  }
+}

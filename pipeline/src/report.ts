@@ -5,6 +5,7 @@
  * - « manquant » : caractère principal selon CLDR que Tongo ne décrit pas encore.
  */
 import { loadContent } from "./content.ts";
+import { coveredIn, hangulJamo } from "./coverage.ts";
 
 const { content, errors } = await loadContent();
 if (errors.length) {
@@ -18,9 +19,11 @@ for (const l of content.languages) {
   const main = new Set(l.characters.main);
   const aux = new Set(l.characters.auxiliary);
   const described = new Set(l.letters.map((e) => chars.get(e.grapheme)!));
-  const notInCldr = [...described].filter((c) => !main.has(c) && !aux.has(c));
+  // Composants des caractères de référence (marques de ton, jamo…) : décrits à dessein.
+  const components = new Set([...main, ...aux].flatMap((c) => [...(hangulJamo(c) ?? []), ...c.normalize("NFD")]));
+  const notInCldr = [...described].filter((c) => !main.has(c) && !aux.has(c) && !components.has(c));
   const auxiliary = [...described].filter((c) => !main.has(c) && aux.has(c));
-  const missing = [...main].filter((c) => !described.has(c));
+  const missing = [...main].filter((c) => !coveredIn(c, described as Set<string>, l.id));
   gaps += missing.length + notInCldr.length;
   console.log(`\n${l.id} (${l.characters.source.locator}) : ${described.size} lettres décrites, ${main.size} principales dans CLDR`);
   if (missing.length) console.log(`  manquant (${missing.length}) : ${missing.join(" ")}`);

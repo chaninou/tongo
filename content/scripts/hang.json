@@ -1,0 +1,337 @@
+{
+  "id": "hang",
+  "cased": false,
+  "groups": [
+    {
+      "id": "consonants",
+      "name": {
+        "fr": "Consonnes",
+        "en": "Consonants",
+        "ar": "الصوامت"
+      }
+    },
+    {
+      "id": "tense",
+      "name": {
+        "fr": "Consonnes tendues (doubles)",
+        "en": "Tense (double) consonants",
+        "ar": "الصوامت المشددة"
+      }
+    },
+    {
+      "id": "vowels",
+      "name": {
+        "fr": "Voyelles",
+        "en": "Vowels",
+        "ar": "الصوائت"
+      }
+    },
+    {
+      "id": "compound",
+      "name": {
+        "fr": "Voyelles composées",
+        "en": "Compound vowels",
+        "ar": "الصوائت المركبة"
+      }
+    }
+  ],
+  "name": {
+    "fr": "Hangeul",
+    "en": "Hangul",
+    "ar": "الهانغول"
+  },
+  "endonym": "한글",
+  "type": "featural",
+  "direction": "ltr",
+  "intro": {
+    "fr": "Créé en 1443 sous le roi Sejong pour être facile à apprendre. La forme des consonnes imite la position de la bouche, et les lettres s'empilent en blocs syllabiques.",
+    "en": "Created in 1443 under King Sejong to be easy to learn. Consonant shapes mimic the position of the mouth, and letters stack into syllable blocks.",
+    "ar": "أُنشئ عام 1443 في عهد الملك سيجونغ ليكون سهل التعلم. تحاكي أشكال الصوامت وضع الفم، وتُجمع الحروف في كتل مقطعية."
+  },
+  "sample": "ㄱ ㅏ 가 한",
+  "font": "Noto Sans KR",
+  "graphemes": [
+    {
+      "id": "giyeok",
+      "char": "ㄱ",
+      "kind": "consonant",
+      "latin": "g/k",
+      "group": "consonants"
+    },
+    {
+      "id": "nieun",
+      "char": "ㄴ",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "consonants"
+    },
+    {
+      "id": "digeut",
+      "char": "ㄷ",
+      "kind": "consonant",
+      "latin": "d/t",
+      "group": "consonants"
+    },
+    {
+      "id": "rieul",
+      "char": "ㄹ",
+      "kind": "consonant",
+      "latin": "r/l",
+      "group": "consonants"
+    },
+    {
+      "id": "mieum",
+      "char": "ㅁ",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "consonants"
+    },
+    {
+      "id": "bieup",
+      "char": "ㅂ",
+      "kind": "consonant",
+      "latin": "b/p",
+      "group": "consonants"
+    },
+    {
+      "id": "siot",
+      "char": "ㅅ",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "consonants"
+    },
+    {
+      "id": "ieung",
+      "char": "ㅇ",
+      "kind": "consonant",
+      "latin": "-/ng",
+      "group": "consonants"
+    },
+    {
+      "id": "jieut",
+      "char": "ㅈ",
+      "kind": "consonant",
+      "latin": "j",
+      "group": "consonants"
+    },
+    {
+      "id": "chieut",
+      "char": "ㅊ",
+      "kind": "consonant",
+      "latin": "ch",
+      "group": "consonants"
+    },
+    {
+      "id": "kieuk",
+      "char": "ㅋ",
+      "kind": "consonant",
+      "latin": "k",
+      "group": "consonants"
+    },
+    {
+      "id": "tieut",
+      "char": "ㅌ",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "consonants"
+    },
+    {
+      "id": "pieup",
+      "char": "ㅍ",
+      "kind": "consonant",
+      "latin": "p",
+      "group": "consonants"
+    },
+    {
+      "id": "hieut",
+      "char": "ㅎ",
+      "kind": "consonant",
+      "latin": "h",
+      "group": "consonants"
+    },
+    {
+      "id": "ssang-giyeok",
+      "char": "ㄲ",
+      "kind": "consonant",
+      "latin": "kk",
+      "group": "tense"
+    },
+    {
+      "id": "ssang-digeut",
+      "char": "ㄸ",
+      "kind": "consonant",
+      "latin": "tt",
+      "group": "tense"
+    },
+    {
+      "id": "ssang-bieup",
+      "char": "ㅃ",
+      "kind": "consonant",
+      "latin": "pp",
+      "group": "tense"
+    },
+    {
+      "id": "ssang-siot",
+      "char": "ㅆ",
+      "kind": "consonant",
+      "latin": "ss",
+      "group": "tense"
+    },
+    {
+      "id": "ssang-jieut",
+      "char": "ㅉ",
+      "kind": "consonant",
+      "latin": "jj",
+      "group": "tense"
+    },
+    {
+      "id": "a",
+      "char": "ㅏ",
+      "kind": "vowel",
+      "latin": "a",
+      "group": "vowels"
+    },
+    {
+      "id": "ya",
+      "char": "ㅑ",
+      "kind": "vowel",
+      "latin": "ya",
+      "group": "vowels"
+    },
+    {
+      "id": "eo",
+      "char": "ㅓ",
+      "kind": "vowel",
+      "latin": "eo",
+      "group": "vowels"
+    },
+    {
+      "id": "yeo",
+      "char": "ㅕ",
+      "kind": "vowel",
+      "latin": "yeo",
+      "group": "vowels"
+    },
+    {
+      "id": "o",
+      "char": "ㅗ",
+      "kind": "vowel",
+      "latin": "o",
+      "group": "vowels"
+    },
+    {
+      "id": "yo",
+      "char": "ㅛ",
+      "kind": "vowel",
+      "latin": "yo",
+      "group": "vowels"
+    },
+    {
+      "id": "u",
+      "char": "ㅜ",
+      "kind": "vowel",
+      "latin": "u",
+      "group": "vowels"
+    },
+    {
+      "id": "yu",
+      "char": "ㅠ",
+      "kind": "vowel",
+      "latin": "yu",
+      "group": "vowels"
+    },
+    {
+      "id": "eu",
+      "char": "ㅡ",
+      "kind": "vowel",
+      "latin": "eu",
+      "group": "vowels"
+    },
+    {
+      "id": "i",
+      "char": "ㅣ",
+      "kind": "vowel",
+      "latin": "i",
+      "group": "vowels"
+    },
+    {
+      "id": "ae",
+      "char": "ㅐ",
+      "kind": "vowel",
+      "latin": "ae",
+      "group": "compound"
+    },
+    {
+      "id": "yae",
+      "char": "ㅒ",
+      "kind": "vowel",
+      "latin": "yae",
+      "group": "compound"
+    },
+    {
+      "id": "e",
+      "char": "ㅔ",
+      "kind": "vowel",
+      "latin": "e",
+      "group": "compound"
+    },
+    {
+      "id": "ye",
+      "char": "ㅖ",
+      "kind": "vowel",
+      "latin": "ye",
+      "group": "compound"
+    },
+    {
+      "id": "wa",
+      "char": "ㅘ",
+      "kind": "vowel",
+      "latin": "wa",
+      "group": "compound"
+    },
+    {
+      "id": "wae",
+      "char": "ㅙ",
+      "kind": "vowel",
+      "latin": "wae",
+      "group": "compound"
+    },
+    {
+      "id": "oe",
+      "char": "ㅚ",
+      "kind": "vowel",
+      "latin": "oe",
+      "group": "compound"
+    },
+    {
+      "id": "wo",
+      "char": "ㅝ",
+      "kind": "vowel",
+      "latin": "wo",
+      "group": "compound"
+    },
+    {
+      "id": "we",
+      "char": "ㅞ",
+      "kind": "vowel",
+      "latin": "we",
+      "group": "compound"
+    },
+    {
+      "id": "wi",
+      "char": "ㅟ",
+      "kind": "vowel",
+      "latin": "wi",
+      "group": "compound"
+    },
+    {
+      "id": "ui",
+      "char": "ㅢ",
+      "kind": "vowel",
+      "latin": "ui",
+      "group": "compound"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

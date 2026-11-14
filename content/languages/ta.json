@@ -1,0 +1,909 @@
+{
+  "id": "ta",
+  "iso639_3": "tam",
+  "name": {
+    "fr": "Tamoul",
+    "en": "Tamil",
+    "ar": "التاميلية"
+  },
+  "endonym": "தமிழ்",
+  "scripts": [
+    "taml"
+  ],
+  "variants": [
+    {
+      "id": "ta-IN",
+      "region": "IN",
+      "name": {
+        "fr": "Inde (Tamil Nadu)",
+        "en": "India (Tamil Nadu)",
+        "ar": "الهند (تاميل نادو)"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 85,
+  "intro": {
+    "fr": "Le tamoul, langue dravidienne, a un alphabet plus compact que le hindi : pas de lettres aspirées, une seule lettre pour k et g. Le son dépend de la position : க se prononce k en début de mot et g entre deux voyelles.",
+    "en": "Tamil, a Dravidian language, has a more compact script than Hindi: no aspirated letters, one letter for k and g. The sound depends on position: க is k at the start of a word and g between vowels.",
+    "ar": "التاميلية لغة درافيدية أبجديتها أكثر اختصارًا من الهندية: لا حروف نفسية، وحرف واحد لـ k وg يتغير نطقه حسب موضعه."
+  },
+  "letters": [
+    {
+      "grapheme": "taml:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "அம்மா",
+          "ipa": "amma",
+          "meaning": {
+            "fr": "maman",
+            "en": "mother",
+            "ar": "أم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:aa",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஆடு",
+          "ipa": "aːɖu",
+          "meaning": {
+            "fr": "chèvre",
+            "en": "goat",
+            "ar": "ماعز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "இலை",
+          "ipa": "ilai̯",
+          "meaning": {
+            "fr": "feuille",
+            "en": "leaf",
+            "ar": "ورقة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:ii",
+      "pronunciation": {
+        "sound": [
+          "iː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஈ",
+          "ipa": "iː",
+          "meaning": {
+            "fr": "mouche",
+            "en": "fly",
+            "ar": "ذبابة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "உப்பு",
+          "ipa": "uppu",
+          "meaning": {
+            "fr": "sel",
+            "en": "salt",
+            "ar": "ملح"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:uu",
+      "pronunciation": {
+        "sound": [
+          "uː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஊசி",
+          "ipa": "uːsi",
+          "meaning": {
+            "fr": "aiguille",
+            "en": "needle",
+            "ar": "إبرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "எலி",
+          "ipa": "eli",
+          "meaning": {
+            "fr": "rat",
+            "en": "rat",
+            "ar": "جرذ"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:ee",
+      "pronunciation": {
+        "sound": [
+          "eː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஏணி",
+          "ipa": "eːɳi",
+          "meaning": {
+            "fr": "échelle",
+            "en": "ladder",
+            "ar": "سلم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:ai",
+      "pronunciation": {
+        "sound": [
+          "aɪ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஐந்து",
+          "ipa": "aɪnd̪u",
+          "meaning": {
+            "fr": "cinq",
+            "en": "five",
+            "ar": "خمسة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஒன்று",
+          "ipa": "onrɯ",
+          "meaning": {
+            "fr": "un",
+            "en": "one",
+            "ar": "واحد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:oo",
+      "pronunciation": {
+        "sound": [
+          "oː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஓடம்",
+          "ipa": "oːɖam",
+          "meaning": {
+            "fr": "barque",
+            "en": "boat",
+            "ar": "قارب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:au",
+      "pronunciation": {
+        "sound": [
+          "au̯"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ஔவை",
+          "ipa": "au̯ʋai̯",
+          "meaning": {
+            "fr": "Avvaiyar (poétesse)",
+            "en": "Avvaiyar (poet)",
+            "ar": "أفّيار"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:aytham",
+      "pronunciation": {
+        "sound": [
+          "x"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:ka",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "a"
+        ],
+        "note": {
+          "fr": "Se prononce g entre deux voyelles.",
+          "en": "Pronounced g between vowels."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "கல்",
+          "ipa": "kal",
+          "meaning": {
+            "fr": "pierre",
+            "en": "stone",
+            "ar": "حجر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:nga",
+      "pronunciation": {
+        "sound": [
+          "ŋ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:ca",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕ",
+          "a"
+        ],
+        "note": {
+          "fr": "Se prononce souvent s en début de mot.",
+          "en": "Often pronounced s at the start of a word."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "சக்கரம்",
+          "ipa": "t͡ɕakkaɾam",
+          "meaning": {
+            "fr": "roue",
+            "en": "wheel",
+            "ar": "عجلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:nya",
+      "pronunciation": {
+        "sound": [
+          "ɲ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:tta",
+      "pronunciation": {
+        "sound": [
+          "ʈ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:nna",
+      "pronunciation": {
+        "sound": [
+          "ɳ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "கண்",
+          "ipa": "kaɳ",
+          "meaning": {
+            "fr": "œil",
+            "en": "eye",
+            "ar": "عين"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:ta",
+      "pronunciation": {
+        "sound": [
+          "t̪",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "தண்ணீர்",
+          "ipa": "t̪aɳɳiːr",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:na",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "நாய்",
+          "ipa": "naːj",
+          "meaning": {
+            "fr": "chien",
+            "en": "dog",
+            "ar": "كلب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:pa",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "பல்",
+          "ipa": "pal",
+          "meaning": {
+            "fr": "dent",
+            "en": "tooth",
+            "ar": "سن"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:ma",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "மரம்",
+          "ipa": "maɾam",
+          "meaning": {
+            "fr": "arbre",
+            "en": "tree",
+            "ar": "شجرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:ya",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "யானை",
+          "ipa": "jaːnai̯",
+          "meaning": {
+            "fr": "éléphant",
+            "en": "elephant",
+            "ar": "فيل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:ra",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:la",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:va",
+      "pronunciation": {
+        "sound": [
+          "ʋ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "வீடு",
+          "ipa": "ʋiːɖu",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:zha",
+      "pronunciation": {
+        "sound": [
+          "ɻ",
+          "a"
+        ],
+        "note": {
+          "fr": "Son typique du tamoul, entre r et l, langue très recourbée.",
+          "en": "A sound typical of Tamil, between r and l, tongue curled far back."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "தமிழ்",
+          "ipa": "t̪amiɻ",
+          "meaning": {
+            "fr": "tamoul",
+            "en": "Tamil",
+            "ar": "التاميلية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "taml:lla",
+      "pronunciation": {
+        "sound": [
+          "ɭ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:rra",
+      "pronunciation": {
+        "sound": [
+          "r",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:nna-alveolar",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:ja",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:ssa",
+      "pronunciation": {
+        "sound": [
+          "ʂ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sa",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:ha",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-aa",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-ii",
+      "pronunciation": {
+        "sound": [
+          "iː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-uu",
+      "pronunciation": {
+        "sound": [
+          "uː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-ee",
+      "pronunciation": {
+        "sound": [
+          "eː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-ai",
+      "pronunciation": {
+        "sound": [
+          "aɪ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-oo",
+      "pronunciation": {
+        "sound": [
+          "oː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:sign-au",
+      "pronunciation": {
+        "sound": [
+          "au̯"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "taml:pulli",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ta.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "அ",
+      "ஆ",
+      "இ",
+      "ஈ",
+      "உ",
+      "ஊ",
+      "எ",
+      "ஏ",
+      "ஐ",
+      "ஒ",
+      "ஓ",
+      "ஔ",
+      "ஃ",
+      "க",
+      "ங",
+      "ச",
+      "ஞ",
+      "ட",
+      "ண",
+      "த",
+      "ந",
+      "ப",
+      "ம",
+      "ய",
+      "ர",
+      "ல",
+      "வ",
+      "ழ",
+      "ள",
+      "ற",
+      "ன",
+      "ஜ",
+      "ஷ",
+      "ஸ",
+      "ஹ",
+      "ா",
+      "ி",
+      "ீ",
+      "ு",
+      "ூ",
+      "ெ",
+      "ே",
+      "ை",
+      "ொ",
+      "ோ",
+      "ௌ",
+      "்"
+    ],
+    "auxiliary": [],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ta.xml"
+    }
+  }
+}

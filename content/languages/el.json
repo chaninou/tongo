@@ -1,0 +1,843 @@
+{
+  "id": "el",
+  "iso639_3": "ell",
+  "name": {
+    "fr": "Grec",
+    "en": "Greek",
+    "ar": "اليونانية"
+  },
+  "endonym": "Ελληνικά",
+  "scripts": [
+    "grek"
+  ],
+  "variants": [
+    {
+      "id": "el-GR",
+      "region": "GR",
+      "name": {
+        "fr": "Grèce",
+        "en": "Greece",
+        "ar": "اليونان"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 13,
+  "intro": {
+    "fr": "Le grec moderne utilise l'alphabet grec, ancêtre du latin et du cyrillique. L'accent aigu (΄) marque la syllabe accentuée, et plusieurs lettres ou paires de lettres se prononcent i.",
+    "en": "Modern Greek uses the Greek alphabet, ancestor of Latin and Cyrillic. The acute accent (΄) marks the stressed syllable, and several letters or letter pairs are pronounced i.",
+    "ar": "تستعمل اليونانية الحديثة الأبجدية اليونانية، أصل اللاتينية والسيريلية. تدل العلامة الحادة على المقطع المنبور، وتُنطق عدة حروف i."
+  },
+  "letters": [
+    {
+      "grapheme": "grek:alpha",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "αέρας",
+          "ipa": "aeɾas",
+          "meaning": {
+            "fr": "air",
+            "en": "air",
+            "ar": "هواء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:beta",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "βιβλίο",
+          "ipa": "vivlio",
+          "meaning": {
+            "fr": "livre",
+            "en": "book",
+            "ar": "كتاب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:gamma",
+      "pronunciation": {
+        "sound": [
+          "ɣ"
+        ],
+        "note": {
+          "fr": "Devant e et i, se prononce comme le y de yaourt.",
+          "en": "Before e and i it sounds like y in yes."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "γάλα",
+          "ipa": "ɣala",
+          "meaning": {
+            "fr": "lait",
+            "en": "milk",
+            "ar": "حليب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:delta",
+      "pronunciation": {
+        "sound": [
+          "ð"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "δέντρο",
+          "ipa": "ðendɾo",
+          "meaning": {
+            "fr": "arbre",
+            "en": "tree",
+            "ar": "شجرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:epsilon",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ελιά",
+          "ipa": "elja",
+          "meaning": {
+            "fr": "olive",
+            "en": "olive",
+            "ar": "زيتونة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:zeta",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ζάχαρη",
+          "ipa": "zaxaɾi",
+          "meaning": {
+            "fr": "sucre",
+            "en": "sugar",
+            "ar": "سكر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:eta",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ήλιος",
+          "ipa": "iʎos",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:theta",
+      "pronunciation": {
+        "sound": [
+          "θ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "θάλασσα",
+          "ipa": "θalasa",
+          "meaning": {
+            "fr": "mer",
+            "en": "sea",
+            "ar": "بحر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:iota",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ιστός",
+          "ipa": "istos",
+          "meaning": {
+            "fr": "toile",
+            "en": "web",
+            "ar": "نسيج"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:kappa",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "καφές",
+          "ipa": "kafes",
+          "meaning": {
+            "fr": "café",
+            "en": "coffee",
+            "ar": "قهوة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:lambda",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "λεμόνι",
+          "ipa": "lemoni",
+          "meaning": {
+            "fr": "citron",
+            "en": "lemon",
+            "ar": "ليمون"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:mu",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "μήλο",
+          "ipa": "milo",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:nu",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "νερό",
+          "ipa": "neɾo",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:xi",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ξύλο",
+          "ipa": "ksilo",
+          "meaning": {
+            "fr": "bois",
+            "en": "wood",
+            "ar": "خشب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:omicron",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "όνομα",
+          "ipa": "onoma",
+          "meaning": {
+            "fr": "nom",
+            "en": "name",
+            "ar": "اسم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:pi",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "πόρτα",
+          "ipa": "poɾta",
+          "meaning": {
+            "fr": "porte",
+            "en": "door",
+            "ar": "باب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:rho",
+      "pronunciation": {
+        "sound": [
+          "ɾ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ρύζι",
+          "ipa": "ɾizi",
+          "meaning": {
+            "fr": "riz",
+            "en": "rice",
+            "ar": "أرز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:sigma",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "σπίτι",
+          "ipa": "spiti",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:final-sigma",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:tau",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "τσάι",
+          "ipa": "t͡sai",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:upsilon",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ύπνος",
+          "ipa": "ipnos",
+          "meaning": {
+            "fr": "sommeil",
+            "en": "sleep",
+            "ar": "نوم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:phi",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "φως",
+          "ipa": "fos",
+          "meaning": {
+            "fr": "lumière",
+            "en": "light",
+            "ar": "ضوء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:chi",
+      "pronunciation": {
+        "sound": [
+          "x"
+        ],
+        "note": {
+          "fr": "Devant e et i, plus en avant (comme ich en allemand).",
+          "en": "Before e and i it moves forward (like German ich)."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "χέρι",
+          "ipa": "çeɾi",
+          "meaning": {
+            "fr": "main",
+            "en": "hand",
+            "ar": "يد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:psi",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ψωμί",
+          "ipa": "psomi",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:omega",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ώρα",
+          "ipa": "oɾa",
+          "meaning": {
+            "fr": "heure",
+            "en": "hour",
+            "ar": "ساعة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "grek:alpha-tonos",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:epsilon-tonos",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:eta-tonos",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:iota-tonos",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:omicron-tonos",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:upsilon-tonos",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:omega-tonos",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:iota-dialytika",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:upsilon-dialytika",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:iota-dialytika-tonos",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "grek:upsilon-dialytika-tonos",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/el.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "α",
+      "ά",
+      "β",
+      "γ",
+      "δ",
+      "ε",
+      "έ",
+      "ζ",
+      "η",
+      "ή",
+      "θ",
+      "ι",
+      "ί",
+      "ϊ",
+      "ΐ",
+      "κ",
+      "λ",
+      "μ",
+      "ν",
+      "ξ",
+      "ο",
+      "ό",
+      "π",
+      "ρ",
+      "σ",
+      "ς",
+      "τ",
+      "υ",
+      "ύ",
+      "ϋ",
+      "ΰ",
+      "φ",
+      "χ",
+      "ψ",
+      "ω",
+      "ώ"
+    ],
+    "auxiliary": [
+      "ἀ",
+      "ἄ",
+      "ἂ",
+      "ἆ",
+      "ἁ",
+      "ἅ",
+      "ἃ",
+      "ἇ",
+      "ὰ",
+      "ᾶ",
+      "ἐ",
+      "ἔ",
+      "ἒ",
+      "ἑ",
+      "ἕ",
+      "ἓ",
+      "ὲ",
+      "ἠ",
+      "ἤ",
+      "ἢ",
+      "ἦ",
+      "ἡ",
+      "ἥ",
+      "ἣ",
+      "ἧ",
+      "ὴ",
+      "ῆ",
+      "ἰ",
+      "ἴ",
+      "ἲ",
+      "ἶ",
+      "ἱ",
+      "ἵ",
+      "ἳ",
+      "ἷ",
+      "ὶ",
+      "ῖ",
+      "ῒ",
+      "ῗ",
+      "ὄ",
+      "ὂ",
+      "ὃ",
+      "ὸ",
+      "ὐ",
+      "ὔ",
+      "ὒ",
+      "ὖ",
+      "ὑ",
+      "ὕ",
+      "ὓ",
+      "ὗ",
+      "ὺ",
+      "ῦ",
+      "ῢ",
+      "ῧ",
+      "ὤ",
+      "ὢ",
+      "ὦ",
+      "ὥ",
+      "ὣ",
+      "ὧ",
+      "ὼ",
+      "ῶ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/el.xml"
+    }
+  }
+}

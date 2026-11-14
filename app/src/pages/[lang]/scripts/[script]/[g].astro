@@ -11,7 +11,7 @@ import Sound from "../../../../components/Sound.astro";
 import VariantPicker from "../../../../components/VariantPicker.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../../i18n/ui";
 import { content, index, splitRef } from "../../../../lib/content";
-import { scriptDir, scriptLang } from "../../../../lib/script-lang";
+import { glyph, scriptDir, scriptLang } from "../../../../lib/script-lang";
 
 export async function getStaticPaths() {
   const c = await content();
@@ -38,7 +38,7 @@ const counterpart = g.counterpart ? (() => {
 })() : undefined;
 const FORM_KEYS = ["isolated", "initial", "medial", "final"] as const;
 const forms = g.forms ? FORM_KEYS.filter((k) => g.forms![k]).map((k) => ({ k, v: g.forms![k]! })) : [];
-const title = `${g.char} · ${loc(locale, script.name)}`;
+const title = `${glyph(g.char)} · ${loc(locale, script.name)}`;
 ---
 <Base locale={locale} section="scripts" title={title}>
   <p class="crumbs">
@@ -47,15 +47,15 @@ const title = `${g.char} · ${loc(locale, script.name)}`;
   </p>
 
   <div class="glyph-hero">
-    <div class="glyph-big" lang={lang} dir={dir}>{script.cased && g.upper ? `${g.upper}${g.char}` : g.char}</div>
+    <div class="glyph-big" lang={lang} dir={dir}>{script.cased && g.upper ? `${g.upper}${g.char}` : glyph(g.char)}</div>
     <div>
-      <h1 style="margin-top:0"><bdi lang={lang}>{g.char}</bdi>{g.latin && <span class="muted" style="font-weight:400"> · {g.latin}</span>}</h1>
+      <h1 style="margin-top:0"><bdi lang={lang}>{glyph(g.char)}</bdi>{g.latin && <span class="muted" style="font-weight:400"> · {g.latin}</span>}</h1>
       <dl class="facts">
         {g.name && <><dt>{t(locale, "char.name")}</dt><dd>{g.name}</dd></>}
         {g.latin && <><dt>{t(locale, "char.latin")}</dt><dd dir="ltr">{g.latin}</dd></>}
         {script.cased && g.upper && <><dt>{t(locale, "char.upper")}</dt><dd lang={lang}>{g.upper}</dd></>}
         {counterpart && <><dt>{t(locale, "char.counterpart")}</dt><dd>
-          <a href={`${base}/${locale}/scripts/${counterpart.sid}/${counterpart.gid}/`}><span lang={scriptLang(counterpart.sid)}>{counterpart.char}</span> · {loc(locale, counterpart.script.name)}</a>
+          <a href={`${base}/${locale}/scripts/${counterpart.sid}/${counterpart.gid}/`}><span lang={scriptLang(counterpart.sid)}>{glyph(counterpart.char)}</span> · {loc(locale, counterpart.script.name)}</a>
         </dd></>}
       </dl>
     </div>
@@ -122,7 +122,7 @@ const title = `${g.char} · ${loc(locale, script.name)}`;
   </section>
 
   <nav class="pager" aria-label={t(locale, "scripts.characters")}>
-    {prev ? <a href={`${base}/${locale}/scripts/${script.id}/${prev.id}/`} rel="prev">{locale === "ar" ? "→" : "←"} {t(locale, "char.prev")} <span lang={lang}>{prev.char}</span></a> : <span />}
-    {next ? <a href={`${base}/${locale}/scripts/${script.id}/${next.id}/`} rel="next">{t(locale, "char.next")} <span lang={lang}>{next.char}</span> {locale === "ar" ? "←" : "→"}</a> : <span />}
+    {prev ? <a href={`${base}/${locale}/scripts/${script.id}/${prev.id}/`} rel="prev">{locale === "ar" ? "→" : "←"} {t(locale, "char.prev")} <span lang={lang}>{glyph(prev.char)}</span></a> : <span />}
+    {next ? <a href={`${base}/${locale}/scripts/${script.id}/${next.id}/`} rel="next">{t(locale, "char.next")} <span lang={lang}>{glyph(next.char)}</span> {locale === "ar" ? "←" : "→"}</a> : <span />}
   </nav>
 </Base>

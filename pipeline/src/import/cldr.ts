@@ -26,6 +26,20 @@ const LANGS: Record<string, { file: string; scripts: string[] }> = {
   ru: { file: "ru", scripts: ["Cyrillic"] },
   ar: { file: "ar", scripts: ["Arabic"] },
   ja: { file: "ja", scripts: ["Hiragana", "Katakana"] },
+  pt: { file: "pt", scripts: ["Latin"] },
+  de: { file: "de", scripts: ["Latin"] },
+  tr: { file: "tr", scripts: ["Latin"] },
+  vi: { file: "vi", scripts: ["Latin"] },
+  sw: { file: "sw", scripts: ["Latin"] },
+  el: { file: "el", scripts: ["Greek"] },
+  ka: { file: "ka", scripts: ["Georgian"] },
+  fa: { file: "fa", scripts: ["Arabic"] },
+  he: { file: "he", scripts: ["Hebrew"] },
+  hi: { file: "hi", scripts: ["Devanagari"] },
+  bn: { file: "bn", scripts: ["Bengali"] },
+  ta: { file: "ta", scripts: ["Tamil"] },
+  th: { file: "th", scripts: ["Thai"] },
+  ko: { file: "ko", scripts: ["Hangul"] },
 };
 
 export interface CldrLanguage {

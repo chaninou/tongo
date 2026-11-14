@@ -1,0 +1,1409 @@
+{
+  "id": "hi",
+  "iso639_3": "hin",
+  "name": {
+    "fr": "Hindi",
+    "en": "Hindi",
+    "ar": "الهندية"
+  },
+  "endonym": "हिन्दी",
+  "scripts": [
+    "deva"
+  ],
+  "variants": [
+    {
+      "id": "hi-IN",
+      "region": "IN",
+      "name": {
+        "fr": "Inde",
+        "en": "India",
+        "ar": "الهند"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 600,
+  "intro": {
+    "fr": "Le hindi s'écrit en devanagari, un abugida : chaque consonne porte un a bref, qu'on change avec des signes vocaliques. Il distingue les consonnes aspirées (avec un souffle) et rétroflexes (langue recourbée).",
+    "en": "Hindi is written in Devanagari, an abugida: each consonant carries a short a, changed with vowel signs. It distinguishes aspirated consonants (with a puff of air) and retroflex ones (tongue curled back).",
+    "ar": "تُكتب الهندية بالديفاناغاري، وهي أبوغيدا: يحمل كل صامت صائتًا قصيرًا تغيره علامات صوتية. وتميز بين الصوامت النفسية والارتدادية."
+  },
+  "letters": [
+    {
+      "grapheme": "deva:a",
+      "pronunciation": {
+        "sound": [
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "अनार",
+          "ipa": "ənaːɾ",
+          "meaning": {
+            "fr": "grenade",
+            "en": "pomegranate",
+            "ar": "رمان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:aa",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "आम",
+          "ipa": "aːm",
+          "meaning": {
+            "fr": "mangue",
+            "en": "mango",
+            "ar": "مانجو"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:i",
+      "pronunciation": {
+        "sound": [
+          "ɪ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "इमली",
+          "ipa": "ɪmliː",
+          "meaning": {
+            "fr": "tamarin",
+            "en": "tamarind",
+            "ar": "تمر هندي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ii",
+      "pronunciation": {
+        "sound": [
+          "iː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ईख",
+          "ipa": "iːkʰ",
+          "meaning": {
+            "fr": "canne à sucre",
+            "en": "sugarcane",
+            "ar": "قصب السكر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:u",
+      "pronunciation": {
+        "sound": [
+          "ʊ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "उल्लू",
+          "ipa": "ʊlluː",
+          "meaning": {
+            "fr": "hibou",
+            "en": "owl",
+            "ar": "بومة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:uu",
+      "pronunciation": {
+        "sound": [
+          "uː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ऊन",
+          "ipa": "uːn",
+          "meaning": {
+            "fr": "laine",
+            "en": "wool",
+            "ar": "صوف"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ri",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "ɪ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ऋषि",
+          "ipa": "ɾɪʃiː",
+          "meaning": {
+            "fr": "sage",
+            "en": "sage",
+            "ar": "حكيم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:li",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "ɪ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:e-candra",
+      "pronunciation": {
+        "sound": [
+          "æ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "एक",
+          "ipa": "eːk",
+          "meaning": {
+            "fr": "un",
+            "en": "one",
+            "ar": "واحد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ai",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ऐनक",
+          "ipa": "ɛnək",
+          "meaning": {
+            "fr": "lunettes",
+            "en": "glasses",
+            "ar": "نظارة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:o-candra",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "note": {
+          "fr": "Pour des mots anglais.",
+          "en": "For English words."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ऑफ़िस",
+          "ipa": "ɔfɪs",
+          "meaning": {
+            "fr": "bureau",
+            "en": "office",
+            "ar": "مكتب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ओस",
+          "ipa": "oːs",
+          "meaning": {
+            "fr": "rosée",
+            "en": "dew",
+            "ar": "ندى"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:au",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "औरत",
+          "ipa": "ɔɾət",
+          "meaning": {
+            "fr": "femme",
+            "en": "woman",
+            "ar": "امرأة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ka",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "कमल",
+          "ipa": "kəməl",
+          "meaning": {
+            "fr": "lotus",
+            "en": "lotus",
+            "ar": "لوتس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:kha",
+      "pronunciation": {
+        "sound": [
+          "kʰ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "खरगोश",
+          "ipa": "kʰəɾɡoːʃ",
+          "meaning": {
+            "fr": "lapin",
+            "en": "rabbit",
+            "ar": "أرنب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ga",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "गाय",
+          "ipa": "ɡaːj",
+          "meaning": {
+            "fr": "vache",
+            "en": "cow",
+            "ar": "بقرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:gha",
+      "pronunciation": {
+        "sound": [
+          "ɡʱ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "घर",
+          "ipa": "ɡʱəɾ",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:nga",
+      "pronunciation": {
+        "sound": [
+          "ŋ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:ca",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "चाय",
+          "ipa": "t͡ʃaːj",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:cha",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃʰ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "छाता",
+          "ipa": "t͡ʃʰaːt̪aː",
+          "meaning": {
+            "fr": "parapluie",
+            "en": "umbrella",
+            "ar": "مظلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ja",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "जहाज़",
+          "ipa": "d͡ʒəɦaːz",
+          "meaning": {
+            "fr": "navire",
+            "en": "ship",
+            "ar": "سفينة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:jha",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒʱ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "झंडा",
+          "ipa": "d͡ʒʱəɳɖaː",
+          "meaning": {
+            "fr": "drapeau",
+            "en": "flag",
+            "ar": "علم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:nya",
+      "pronunciation": {
+        "sound": [
+          "ɲ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:tta",
+      "pronunciation": {
+        "sound": [
+          "ʈ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "टमाटर",
+          "ipa": "ʈəmaːʈəɾ",
+          "meaning": {
+            "fr": "tomate",
+            "en": "tomato",
+            "ar": "طماطم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ttha",
+      "pronunciation": {
+        "sound": [
+          "ʈʰ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ठंड",
+          "ipa": "ʈʰəɳɖ",
+          "meaning": {
+            "fr": "froid",
+            "en": "cold",
+            "ar": "برد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:dda",
+      "pronunciation": {
+        "sound": [
+          "ɖ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "डमरू",
+          "ipa": "ɖəmruː",
+          "meaning": {
+            "fr": "tambourin",
+            "en": "small drum",
+            "ar": "طبلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ddha",
+      "pronunciation": {
+        "sound": [
+          "ɖʱ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ढोल",
+          "ipa": "ɖʱoːl",
+          "meaning": {
+            "fr": "tambour",
+            "en": "drum",
+            "ar": "طبل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:nna",
+      "pronunciation": {
+        "sound": [
+          "ɳ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:ta",
+      "pronunciation": {
+        "sound": [
+          "t̪",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "तारा",
+          "ipa": "t̪aːɾaː",
+          "meaning": {
+            "fr": "étoile",
+            "en": "star",
+            "ar": "نجمة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:tha",
+      "pronunciation": {
+        "sound": [
+          "t̪ʰ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "थाली",
+          "ipa": "t̪ʰaːliː",
+          "meaning": {
+            "fr": "plateau",
+            "en": "plate",
+            "ar": "صينية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:da",
+      "pronunciation": {
+        "sound": [
+          "d̪",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "दवा",
+          "ipa": "d̪əʋaː",
+          "meaning": {
+            "fr": "médicament",
+            "en": "medicine",
+            "ar": "دواء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:dha",
+      "pronunciation": {
+        "sound": [
+          "d̪ʱ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "धनुष",
+          "ipa": "d̪ʱənʊʃ",
+          "meaning": {
+            "fr": "arc",
+            "en": "bow",
+            "ar": "قوس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:na",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "नल",
+          "ipa": "nəl",
+          "meaning": {
+            "fr": "robinet",
+            "en": "tap",
+            "ar": "صنبور"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:pa",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "पतंग",
+          "ipa": "pət̪əŋɡ",
+          "meaning": {
+            "fr": "cerf-volant",
+            "en": "kite",
+            "ar": "طائرة ورقية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:pha",
+      "pronunciation": {
+        "sound": [
+          "pʰ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "फल",
+          "ipa": "pʰəl",
+          "meaning": {
+            "fr": "fruit",
+            "en": "fruit",
+            "ar": "فاكهة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ba",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "बतख",
+          "ipa": "bət̪əkʰ",
+          "meaning": {
+            "fr": "canard",
+            "en": "duck",
+            "ar": "بطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:bha",
+      "pronunciation": {
+        "sound": [
+          "bʱ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "भालू",
+          "ipa": "bʱaːluː",
+          "meaning": {
+            "fr": "ours",
+            "en": "bear",
+            "ar": "دب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ma",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "मछली",
+          "ipa": "mət͡ʃʰliː",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ya",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "यात्रा",
+          "ipa": "jaːt̪ɾaː",
+          "meaning": {
+            "fr": "voyage",
+            "en": "journey",
+            "ar": "رحلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ra",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "रथ",
+          "ipa": "ɾət̪ʰ",
+          "meaning": {
+            "fr": "char",
+            "en": "chariot",
+            "ar": "عربة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:la",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "लड़का",
+          "ipa": "ləɽkaː",
+          "meaning": {
+            "fr": "garçon",
+            "en": "boy",
+            "ar": "ولد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:lla",
+      "pronunciation": {
+        "sound": [
+          "ɭ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:va",
+      "pronunciation": {
+        "sound": [
+          "ʋ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "वन",
+          "ipa": "ʋən",
+          "meaning": {
+            "fr": "forêt",
+            "en": "forest",
+            "ar": "غابة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:sha",
+      "pronunciation": {
+        "sound": [
+          "ʃ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "शेर",
+          "ipa": "ʃeːɾ",
+          "meaning": {
+            "fr": "tigre, lion",
+            "en": "tiger, lion",
+            "ar": "نمر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ssa",
+      "pronunciation": {
+        "sound": [
+          "ʃ",
+          "ə"
+        ],
+        "note": {
+          "fr": "Se prononce comme श en hindi.",
+          "en": "Pronounced like श in Hindi."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "षट्कोण",
+          "ipa": "ʃəʈkoːɳ",
+          "meaning": {
+            "fr": "hexagone",
+            "en": "hexagon",
+            "ar": "سداسي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:sa",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "सेब",
+          "ipa": "seːb",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:ha",
+      "pronunciation": {
+        "sound": [
+          "ɦ",
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "हाथी",
+          "ipa": "ɦaːt̪ʰiː",
+          "meaning": {
+            "fr": "éléphant",
+            "en": "elephant",
+            "ar": "فيل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "deva:sign-aa",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-i",
+      "pronunciation": {
+        "sound": [
+          "ɪ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-ii",
+      "pronunciation": {
+        "sound": [
+          "iː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-u",
+      "pronunciation": {
+        "sound": [
+          "ʊ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-uu",
+      "pronunciation": {
+        "sound": [
+          "uː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-ri",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "ɪ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-e-candra",
+      "pronunciation": {
+        "sound": [
+          "æ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-ai",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-o-candra",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:sign-au",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:virama",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:anusvara",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:candrabindu",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:visarga",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:nukta",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:avagraha",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "deva:om",
+      "pronunciation": {
+        "sound": [
+          "o",
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ॐ",
+          "ipa": "oːm",
+          "meaning": {
+            "fr": "om (syllabe sacrée)",
+            "en": "om (sacred syllable)",
+            "ar": "أوم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/hi.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "़",
+      "ॐ",
+      "ं",
+      "ँ",
+      "ः",
+      "अ",
+      "आ",
+      "इ",
+      "ई",
+      "उ",
+      "ऊ",
+      "ऋ",
+      "ऌ",
+      "ऍ",
+      "ए",
+      "ऐ",
+      "ऑ",
+      "ओ",
+      "औ",
+      "क",
+      "ख",
+      "ग",
+      "घ",
+      "ङ",
+      "च",
+      "छ",
+      "ज",
+      "झ",
+      "ञ",
+      "ट",
+      "ठ",
+      "ड",
+      "ढ",
+      "ण",
+      "त",
+      "थ",
+      "द",
+      "ध",
+      "न",
+      "प",
+      "फ",
+      "ब",
+      "भ",
+      "म",
+      "य",
+      "र",
+      "ल",
+      "ळ",
+      "व",
+      "श",
+      "ष",
+      "स",
+      "ह",
+      "ऽ",
+      "ा",
+      "ि",
+      "ी",
+      "ु",
+      "ू",
+      "ृ",
+      "ॅ",
+      "े",
+      "ै",
+      "ॉ",
+      "ो",
+      "ौ",
+      "्"
+    ],
+    "auxiliary": [
+      "ॄ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/hi.xml"
+    }
+  }
+}

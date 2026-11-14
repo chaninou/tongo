@@ -6,7 +6,7 @@
 import Base from "../../layouts/Base.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../i18n/ui";
 import { index } from "../../lib/content";
-import { scriptLang } from "../../lib/script-lang";
+import { glyph, scriptLang } from "../../lib/script-lang";
 
 export function getStaticPaths() {
   return UI_LOCALES.map((lang) => ({ params: { lang } }));
@@ -22,7 +22,7 @@ const data = {
       keys: [g.char, g.upper, ...Object.values(g.forms ?? {}).map((f) => f.replace(/\u200D/g, ""))]
         .filter((x): x is string => !!x).map((x) => x.normalize("NFC")),
       latin: g.latin ? norm(g.latin) : undefined,
-      label: g.char, sub: `${loc(locale, s.name)}${g.latin ? ` · ${g.latin}` : ""}`,
+      label: glyph(g.char), sub: `${loc(locale, s.name)}${g.latin ? ` · ${g.latin}` : ""}`,
       lang: scriptLang(s.id), href: `${base}/scripts/${s.id}/${g.id}/`,
     })),
   ),

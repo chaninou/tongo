@@ -6,7 +6,7 @@ import Sound from "../../../components/Sound.astro";
 import VariantPicker from "../../../components/VariantPicker.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
 import { content, index, splitRef } from "../../../lib/content";
-import { scriptLang } from "../../../lib/script-lang";
+import { glyph, scriptLang } from "../../../lib/script-lang";
 import { weakest } from "@tongo/model";
 
 export async function getStaticPaths() {
@@ -55,7 +55,7 @@ const byScript = language.scripts.map((sid) => ({
               return (
                 <tr>
                   <td><a class="g" href={`${base}/${locale}/scripts/${sid}/${gid}/`} lang={scriptLang(sid)}>
-                    {g.upper && g.upper !== g.char ? `${g.upper} ${g.char}` : g.char}
+                    {g.upper && g.upper !== g.char ? `${g.upper} ${g.char}` : glyph(g.char)}
                   </a>{g.latin && <div class="muted" style="font-size:.85rem">{g.latin}</div>}</td>
                   <td><Sound p={e.pronunciation} language={language} locale={locale} />
                     {like && <div class="muted" style="font-size:.9rem">{t(locale, "char.like")} « {like} »</div>}</td>

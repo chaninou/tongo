@@ -1,0 +1,1320 @@
+{
+  "id": "bn",
+  "iso639_3": "ben",
+  "name": {
+    "fr": "Bengali",
+    "en": "Bengali",
+    "ar": "البنغالية"
+  },
+  "endonym": "বাংলা",
+  "scripts": [
+    "beng"
+  ],
+  "variants": [
+    {
+      "id": "bn-BD",
+      "region": "BD",
+      "name": {
+        "fr": "Bangladesh",
+        "en": "Bangladesh",
+        "ar": "بنغلاديش"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 270,
+  "intro": {
+    "fr": "Le bengali s'écrit avec l'alphasyllabaire bengali, cousin du devanagari. La voyelle portée par chaque consonne y est un o ouvert (ɔ), et plusieurs lettres se prononcent de la même façon.",
+    "en": "Bengali is written in the Bengali abugida, a cousin of Devanagari. The vowel carried by each consonant is an open o (ɔ), and several letters sound the same.",
+    "ar": "تُكتب البنغالية بالأبوغيدا البنغالية، القريبة من الديفاناغاري. الصائت الملازم لكل صامت هو o مفتوحة."
+  },
+  "letters": [
+    {
+      "grapheme": "beng:o",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "অজগর",
+          "ipa": "ɔd͡ʒɡɔɾ",
+          "meaning": {
+            "fr": "python",
+            "en": "python",
+            "ar": "ثعبان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "আম",
+          "ipa": "am",
+          "meaning": {
+            "fr": "mangue",
+            "en": "mango",
+            "ar": "مانجو"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ইঁদুর",
+          "ipa": "ĩd̪uɾ",
+          "meaning": {
+            "fr": "souris",
+            "en": "mouse",
+            "ar": "فأر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ii",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ঈগল",
+          "ipa": "iɡol",
+          "meaning": {
+            "fr": "aigle",
+            "en": "eagle",
+            "ar": "نسر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "উট",
+          "ipa": "uʈ",
+          "meaning": {
+            "fr": "chameau",
+            "en": "camel",
+            "ar": "جمل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:uu",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:ri",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ঋষি",
+          "ipa": "ɾiʃi",
+          "meaning": {
+            "fr": "sage",
+            "en": "sage",
+            "ar": "حكيم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:rii",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:li",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:lii",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "একতারা",
+          "ipa": "ekt̪aɾa",
+          "meaning": {
+            "fr": "ektara (instrument)",
+            "en": "ektara (instrument)",
+            "ar": "إكتارا"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:oi",
+      "pronunciation": {
+        "sound": [
+          "oi̯"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ঐরাবত",
+          "ipa": "oi̯ɾabɔt̪",
+          "meaning": {
+            "fr": "éléphant mythique",
+            "en": "mythical elephant",
+            "ar": "فيل أسطوري"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:o-closed",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ওল",
+          "ipa": "ol",
+          "meaning": {
+            "fr": "igname",
+            "en": "yam",
+            "ar": "يام"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ou",
+      "pronunciation": {
+        "sound": [
+          "ou̯"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ঔষধ",
+          "ipa": "ou̯ʃɔd̪ʱ",
+          "meaning": {
+            "fr": "médicament",
+            "en": "medicine",
+            "ar": "دواء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ka",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "কলা",
+          "ipa": "kɔla",
+          "meaning": {
+            "fr": "banane",
+            "en": "banana",
+            "ar": "موز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:kha",
+      "pronunciation": {
+        "sound": [
+          "kʰ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "খরগোশ",
+          "ipa": "kʰɔɾɡoʃ",
+          "meaning": {
+            "fr": "lapin",
+            "en": "rabbit",
+            "ar": "أرنب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ga",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "গরু",
+          "ipa": "ɡoɾu",
+          "meaning": {
+            "fr": "vache",
+            "en": "cow",
+            "ar": "بقرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:gha",
+      "pronunciation": {
+        "sound": [
+          "ɡʱ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ঘর",
+          "ipa": "ɡʱɔɾ",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:nga",
+      "pronunciation": {
+        "sound": [
+          "ŋ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:ca",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "চা",
+          "ipa": "t͡ʃa",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:cha",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃʰ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ছাতা",
+          "ipa": "t͡ʃʰat̪a",
+          "meaning": {
+            "fr": "parapluie",
+            "en": "umbrella",
+            "ar": "مظلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ja",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "জল",
+          "ipa": "d͡ʒɔl",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:jha",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒʱ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:nya",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:tta",
+      "pronunciation": {
+        "sound": [
+          "ʈ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "টিয়া",
+          "ipa": "ʈia",
+          "meaning": {
+            "fr": "perruche",
+            "en": "parakeet",
+            "ar": "ببغاء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ttha",
+      "pronunciation": {
+        "sound": [
+          "ʈʰ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:dda",
+      "pronunciation": {
+        "sound": [
+          "ɖ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ডাব",
+          "ipa": "ɖab",
+          "meaning": {
+            "fr": "noix de coco verte",
+            "en": "green coconut",
+            "ar": "جوز هند أخضر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ddha",
+      "pronunciation": {
+        "sound": [
+          "ɖʱ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ঢোল",
+          "ipa": "ɖʱol",
+          "meaning": {
+            "fr": "tambour",
+            "en": "drum",
+            "ar": "طبل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:nna",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:ta",
+      "pronunciation": {
+        "sound": [
+          "t̪",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "তাল",
+          "ipa": "t̪al",
+          "meaning": {
+            "fr": "palmier",
+            "en": "palm",
+            "ar": "نخلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:khanda-ta",
+      "pronunciation": {
+        "sound": [
+          "t̪"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:tha",
+      "pronunciation": {
+        "sound": [
+          "t̪ʰ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:da",
+      "pronunciation": {
+        "sound": [
+          "d̪",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "দই",
+          "ipa": "d̪oi̯",
+          "meaning": {
+            "fr": "yaourt",
+            "en": "yogurt",
+            "ar": "لبن"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:dha",
+      "pronunciation": {
+        "sound": [
+          "d̪ʱ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ধান",
+          "ipa": "d̪ʱan",
+          "meaning": {
+            "fr": "riz (plante)",
+            "en": "paddy",
+            "ar": "أرز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:na",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "নদী",
+          "ipa": "nod̪i",
+          "meaning": {
+            "fr": "rivière",
+            "en": "river",
+            "ar": "نهر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:pa",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "পাখি",
+          "ipa": "pakʰi",
+          "meaning": {
+            "fr": "oiseau",
+            "en": "bird",
+            "ar": "طائر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:pha",
+      "pronunciation": {
+        "sound": [
+          "pʰ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ফল",
+          "ipa": "pʰɔl",
+          "meaning": {
+            "fr": "fruit",
+            "en": "fruit",
+            "ar": "فاكهة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ba",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "বই",
+          "ipa": "boi̯",
+          "meaning": {
+            "fr": "livre",
+            "en": "book",
+            "ar": "كتاب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:bha",
+      "pronunciation": {
+        "sound": [
+          "bʱ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ভালুক",
+          "ipa": "bʱaluk",
+          "meaning": {
+            "fr": "ours",
+            "en": "bear",
+            "ar": "دب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ma",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "মাছ",
+          "ipa": "mat͡ʃʰ",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ya",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:ra",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "রাত",
+          "ipa": "ɾat̪",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:la",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "লেবু",
+          "ipa": "lebu",
+          "meaning": {
+            "fr": "citron",
+            "en": "lemon",
+            "ar": "ليمون"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:sha",
+      "pronunciation": {
+        "sound": [
+          "ʃ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "শাপলা",
+          "ipa": "ʃapla",
+          "meaning": {
+            "fr": "nénuphar",
+            "en": "water lily",
+            "ar": "زنبق الماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ssa",
+      "pronunciation": {
+        "sound": [
+          "ʃ",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sa",
+      "pronunciation": {
+        "sound": [
+          "ʃ",
+          "ɔ"
+        ],
+        "note": {
+          "fr": "Se prononce ch, et s devant certaines consonnes.",
+          "en": "Pronounced sh, and s before some consonants."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "সাপ",
+          "ipa": "ʃap",
+          "meaning": {
+            "fr": "serpent",
+            "en": "snake",
+            "ar": "ثعبان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:ha",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "হাঁস",
+          "ipa": "hãʃ",
+          "meaning": {
+            "fr": "canard",
+            "en": "duck",
+            "ar": "بطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "beng:sign-a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-ii",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-uu",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-ri",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-rii",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-li",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-lii",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-oi",
+      "pronunciation": {
+        "sound": [
+          "oi̯"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:sign-ou",
+      "pronunciation": {
+        "sound": [
+          "ou̯"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:hasanta",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:anusvara",
+      "pronunciation": {
+        "sound": [
+          "ŋ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:visarga",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:candrabindu",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:nukta",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:avagraha",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:au-length",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "beng:isshar",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/bn.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "ক্ষ",
+      "ড়",
+      "ঢ়",
+      "য়",
+      "়",
+      "৺",
+      "অ",
+      "আ",
+      "ই",
+      "ঈ",
+      "উ",
+      "ঊ",
+      "ঋ",
+      "ৠ",
+      "ঌ",
+      "ৡ",
+      "এ",
+      "ঐ",
+      "ও",
+      "ঔ",
+      "ং",
+      "ঃ",
+      "ঁ",
+      "ক",
+      "খ",
+      "গ",
+      "ঘ",
+      "ঙ",
+      "চ",
+      "ছ",
+      "জ",
+      "ঝ",
+      "ঞ",
+      "ট",
+      "ঠ",
+      "ড",
+      "ঢ",
+      "ণ",
+      "ত",
+      "ৎ",
+      "থ",
+      "দ",
+      "ধ",
+      "ন",
+      "প",
+      "ফ",
+      "ব",
+      "ভ",
+      "ম",
+      "য",
+      "র",
+      "ল",
+      "শ",
+      "ষ",
+      "স",
+      "হ",
+      "ঽ",
+      "া",
+      "ি",
+      "ী",
+      "ু",
+      "ূ",
+      "ৃ",
+      "ৄ",
+      "ৢ",
+      "ৣ",
+      "ে",
+      "ৈ",
+      "ো",
+      "ৌ",
+      "্",
+      "ৗ"
+    ],
+    "auxiliary": [
+      "৲",
+      "৳",
+      "৴",
+      "৵",
+      "৶",
+      "৷",
+      "৸",
+      "৹",
+      "ৰ",
+      "ৱ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/bn.xml"
+    }
+  }
+}

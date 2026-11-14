@@ -12,12 +12,23 @@ import { CONTENT_DIR } from "../content.ts";
 import { PHONEMES } from "./phonemes.ts";
 import { SCRIPTS } from "./scripts.ts";
 import { SOURCES } from "./sources.ts";
+import type { Grapheme, Script } from "@tongo/model";
+import type { PhonemeRow } from "./table.ts";
 import ar from "./languages/ar.ts";
 import en from "./languages/en.ts";
 import es from "./languages/es.ts";
 import fr from "./languages/fr.ts";
 import ja from "./languages/ja.ts";
 import ru from "./languages/ru.ts";
+import { MORE } from "./languages/more.ts";
+
+/** Ce qu'apporte un module de langue : la langue, et éventuellement une écriture, des lettres, des phonèmes. */
+export interface LanguageModule {
+  language: Language;
+  scripts?: Script[];
+  extend?: { script: string; graphemes: Grapheme[] }[];
+  phonemes?: PhonemeRow[];
+}
 
 /**
  * Les caractères importés de CLDR (npm run import:cldr) sont joints à chaque langue, avec la source.
@@ -31,18 +42,45 @@ const withCldr = (l: Language): Language => {
   return { ...l, characters: { ...c, source }, sources: [...l.sources, source] };
 };
 
-const LANGUAGES = [fr, en, es, ru, ar, ja].map(withCldr);
+const modules: LanguageModule[] = [...[fr, en, es, ru, ar, ja].map((language) => ({ language })), ...MORE];
+const LANGUAGES = modules.map((m) => withCldr(m.language));
+
+const scripts = new Map<string, Script>(SCRIPTS.map((s) => [s.id, structuredClone(s)]));
+for (const m of modules) for (const s of m.scripts ?? []) {
+  if (scripts.has(s.id)) throw new Error(`Écriture ${s.id} déclarée deux fois`);
+  scripts.set(s.id, s);
+}
+for (const m of modules) for (const { script, graphemes } of m.extend ?? []) {
+  const s = scripts.get(script);
+  if (!s) throw new Error(`Écriture ${script} inconnue (${m.language.id})`);
+  for (const g of graphemes) {
+    const same = s.graphemes.find((x) => x.id === g.id);
+    if (same && same.char !== g.char) throw new Error(`${script}:${g.id} : « ${same.char} » ≠ « ${g.char} » (${m.language.id})`);
+    if (!same) {
+      const clash = s.graphemes.find((x) => x.char === g.char);
+      if (clash) throw new Error(`${script} : « ${g.char} » existe déjà sous l'id ${clash.id} (${m.language.id})`);
+      s.graphemes.push(g);
+    }
+  }
+}
+const ALL_SCRIPTS = [...scripts.values()];
 
 const json = (v: unknown) => JSON.stringify(v, null, 2) + "\n";
 
 await mkdir(join(CONTENT_DIR, "scripts"), { recursive: true });
 await mkdir(join(CONTENT_DIR, "languages"), { recursive: true });
 
-const phonemes: Phoneme[] = PHONEMES.map(([ipa, id, kind, fr, en]) => ({
+const phonemeRows = new Map<string, PhonemeRow>();
+for (const row of [...PHONEMES, ...modules.flatMap((m) => m.phonemes ?? [])]) {
+  const prev = phonemeRows.get(row[0]);
+  if (prev && prev[1] !== row[1]) throw new Error(`Phonème /${row[0]}/ : identifiants ${prev[1]} et ${row[1]}`);
+  phonemeRows.set(row[0], row);
+}
+const phonemes: Phoneme[] = [...phonemeRows.values()].map(([ipa, id, kind, fr, en]) => ({
   ipa, id, kind, name: { fr, en }, confidence: "draft", sources: [],
 }));
 await writeFile(join(CONTENT_DIR, "phonemes.json"), json(phonemes));
 await writeFile(join(CONTENT_DIR, "sources.json"), json(SOURCES));
-for (const s of SCRIPTS) await writeFile(join(CONTENT_DIR, "scripts", `${s.id}.json`), json(s));
+for (const s of ALL_SCRIPTS) await writeFile(join(CONTENT_DIR, "scripts", `${s.id}.json`), json(s));
 for (const l of LANGUAGES) await writeFile(join(CONTENT_DIR, "languages", `${l.id}.json`), json(l));
-console.log(`Écrit : ${SCRIPTS.length} écritures, ${LANGUAGES.length} langues, ${phonemes.length} phonèmes.`);
+console.log(`Écrit : ${ALL_SCRIPTS.length} écritures, ${LANGUAGES.length} langues, ${phonemes.length} phonèmes.`);

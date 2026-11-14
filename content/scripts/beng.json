@@ -1,0 +1,528 @@
+{
+  "id": "beng",
+  "cased": false,
+  "groups": [
+    {
+      "id": "vowels",
+      "name": {
+        "fr": "Voyelles",
+        "en": "Vowels",
+        "ar": "الصوائت"
+      }
+    },
+    {
+      "id": "consonants",
+      "name": {
+        "fr": "Consonnes",
+        "en": "Consonants",
+        "ar": "الصوامت"
+      }
+    },
+    {
+      "id": "signs",
+      "name": {
+        "fr": "Signes vocaliques",
+        "en": "Vowel signs",
+        "ar": "العلامات الصوتية"
+      }
+    },
+    {
+      "id": "marks",
+      "name": {
+        "fr": "Autres signes",
+        "en": "Other marks",
+        "ar": "علامات أخرى"
+      }
+    }
+  ],
+  "name": {
+    "fr": "Bengali",
+    "en": "Bengali",
+    "ar": "البنغالية"
+  },
+  "endonym": "বাংলা লিপি",
+  "type": "abugida",
+  "direction": "ltr",
+  "intro": {
+    "fr": "Comme le devanagari, les lettres pendent sous une barre horizontale. Il sert au bengali et à l'assamais.",
+    "en": "Like Devanagari, letters hang from a horizontal bar. It is used for Bengali and Assamese.",
+    "ar": "كالديفاناغاري، تتدلى الحروف من خط أفقي. تُكتب بها البنغالية والآسامية."
+  },
+  "sample": "ক খ গ অ",
+  "font": "Noto Sans Bengali",
+  "graphemes": [
+    {
+      "id": "o",
+      "char": "অ",
+      "kind": "vowel",
+      "latin": "ô",
+      "group": "vowels"
+    },
+    {
+      "id": "a",
+      "char": "আ",
+      "kind": "vowel",
+      "latin": "a",
+      "group": "vowels"
+    },
+    {
+      "id": "i",
+      "char": "ই",
+      "kind": "vowel",
+      "latin": "i",
+      "group": "vowels"
+    },
+    {
+      "id": "ii",
+      "char": "ঈ",
+      "kind": "vowel",
+      "latin": "ī",
+      "group": "vowels"
+    },
+    {
+      "id": "u",
+      "char": "উ",
+      "kind": "vowel",
+      "latin": "u",
+      "group": "vowels"
+    },
+    {
+      "id": "uu",
+      "char": "ঊ",
+      "kind": "vowel",
+      "latin": "ū",
+      "group": "vowels"
+    },
+    {
+      "id": "ri",
+      "char": "ঋ",
+      "kind": "vowel",
+      "latin": "ṛ",
+      "group": "vowels"
+    },
+    {
+      "id": "rii",
+      "char": "ৠ",
+      "kind": "vowel",
+      "latin": "ṝ",
+      "group": "vowels"
+    },
+    {
+      "id": "li",
+      "char": "ঌ",
+      "kind": "vowel",
+      "latin": "ḷ",
+      "group": "vowels"
+    },
+    {
+      "id": "lii",
+      "char": "ৡ",
+      "kind": "vowel",
+      "latin": "ḹ",
+      "group": "vowels"
+    },
+    {
+      "id": "e",
+      "char": "এ",
+      "kind": "vowel",
+      "latin": "e",
+      "group": "vowels"
+    },
+    {
+      "id": "oi",
+      "char": "ঐ",
+      "kind": "vowel",
+      "latin": "oi",
+      "group": "vowels"
+    },
+    {
+      "id": "o-closed",
+      "char": "ও",
+      "kind": "vowel",
+      "latin": "o",
+      "group": "vowels"
+    },
+    {
+      "id": "ou",
+      "char": "ঔ",
+      "kind": "vowel",
+      "latin": "ou",
+      "group": "vowels"
+    },
+    {
+      "id": "ka",
+      "char": "ক",
+      "kind": "consonant",
+      "latin": "k",
+      "group": "consonants"
+    },
+    {
+      "id": "kha",
+      "char": "খ",
+      "kind": "consonant",
+      "latin": "kh",
+      "group": "consonants"
+    },
+    {
+      "id": "ga",
+      "char": "গ",
+      "kind": "consonant",
+      "latin": "g",
+      "group": "consonants"
+    },
+    {
+      "id": "gha",
+      "char": "ঘ",
+      "kind": "consonant",
+      "latin": "gh",
+      "group": "consonants"
+    },
+    {
+      "id": "nga",
+      "char": "ঙ",
+      "kind": "consonant",
+      "latin": "ṅ",
+      "group": "consonants"
+    },
+    {
+      "id": "ca",
+      "char": "চ",
+      "kind": "consonant",
+      "latin": "c",
+      "group": "consonants"
+    },
+    {
+      "id": "cha",
+      "char": "ছ",
+      "kind": "consonant",
+      "latin": "ch",
+      "group": "consonants"
+    },
+    {
+      "id": "ja",
+      "char": "জ",
+      "kind": "consonant",
+      "latin": "j",
+      "group": "consonants"
+    },
+    {
+      "id": "jha",
+      "char": "ঝ",
+      "kind": "consonant",
+      "latin": "jh",
+      "group": "consonants"
+    },
+    {
+      "id": "nya",
+      "char": "ঞ",
+      "kind": "consonant",
+      "latin": "ñ",
+      "group": "consonants"
+    },
+    {
+      "id": "tta",
+      "char": "ট",
+      "kind": "consonant",
+      "latin": "ṭ",
+      "group": "consonants"
+    },
+    {
+      "id": "ttha",
+      "char": "ঠ",
+      "kind": "consonant",
+      "latin": "ṭh",
+      "group": "consonants"
+    },
+    {
+      "id": "dda",
+      "char": "ড",
+      "kind": "consonant",
+      "latin": "ḍ",
+      "group": "consonants"
+    },
+    {
+      "id": "ddha",
+      "char": "ঢ",
+      "kind": "consonant",
+      "latin": "ḍh",
+      "group": "consonants"
+    },
+    {
+      "id": "nna",
+      "char": "ণ",
+      "kind": "consonant",
+      "latin": "ṇ",
+      "group": "consonants"
+    },
+    {
+      "id": "ta",
+      "char": "ত",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "consonants"
+    },
+    {
+      "id": "khanda-ta",
+      "char": "ৎ",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "consonants"
+    },
+    {
+      "id": "tha",
+      "char": "থ",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "consonants"
+    },
+    {
+      "id": "da",
+      "char": "দ",
+      "kind": "consonant",
+      "latin": "d",
+      "group": "consonants"
+    },
+    {
+      "id": "dha",
+      "char": "ধ",
+      "kind": "consonant",
+      "latin": "dh",
+      "group": "consonants"
+    },
+    {
+      "id": "na",
+      "char": "ন",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "consonants"
+    },
+    {
+      "id": "pa",
+      "char": "প",
+      "kind": "consonant",
+      "latin": "p",
+      "group": "consonants"
+    },
+    {
+      "id": "pha",
+      "char": "ফ",
+      "kind": "consonant",
+      "latin": "ph",
+      "group": "consonants"
+    },
+    {
+      "id": "ba",
+      "char": "ব",
+      "kind": "consonant",
+      "latin": "b",
+      "group": "consonants"
+    },
+    {
+      "id": "bha",
+      "char": "ভ",
+      "kind": "consonant",
+      "latin": "bh",
+      "group": "consonants"
+    },
+    {
+      "id": "ma",
+      "char": "ম",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "consonants"
+    },
+    {
+      "id": "ya",
+      "char": "য",
+      "kind": "consonant",
+      "latin": "y",
+      "group": "consonants"
+    },
+    {
+      "id": "ra",
+      "char": "র",
+      "kind": "consonant",
+      "latin": "r",
+      "group": "consonants"
+    },
+    {
+      "id": "la",
+      "char": "ল",
+      "kind": "consonant",
+      "latin": "l",
+      "group": "consonants"
+    },
+    {
+      "id": "sha",
+      "char": "শ",
+      "kind": "consonant",
+      "latin": "ś",
+      "group": "consonants"
+    },
+    {
+      "id": "ssa",
+      "char": "ষ",
+      "kind": "consonant",
+      "latin": "ṣ",
+      "group": "consonants"
+    },
+    {
+      "id": "sa",
+      "char": "স",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "consonants"
+    },
+    {
+      "id": "ha",
+      "char": "হ",
+      "kind": "consonant",
+      "latin": "h",
+      "group": "consonants"
+    },
+    {
+      "id": "sign-a",
+      "char": "া",
+      "kind": "vowel-sign",
+      "latin": "a",
+      "group": "signs"
+    },
+    {
+      "id": "sign-i",
+      "char": "ি",
+      "kind": "vowel-sign",
+      "latin": "i",
+      "group": "signs"
+    },
+    {
+      "id": "sign-ii",
+      "char": "ী",
+      "kind": "vowel-sign",
+      "latin": "ī",
+      "group": "signs"
+    },
+    {
+      "id": "sign-u",
+      "char": "ু",
+      "kind": "vowel-sign",
+      "latin": "u",
+      "group": "signs"
+    },
+    {
+      "id": "sign-uu",
+      "char": "ূ",
+      "kind": "vowel-sign",
+      "latin": "ū",
+      "group": "signs"
+    },
+    {
+      "id": "sign-ri",
+      "char": "ৃ",
+      "kind": "vowel-sign",
+      "latin": "ṛ",
+      "group": "signs"
+    },
+    {
+      "id": "sign-rii",
+      "char": "ৄ",
+      "kind": "vowel-sign",
+      "latin": "ṝ",
+      "group": "signs"
+    },
+    {
+      "id": "sign-li",
+      "char": "ৢ",
+      "kind": "vowel-sign",
+      "latin": "ḷ",
+      "group": "signs"
+    },
+    {
+      "id": "sign-lii",
+      "char": "ৣ",
+      "kind": "vowel-sign",
+      "latin": "ḹ",
+      "group": "signs"
+    },
+    {
+      "id": "sign-e",
+      "char": "ে",
+      "kind": "vowel-sign",
+      "latin": "e",
+      "group": "signs"
+    },
+    {
+      "id": "sign-oi",
+      "char": "ৈ",
+      "kind": "vowel-sign",
+      "latin": "oi",
+      "group": "signs"
+    },
+    {
+      "id": "sign-o",
+      "char": "ো",
+      "kind": "vowel-sign",
+      "latin": "o",
+      "group": "signs"
+    },
+    {
+      "id": "sign-ou",
+      "char": "ৌ",
+      "kind": "vowel-sign",
+      "latin": "ou",
+      "group": "signs"
+    },
+    {
+      "id": "hasanta",
+      "char": "্",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "anusvara",
+      "char": "ং",
+      "kind": "diacritic",
+      "latin": "ṃ",
+      "group": "marks"
+    },
+    {
+      "id": "visarga",
+      "char": "ঃ",
+      "kind": "diacritic",
+      "latin": "ḥ",
+      "group": "marks"
+    },
+    {
+      "id": "candrabindu",
+      "char": "ঁ",
+      "kind": "diacritic",
+      "latin": "m̐",
+      "group": "marks"
+    },
+    {
+      "id": "nukta",
+      "char": "়",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "avagraha",
+      "char": "ঽ",
+      "kind": "sign",
+      "group": "marks"
+    },
+    {
+      "id": "au-length",
+      "char": "ৗ",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "isshar",
+      "char": "৺",
+      "kind": "sign",
+      "group": "marks"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

@@ -1,0 +1,768 @@
+{
+  "id": "he",
+  "iso639_3": "heb",
+  "name": {
+    "fr": "Hébreu",
+    "en": "Hebrew",
+    "ar": "العبرية"
+  },
+  "endonym": "עברית",
+  "scripts": [
+    "hebr"
+  ],
+  "variants": [
+    {
+      "id": "he-IL",
+      "region": "IL",
+      "name": {
+        "fr": "Israël",
+        "en": "Israel",
+        "ar": "إسرائيل"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 9,
+  "intro": {
+    "fr": "L'hébreu s'écrit de droite à gauche avec un abjad de 22 lettres, dont cinq ont une forme spéciale en fin de mot. Les voyelles sont le plus souvent omises ; elles peuvent être notées par des points (niqqud) dans les livres pour enfants.",
+    "en": "Hebrew is written right to left in a 22-letter abjad, five of which have a special word-final form. Vowels are usually left out; they can be shown with dots (niqqud) in children's books.",
+    "ar": "تُكتب العبرية من اليمين إلى اليسار بأبجد من 22 حرفًا، لخمسة منها شكل خاص في آخر الكلمة. تُحذف الصوائت غالبًا."
+  },
+  "letters": [
+    {
+      "grapheme": "hebr:alef",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Souvent muet ; porte une voyelle.",
+          "en": "Often silent; carries a vowel."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "אבא",
+          "ipa": "ʔaba",
+          "meaning": {
+            "fr": "papa",
+            "en": "dad",
+            "ar": "أب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:bet",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "note": {
+          "fr": "Se prononce v sans point (בֿ).",
+          "en": "Pronounced v without its dot."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "בית",
+          "ipa": "bajit",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:gimel",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "גמל",
+          "ipa": "ɡamal",
+          "meaning": {
+            "fr": "chameau",
+            "en": "camel",
+            "ar": "جمل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:dalet",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "דג",
+          "ipa": "daɡ",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:he",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "הר",
+          "ipa": "haʁ",
+          "meaning": {
+            "fr": "montagne",
+            "en": "mountain",
+            "ar": "جبل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:vav",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "note": {
+          "fr": "Sert aussi à écrire o et u.",
+          "en": "Also used to write o and u."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ורד",
+          "ipa": "veʁed",
+          "meaning": {
+            "fr": "rose",
+            "en": "rose",
+            "ar": "وردة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:zayin",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "זהב",
+          "ipa": "zahav",
+          "meaning": {
+            "fr": "or",
+            "en": "gold",
+            "ar": "ذهب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:het",
+      "pronunciation": {
+        "sound": [
+          "χ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "חלב",
+          "ipa": "χalav",
+          "meaning": {
+            "fr": "lait",
+            "en": "milk",
+            "ar": "حليب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:tet",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "טלפון",
+          "ipa": "telefon",
+          "meaning": {
+            "fr": "téléphone",
+            "en": "telephone",
+            "ar": "هاتف"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:yod",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "note": {
+          "fr": "Sert aussi à écrire i.",
+          "en": "Also used to write i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "יד",
+          "ipa": "jad",
+          "meaning": {
+            "fr": "main",
+            "en": "hand",
+            "ar": "يد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:kaf",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "note": {
+          "fr": "Se prononce kh (χ) sans point.",
+          "en": "Pronounced kh without its dot."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "כלב",
+          "ipa": "kelev",
+          "meaning": {
+            "fr": "chien",
+            "en": "dog",
+            "ar": "كلب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:lamed",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "לחם",
+          "ipa": "leχem",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:mem",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "מים",
+          "ipa": "majim",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:nun",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "נר",
+          "ipa": "neʁ",
+          "meaning": {
+            "fr": "bougie",
+            "en": "candle",
+            "ar": "شمعة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:samekh",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ספר",
+          "ipa": "sefeʁ",
+          "meaning": {
+            "fr": "livre",
+            "en": "book",
+            "ar": "كتاب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:ayin",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Souvent muet en hébreu moderne.",
+          "en": "Often silent in modern Hebrew."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "עין",
+          "ipa": "ʔajin",
+          "meaning": {
+            "fr": "œil",
+            "en": "eye",
+            "ar": "عين"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:pe",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "note": {
+          "fr": "Se prononce f sans point.",
+          "en": "Pronounced f without its dot."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "פה",
+          "ipa": "pe",
+          "meaning": {
+            "fr": "bouche",
+            "en": "mouth",
+            "ar": "فم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:tsadi",
+      "pronunciation": {
+        "sound": [
+          "t͡s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "צב",
+          "ipa": "t͡sav",
+          "meaning": {
+            "fr": "tortue",
+            "en": "turtle",
+            "ar": "سلحفاة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:qof",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "קפה",
+          "ipa": "kafe",
+          "meaning": {
+            "fr": "café",
+            "en": "coffee",
+            "ar": "قهوة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:resh",
+      "pronunciation": {
+        "sound": [
+          "ʁ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "רגל",
+          "ipa": "ʁeɡel",
+          "meaning": {
+            "fr": "jambe",
+            "en": "leg",
+            "ar": "ساق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:shin",
+      "pronunciation": {
+        "sound": [
+          "ʃ"
+        ],
+        "note": {
+          "fr": "Se prononce s avec un point à gauche (שׂ).",
+          "en": "Pronounced s with a dot on the left."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "שמש",
+          "ipa": "ʃemeʃ",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:tav",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "תפוח",
+          "ipa": "tapuaχ",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:kaf-final",
+      "pronunciation": {
+        "sound": [
+          "χ"
+        ],
+        "note": {
+          "fr": "Forme de כ en fin de mot.",
+          "en": "Word-final form of כ."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "מלך",
+          "ipa": "meleχ",
+          "meaning": {
+            "fr": "roi",
+            "en": "king",
+            "ar": "ملك"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:mem-final",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "note": {
+          "fr": "Forme de מ en fin de mot.",
+          "en": "Word-final form of מ."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "שלום",
+          "ipa": "ʃalom",
+          "meaning": {
+            "fr": "paix, bonjour",
+            "en": "peace, hello",
+            "ar": "سلام"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:nun-final",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "note": {
+          "fr": "Forme de נ en fin de mot.",
+          "en": "Word-final form of נ."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "גן",
+          "ipa": "ɡan",
+          "meaning": {
+            "fr": "jardin",
+            "en": "garden",
+            "ar": "حديقة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:pe-final",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "note": {
+          "fr": "Forme de פ en fin de mot.",
+          "en": "Word-final form of פ."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "אף",
+          "ipa": "ʔaf",
+          "meaning": {
+            "fr": "nez",
+            "en": "nose",
+            "ar": "أنف"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hebr:tsadi-final",
+      "pronunciation": {
+        "sound": [
+          "t͡s"
+        ],
+        "note": {
+          "fr": "Forme de צ en fin de mot.",
+          "en": "Word-final form of צ."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "עץ",
+          "ipa": "ʔet͡s",
+          "meaning": {
+            "fr": "arbre",
+            "en": "tree",
+            "ar": "شجرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/he.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "א",
+      "ב",
+      "ג",
+      "ד",
+      "ה",
+      "ו",
+      "ז",
+      "ח",
+      "ט",
+      "י",
+      "כ",
+      "ך",
+      "ל",
+      "מ",
+      "ם",
+      "נ",
+      "ן",
+      "ס",
+      "ע",
+      "פ",
+      "ף",
+      "צ",
+      "ץ",
+      "ק",
+      "ר",
+      "ש",
+      "ת"
+    ],
+    "auxiliary": [
+      "ֽ",
+      "ׄ",
+      "ְ",
+      "ֱ",
+      "ֲ",
+      "ֳ",
+      "ִ",
+      "ֵ",
+      "ֶ",
+      "ַ",
+      "ָ",
+      "ֹ",
+      "ֻ",
+      "ׂ",
+      "ׁ",
+      "ּ",
+      "ֿ",
+      "״"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/he.xml"
+    }
+  }
+}

@@ -1,0 +1,704 @@
+{
+  "id": "tr",
+  "iso639_3": "tur",
+  "name": {
+    "fr": "Turc",
+    "en": "Turkish",
+    "ar": "التركية"
+  },
+  "endonym": "Türkçe",
+  "scripts": [
+    "latn"
+  ],
+  "variants": [
+    {
+      "id": "tr-TR",
+      "region": "TR",
+      "name": {
+        "fr": "Turquie",
+        "en": "Turkey",
+        "ar": "تركيا"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 90,
+  "intro": {
+    "fr": "Depuis 1928, le turc s'écrit en alphabet latin, de façon presque parfaitement phonétique : une lettre, un son. Attention au i sans point (ı) et au ğ, qui allonge la voyelle précédente.",
+    "en": "Since 1928 Turkish has been written in the Latin alphabet, almost perfectly phonetically: one letter, one sound. Watch out for dotless ı and for ğ, which lengthens the previous vowel.",
+    "ar": "تُكتب التركية منذ 1928 بالأبجدية اللاتينية بشكل صوتي تقريبًا: حرف واحد لصوت واحد. انتبه إلى ı بلا نقطة وإلى ğ الذي يمد الصائت السابق."
+  },
+  "letters": [
+    {
+      "grapheme": "latn:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ana",
+          "ipa": "ana",
+          "meaning": {
+            "fr": "mère",
+            "en": "mother",
+            "ar": "أم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:b",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "balık",
+          "ipa": "balɯk",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ"
+        ],
+        "note": {
+          "fr": "Se prononce dj.",
+          "en": "Pronounced like j in jam."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "cami",
+          "ipa": "d͡ʒami",
+          "meaning": {
+            "fr": "mosquée",
+            "en": "mosque",
+            "ar": "مسجد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c-cedilla",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "çay",
+          "ipa": "t͡ʃaj",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:d",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "deniz",
+          "ipa": "deniz",
+          "meaning": {
+            "fr": "mer",
+            "en": "sea",
+            "ar": "بحر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ev",
+          "ipa": "ev",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:f",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:g",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "göz",
+          "ipa": "ɡøz",
+          "meaning": {
+            "fr": "œil",
+            "en": "eye",
+            "ar": "عين"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:g-breve",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Ne se prononce pas : il allonge la voyelle qui précède.",
+          "en": "Not pronounced: it lengthens the previous vowel."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "dağ",
+          "ipa": "daː",
+          "meaning": {
+            "fr": "montagne",
+            "en": "mountain",
+            "ar": "جبل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:h",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "hava",
+          "ipa": "hava",
+          "meaning": {
+            "fr": "air, temps",
+            "en": "air, weather",
+            "ar": "هواء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:dotless-i",
+      "pronunciation": {
+        "sound": [
+          "ɯ"
+        ],
+        "note": {
+          "fr": "Un i prononcé sans étirer les lèvres. Sa majuscule est I.",
+          "en": "An i said without spreading the lips. Its capital is I."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ılık",
+          "ipa": "ɯlɯk",
+          "meaning": {
+            "fr": "tiède",
+            "en": "lukewarm",
+            "ar": "فاتر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "note": {
+          "fr": "Sa majuscule garde le point : İ.",
+          "en": "Its capital keeps the dot: İ."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "iki",
+          "ipa": "iki",
+          "meaning": {
+            "fr": "deux",
+            "en": "two",
+            "ar": "اثنان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:j",
+      "pronunciation": {
+        "sound": [
+          "ʒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "jeton",
+          "ipa": "ʒeton",
+          "meaning": {
+            "fr": "jeton",
+            "en": "token",
+            "ar": "قطعة نقدية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:k",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "kedi",
+          "ipa": "kedi",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:l",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:m",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "masa",
+          "ipa": "masa",
+          "meaning": {
+            "fr": "table",
+            "en": "table",
+            "ar": "طاولة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "okul",
+          "ipa": "okul",
+          "meaning": {
+            "fr": "école",
+            "en": "school",
+            "ar": "مدرسة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "ø"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ödev",
+          "ipa": "ødev",
+          "meaning": {
+            "fr": "devoir",
+            "en": "homework",
+            "ar": "واجب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:p",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:r",
+      "pronunciation": {
+        "sound": [
+          "ɾ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:s",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "su",
+          "ipa": "su",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:s-cedilla",
+      "pronunciation": {
+        "sound": [
+          "ʃ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "şeker",
+          "ipa": "ʃeceɾ",
+          "meaning": {
+            "fr": "sucre",
+            "en": "sugar",
+            "ar": "سكر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:t",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "uçak",
+          "ipa": "ut͡ʃak",
+          "meaning": {
+            "fr": "avion",
+            "en": "plane",
+            "ar": "طائرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "y"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "üzüm",
+          "ipa": "yzym",
+          "meaning": {
+            "fr": "raisin",
+            "en": "grape",
+            "ar": "عنب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:v",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:y",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "yol",
+          "ipa": "jol",
+          "meaning": {
+            "fr": "route",
+            "en": "road",
+            "ar": "طريق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:z",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/tr.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "a",
+      "b",
+      "c",
+      "ç",
+      "d",
+      "e",
+      "f",
+      "g",
+      "ğ",
+      "h",
+      "ı",
+      "i",
+      "İ",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "ö",
+      "p",
+      "r",
+      "s",
+      "ş",
+      "t",
+      "u",
+      "ü",
+      "v",
+      "y",
+      "z"
+    ],
+    "auxiliary": [
+      "á",
+      "à",
+      "ă",
+      "â",
+      "å",
+      "ä",
+      "ã",
+      "ā",
+      "æ",
+      "é",
+      "è",
+      "ĕ",
+      "ê",
+      "ë",
+      "ē",
+      "í",
+      "ì",
+      "ĭ",
+      "î",
+      "ï",
+      "ī",
+      "ñ",
+      "ó",
+      "ò",
+      "ŏ",
+      "ô",
+      "ø",
+      "ō",
+      "œ",
+      "q",
+      "ß",
+      "ú",
+      "ù",
+      "ŭ",
+      "û",
+      "ū",
+      "w",
+      "x",
+      "ÿ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/tr.xml"
+    }
+  }
+}

@@ -4,7 +4,7 @@ import Base from "../../../layouts/Base.astro";
 import Confidence from "../../../components/Confidence.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
 import { content, index } from "../../../lib/content";
-import { scriptLang } from "../../../lib/script-lang";
+import { glyph, scriptLang } from "../../../lib/script-lang";
 
 export async function getStaticPaths() {
   const c = await content();
@@ -36,7 +36,7 @@ const variantLabel = (l: (typeof spellings)[number]["language"], v: string) => {
     <div class="grid">
       {spellings.map((s) => (
         <a class="card" href={`${base}/${locale}/scripts/${s.script.id}/${s.grapheme.id}/`}>
-          <div class="sample" lang={scriptLang(s.script.id)}>{s.grapheme.char}</div>
+          <div class="sample" lang={scriptLang(s.script.id)}>{glyph(s.grapheme.char)}</div>
           <strong>{loc(locale, s.language.name)}</strong>
           {s.variants.filter((v) => v !== "*").length > 0 && (
             <div class="muted" style="font-size:.9rem">{s.variants.filter((v) => v !== "*").map((v) => variantLabel(s.language, v)).join(", ")}</div>

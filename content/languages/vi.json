@@ -1,0 +1,809 @@
+{
+  "id": "vi",
+  "iso639_3": "vie",
+  "name": {
+    "fr": "Vietnamien",
+    "en": "Vietnamese",
+    "ar": "الفيتنامية"
+  },
+  "endonym": "Tiếng Việt",
+  "scripts": [
+    "latn"
+  ],
+  "variants": [
+    {
+      "id": "vi-VN",
+      "region": "VN",
+      "name": {
+        "fr": "Viêt Nam (Hanoï)",
+        "en": "Vietnam (Hanoi)",
+        "ar": "فيتنام (هانوي)"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 86,
+  "intro": {
+    "fr": "Le vietnamien s'écrit en alphabet latin (quốc ngữ). C'est une langue à tons : la même syllabe change de sens selon la mélodie, notée par cinq signes au-dessus ou au-dessous des voyelles. La prononciation décrite ici est celle de Hanoï.",
+    "en": "Vietnamese is written in the Latin alphabet (quốc ngữ). It is a tonal language: the same syllable changes meaning with its melody, marked by five signs above or below the vowels. The pronunciation shown is that of Hanoi.",
+    "ar": "تُكتب الفيتنامية بالأبجدية اللاتينية. وهي لغة نغمية: يتغير معنى المقطع بتغير لحنه، وتُكتب النغمات بخمس علامات فوق الصوائت أو تحتها."
+  },
+  "letters": [
+    {
+      "grapheme": "latn:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ba",
+          "ipa": "ɓa",
+          "meaning": {
+            "fr": "trois",
+            "en": "three",
+            "ar": "ثلاثة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:a-breve",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "note": {
+          "fr": "Un a bref.",
+          "en": "A short a."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ăn",
+          "ipa": "an",
+          "meaning": {
+            "fr": "manger",
+            "en": "to eat",
+            "ar": "يأكل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:a-circumflex",
+      "pronunciation": {
+        "sound": [
+          "ə"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ấm",
+          "ipa": "əm˧˥",
+          "meaning": {
+            "fr": "chaud",
+            "en": "warm",
+            "ar": "دافئ"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:b",
+      "pronunciation": {
+        "sound": [
+          "ɓ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "bò",
+          "ipa": "ɓɔ˨˩",
+          "meaning": {
+            "fr": "vache",
+            "en": "cow",
+            "ar": "بقرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "cá",
+          "ipa": "ka˧˥",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:d",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "note": {
+          "fr": "Se prononce z à Hanoï, y dans le Sud.",
+          "en": "Sounds like z in Hanoi, y in the South."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "da",
+          "ipa": "za",
+          "meaning": {
+            "fr": "peau",
+            "en": "skin",
+            "ar": "جلد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:d-stroke",
+      "pronunciation": {
+        "sound": [
+          "ɗ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "đi",
+          "ipa": "ɗi",
+          "meaning": {
+            "fr": "aller",
+            "en": "to go",
+            "ar": "يذهب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "em",
+          "ipa": "ɛm",
+          "meaning": {
+            "fr": "petit frère ou sœur",
+            "en": "younger sibling",
+            "ar": "الأخ الأصغر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e-circumflex",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "đêm",
+          "ipa": "ɗem",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:g",
+      "pronunciation": {
+        "sound": [
+          "ɣ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "gà",
+          "ipa": "ɣa˨˩",
+          "meaning": {
+            "fr": "poulet",
+            "en": "chicken",
+            "ar": "دجاجة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:h",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "hoa",
+          "ipa": "hwa",
+          "meaning": {
+            "fr": "fleur",
+            "en": "flower",
+            "ar": "زهرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:k",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:l",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:m",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mẹ",
+          "ipa": "mɛ˨˩ˀ",
+          "meaning": {
+            "fr": "mère",
+            "en": "mother",
+            "ar": "أم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "nước",
+          "ipa": "nɨək˧˥",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:o-circumflex",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "cô",
+          "ipa": "ko",
+          "meaning": {
+            "fr": "tante, mademoiselle",
+            "en": "aunt, miss",
+            "ar": "عمة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o-horn",
+      "pronunciation": {
+        "sound": [
+          "ɤ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "cơm",
+          "ipa": "kɤm",
+          "meaning": {
+            "fr": "riz cuit",
+            "en": "cooked rice",
+            "ar": "أرز مطبوخ"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:p",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:q",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:r",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:s",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:t",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:u-horn",
+      "pronunciation": {
+        "sound": [
+          "ɨ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "những",
+          "ipa": "ɲɨŋ˧ˀ˥",
+          "meaning": {
+            "fr": "des, les (pluriel)",
+            "en": "(plural marker)",
+            "ar": "علامة الجمع"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:v",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:x",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "xe",
+          "ipa": "sɛ",
+          "meaning": {
+            "fr": "véhicule",
+            "en": "vehicle",
+            "ar": "مركبة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:y",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:tone-grave",
+      "pronunciation": {
+        "sound": [
+          "˨˩"
+        ],
+        "note": {
+          "fr": "Ton huyền : bas et descendant.",
+          "en": "Huyền tone: low and falling."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "bà",
+          "ipa": "ɓa˨˩",
+          "meaning": {
+            "fr": "grand-mère",
+            "en": "grandmother",
+            "ar": "جدة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:tone-acute",
+      "pronunciation": {
+        "sound": [
+          "˧˥"
+        ],
+        "note": {
+          "fr": "Ton sắc : montant.",
+          "en": "Sắc tone: rising."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "má",
+          "ipa": "ma˧˥",
+          "meaning": {
+            "fr": "maman, joue",
+            "en": "mom, cheek",
+            "ar": "أم، خد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:tone-hook",
+      "pronunciation": {
+        "sound": [
+          "˧˩˧"
+        ],
+        "note": {
+          "fr": "Ton hỏi : descend puis remonte.",
+          "en": "Hỏi tone: dips then rises."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mả",
+          "ipa": "ma˧˩˧",
+          "meaning": {
+            "fr": "tombe",
+            "en": "grave",
+            "ar": "قبر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:tone-tilde",
+      "pronunciation": {
+        "sound": [
+          "˧ˀ˥"
+        ],
+        "note": {
+          "fr": "Ton ngã : montant, brisé par un coup de glotte.",
+          "en": "Ngã tone: rising, broken by a glottal catch."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mã",
+          "ipa": "ma˧ˀ˥",
+          "meaning": {
+            "fr": "cheval (mot savant)",
+            "en": "horse (literary)",
+            "ar": "حصان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:tone-dot",
+      "pronunciation": {
+        "sound": [
+          "˨˩ˀ"
+        ],
+        "note": {
+          "fr": "Ton nặng : bas, court et serré.",
+          "en": "Nặng tone: low, short and tight."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mạ",
+          "ipa": "ma˨˩ˀ",
+          "meaning": {
+            "fr": "jeune plant de riz",
+            "en": "rice seedling",
+            "ar": "شتلة أرز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/vi.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "a",
+      "à",
+      "ả",
+      "ã",
+      "á",
+      "ạ",
+      "ă",
+      "ằ",
+      "ẳ",
+      "ẵ",
+      "ắ",
+      "ặ",
+      "â",
+      "ầ",
+      "ẩ",
+      "ẫ",
+      "ấ",
+      "ậ",
+      "b",
+      "c",
+      "d",
+      "đ",
+      "e",
+      "è",
+      "ẻ",
+      "ẽ",
+      "é",
+      "ẹ",
+      "ê",
+      "ề",
+      "ể",
+      "ễ",
+      "ế",
+      "ệ",
+      "g",
+      "h",
+      "i",
+      "ì",
+      "ỉ",
+      "ĩ",
+      "í",
+      "ị",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "ò",
+      "ỏ",
+      "õ",
+      "ó",
+      "ọ",
+      "ô",
+      "ồ",
+      "ổ",
+      "ỗ",
+      "ố",
+      "ộ",
+      "ơ",
+      "ờ",
+      "ở",
+      "ỡ",
+      "ớ",
+      "ợ",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "ù",
+      "ủ",
+      "ũ",
+      "ú",
+      "ụ",
+      "ư",
+      "ừ",
+      "ử",
+      "ữ",
+      "ứ",
+      "ự",
+      "v",
+      "x",
+      "y",
+      "ỳ",
+      "ỷ",
+      "ỹ",
+      "ý",
+      "ỵ"
+    ],
+    "auxiliary": [
+      "f",
+      "j",
+      "w",
+      "z"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/vi.xml"
+    }
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "id": "fa",
+  "iso639_3": "pes",
+  "name": {
+    "fr": "Persan",
+    "en": "Persian",
+    "ar": "الفارسية"
+  },
+  "endonym": "فارسی",
+  "scripts": [
+    "arab"
+  ],
+  "variants": [
+    {
+      "id": "fa-IR",
+      "region": "IR",
+      "name": {
+        "fr": "Iran",
+        "en": "Iran",
+        "ar": "إيران"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 80,
+  "intro": {
+    "fr": "Le persan s'écrit avec l'alphabet arabe, complété de quatre lettres (پ چ ژ گ). Plusieurs lettres arabes s'y prononcent de la même façon : ث س ص valent toutes s, et ذ ز ض ظ valent z.",
+    "en": "Persian is written with the Arabic alphabet plus four letters (پ چ ژ گ). Several Arabic letters sound alike in it: ث س ص are all s, and ذ ز ض ظ are all z.",
+    "ar": "تُكتب الفارسية بالحروف العربية مع أربعة حروف إضافية (پ چ ژ گ). وتُنطق عدة حروف عربية فيها بالطريقة نفسها."
+  },
+  "letters": [
+    {
+      "grapheme": "arab:alif",
+      "pronunciation": {
+        "sound": [
+          "ɒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "آب",
+          "ipa": "ɒb",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:alif-madda",
+      "pronunciation": {
+        "sound": [
+          "ɒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "آسمان",
+          "ipa": "ɒsemɒn",
+          "meaning": {
+            "fr": "ciel",
+            "en": "sky",
+            "ar": "سماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ba",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "باران",
+          "ipa": "bɒɾɒn",
+          "meaning": {
+            "fr": "pluie",
+            "en": "rain",
+            "ar": "مطر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:pe",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "پدر",
+          "ipa": "pedæɾ",
+          "meaning": {
+            "fr": "père",
+            "en": "father",
+            "ar": "أب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ta",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "توت",
+          "ipa": "tut",
+          "meaning": {
+            "fr": "mûre",
+            "en": "mulberry",
+            "ar": "توت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:tha",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:jim",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "جنگل",
+          "ipa": "d͡ʒænɡæl",
+          "meaning": {
+            "fr": "forêt",
+            "en": "forest",
+            "ar": "غابة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:che",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "چای",
+          "ipa": "t͡ʃɒj",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ha",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:kha",
+      "pronunciation": {
+        "sound": [
+          "χ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "خانه",
+          "ipa": "χɒne",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:dal",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "دست",
+          "ipa": "dæst",
+          "meaning": {
+            "fr": "main",
+            "en": "hand",
+            "ar": "يد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:dhal",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:ra",
+      "pronunciation": {
+        "sound": [
+          "ɾ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "روز",
+          "ipa": "ɾuz",
+          "meaning": {
+            "fr": "jour",
+            "en": "day",
+            "ar": "يوم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:zay",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "زمین",
+          "ipa": "zæmin",
+          "meaning": {
+            "fr": "terre",
+            "en": "earth",
+            "ar": "أرض"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:zhe",
+      "pronunciation": {
+        "sound": [
+          "ʒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ژاله",
+          "ipa": "ʒɒle",
+          "meaning": {
+            "fr": "rosée",
+            "en": "dew",
+            "ar": "ندى"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:sin",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "سیب",
+          "ipa": "sib",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:shin",
+      "pronunciation": {
+        "sound": [
+          "ʃ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "شب",
+          "ipa": "ʃæb",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:sad",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "صبح",
+          "ipa": "sobh",
+          "meaning": {
+            "fr": "matin",
+            "en": "morning",
+            "ar": "صباح"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:dad",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:tah",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:zah",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:ayn",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:ghayn",
+      "pronunciation": {
+        "sound": [
+          "ɢ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:fa",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "فیل",
+          "ipa": "fil",
+          "meaning": {
+            "fr": "éléphant",
+            "en": "elephant",
+            "ar": "فيل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:qaf",
+      "pronunciation": {
+        "sound": [
+          "ɢ"
+        ],
+        "note": {
+          "fr": "Se prononce comme غ en persan.",
+          "en": "Pronounced like غ in Persian."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "قند",
+          "ipa": "ɢænd",
+          "meaning": {
+            "fr": "sucre en morceaux",
+            "en": "sugar cube",
+            "ar": "قند"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:keheh",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "note": {
+          "fr": "Forme persane du kâf, sans petit trait intérieur.",
+          "en": "The Persian form of kâf."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "کتاب",
+          "ipa": "ketɒb",
+          "meaning": {
+            "fr": "livre",
+            "en": "book",
+            "ar": "كتاب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:gaf",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "گل",
+          "ipa": "ɡol",
+          "meaning": {
+            "fr": "fleur",
+            "en": "flower",
+            "ar": "زهرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:lam",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "لب",
+          "ipa": "læb",
+          "meaning": {
+            "fr": "lèvre",
+            "en": "lip",
+            "ar": "شفة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:mim",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ماه",
+          "ipa": "mɒh",
+          "meaning": {
+            "fr": "lune, mois",
+            "en": "moon, month",
+            "ar": "قمر، شهر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:nun",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "نان",
+          "ipa": "nɒn",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:waw",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:heh",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:farsi-yeh",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:hamza",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:alif-hamza-above",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:waw-hamza",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:ya-hamza",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "arab:ta-marbuta",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/fa.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "آ",
+      "ا",
+      "ء",
+      "أ",
+      "ؤ",
+      "ئ",
+      "ب",
+      "پ",
+      "ت",
+      "ث",
+      "ج",
+      "چ",
+      "ح",
+      "خ",
+      "د",
+      "ذ",
+      "ر",
+      "ز",
+      "ژ",
+      "س",
+      "ش",
+      "ص",
+      "ض",
+      "ط",
+      "ظ",
+      "ع",
+      "غ",
+      "ف",
+      "ق",
+      "ک",
+      "گ",
+      "ل",
+      "م",
+      "ن",
+      "و",
+      "ه",
+      "ة",
+      "ی"
+    ],
+    "auxiliary": [
+      "ٖ",
+      "إ",
+      "ك",
+      "ى",
+      "ي"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/fa.xml"
+    }
+  }
+}

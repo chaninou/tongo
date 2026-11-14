@@ -1,0 +1,770 @@
+{
+  "id": "ka",
+  "iso639_3": "kat",
+  "name": {
+    "fr": "Géorgien",
+    "en": "Georgian",
+    "ar": "الجورجية"
+  },
+  "endonym": "ქართული",
+  "scripts": [
+    "geor"
+  ],
+  "variants": [
+    {
+      "id": "ka-GE",
+      "region": "GE",
+      "name": {
+        "fr": "Géorgie",
+        "en": "Georgia",
+        "ar": "جورجيا"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 4,
+  "intro": {
+    "fr": "Le géorgien a son propre alphabet, aux lettres arrondies, sans majuscules. Il distingue trois séries de consonnes : sonores, aspirées et éjectives (prononcées avec un petit claquement).",
+    "en": "Georgian has its own alphabet of rounded letters, with no capitals. It has three series of consonants: voiced, aspirated and ejective (said with a little pop).",
+    "ar": "للجورجية أبجديتها الخاصة بحروف مستديرة ودون حروف كبيرة. وفيها ثلاث سلاسل من الصوامت: مجهورة ومهموسة نفسية وانفجارية قذفية."
+  },
+  "letters": [
+    {
+      "grapheme": "geor:an",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ასი",
+          "ipa": "asi",
+          "meaning": {
+            "fr": "cent",
+            "en": "hundred",
+            "ar": "مئة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:ban",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ბავშვი",
+          "ipa": "bavʃvi",
+          "meaning": {
+            "fr": "enfant",
+            "en": "child",
+            "ar": "طفل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:gan",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "გული",
+          "ipa": "ɡuli",
+          "meaning": {
+            "fr": "cœur",
+            "en": "heart",
+            "ar": "قلب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:don",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "დედა",
+          "ipa": "dɛda",
+          "meaning": {
+            "fr": "mère",
+            "en": "mother",
+            "ar": "أم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:en",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ეზო",
+          "ipa": "ɛzɔ",
+          "meaning": {
+            "fr": "cour",
+            "en": "yard",
+            "ar": "فناء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:vin",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ვაშლი",
+          "ipa": "vaʃli",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:zen",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ზღვა",
+          "ipa": "zɣva",
+          "meaning": {
+            "fr": "mer",
+            "en": "sea",
+            "ar": "بحر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:tan",
+      "pronunciation": {
+        "sound": [
+          "tʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "თვალი",
+          "ipa": "tʰvali",
+          "meaning": {
+            "fr": "œil",
+            "en": "eye",
+            "ar": "عين"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:in",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:kan",
+      "pronunciation": {
+        "sound": [
+          "kʼ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "კატა",
+          "ipa": "kʼatʼa",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:las",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ლომი",
+          "ipa": "lɔmi",
+          "meaning": {
+            "fr": "lion",
+            "en": "lion",
+            "ar": "أسد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:man",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "მზე",
+          "ipa": "mzɛ",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:nar",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:on",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:par",
+      "pronunciation": {
+        "sound": [
+          "pʼ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "პური",
+          "ipa": "pʼuri",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:zhan",
+      "pronunciation": {
+        "sound": [
+          "ʒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:rae",
+      "pronunciation": {
+        "sound": [
+          "r"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:san",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "სახლი",
+          "ipa": "saxli",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:tar",
+      "pronunciation": {
+        "sound": [
+          "tʼ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:un",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:par-aspirated",
+      "pronunciation": {
+        "sound": [
+          "pʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ფული",
+          "ipa": "pʰuli",
+          "meaning": {
+            "fr": "argent",
+            "en": "money",
+            "ar": "نقود"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:kan-aspirated",
+      "pronunciation": {
+        "sound": [
+          "kʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ქალაქი",
+          "ipa": "kʰalakʰi",
+          "meaning": {
+            "fr": "ville",
+            "en": "city",
+            "ar": "مدينة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:ghan",
+      "pronunciation": {
+        "sound": [
+          "ɣ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ღამე",
+          "ipa": "ɣamɛ",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:qar",
+      "pronunciation": {
+        "sound": [
+          "qʼ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ყვავილი",
+          "ipa": "qʼvavili",
+          "meaning": {
+            "fr": "fleur",
+            "en": "flower",
+            "ar": "زهرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:shin",
+      "pronunciation": {
+        "sound": [
+          "ʃ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "შაქარი",
+          "ipa": "ʃakʰari",
+          "meaning": {
+            "fr": "sucre",
+            "en": "sugar",
+            "ar": "سكر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:chin",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ჩაი",
+          "ipa": "t͡ʃʰai",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:tsan",
+      "pronunciation": {
+        "sound": [
+          "t͡sʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ცა",
+          "ipa": "t͡sʰa",
+          "meaning": {
+            "fr": "ciel",
+            "en": "sky",
+            "ar": "سماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:dzil",
+      "pronunciation": {
+        "sound": [
+          "d͡z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ძაღლი",
+          "ipa": "d͡zaɣli",
+          "meaning": {
+            "fr": "chien",
+            "en": "dog",
+            "ar": "كلب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:tsil",
+      "pronunciation": {
+        "sound": [
+          "t͡sʼ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "წყალი",
+          "ipa": "t͡sʼqʼali",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:char",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃʼ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:khan",
+      "pronunciation": {
+        "sound": [
+          "χ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ხე",
+          "ipa": "χɛ",
+          "meaning": {
+            "fr": "arbre",
+            "en": "tree",
+            "ar": "شجرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "geor:jan",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "geor:hae",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ka.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "ა",
+      "ბ",
+      "გ",
+      "დ",
+      "ე",
+      "ვ",
+      "ზ",
+      "თ",
+      "ი",
+      "კ",
+      "ლ",
+      "მ",
+      "ნ",
+      "ო",
+      "პ",
+      "ჟ",
+      "რ",
+      "ს",
+      "ტ",
+      "უ",
+      "ფ",
+      "ქ",
+      "ღ",
+      "ყ",
+      "შ",
+      "ჩ",
+      "ც",
+      "ძ",
+      "წ",
+      "ჭ",
+      "ხ",
+      "ჯ",
+      "ჰ"
+    ],
+    "auxiliary": [
+      "ⴀ",
+      "ⴁ",
+      "ⴂ",
+      "ⴃ",
+      "ⴄ",
+      "ⴅ",
+      "ⴆ",
+      "ჱ",
+      "ⴡ",
+      "ⴇ",
+      "ⴈ",
+      "ⴉ",
+      "ⴊ",
+      "ⴋ",
+      "ⴌ",
+      "ჲ",
+      "ⴢ",
+      "ⴍ",
+      "ⴎ",
+      "ⴏ",
+      "ⴐ",
+      "ⴑ",
+      "ⴒ",
+      "ჳ",
+      "ⴣ",
+      "ⴓ",
+      "ⴔ",
+      "ⴕ",
+      "ⴖ",
+      "ⴗ",
+      "ⴘ",
+      "ⴙ",
+      "ⴚ",
+      "ⴛ",
+      "ⴜ",
+      "ⴝ",
+      "ⴞ",
+      "ჴ",
+      "ⴤ",
+      "ⴟ",
+      "ⴠ",
+      "ჵ",
+      "ⴥ",
+      "ჶ",
+      "ჷ",
+      "ჸ",
+      "ჹ",
+      "ჺ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ka.xml"
+    }
+  }
+}

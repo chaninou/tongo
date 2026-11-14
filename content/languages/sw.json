@@ -1,0 +1,637 @@
+{
+  "id": "sw",
+  "iso639_3": "swa",
+  "name": {
+    "fr": "Swahili",
+    "en": "Swahili",
+    "ar": "السواحيلية"
+  },
+  "endonym": "Kiswahili",
+  "scripts": [
+    "latn"
+  ],
+  "variants": [
+    {
+      "id": "sw-TZ",
+      "region": "TZ",
+      "name": {
+        "fr": "Tanzanie",
+        "en": "Tanzania",
+        "ar": "تنزانيا"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 80,
+  "intro": {
+    "fr": "Langue de communication de l'Afrique de l'Est, le swahili s'écrit en alphabet latin de façon très régulière. Les cinq voyelles se prononcent toujours pareil, et quelques sons s'écrivent avec deux lettres (ch, sh, ng', ny).",
+    "en": "The lingua franca of East Africa, Swahili is written in the Latin alphabet very regularly. Its five vowels always sound the same, and a few sounds use two letters (ch, sh, ng', ny).",
+    "ar": "السواحيلية لغة التواصل في شرق إفريقيا، تُكتب بالأبجدية اللاتينية بانتظام كبير. صوائتها الخمسة ثابتة النطق، وبعض الأصوات تُكتب بحرفين."
+  },
+  "letters": [
+    {
+      "grapheme": "latn:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "asante",
+          "ipa": "asante",
+          "meaning": {
+            "fr": "merci",
+            "en": "thank you",
+            "ar": "شكرًا"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:b",
+      "pronunciation": {
+        "sound": [
+          "ɓ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "baba",
+          "ipa": "ɓaɓa",
+          "meaning": {
+            "fr": "père",
+            "en": "father",
+            "ar": "أب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:ch",
+      "pronunciation": {
+        "sound": [
+          "t͡ʃ"
+        ],
+        "note": {
+          "fr": "Deux lettres pour un seul son.",
+          "en": "Two letters for one sound."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "chai",
+          "ipa": "t͡ʃai",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:d",
+      "pronunciation": {
+        "sound": [
+          "ɗ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "dada",
+          "ipa": "ɗaɗa",
+          "meaning": {
+            "fr": "sœur",
+            "en": "sister",
+            "ar": "أخت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "embe",
+          "ipa": "ɛmɓɛ",
+          "meaning": {
+            "fr": "mangue",
+            "en": "mango",
+            "ar": "مانجو"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:f",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "fimbo",
+          "ipa": "fimɓɔ",
+          "meaning": {
+            "fr": "bâton",
+            "en": "stick",
+            "ar": "عصا"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:g",
+      "pronunciation": {
+        "sound": [
+          "ɠ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "gari",
+          "ipa": "ɠaɾi",
+          "meaning": {
+            "fr": "voiture",
+            "en": "car",
+            "ar": "سيارة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:h",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "habari",
+          "ipa": "haɓaɾi",
+          "meaning": {
+            "fr": "nouvelles",
+            "en": "news",
+            "ar": "أخبار"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "iko",
+          "ipa": "ikɔ",
+          "meaning": {
+            "fr": "il y a",
+            "en": "there is",
+            "ar": "يوجد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:j",
+      "pronunciation": {
+        "sound": [
+          "ʄ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "jua",
+          "ipa": "ʄua",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:k",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "kitabu",
+          "ipa": "kitaɓu",
+          "meaning": {
+            "fr": "livre",
+            "en": "book",
+            "ar": "كتاب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:l",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "limau",
+          "ipa": "limau",
+          "meaning": {
+            "fr": "citron",
+            "en": "lemon",
+            "ar": "ليمون"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:m",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "maji",
+          "ipa": "maʄi",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "note": {
+          "fr": "Dans ny, se prononce gn.",
+          "en": "In ny it sounds like ny in canyon."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "nyumba",
+          "ipa": "ɲumɓa",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ondoa",
+          "ipa": "ɔndɔa",
+          "meaning": {
+            "fr": "enlever",
+            "en": "remove",
+            "ar": "يزيل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:p",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "paka",
+          "ipa": "paka",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:r",
+      "pronunciation": {
+        "sound": [
+          "ɾ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "rafiki",
+          "ipa": "ɾafiki",
+          "meaning": {
+            "fr": "ami",
+            "en": "friend",
+            "ar": "صديق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:s",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "simba",
+          "ipa": "simɓa",
+          "meaning": {
+            "fr": "lion",
+            "en": "lion",
+            "ar": "أسد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:t",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "tano",
+          "ipa": "tanɔ",
+          "meaning": {
+            "fr": "cinq",
+            "en": "five",
+            "ar": "خمسة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ua",
+          "ipa": "ua",
+          "meaning": {
+            "fr": "fleur",
+            "en": "flower",
+            "ar": "زهرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:v",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "viatu",
+          "ipa": "viatu",
+          "meaning": {
+            "fr": "chaussures",
+            "en": "shoes",
+            "ar": "أحذية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:w",
+      "pronunciation": {
+        "sound": [
+          "w"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "watoto",
+          "ipa": "watɔtɔ",
+          "meaning": {
+            "fr": "enfants",
+            "en": "children",
+            "ar": "أطفال"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:y",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "yai",
+          "ipa": "jai",
+          "meaning": {
+            "fr": "œuf",
+            "en": "egg",
+            "ar": "بيضة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:z",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "zawadi",
+          "ipa": "zawaɗi",
+          "meaning": {
+            "fr": "cadeau",
+            "en": "gift",
+            "ar": "هدية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/sw.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "ch",
+      "a",
+      "b",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "y",
+      "z"
+    ],
+    "auxiliary": [
+      "c",
+      "q",
+      "x"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/sw.xml"
+    }
+  }
+}

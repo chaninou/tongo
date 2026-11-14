@@ -1,0 +1,385 @@
+{
+  "id": "taml",
+  "cased": false,
+  "groups": [
+    {
+      "id": "vowels",
+      "name": {
+        "fr": "Voyelles",
+        "en": "Vowels",
+        "ar": "الصوائت"
+      }
+    },
+    {
+      "id": "consonants",
+      "name": {
+        "fr": "Consonnes",
+        "en": "Consonants",
+        "ar": "الصوامت"
+      }
+    },
+    {
+      "id": "grantha",
+      "name": {
+        "fr": "Consonnes d'emprunt (grantha)",
+        "en": "Borrowed consonants (Grantha)",
+        "ar": "صوامت دخيلة"
+      }
+    },
+    {
+      "id": "signs",
+      "name": {
+        "fr": "Signes vocaliques",
+        "en": "Vowel signs",
+        "ar": "العلامات الصوتية"
+      }
+    }
+  ],
+  "name": {
+    "fr": "Tamoul",
+    "en": "Tamil",
+    "ar": "التاميلية"
+  },
+  "endonym": "தமிழ் எழுத்து",
+  "type": "abugida",
+  "direction": "ltr",
+  "intro": {
+    "fr": "Une écriture arrondie, sans barre horizontale. Un point (pulli) posé sur une consonne lui retire sa voyelle.",
+    "en": "A rounded script with no horizontal bar. A dot (pulli) on a consonant removes its vowel.",
+    "ar": "كتابة مستديرة دون خط أفقي. نقطة (بولي) فوق الصامت تحذف صائته."
+  },
+  "sample": "க ங ச அ",
+  "font": "Noto Sans Tamil",
+  "graphemes": [
+    {
+      "id": "a",
+      "char": "அ",
+      "kind": "vowel",
+      "latin": "a",
+      "group": "vowels"
+    },
+    {
+      "id": "aa",
+      "char": "ஆ",
+      "kind": "vowel",
+      "latin": "ā",
+      "group": "vowels"
+    },
+    {
+      "id": "i",
+      "char": "இ",
+      "kind": "vowel",
+      "latin": "i",
+      "group": "vowels"
+    },
+    {
+      "id": "ii",
+      "char": "ஈ",
+      "kind": "vowel",
+      "latin": "ī",
+      "group": "vowels"
+    },
+    {
+      "id": "u",
+      "char": "உ",
+      "kind": "vowel",
+      "latin": "u",
+      "group": "vowels"
+    },
+    {
+      "id": "uu",
+      "char": "ஊ",
+      "kind": "vowel",
+      "latin": "ū",
+      "group": "vowels"
+    },
+    {
+      "id": "e",
+      "char": "எ",
+      "kind": "vowel",
+      "latin": "e",
+      "group": "vowels"
+    },
+    {
+      "id": "ee",
+      "char": "ஏ",
+      "kind": "vowel",
+      "latin": "ē",
+      "group": "vowels"
+    },
+    {
+      "id": "ai",
+      "char": "ஐ",
+      "kind": "vowel",
+      "latin": "ai",
+      "group": "vowels"
+    },
+    {
+      "id": "o",
+      "char": "ஒ",
+      "kind": "vowel",
+      "latin": "o",
+      "group": "vowels"
+    },
+    {
+      "id": "oo",
+      "char": "ஓ",
+      "kind": "vowel",
+      "latin": "ō",
+      "group": "vowels"
+    },
+    {
+      "id": "au",
+      "char": "ஔ",
+      "kind": "vowel",
+      "latin": "au",
+      "group": "vowels"
+    },
+    {
+      "id": "aytham",
+      "char": "ஃ",
+      "kind": "sign",
+      "latin": "ḵ",
+      "group": "vowels"
+    },
+    {
+      "id": "ka",
+      "char": "க",
+      "kind": "consonant",
+      "latin": "k",
+      "group": "consonants"
+    },
+    {
+      "id": "nga",
+      "char": "ங",
+      "kind": "consonant",
+      "latin": "ṅ",
+      "group": "consonants"
+    },
+    {
+      "id": "ca",
+      "char": "ச",
+      "kind": "consonant",
+      "latin": "c",
+      "group": "consonants"
+    },
+    {
+      "id": "nya",
+      "char": "ஞ",
+      "kind": "consonant",
+      "latin": "ñ",
+      "group": "consonants"
+    },
+    {
+      "id": "tta",
+      "char": "ட",
+      "kind": "consonant",
+      "latin": "ṭ",
+      "group": "consonants"
+    },
+    {
+      "id": "nna",
+      "char": "ண",
+      "kind": "consonant",
+      "latin": "ṇ",
+      "group": "consonants"
+    },
+    {
+      "id": "ta",
+      "char": "த",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "consonants"
+    },
+    {
+      "id": "na",
+      "char": "ந",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "consonants"
+    },
+    {
+      "id": "pa",
+      "char": "ப",
+      "kind": "consonant",
+      "latin": "p",
+      "group": "consonants"
+    },
+    {
+      "id": "ma",
+      "char": "ம",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "consonants"
+    },
+    {
+      "id": "ya",
+      "char": "ய",
+      "kind": "consonant",
+      "latin": "y",
+      "group": "consonants"
+    },
+    {
+      "id": "ra",
+      "char": "ர",
+      "kind": "consonant",
+      "latin": "r",
+      "group": "consonants"
+    },
+    {
+      "id": "la",
+      "char": "ல",
+      "kind": "consonant",
+      "latin": "l",
+      "group": "consonants"
+    },
+    {
+      "id": "va",
+      "char": "வ",
+      "kind": "consonant",
+      "latin": "v",
+      "group": "consonants"
+    },
+    {
+      "id": "zha",
+      "char": "ழ",
+      "kind": "consonant",
+      "latin": "ḻ",
+      "group": "consonants"
+    },
+    {
+      "id": "lla",
+      "char": "ள",
+      "kind": "consonant",
+      "latin": "ḷ",
+      "group": "consonants"
+    },
+    {
+      "id": "rra",
+      "char": "ற",
+      "kind": "consonant",
+      "latin": "ṟ",
+      "group": "consonants"
+    },
+    {
+      "id": "nna-alveolar",
+      "char": "ன",
+      "kind": "consonant",
+      "latin": "ṉ",
+      "group": "consonants"
+    },
+    {
+      "id": "ja",
+      "char": "ஜ",
+      "kind": "consonant",
+      "latin": "j",
+      "group": "grantha"
+    },
+    {
+      "id": "ssa",
+      "char": "ஷ",
+      "kind": "consonant",
+      "latin": "ṣ",
+      "group": "grantha"
+    },
+    {
+      "id": "sa",
+      "char": "ஸ",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "grantha"
+    },
+    {
+      "id": "ha",
+      "char": "ஹ",
+      "kind": "consonant",
+      "latin": "h",
+      "group": "grantha"
+    },
+    {
+      "id": "sign-aa",
+      "char": "ா",
+      "kind": "vowel-sign",
+      "latin": "ā",
+      "group": "signs"
+    },
+    {
+      "id": "sign-i",
+      "char": "ி",
+      "kind": "vowel-sign",
+      "latin": "i",
+      "group": "signs"
+    },
+    {
+      "id": "sign-ii",
+      "char": "ீ",
+      "kind": "vowel-sign",
+      "latin": "ī",
+      "group": "signs"
+    },
+    {
+      "id": "sign-u",
+      "char": "ு",
+      "kind": "vowel-sign",
+      "latin": "u",
+      "group": "signs"
+    },
+    {
+      "id": "sign-uu",
+      "char": "ூ",
+      "kind": "vowel-sign",
+      "latin": "ū",
+      "group": "signs"
+    },
+    {
+      "id": "sign-e",
+      "char": "ெ",
+      "kind": "vowel-sign",
+      "latin": "e",
+      "group": "signs"
+    },
+    {
+      "id": "sign-ee",
+      "char": "ே",
+      "kind": "vowel-sign",
+      "latin": "ē",
+      "group": "signs"
+    },
+    {
+      "id": "sign-ai",
+      "char": "ை",
+      "kind": "vowel-sign",
+      "latin": "ai",
+      "group": "signs"
+    },
+    {
+      "id": "sign-o",
+      "char": "ொ",
+      "kind": "vowel-sign",
+      "latin": "o",
+      "group": "signs"
+    },
+    {
+      "id": "sign-oo",
+      "char": "ோ",
+      "kind": "vowel-sign",
+      "latin": "ō",
+      "group": "signs"
+    },
+    {
+      "id": "sign-au",
+      "char": "ௌ",
+      "kind": "vowel-sign",
+      "latin": "au",
+      "group": "signs"
+    },
+    {
+      "id": "pulli",
+      "char": "்",
+      "kind": "diacritic",
+      "group": "signs"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

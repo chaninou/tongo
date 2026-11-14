@@ -1,0 +1,557 @@
+{
+  "id": "thai",
+  "cased": false,
+  "groups": [
+    {
+      "id": "consonants",
+      "name": {
+        "fr": "Consonnes",
+        "en": "Consonants",
+        "ar": "الصوامت"
+      }
+    },
+    {
+      "id": "vowels",
+      "name": {
+        "fr": "Signes vocaliques",
+        "en": "Vowel signs",
+        "ar": "العلامات الصوتية"
+      }
+    },
+    {
+      "id": "tones",
+      "name": {
+        "fr": "Marques de ton",
+        "en": "Tone marks",
+        "ar": "علامات النغمة"
+      }
+    },
+    {
+      "id": "marks",
+      "name": {
+        "fr": "Autres signes",
+        "en": "Other marks",
+        "ar": "علامات أخرى"
+      }
+    }
+  ],
+  "name": {
+    "fr": "Thaï",
+    "en": "Thai",
+    "ar": "التايلاندية"
+  },
+  "endonym": "อักษรไทย",
+  "type": "abugida",
+  "direction": "ltr",
+  "intro": {
+    "fr": "Un abugida d'origine indienne. Les voyelles se placent avant, après, au-dessus ou au-dessous de la consonne, et des petits signes au-dessus notent le ton.",
+    "en": "An abugida of Indian origin. Vowels go before, after, above or below the consonant, and small marks above show the tone.",
+    "ar": "أبوغيدا ذات أصل هندي. توضع الصوائت قبل الصامت أو بعده أو فوقه أو تحته، وتدل علامات صغيرة فوقه على النغمة."
+  },
+  "sample": "ก ข ค ง",
+  "font": "Noto Sans Thai",
+  "graphemes": [
+    {
+      "id": "ko-kai",
+      "char": "ก",
+      "kind": "consonant",
+      "latin": "k",
+      "group": "consonants"
+    },
+    {
+      "id": "kho-khai",
+      "char": "ข",
+      "kind": "consonant",
+      "latin": "kh",
+      "group": "consonants"
+    },
+    {
+      "id": "kho-khuat",
+      "char": "ฃ",
+      "kind": "consonant",
+      "latin": "kh",
+      "group": "consonants"
+    },
+    {
+      "id": "kho-khwai",
+      "char": "ค",
+      "kind": "consonant",
+      "latin": "kh",
+      "group": "consonants"
+    },
+    {
+      "id": "kho-khon",
+      "char": "ฅ",
+      "kind": "consonant",
+      "latin": "kh",
+      "group": "consonants"
+    },
+    {
+      "id": "kho-rakhang",
+      "char": "ฆ",
+      "kind": "consonant",
+      "latin": "kh",
+      "group": "consonants"
+    },
+    {
+      "id": "ngo-ngu",
+      "char": "ง",
+      "kind": "consonant",
+      "latin": "ng",
+      "group": "consonants"
+    },
+    {
+      "id": "cho-chan",
+      "char": "จ",
+      "kind": "consonant",
+      "latin": "ch",
+      "group": "consonants"
+    },
+    {
+      "id": "cho-ching",
+      "char": "ฉ",
+      "kind": "consonant",
+      "latin": "ch",
+      "group": "consonants"
+    },
+    {
+      "id": "cho-chang",
+      "char": "ช",
+      "kind": "consonant",
+      "latin": "ch",
+      "group": "consonants"
+    },
+    {
+      "id": "so-so",
+      "char": "ซ",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "consonants"
+    },
+    {
+      "id": "cho-choe",
+      "char": "ฌ",
+      "kind": "consonant",
+      "latin": "ch",
+      "group": "consonants"
+    },
+    {
+      "id": "yo-ying",
+      "char": "ญ",
+      "kind": "consonant",
+      "latin": "y",
+      "group": "consonants"
+    },
+    {
+      "id": "do-chada",
+      "char": "ฎ",
+      "kind": "consonant",
+      "latin": "d",
+      "group": "consonants"
+    },
+    {
+      "id": "to-patak",
+      "char": "ฏ",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "consonants"
+    },
+    {
+      "id": "tho-than",
+      "char": "ฐ",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "consonants"
+    },
+    {
+      "id": "tho-montho",
+      "char": "ฑ",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "consonants"
+    },
+    {
+      "id": "tho-phuthao",
+      "char": "ฒ",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "consonants"
+    },
+    {
+      "id": "no-nen",
+      "char": "ณ",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "consonants"
+    },
+    {
+      "id": "do-dek",
+      "char": "ด",
+      "kind": "consonant",
+      "latin": "d",
+      "group": "consonants"
+    },
+    {
+      "id": "to-tao",
+      "char": "ต",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "consonants"
+    },
+    {
+      "id": "tho-thung",
+      "char": "ถ",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "consonants"
+    },
+    {
+      "id": "tho-thahan",
+      "char": "ท",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "consonants"
+    },
+    {
+      "id": "tho-thong",
+      "char": "ธ",
+      "kind": "consonant",
+      "latin": "th",
+      "group": "consonants"
+    },
+    {
+      "id": "no-nu",
+      "char": "น",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "consonants"
+    },
+    {
+      "id": "bo-baimai",
+      "char": "บ",
+      "kind": "consonant",
+      "latin": "b",
+      "group": "consonants"
+    },
+    {
+      "id": "po-pla",
+      "char": "ป",
+      "kind": "consonant",
+      "latin": "p",
+      "group": "consonants"
+    },
+    {
+      "id": "pho-phueng",
+      "char": "ผ",
+      "kind": "consonant",
+      "latin": "ph",
+      "group": "consonants"
+    },
+    {
+      "id": "fo-fa",
+      "char": "ฝ",
+      "kind": "consonant",
+      "latin": "f",
+      "group": "consonants"
+    },
+    {
+      "id": "pho-phan",
+      "char": "พ",
+      "kind": "consonant",
+      "latin": "ph",
+      "group": "consonants"
+    },
+    {
+      "id": "fo-fan",
+      "char": "ฟ",
+      "kind": "consonant",
+      "latin": "f",
+      "group": "consonants"
+    },
+    {
+      "id": "pho-samphao",
+      "char": "ภ",
+      "kind": "consonant",
+      "latin": "ph",
+      "group": "consonants"
+    },
+    {
+      "id": "mo-ma",
+      "char": "ม",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "consonants"
+    },
+    {
+      "id": "yo-yak",
+      "char": "ย",
+      "kind": "consonant",
+      "latin": "y",
+      "group": "consonants"
+    },
+    {
+      "id": "ro-ruea",
+      "char": "ร",
+      "kind": "consonant",
+      "latin": "r",
+      "group": "consonants"
+    },
+    {
+      "id": "rue",
+      "char": "ฤ",
+      "kind": "vowel",
+      "latin": "rue",
+      "group": "consonants"
+    },
+    {
+      "id": "lo-ling",
+      "char": "ล",
+      "kind": "consonant",
+      "latin": "l",
+      "group": "consonants"
+    },
+    {
+      "id": "lue",
+      "char": "ฦ",
+      "kind": "vowel",
+      "latin": "lue",
+      "group": "consonants"
+    },
+    {
+      "id": "wo-waen",
+      "char": "ว",
+      "kind": "consonant",
+      "latin": "w",
+      "group": "consonants"
+    },
+    {
+      "id": "so-sala",
+      "char": "ศ",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "consonants"
+    },
+    {
+      "id": "so-ruesi",
+      "char": "ษ",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "consonants"
+    },
+    {
+      "id": "so-suea",
+      "char": "ส",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "consonants"
+    },
+    {
+      "id": "ho-hip",
+      "char": "ห",
+      "kind": "consonant",
+      "latin": "h",
+      "group": "consonants"
+    },
+    {
+      "id": "lo-chula",
+      "char": "ฬ",
+      "kind": "consonant",
+      "latin": "l",
+      "group": "consonants"
+    },
+    {
+      "id": "o-ang",
+      "char": "อ",
+      "kind": "consonant",
+      "latin": "ʔ",
+      "group": "consonants"
+    },
+    {
+      "id": "ho-nokhuk",
+      "char": "ฮ",
+      "kind": "consonant",
+      "latin": "h",
+      "group": "consonants"
+    },
+    {
+      "id": "sara-a",
+      "char": "ะ",
+      "kind": "vowel-sign",
+      "latin": "a",
+      "group": "vowels"
+    },
+    {
+      "id": "mai-han-akat",
+      "char": "ั",
+      "kind": "vowel-sign",
+      "latin": "a",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-aa",
+      "char": "า",
+      "kind": "vowel-sign",
+      "latin": "ā",
+      "group": "vowels"
+    },
+    {
+      "id": "lakkhangyao",
+      "char": "ๅ",
+      "kind": "vowel-sign",
+      "latin": "ā",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-am",
+      "char": "ำ",
+      "kind": "vowel-sign",
+      "latin": "am",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-i",
+      "char": "ิ",
+      "kind": "vowel-sign",
+      "latin": "i",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-ii",
+      "char": "ี",
+      "kind": "vowel-sign",
+      "latin": "ī",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-ue",
+      "char": "ึ",
+      "kind": "vowel-sign",
+      "latin": "ue",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-uee",
+      "char": "ื",
+      "kind": "vowel-sign",
+      "latin": "ūe",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-u",
+      "char": "ุ",
+      "kind": "vowel-sign",
+      "latin": "u",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-uu",
+      "char": "ู",
+      "kind": "vowel-sign",
+      "latin": "ū",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-e",
+      "char": "เ",
+      "kind": "vowel-sign",
+      "latin": "e",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-ae",
+      "char": "แ",
+      "kind": "vowel-sign",
+      "latin": "ae",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-o",
+      "char": "โ",
+      "kind": "vowel-sign",
+      "latin": "o",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-ai-maimuan",
+      "char": "ใ",
+      "kind": "vowel-sign",
+      "latin": "ai",
+      "group": "vowels"
+    },
+    {
+      "id": "sara-ai-maimalai",
+      "char": "ไ",
+      "kind": "vowel-sign",
+      "latin": "ai",
+      "group": "vowels"
+    },
+    {
+      "id": "mai-ek",
+      "char": "่",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "mai-tho",
+      "char": "้",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "mai-tri",
+      "char": "๊",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "mai-chattawa",
+      "char": "๋",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "maitaikhu",
+      "char": "็",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "thanthakhat",
+      "char": "์",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "nikhahit",
+      "char": "ํ",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "phinthu",
+      "char": "ฺ",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "yamakkan",
+      "char": "๎",
+      "kind": "diacritic",
+      "group": "marks"
+    },
+    {
+      "id": "paiyannoi",
+      "char": "ฯ",
+      "kind": "sign",
+      "group": "marks"
+    },
+    {
+      "id": "maiyamok",
+      "char": "ๆ",
+      "kind": "sign",
+      "group": "marks"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

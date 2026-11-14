@@ -510,6 +510,88 @@
         "isolated": "ى",
         "final": "‍ى"
       }
+    },
+    {
+      "id": "pe",
+      "char": "پ",
+      "name": "pe",
+      "latin": "p",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "پ",
+        "initial": "پ‍",
+        "medial": "‍پ‍",
+        "final": "‍پ"
+      }
+    },
+    {
+      "id": "che",
+      "char": "چ",
+      "name": "che",
+      "latin": "č",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "چ",
+        "initial": "چ‍",
+        "medial": "‍چ‍",
+        "final": "‍چ"
+      }
+    },
+    {
+      "id": "zhe",
+      "char": "ژ",
+      "name": "že",
+      "latin": "ž",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ژ",
+        "final": "‍ژ"
+      }
+    },
+    {
+      "id": "keheh",
+      "char": "ک",
+      "name": "kâf",
+      "latin": "k",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ک",
+        "initial": "ک‍",
+        "medial": "‍ک‍",
+        "final": "‍ک"
+      }
+    },
+    {
+      "id": "gaf",
+      "char": "گ",
+      "name": "gâf",
+      "latin": "g",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "گ",
+        "initial": "گ‍",
+        "medial": "‍گ‍",
+        "final": "‍گ"
+      }
+    },
+    {
+      "id": "farsi-yeh",
+      "char": "ی",
+      "name": "ye",
+      "latin": "y / i",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ی",
+        "initial": "ی‍",
+        "medial": "‍ی‍",
+        "final": "‍ی"
+      }
     }
   ],
   "confidence": "draft",

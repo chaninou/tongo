@@ -32,6 +32,14 @@
         "en": "Accented letters",
         "ar": "الحروف ذات العلامات"
       }
+    },
+    {
+      "id": "tones",
+      "name": {
+        "fr": "Marques de ton (vietnamien)",
+        "en": "Tone marks (Vietnamese)",
+        "ar": "علامات النغمة (الفيتنامية)"
+      }
     }
   ],
   "graphemes": [
@@ -362,6 +370,120 @@
       "char": "ÿ",
       "upper": "Ÿ",
       "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "a-tilde",
+      "char": "ã",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "o-grave",
+      "char": "ò",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "o-tilde",
+      "char": "õ",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "a-diaeresis",
+      "char": "ä",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "o-diaeresis",
+      "char": "ö",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "sharp-s",
+      "char": "ß",
+      "kind": "consonant",
+      "group": "accents"
+    },
+    {
+      "id": "g-breve",
+      "char": "ğ",
+      "kind": "consonant",
+      "group": "accents"
+    },
+    {
+      "id": "dotless-i",
+      "char": "ı",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "s-cedilla",
+      "char": "ş",
+      "kind": "consonant",
+      "group": "accents"
+    },
+    {
+      "id": "a-breve",
+      "char": "ă",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "d-stroke",
+      "char": "đ",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "o-horn",
+      "char": "ơ",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "u-horn",
+      "char": "ư",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "tone-grave",
+      "char": "̀",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "tone-acute",
+      "char": "́",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "tone-hook",
+      "char": "̉",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "tone-tilde",
+      "char": "̃",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "tone-dot",
+      "char": "̣",
+      "kind": "diacritic",
+      "group": "tones"
+    },
+    {
+      "id": "ch",
+      "char": "ch",
+      "kind": "consonant",
       "group": "accents"
     }
   ],

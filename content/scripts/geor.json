@@ -1,0 +1,222 @@
+{
+  "id": "geor",
+  "cased": false,
+  "groups": [],
+  "name": {
+    "fr": "Géorgien",
+    "en": "Georgian",
+    "ar": "الجورجية"
+  },
+  "endonym": "მხედრული",
+  "type": "alphabet",
+  "direction": "ltr",
+  "intro": {
+    "fr": "L'alphabet géorgien moderne (mkhedruli) compte 33 lettres. Il ne ressemble à aucun autre et n'est utilisé que pour les langues de Géorgie.",
+    "en": "The modern Georgian alphabet (mkhedruli) has 33 letters. It looks like no other script and is only used for the languages of Georgia.",
+    "ar": "تضم الأبجدية الجورجية الحديثة (مخيدرولي) 33 حرفًا، ولا تشبه أي كتابة أخرى."
+  },
+  "sample": "ა ბ გ ქ",
+  "font": "Noto Sans Georgian",
+  "graphemes": [
+    {
+      "id": "an",
+      "char": "ა",
+      "kind": "vowel",
+      "latin": "a"
+    },
+    {
+      "id": "ban",
+      "char": "ბ",
+      "kind": "consonant",
+      "latin": "b"
+    },
+    {
+      "id": "gan",
+      "char": "გ",
+      "kind": "consonant",
+      "latin": "g"
+    },
+    {
+      "id": "don",
+      "char": "დ",
+      "kind": "consonant",
+      "latin": "d"
+    },
+    {
+      "id": "en",
+      "char": "ე",
+      "kind": "vowel",
+      "latin": "e"
+    },
+    {
+      "id": "vin",
+      "char": "ვ",
+      "kind": "consonant",
+      "latin": "v"
+    },
+    {
+      "id": "zen",
+      "char": "ზ",
+      "kind": "consonant",
+      "latin": "z"
+    },
+    {
+      "id": "tan",
+      "char": "თ",
+      "kind": "consonant",
+      "latin": "t"
+    },
+    {
+      "id": "in",
+      "char": "ი",
+      "kind": "vowel",
+      "latin": "i"
+    },
+    {
+      "id": "kan",
+      "char": "კ",
+      "kind": "consonant",
+      "latin": "k'"
+    },
+    {
+      "id": "las",
+      "char": "ლ",
+      "kind": "consonant",
+      "latin": "l"
+    },
+    {
+      "id": "man",
+      "char": "მ",
+      "kind": "consonant",
+      "latin": "m"
+    },
+    {
+      "id": "nar",
+      "char": "ნ",
+      "kind": "consonant",
+      "latin": "n"
+    },
+    {
+      "id": "on",
+      "char": "ო",
+      "kind": "vowel",
+      "latin": "o"
+    },
+    {
+      "id": "par",
+      "char": "პ",
+      "kind": "consonant",
+      "latin": "p'"
+    },
+    {
+      "id": "zhan",
+      "char": "ჟ",
+      "kind": "consonant",
+      "latin": "zh"
+    },
+    {
+      "id": "rae",
+      "char": "რ",
+      "kind": "consonant",
+      "latin": "r"
+    },
+    {
+      "id": "san",
+      "char": "ს",
+      "kind": "consonant",
+      "latin": "s"
+    },
+    {
+      "id": "tar",
+      "char": "ტ",
+      "kind": "consonant",
+      "latin": "t'"
+    },
+    {
+      "id": "un",
+      "char": "უ",
+      "kind": "vowel",
+      "latin": "u"
+    },
+    {
+      "id": "par-aspirated",
+      "char": "ფ",
+      "kind": "consonant",
+      "latin": "p"
+    },
+    {
+      "id": "kan-aspirated",
+      "char": "ქ",
+      "kind": "consonant",
+      "latin": "k"
+    },
+    {
+      "id": "ghan",
+      "char": "ღ",
+      "kind": "consonant",
+      "latin": "gh"
+    },
+    {
+      "id": "qar",
+      "char": "ყ",
+      "kind": "consonant",
+      "latin": "q'"
+    },
+    {
+      "id": "shin",
+      "char": "შ",
+      "kind": "consonant",
+      "latin": "sh"
+    },
+    {
+      "id": "chin",
+      "char": "ჩ",
+      "kind": "consonant",
+      "latin": "ch"
+    },
+    {
+      "id": "tsan",
+      "char": "ც",
+      "kind": "consonant",
+      "latin": "ts"
+    },
+    {
+      "id": "dzil",
+      "char": "ძ",
+      "kind": "consonant",
+      "latin": "dz"
+    },
+    {
+      "id": "tsil",
+      "char": "წ",
+      "kind": "consonant",
+      "latin": "ts'"
+    },
+    {
+      "id": "char",
+      "char": "ჭ",
+      "kind": "consonant",
+      "latin": "ch'"
+    },
+    {
+      "id": "khan",
+      "char": "ხ",
+      "kind": "consonant",
+      "latin": "kh"
+    },
+    {
+      "id": "jan",
+      "char": "ჯ",
+      "kind": "consonant",
+      "latin": "j"
+    },
+    {
+      "id": "hae",
+      "char": "ჰ",
+      "kind": "consonant",
+      "latin": "h"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

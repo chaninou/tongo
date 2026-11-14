@@ -1,0 +1,1348 @@
+{
+  "id": "th",
+  "iso639_3": "tha",
+  "name": {
+    "fr": "Thaï",
+    "en": "Thai",
+    "ar": "التايلاندية"
+  },
+  "endonym": "ภาษาไทย",
+  "scripts": [
+    "thai"
+  ],
+  "variants": [
+    {
+      "id": "th-TH",
+      "region": "TH",
+      "name": {
+        "fr": "Thaïlande",
+        "en": "Thailand",
+        "ar": "تايلاند"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 60,
+  "intro": {
+    "fr": "Le thaï est une langue à cinq tons, écrite sans espace entre les mots. Les 44 consonnes se répartissent en trois classes (haute, moyenne, basse) qui, avec les marques de ton, déterminent la mélodie de la syllabe. Plusieurs consonnes notent le même son.",
+    "en": "Thai has five tones and is written without spaces between words. Its 44 consonants fall into three classes (high, mid, low) which, with the tone marks, set the melody of each syllable. Several consonants share the same sound.",
+    "ar": "التايلاندية لغة بخمس نغمات، تُكتب دون فراغات بين الكلمات. تنقسم صوامتها الأربعة والأربعون إلى ثلاث فئات تحدد مع علامات النغمة لحن المقطع."
+  },
+  "letters": [
+    {
+      "grapheme": "thai:ko-kai",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ไก่",
+          "ipa": "kàj",
+          "meaning": {
+            "fr": "poulet",
+            "en": "chicken",
+            "ar": "دجاجة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:kho-khai",
+      "pronunciation": {
+        "sound": [
+          "kʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ไข่",
+          "ipa": "kʰàj",
+          "meaning": {
+            "fr": "œuf",
+            "en": "egg",
+            "ar": "بيضة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:kho-khuat",
+      "pronunciation": {
+        "sound": [
+          "kʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:kho-khwai",
+      "pronunciation": {
+        "sound": [
+          "kʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ควาย",
+          "ipa": "kʰwaːj",
+          "meaning": {
+            "fr": "buffle",
+            "en": "buffalo",
+            "ar": "جاموس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:kho-khon",
+      "pronunciation": {
+        "sound": [
+          "kʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:kho-rakhang",
+      "pronunciation": {
+        "sound": [
+          "kʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ระฆัง",
+          "ipa": "ráʔkʰaŋ",
+          "meaning": {
+            "fr": "cloche",
+            "en": "bell",
+            "ar": "جرس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:ngo-ngu",
+      "pronunciation": {
+        "sound": [
+          "ŋ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "งู",
+          "ipa": "ŋuː",
+          "meaning": {
+            "fr": "serpent",
+            "en": "snake",
+            "ar": "ثعبان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:cho-chan",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "จาน",
+          "ipa": "t͡ɕaːn",
+          "meaning": {
+            "fr": "assiette",
+            "en": "plate",
+            "ar": "صحن"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:cho-ching",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ฉิ่ง",
+          "ipa": "t͡ɕʰìŋ",
+          "meaning": {
+            "fr": "cymbales",
+            "en": "cymbals",
+            "ar": "صنج"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:cho-chang",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ช้าง",
+          "ipa": "t͡ɕʰáːŋ",
+          "meaning": {
+            "fr": "éléphant",
+            "en": "elephant",
+            "ar": "فيل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:so-so",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "โซ่",
+          "ipa": "sôː",
+          "meaning": {
+            "fr": "chaîne",
+            "en": "chain",
+            "ar": "سلسلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:cho-choe",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:yo-ying",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "note": {
+          "fr": "Se prononce n en fin de syllabe.",
+          "en": "Pronounced n at the end of a syllable."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ผู้หญิง",
+          "ipa": "pʰûːjǐŋ",
+          "meaning": {
+            "fr": "femme",
+            "en": "woman",
+            "ar": "امرأة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:do-chada",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:to-patak",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:tho-than",
+      "pronunciation": {
+        "sound": [
+          "tʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:tho-montho",
+      "pronunciation": {
+        "sound": [
+          "tʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:tho-phuthao",
+      "pronunciation": {
+        "sound": [
+          "tʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:no-nen",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:do-dek",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "note": {
+          "fr": "Se prononce t en fin de syllabe.",
+          "en": "Pronounced t at the end of a syllable."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "เด็ก",
+          "ipa": "dèk",
+          "meaning": {
+            "fr": "enfant",
+            "en": "child",
+            "ar": "طفل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:to-tao",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "เต่า",
+          "ipa": "tàw",
+          "meaning": {
+            "fr": "tortue",
+            "en": "turtle",
+            "ar": "سلحفاة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:tho-thung",
+      "pronunciation": {
+        "sound": [
+          "tʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ถุง",
+          "ipa": "tʰǔŋ",
+          "meaning": {
+            "fr": "sac",
+            "en": "bag",
+            "ar": "كيس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:tho-thahan",
+      "pronunciation": {
+        "sound": [
+          "tʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ทหาร",
+          "ipa": "tʰáʔhǎːn",
+          "meaning": {
+            "fr": "soldat",
+            "en": "soldier",
+            "ar": "جندي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:tho-thong",
+      "pronunciation": {
+        "sound": [
+          "tʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ธง",
+          "ipa": "tʰoŋ",
+          "meaning": {
+            "fr": "drapeau",
+            "en": "flag",
+            "ar": "علم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:no-nu",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "หนู",
+          "ipa": "nǔː",
+          "meaning": {
+            "fr": "souris",
+            "en": "mouse",
+            "ar": "فأر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:bo-baimai",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "note": {
+          "fr": "Se prononce p en fin de syllabe.",
+          "en": "Pronounced p at the end of a syllable."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ใบไม้",
+          "ipa": "bajmáːj",
+          "meaning": {
+            "fr": "feuille",
+            "en": "leaf",
+            "ar": "ورقة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:po-pla",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ปลา",
+          "ipa": "plaː",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:pho-phueng",
+      "pronunciation": {
+        "sound": [
+          "pʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ผึ้ง",
+          "ipa": "pʰɯ̂ŋ",
+          "meaning": {
+            "fr": "abeille",
+            "en": "bee",
+            "ar": "نحلة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:fo-fa",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ฝา",
+          "ipa": "fǎː",
+          "meaning": {
+            "fr": "couvercle",
+            "en": "lid",
+            "ar": "غطاء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:pho-phan",
+      "pronunciation": {
+        "sound": [
+          "pʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "พาน",
+          "ipa": "pʰaːn",
+          "meaning": {
+            "fr": "plateau à offrandes",
+            "en": "offering tray",
+            "ar": "صينية القرابين"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:fo-fan",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ฟัน",
+          "ipa": "fan",
+          "meaning": {
+            "fr": "dent",
+            "en": "tooth",
+            "ar": "سن"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:pho-samphao",
+      "pronunciation": {
+        "sound": [
+          "pʰ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "สำเภา",
+          "ipa": "sǎmpʰaw",
+          "meaning": {
+            "fr": "jonque",
+            "en": "junk (ship)",
+            "ar": "سفينة شراعية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:mo-ma",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ม้า",
+          "ipa": "máː",
+          "meaning": {
+            "fr": "cheval",
+            "en": "horse",
+            "ar": "حصان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:yo-yak",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ยักษ์",
+          "ipa": "ják",
+          "meaning": {
+            "fr": "géant",
+            "en": "giant",
+            "ar": "عملاق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:ro-ruea",
+      "pronunciation": {
+        "sound": [
+          "r"
+        ],
+        "note": {
+          "fr": "Souvent prononcé l à l'oral.",
+          "en": "Often pronounced l in casual speech."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "เรือ",
+          "ipa": "rɯa",
+          "meaning": {
+            "fr": "bateau",
+            "en": "boat",
+            "ar": "قارب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:rue",
+      "pronunciation": {
+        "sound": [
+          "r",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:lo-ling",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ลิง",
+          "ipa": "liŋ",
+          "meaning": {
+            "fr": "singe",
+            "en": "monkey",
+            "ar": "قرد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:lue",
+      "pronunciation": {
+        "sound": [
+          "l",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:wo-waen",
+      "pronunciation": {
+        "sound": [
+          "w"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "แหวน",
+          "ipa": "wɛ̌ːn",
+          "meaning": {
+            "fr": "bague",
+            "en": "ring",
+            "ar": "خاتم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:so-sala",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ศาลา",
+          "ipa": "sǎːlaː",
+          "meaning": {
+            "fr": "pavillon",
+            "en": "pavilion",
+            "ar": "جناح"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:so-ruesi",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ฤๅษี",
+          "ipa": "rɯːsǐː",
+          "meaning": {
+            "fr": "ermite",
+            "en": "hermit",
+            "ar": "ناسك"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:so-suea",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "เสือ",
+          "ipa": "sɯ̌a",
+          "meaning": {
+            "fr": "tigre",
+            "en": "tiger",
+            "ar": "نمر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:ho-hip",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "หีบ",
+          "ipa": "hìːp",
+          "meaning": {
+            "fr": "coffre",
+            "en": "chest",
+            "ar": "صندوق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:lo-chula",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "จุฬา",
+          "ipa": "t͡ɕùlaː",
+          "meaning": {
+            "fr": "cerf-volant",
+            "en": "kite",
+            "ar": "طائرة ورقية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:o-ang",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Coup de glotte ; sert aussi de support aux voyelles.",
+          "en": "Glottal stop; also a seat for vowels."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "อ่าง",
+          "ipa": "ʔàːŋ",
+          "meaning": {
+            "fr": "bassine",
+            "en": "basin",
+            "ar": "حوض"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:ho-nokhuk",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "นกฮูก",
+          "ipa": "nókhûːk",
+          "meaning": {
+            "fr": "hibou",
+            "en": "owl",
+            "ar": "بومة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "thai:sara-a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:mai-han-akat",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-aa",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:lakkhangyao",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-am",
+      "pronunciation": {
+        "sound": [
+          "a",
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-ii",
+      "pronunciation": {
+        "sound": [
+          "iː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-ue",
+      "pronunciation": {
+        "sound": [
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-uee",
+      "pronunciation": {
+        "sound": [
+          "ɯː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-uu",
+      "pronunciation": {
+        "sound": [
+          "uː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-e",
+      "pronunciation": {
+        "sound": [
+          "eː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-ae",
+      "pronunciation": {
+        "sound": [
+          "ɛː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-o",
+      "pronunciation": {
+        "sound": [
+          "oː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-ai-maimuan",
+      "pronunciation": {
+        "sound": [
+          "a",
+          "j"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:sara-ai-maimalai",
+      "pronunciation": {
+        "sound": [
+          "a",
+          "j"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:mai-ek",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:mai-tho",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:mai-tri",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:mai-chattawa",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:maitaikhu",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:thanthakhat",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:nikhahit",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:phinthu",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:yamakkan",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:paiyannoi",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "thai:maiyamok",
+      "pronunciation": {
+        "sound": [],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/th.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "ฯ",
+      "ๆ",
+      "๎",
+      "์",
+      "็",
+      "่",
+      "้",
+      "๊",
+      "๋",
+      "ก",
+      "ข",
+      "ฃ",
+      "ค",
+      "ฅ",
+      "ฆ",
+      "ง",
+      "จ",
+      "ฉ",
+      "ช",
+      "ซ",
+      "ฌ",
+      "ญ",
+      "ฎ",
+      "ฏ",
+      "ฐ",
+      "ฑ",
+      "ฒ",
+      "ณ",
+      "ด",
+      "ต",
+      "ถ",
+      "ท",
+      "ธ",
+      "น",
+      "บ",
+      "ป",
+      "ผ",
+      "ฝ",
+      "พ",
+      "ฟ",
+      "ภ",
+      "ม",
+      "ย",
+      "ร",
+      "ฤ",
+      "ล",
+      "ฦ",
+      "ว",
+      "ศ",
+      "ษ",
+      "ส",
+      "ห",
+      "ฬ",
+      "อ",
+      "ฮ",
+      "ํ",
+      "ะ",
+      "ั",
+      "า",
+      "ๅ",
+      "ำ",
+      "ิ",
+      "ี",
+      "ึ",
+      "ื",
+      "ุ",
+      "ู",
+      "เ",
+      "แ",
+      "โ",
+      "ใ",
+      "ไ",
+      "ฺ"
+    ],
+    "auxiliary": [],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/th.xml"
+    }
+  }
+}

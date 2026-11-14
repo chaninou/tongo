@@ -1,0 +1,230 @@
+{
+  "id": "hebr",
+  "cased": false,
+  "groups": [
+    {
+      "id": "letters",
+      "name": {
+        "fr": "Lettres",
+        "en": "Letters",
+        "ar": "الحروف"
+      }
+    },
+    {
+      "id": "final",
+      "name": {
+        "fr": "Formes finales",
+        "en": "Final forms",
+        "ar": "الأشكال النهائية"
+      }
+    }
+  ],
+  "name": {
+    "fr": "Hébreu",
+    "en": "Hebrew",
+    "ar": "العبرية"
+  },
+  "endonym": "אלפבית עברי",
+  "type": "abjad",
+  "direction": "rtl",
+  "intro": {
+    "fr": "Un abjad carré, issu de l'araméen. Les lettres ne se lient pas entre elles, mais כ מ נ פ צ changent de forme en fin de mot.",
+    "en": "A square abjad derived from Aramaic. Letters do not join, but כ מ נ פ צ change shape at the end of a word.",
+    "ar": "أبجد مربع مشتق من الآرامية. لا تتصل الحروف، لكن خمسة منها يتغير شكلها في آخر الكلمة."
+  },
+  "sample": "א ב ש ת",
+  "font": "Noto Sans Hebrew",
+  "graphemes": [
+    {
+      "id": "alef",
+      "char": "א",
+      "kind": "consonant",
+      "latin": "ʾ",
+      "group": "letters"
+    },
+    {
+      "id": "bet",
+      "char": "ב",
+      "kind": "consonant",
+      "latin": "b",
+      "group": "letters"
+    },
+    {
+      "id": "gimel",
+      "char": "ג",
+      "kind": "consonant",
+      "latin": "g",
+      "group": "letters"
+    },
+    {
+      "id": "dalet",
+      "char": "ד",
+      "kind": "consonant",
+      "latin": "d",
+      "group": "letters"
+    },
+    {
+      "id": "he",
+      "char": "ה",
+      "kind": "consonant",
+      "latin": "h",
+      "group": "letters"
+    },
+    {
+      "id": "vav",
+      "char": "ו",
+      "kind": "consonant",
+      "latin": "v",
+      "group": "letters"
+    },
+    {
+      "id": "zayin",
+      "char": "ז",
+      "kind": "consonant",
+      "latin": "z",
+      "group": "letters"
+    },
+    {
+      "id": "het",
+      "char": "ח",
+      "kind": "consonant",
+      "latin": "ḥ",
+      "group": "letters"
+    },
+    {
+      "id": "tet",
+      "char": "ט",
+      "kind": "consonant",
+      "latin": "ṭ",
+      "group": "letters"
+    },
+    {
+      "id": "yod",
+      "char": "י",
+      "kind": "consonant",
+      "latin": "y",
+      "group": "letters"
+    },
+    {
+      "id": "kaf",
+      "char": "כ",
+      "kind": "consonant",
+      "latin": "k",
+      "group": "letters"
+    },
+    {
+      "id": "lamed",
+      "char": "ל",
+      "kind": "consonant",
+      "latin": "l",
+      "group": "letters"
+    },
+    {
+      "id": "mem",
+      "char": "מ",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "letters"
+    },
+    {
+      "id": "nun",
+      "char": "נ",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "letters"
+    },
+    {
+      "id": "samekh",
+      "char": "ס",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "letters"
+    },
+    {
+      "id": "ayin",
+      "char": "ע",
+      "kind": "consonant",
+      "latin": "ʿ",
+      "group": "letters"
+    },
+    {
+      "id": "pe",
+      "char": "פ",
+      "kind": "consonant",
+      "latin": "p",
+      "group": "letters"
+    },
+    {
+      "id": "tsadi",
+      "char": "צ",
+      "kind": "consonant",
+      "latin": "ts",
+      "group": "letters"
+    },
+    {
+      "id": "qof",
+      "char": "ק",
+      "kind": "consonant",
+      "latin": "q",
+      "group": "letters"
+    },
+    {
+      "id": "resh",
+      "char": "ר",
+      "kind": "consonant",
+      "latin": "r",
+      "group": "letters"
+    },
+    {
+      "id": "shin",
+      "char": "ש",
+      "kind": "consonant",
+      "latin": "sh",
+      "group": "letters"
+    },
+    {
+      "id": "tav",
+      "char": "ת",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "letters"
+    },
+    {
+      "id": "kaf-final",
+      "char": "ך",
+      "kind": "consonant",
+      "latin": "kh",
+      "group": "final"
+    },
+    {
+      "id": "mem-final",
+      "char": "ם",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "final"
+    },
+    {
+      "id": "nun-final",
+      "char": "ן",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "final"
+    },
+    {
+      "id": "pe-final",
+      "char": "ף",
+      "kind": "consonant",
+      "latin": "f",
+      "group": "final"
+    },
+    {
+      "id": "tsadi-final",
+      "char": "ץ",
+      "kind": "consonant",
+      "latin": "ts",
+      "group": "final"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

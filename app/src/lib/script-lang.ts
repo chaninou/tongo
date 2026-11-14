@@ -8,3 +8,9 @@ const TAGS: Record<string, string> = {
 };
 export const scriptLang = (scriptId: string) => TAGS[scriptId] ?? `und-${scriptId[0]!.toUpperCase()}${scriptId.slice(1)}`;
 export const scriptDir = (scriptId: string) => (scriptId === "arab" || scriptId === "hebr" ? "rtl" : "ltr");
+
+/**
+ * Forme affichable d'un caractère seul : une marque combinante (ton, signe vocalique, virama)
+ * est posée sur un cercle pointillé ◌, comme dans les tableaux Unicode.
+ */
+export const glyph = (char: string) => (/^\p{M}/u.test(char) ? `◌${char}` : char);

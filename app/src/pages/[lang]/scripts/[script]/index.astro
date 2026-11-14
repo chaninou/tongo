@@ -4,7 +4,7 @@ import Base from "../../../../layouts/Base.astro";
 import Confidence from "../../../../components/Confidence.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../../i18n/ui";
 import { content, index } from "../../../../lib/content";
-import { scriptDir, scriptLang } from "../../../../lib/script-lang";
+import { glyph, scriptDir, scriptLang } from "../../../../lib/script-lang";
 
 export async function getStaticPaths() {
   const c = await content();
@@ -39,8 +39,8 @@ const groups = script.groups.length
       {g.name && <h3>{g.name}</h3>}
       <div class="chars" dir={scriptDir(script.id)}>
         {g.items.map((x) => (
-          <a class="char-tile" href={`${base}/${locale}/scripts/${script.id}/${x.id}/`} aria-label={`${x.char}${x.latin ? ` (${x.latin})` : ""}`}>
-            <span class="g" lang={scriptLang(script.id)}>{script.cased && x.upper ? `${x.upper}${x.char}` : x.char}</span>
+          <a class="char-tile" href={`${base}/${locale}/scripts/${script.id}/${x.id}/`} aria-label={`${glyph(x.char)}${x.latin ? ` (${x.latin})` : ""}`}>
+            <span class="g" lang={scriptLang(script.id)}>{script.cased && x.upper ? `${x.upper}${x.char}` : glyph(x.char)}</span>
             <span class="l" dir="ltr">{x.latin ?? x.name ?? ""}</span>
           </a>
         ))}

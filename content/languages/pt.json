@@ -1,0 +1,1035 @@
+{
+  "id": "pt",
+  "iso639_3": "por",
+  "name": {
+    "fr": "Portugais",
+    "en": "Portuguese",
+    "ar": "البرتغالية"
+  },
+  "endonym": "português",
+  "scripts": [
+    "latn"
+  ],
+  "variants": [
+    {
+      "id": "pt-BR",
+      "region": "BR",
+      "name": {
+        "fr": "Brésil",
+        "en": "Brazil",
+        "ar": "البرازيل"
+      },
+      "default": true
+    },
+    {
+      "id": "pt-PT",
+      "region": "PT",
+      "name": {
+        "fr": "Portugal",
+        "en": "Portugal",
+        "ar": "البرتغال"
+      },
+      "default": false
+    }
+  ],
+  "speakersM": 260,
+  "intro": {
+    "fr": "Le portugais s'écrit en alphabet latin avec des accents et le tilde, qui marque les voyelles nasales (ã, õ). Le Brésil et le Portugal prononcent assez différemment, surtout le r, le s final et les voyelles non accentuées.",
+    "en": "Portuguese uses the Latin alphabet with accents and the tilde, which marks nasal vowels (ã, õ). Brazil and Portugal sound quite different, especially r, final s and unstressed vowels.",
+    "ar": "تُكتب البرتغالية بالأبجدية اللاتينية مع علامات منها التيلدا التي تدل على الصوائت الأنفية. يختلف النطق بين البرازيل والبرتغال خاصة في r وs الأخيرة."
+  },
+  "letters": [
+    {
+      "grapheme": "latn:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "casa",
+          "ipa": "kaza",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:b",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "boca",
+          "ipa": "boka",
+          "meaning": {
+            "fr": "bouche",
+            "en": "mouth",
+            "ar": "فم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "note": {
+          "fr": "Se prononce s devant e et i.",
+          "en": "Pronounced s before e and i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "casa",
+          "ipa": "kaza",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:d",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "d͡ʒ"
+            ],
+            "context": {
+              "fr": "devant i au Brésil",
+              "en": "before i in Brazil"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "dia",
+          "ipa": "d͡ʒia",
+          "meaning": {
+            "fr": "jour",
+            "en": "day",
+            "ar": "يوم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "note": {
+          "fr": "Ouvert (è) ou fermé (é) selon le mot.",
+          "en": "Open or closed depending on the word."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mesa",
+          "ipa": "meza",
+          "meaning": {
+            "fr": "table",
+            "en": "table",
+            "ar": "طاولة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:f",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "faca",
+          "ipa": "faka",
+          "meaning": {
+            "fr": "couteau",
+            "en": "knife",
+            "ar": "سكين"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:g",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "note": {
+          "fr": "Se prononce j devant e et i.",
+          "en": "Pronounced like s in measure before e and i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "gato",
+          "ipa": "ɡatu",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:h",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Toujours muet.",
+          "en": "Always silent."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "homem",
+          "ipa": "ɔmẽj",
+          "meaning": {
+            "fr": "homme",
+            "en": "man",
+            "ar": "رجل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ilha",
+          "ipa": "iʎa",
+          "meaning": {
+            "fr": "île",
+            "en": "island",
+            "ar": "جزيرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:j",
+      "pronunciation": {
+        "sound": [
+          "ʒ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "janela",
+          "ipa": "ʒanɛla",
+          "meaning": {
+            "fr": "fenêtre",
+            "en": "window",
+            "ar": "نافذة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:k",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:l",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "w"
+            ],
+            "context": {
+              "fr": "en fin de syllabe au Brésil",
+              "en": "syllable-final in Brazil"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "lua",
+          "ipa": "lua",
+          "meaning": {
+            "fr": "lune",
+            "en": "moon",
+            "ar": "قمر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:m",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mão",
+          "ipa": "mɐ̃w",
+          "meaning": {
+            "fr": "main",
+            "en": "hand",
+            "ar": "يد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "noite",
+          "ipa": "nojt͡ʃi",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "note": {
+          "fr": "Se prononce souvent ou en fin de mot.",
+          "en": "Often sounds like oo at the end of a word."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ovo",
+          "ipa": "ovu",
+          "meaning": {
+            "fr": "œuf",
+            "en": "egg",
+            "ar": "بيضة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:p",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "pão",
+          "ipa": "pɐ̃w",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:q",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "queijo",
+          "ipa": "kejʒu",
+          "meaning": {
+            "fr": "fromage",
+            "en": "cheese",
+            "ar": "جبن"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:r",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "variants": {
+          "pt-PT": [
+            "ʁ"
+          ]
+        },
+        "alternates": [
+          {
+            "sound": [
+              "ɾ"
+            ],
+            "context": {
+              "fr": "entre deux voyelles ou après une consonne",
+              "en": "between vowels or after a consonant"
+            }
+          }
+        ],
+        "note": {
+          "fr": "Au Brésil, un r en début de mot sonne comme un h aspiré.",
+          "en": "In Brazil, a word-initial r sounds like an h."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "rua",
+          "ipa": "hua",
+          "meaning": {
+            "fr": "rue",
+            "en": "street",
+            "ar": "شارع"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:s",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "z"
+            ],
+            "context": {
+              "fr": "entre deux voyelles",
+              "en": "between vowels"
+            }
+          },
+          {
+            "sound": [
+              "ʃ"
+            ],
+            "context": {
+              "fr": "en fin de syllabe au Portugal",
+              "en": "syllable-final in Portugal"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "sol",
+          "ipa": "sɔw",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:t",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "t͡ʃ"
+            ],
+            "context": {
+              "fr": "devant i au Brésil",
+              "en": "before i in Brazil"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "tia",
+          "ipa": "t͡ʃia",
+          "meaning": {
+            "fr": "tante",
+            "en": "aunt",
+            "ar": "عمة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "uva",
+          "ipa": "uva",
+          "meaning": {
+            "fr": "raisin",
+            "en": "grape",
+            "ar": "عنب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:v",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "vaca",
+          "ipa": "vaka",
+          "meaning": {
+            "fr": "vache",
+            "en": "cow",
+            "ar": "بقرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:w",
+      "pronunciation": {
+        "sound": [
+          "w"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:x",
+      "pronunciation": {
+        "sound": [
+          "ʃ"
+        ],
+        "note": {
+          "fr": "Peut aussi se lire ks, z ou s.",
+          "en": "Can also be read ks, z or s."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "xícara",
+          "ipa": "ʃikaɾa",
+          "meaning": {
+            "fr": "tasse",
+            "en": "cup",
+            "ar": "فنجان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:y",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:z",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "zero",
+          "ipa": "zɛɾu",
+          "meaning": {
+            "fr": "zéro",
+            "en": "zero",
+            "ar": "صفر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:a-acute",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "água",
+          "ipa": "aɡwa",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:a-grave",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:a-circumflex",
+      "pronunciation": {
+        "sound": [
+          "ɐ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "câmara",
+          "ipa": "kɐmaɾa",
+          "meaning": {
+            "fr": "chambre",
+            "en": "chamber",
+            "ar": "غرفة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:a-tilde",
+      "pronunciation": {
+        "sound": [
+          "ɐ̃"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "maçã",
+          "ipa": "masɐ̃",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c-cedilla",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "coração",
+          "ipa": "koɾasɐ̃w",
+          "meaning": {
+            "fr": "cœur",
+            "en": "heart",
+            "ar": "قلب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e-acute",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "café",
+          "ipa": "kafɛ",
+          "meaning": {
+            "fr": "café",
+            "en": "coffee",
+            "ar": "قهوة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e-circumflex",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "você",
+          "ipa": "vose",
+          "meaning": {
+            "fr": "vous, toi",
+            "en": "you",
+            "ar": "أنت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i-acute",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:o-acute",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "avó",
+          "ipa": "avɔ",
+          "meaning": {
+            "fr": "grand-mère",
+            "en": "grandmother",
+            "ar": "جدة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o-grave",
+      "pronunciation": {
+        "sound": [
+          "ɔ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "latn:o-circumflex",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "avô",
+          "ipa": "avo",
+          "meaning": {
+            "fr": "grand-père",
+            "en": "grandfather",
+            "ar": "جد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o-tilde",
+      "pronunciation": {
+        "sound": [
+          "õ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "limões",
+          "ipa": "limõjs",
+          "meaning": {
+            "fr": "citrons",
+            "en": "lemons",
+            "ar": "ليمون"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u-acute",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    }
+  ],
+  "confidence": "draft",
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/pt.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "a",
+      "á",
+      "à",
+      "â",
+      "ã",
+      "b",
+      "c",
+      "ç",
+      "d",
+      "e",
+      "é",
+      "ê",
+      "f",
+      "g",
+      "h",
+      "i",
+      "í",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "ó",
+      "ò",
+      "ô",
+      "õ",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "ú",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z"
+    ],
+    "auxiliary": [
+      "ª",
+      "ă",
+      "å",
+      "ä",
+      "ā",
+      "æ",
+      "è",
+      "ĕ",
+      "ë",
+      "ē",
+      "ì",
+      "ĭ",
+      "î",
+      "ï",
+      "ī",
+      "ñ",
+      "º",
+      "ŏ",
+      "ö",
+      "ø",
+      "ō",
+      "œ",
+      "ù",
+      "ŭ",
+      "û",
+      "ü",
+      "ū",
+      "ÿ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/pt.xml"
+    }
+  }
+}

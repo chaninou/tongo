@@ -922,5 +922,599 @@
     },
     "confidence": "draft",
     "sources": []
+  },
+  {
+    "ipa": "ɐ",
+    "id": "turned-a",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle centrale pré-ouverte",
+      "en": "near-open central vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɐ̃",
+    "id": "turned-a-nasal",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle nasale (ã portugais)",
+      "en": "nasal near-open central vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "õ",
+    "id": "o-nasal",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle nasale (õ portugais)",
+      "en": "nasal close-mid back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɓ",
+    "id": "b-implosive",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive bilabiale implosive",
+      "en": "bilabial implosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɗ",
+    "id": "d-implosive",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive alvéolaire implosive",
+      "en": "alveolar implosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɤ",
+    "id": "rams-horn",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-fermée postérieure non arrondie",
+      "en": "close-mid back unrounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "˨˩",
+    "id": "tone-low-falling",
+    "kind": "tone",
+    "name": {
+      "fr": "ton bas descendant",
+      "en": "low falling tone"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "˧˥",
+    "id": "tone-rising",
+    "kind": "tone",
+    "name": {
+      "fr": "ton montant",
+      "en": "rising tone"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "˧˩˧",
+    "id": "tone-dipping",
+    "kind": "tone",
+    "name": {
+      "fr": "ton descendant puis montant",
+      "en": "dipping tone"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "˧ˀ˥",
+    "id": "tone-broken",
+    "kind": "tone",
+    "name": {
+      "fr": "ton montant brisé (coup de glotte)",
+      "en": "broken rising tone"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "˨˩ˀ",
+    "id": "tone-heavy",
+    "kind": "tone",
+    "name": {
+      "fr": "ton bas lourd (coup de glotte)",
+      "en": "heavy low tone"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɠ",
+    "id": "g-implosive",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive vélaire implosive",
+      "en": "velar implosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʄ",
+    "id": "j-implosive",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive palatale implosive",
+      "en": "palatal implosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "tʰ",
+    "id": "t-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "t aspiré",
+      "en": "aspirated t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "pʰ",
+    "id": "p-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "p aspiré",
+      "en": "aspirated p"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "kʰ",
+    "id": "k-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "k aspiré",
+      "en": "aspirated k"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "pʼ",
+    "id": "p-ejective",
+    "kind": "consonant",
+    "name": {
+      "fr": "p éjectif",
+      "en": "ejective p"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "tʼ",
+    "id": "t-ejective",
+    "kind": "consonant",
+    "name": {
+      "fr": "t éjectif",
+      "en": "ejective t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "kʼ",
+    "id": "k-ejective",
+    "kind": "consonant",
+    "name": {
+      "fr": "k éjectif",
+      "en": "ejective k"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "qʼ",
+    "id": "q-ejective",
+    "kind": "consonant",
+    "name": {
+      "fr": "q éjectif (au fond de la gorge)",
+      "en": "ejective q"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡sʰ",
+    "id": "ts-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "ts aspiré",
+      "en": "aspirated ts"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡ʃʰ",
+    "id": "tsh-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "tch aspiré",
+      "en": "aspirated ch"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡sʼ",
+    "id": "ts-ejective",
+    "kind": "consonant",
+    "name": {
+      "fr": "ts éjectif",
+      "en": "ejective ts"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡ʃʼ",
+    "id": "tsh-ejective",
+    "kind": "consonant",
+    "name": {
+      "fr": "tch éjectif",
+      "en": "ejective ch"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɢ",
+    "id": "g-uvular",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive uvulaire sonore",
+      "en": "voiced uvular plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɡʱ",
+    "id": "g-breathy",
+    "kind": "consonant",
+    "name": {
+      "fr": "g soufflé",
+      "en": "breathy-voiced g"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "d͡ʒʱ",
+    "id": "dzh-breathy",
+    "kind": "consonant",
+    "name": {
+      "fr": "dj soufflé",
+      "en": "breathy-voiced j"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʈ",
+    "id": "t-retroflex",
+    "kind": "consonant",
+    "name": {
+      "fr": "t rétroflexe (langue recourbée)",
+      "en": "retroflex t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʈʰ",
+    "id": "t-retroflex-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "t rétroflexe aspiré",
+      "en": "aspirated retroflex t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɖ",
+    "id": "d-retroflex",
+    "kind": "consonant",
+    "name": {
+      "fr": "d rétroflexe",
+      "en": "retroflex d"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɖʱ",
+    "id": "d-retroflex-breathy",
+    "kind": "consonant",
+    "name": {
+      "fr": "d rétroflexe soufflé",
+      "en": "breathy-voiced retroflex d"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɳ",
+    "id": "n-retroflex",
+    "kind": "consonant",
+    "name": {
+      "fr": "n rétroflexe",
+      "en": "retroflex n"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɭ",
+    "id": "l-retroflex",
+    "kind": "consonant",
+    "name": {
+      "fr": "l rétroflexe",
+      "en": "retroflex l"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɻ",
+    "id": "r-retroflex",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante rétroflexe (zh tamoul)",
+      "en": "retroflex approximant"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t̪",
+    "id": "t-dental",
+    "kind": "consonant",
+    "name": {
+      "fr": "t dental (langue contre les dents)",
+      "en": "dental t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t̪ʰ",
+    "id": "t-dental-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "t dental aspiré",
+      "en": "aspirated dental t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "d̪",
+    "id": "d-dental",
+    "kind": "consonant",
+    "name": {
+      "fr": "d dental",
+      "en": "dental d"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "d̪ʱ",
+    "id": "d-dental-breathy",
+    "kind": "consonant",
+    "name": {
+      "fr": "d dental soufflé",
+      "en": "breathy-voiced dental d"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "bʱ",
+    "id": "b-breathy",
+    "kind": "consonant",
+    "name": {
+      "fr": "b soufflé",
+      "en": "breathy-voiced b"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʋ",
+    "id": "v-approximant",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante labiodentale (entre v et w)",
+      "en": "labiodental approximant"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɦ",
+    "id": "h-voiced",
+    "kind": "consonant",
+    "name": {
+      "fr": "h sonore",
+      "en": "voiced h"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "eː",
+    "id": "e-long",
+    "kind": "vowel",
+    "name": {
+      "fr": "é long",
+      "en": "long e"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "oː",
+    "id": "o-long",
+    "kind": "vowel",
+    "name": {
+      "fr": "o long",
+      "en": "long o"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "oi̯",
+    "id": "oi-diphthong",
+    "kind": "diphthong",
+    "name": {
+      "fr": "diphtongue oï",
+      "en": "diphthong oi"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ou̯",
+    "id": "ou-diphthong",
+    "kind": "diphthong",
+    "name": {
+      "fr": "diphtongue o-ou",
+      "en": "diphthong ou"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "au̯",
+    "id": "au-diphthong",
+    "kind": "diphthong",
+    "name": {
+      "fr": "diphtongue a-ou",
+      "en": "diphthong au"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡ɕʰ",
+    "id": "tc-aspirated",
+    "kind": "consonant",
+    "name": {
+      "fr": "tch aspiré (palatal)",
+      "en": "aspirated alveolo-palatal affricate"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɯː",
+    "id": "u-unrounded-long",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle fermée postérieure non arrondie longue",
+      "en": "long close back unrounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɛː",
+    "id": "epsilon-long",
+    "kind": "vowel",
+    "name": {
+      "fr": "è long",
+      "en": "long open-mid front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "k͈",
+    "id": "k-tense",
+    "kind": "consonant",
+    "name": {
+      "fr": "k tendu",
+      "en": "tense k"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͈",
+    "id": "t-tense",
+    "kind": "consonant",
+    "name": {
+      "fr": "t tendu",
+      "en": "tense t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "p͈",
+    "id": "p-tense",
+    "kind": "consonant",
+    "name": {
+      "fr": "p tendu",
+      "en": "tense p"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "s͈",
+    "id": "s-tense",
+    "kind": "consonant",
+    "name": {
+      "fr": "s tendu",
+      "en": "tense s"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡ɕ͈",
+    "id": "tc-tense",
+    "kind": "consonant",
+    "name": {
+      "fr": "tch tendu",
+      "en": "tense ch"
+    },
+    "confidence": "draft",
+    "sources": []
   }
 ]

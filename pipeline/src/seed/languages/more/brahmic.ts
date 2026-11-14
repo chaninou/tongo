@@ -1,0 +1,30 @@
+import type { PhonemeRow } from "../../table.ts";
+
+/** Phonèmes partagés par les langues indiennes (hindi, bengali, tamoul). */
+export const INDIC_PHONEMES: PhonemeRow[] = [
+  ["ɡʱ", "g-breathy", "consonant", "g soufflé", "breathy-voiced g"],
+  ["d͡ʒʱ", "dzh-breathy", "consonant", "dj soufflé", "breathy-voiced j"],
+  ["ʈ", "t-retroflex", "consonant", "t rétroflexe (langue recourbée)", "retroflex t"],
+  ["ʈʰ", "t-retroflex-aspirated", "consonant", "t rétroflexe aspiré", "aspirated retroflex t"],
+  ["ɖ", "d-retroflex", "consonant", "d rétroflexe", "retroflex d"],
+  ["ɖʱ", "d-retroflex-breathy", "consonant", "d rétroflexe soufflé", "breathy-voiced retroflex d"],
+  ["ɳ", "n-retroflex", "consonant", "n rétroflexe", "retroflex n"],
+  ["ɭ", "l-retroflex", "consonant", "l rétroflexe", "retroflex l"],
+  ["ɻ", "r-retroflex", "consonant", "spirante rétroflexe (zh tamoul)", "retroflex approximant"],
+  ["t̪", "t-dental", "consonant", "t dental (langue contre les dents)", "dental t"],
+  ["t̪ʰ", "t-dental-aspirated", "consonant", "t dental aspiré", "aspirated dental t"],
+  ["d̪", "d-dental", "consonant", "d dental", "dental d"],
+  ["d̪ʱ", "d-dental-breathy", "consonant", "d dental soufflé", "breathy-voiced dental d"],
+  ["bʱ", "b-breathy", "consonant", "b soufflé", "breathy-voiced b"],
+  ["ʋ", "v-approximant", "consonant", "spirante labiodentale (entre v et w)", "labiodental approximant"],
+  ["ɦ", "h-voiced", "consonant", "h sonore", "voiced h"],
+  ["tʰ", "t-aspirated", "consonant", "t aspiré", "aspirated t"],
+  ["pʰ", "p-aspirated", "consonant", "p aspiré", "aspirated p"],
+  ["kʰ", "k-aspirated", "consonant", "k aspiré", "aspirated k"],
+  ["t͡ʃʰ", "tsh-aspirated", "consonant", "tch aspiré", "aspirated ch"],
+  ["eː", "e-long", "vowel", "é long", "long e"],
+  ["oː", "o-long", "vowel", "o long", "long o"],
+  ["oi̯", "oi-diphthong", "diphthong", "diphtongue oï", "diphthong oi"],
+  ["ou̯", "ou-diphthong", "diphthong", "diphtongue o-ou", "diphthong ou"],
+  ["au̯", "au-diphthong", "diphthong", "diphtongue a-ou", "diphthong au"],
+];

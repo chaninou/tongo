@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { loadContent } from "../src/content.ts";
+import { coveredIn } from "../src/coverage.ts";
 
 describe("contenu publié", () => {
   it("est valide (schéma et références croisées)", async () => {
@@ -29,8 +30,8 @@ describe("couverture CLDR (TS-004)", () => {
     const chars = new Map(content.scripts.flatMap((s) => s.graphemes.map((g) => [`${s.id}:${g.id}`, g.char] as const)));
     for (const l of content.languages) {
       if (!l.characters) continue;
-      const described = new Set(l.letters.map((e) => chars.get(e.grapheme)));
-      expect(l.characters.main.filter((c) => !described.has(c)), l.id).toEqual([]);
+      const described = new Set(l.letters.map((e) => chars.get(e.grapheme)!));
+      expect(l.characters.main.filter((c) => !coveredIn(c, described, l.id)), l.id).toEqual([]);
     }
   });
 });

@@ -43,6 +43,7 @@ const latin: Script = {
   groups: [
     { id: "base", name: { fr: "Lettres de base", en: "Basic letters", ar: "الحروف الأساسية" } },
     { id: "accents", name: { fr: "Lettres accentuées", en: "Accented letters", ar: "الحروف ذات العلامات" } },
+    { id: "tones", name: { fr: "Marques de ton (vietnamien)", en: "Tone marks (Vietnamese)", ar: "علامات النغمة (الفيتنامية)" } },
   ],
   graphemes: [
     ...latinBase,
