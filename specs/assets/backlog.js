@@ -317,7 +317,8 @@ window.TONGO = {
       want: "fixer le niveau de transcription (phonémique /…/) et une variante de référence par langue",
       so: "que les ponts entre langues reposent sur des données cohérentes",
       criteria: [
-        ["la convention est rédigée", "on transcrit un graphème", "la transcription est phonémique ; chaque langue a une variante par défaut (la plus parlée) et éventuellement des variantes par pays, chacune identifiée par un code BCP 47 (pt-BR, pt-PT…) et documentée"]
+        ["la convention est rédigée", "on transcrit un graphème", "la transcription est phonémique ; chaque langue a une variante par défaut (la plus parlée) et éventuellement des variantes par pays, chacune identifiée par un code BCP 47 (pt-BR, pt-PT…) et documentée"],
+        ["la V1 est livrée", "on liste les variantes", "elles correspondent à D23 : en-US/en-GB, pt-BR/pt-PT, es-ES/es-MX, fr-FR/fr-CA, arabe standard moderne seul, une variante unique pour les autres langues"]
       ]
     },
     {
