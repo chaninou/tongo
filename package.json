@@ -1,0 +1,22 @@
+{
+  "name": "tongo",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "model",
+    "pipeline",
+    "app"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w app",
+    "build": "npm run validate && npm run build -w app",
+    "validate": "npm run validate -w pipeline",
+    "test": "vitest run",
+    "check": "npm run check -w app",
+    "seed": "npm run seed -w pipeline"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "vitest": "5.0.5"
+  }
+}
