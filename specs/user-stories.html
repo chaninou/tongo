@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tongo · User Stories</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">Tong<span>o</span></a>
+  <nav class="main">
+    <a href="index.html">Suivi</a>
+    <a href="besoin.html">Besoin</a>
+    <a href="personas.html">Personas</a>
+    <a href="user-stories.html" aria-current="page">User Stories</a>
+    <a href="technical-stories.html">Technical Stories</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>User Stories</h1>
+  <p class="lede">Les besoins des visiteurs de Tongo, formulés du point de vue d'un <a href="personas.html">persona</a>. Chaque story a des critères d'acceptation <b>Étant donné / Quand / Alors</b>, une priorité MoSCoW, une estimation en points (suite de Fibonacci) et une Epic.</p>
+  <p class="meta">Mise à jour : <span data-updated></span></p>
+  <div id="list"></div>
+</main>
+
+<script src="assets/backlog.js"></script>
+<script src="assets/app.js"></script>
+<script>TongoSpecs.renderStories(document.getElementById("list"), "US");</script>
+</body>
+</html>

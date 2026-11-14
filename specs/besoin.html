@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tongo · Besoin fonctionnel</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .toc { columns: 2 220px; padding-left: 18px; }
+  .diagram svg .ah { fill: var(--muted); }
+  ul.tight li { margin-bottom: 4px; }
+  .pipeline { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0; }
+  .pipeline .step { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; flex: 1 1 150px; }
+  .pipeline .step b { display: block; font-size: 13px; color: var(--sea); }
+  .pipeline .arrow { color: var(--muted); font-size: 20px; }
+  .glyphs { font-size: 20px; letter-spacing: 4px; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">Tong<span>o</span></a>
+  <nav class="main">
+    <a href="index.html">Suivi</a>
+    <a href="besoin.html" aria-current="page">Besoin</a>
+    <a href="personas.html">Personas</a>
+    <a href="user-stories.html">User Stories</a>
+    <a href="technical-stories.html">Technical Stories</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Besoin fonctionnel V1</h1>
+  <p class="lede">Ce document de cadrage rassemble les décisions prises pendant la phase de brainstorming. Le détail des besoins se trouve dans les <a href="user-stories.html">User Stories</a> et les <a href="technical-stories.html">Technical Stories</a>.</p>
+  <p class="meta">Version 0.2 · 2026-11-14 · statut : brouillon validé en atelier</p>
+
+  <ol class="toc">
+    <li><a href="#vision">Vision et nom</a></li>
+    <li><a href="#origine">Origine du projet</a></li>
+    <li><a href="#public">Public et plateformes</a></li>
+    <li><a href="#perimetre">Périmètre V1 et hors périmètre</a></li>
+    <li><a href="#langues">Les 20 langues de lancement</a></li>
+    <li><a href="#modele">Modèle conceptuel</a></li>
+    <li><a href="#ipa">L'IPA comme pivot</a></li>
+    <li><a href="#parcours">Parcours et écrans</a></li>
+    <li><a href="#contenu">Production du contenu</a></li>
+    <li><a href="#audio">Audio</a></li>
+    <li><a href="#nfr">Exigences non fonctionnelles</a></li>
+    <li><a href="#archi">Architecture technique</a></li>
+    <li><a href="#decisions">Journal des décisions</a></li>
+    <li><a href="#questions">Questions ouvertes</a></li>
+  </ol>
+
+  <h2 id="vision">1. Vision et nom</h2>
+  <p><b>Tongo est un atlas des écritures du monde.</b> On y découvre comment s'écrivent et se prononcent les caractères des langues vivantes, dans une ambiance de voyage.</p>
+  <p><b>Le nom :</b> « Tongo » évoque <i>tongue</i> (la langue, en anglais). Il est facile à prononcer dans toutes les langues et donne une impression de voyage. Le voyage reste une <b>ambiance visuelle</b>, pas une mécanique de jeu.</p>
+  <p><b>La promesse V1 :</b> en quelques minutes, <b>reconnaître</b> un caractère et savoir le <b>prononcer</b>.</p>
+
+  <h2 id="origine">2. Origine du projet</h2>
+  <p>Tongo reprend l'idée du prototype <code>Tongo_old</code>, une API Flask qui donnait, pour une lettre latine (a, b), son équivalent dans 7 langues avec une prononciation par synthèse vocale (gTTS). Les enseignements tirés de ce prototype :</p>
+  <ul class="tight">
+    <li><b>Le pivot par lettre latine est abandonné.</b> Il ne fonctionne pas pour les écritures non latines (ア n'est pas un « A », le hangeul sépare consonnes et voyelles). Il est remplacé par l'<a href="#ipa">IPA</a>.</li>
+    <li><b>Les données codées en dur sont abandonnées</b> au profit d'un contenu statique produit par une chaîne d'outils.</li>
+    <li><b>La synthèse vocale gTTS ne suffit pas pour les caractères isolés</b> : voir la section <a href="#audio">Audio</a>.</li>
+    <li>Le prototype de RAG coranique présent dans l'historique est un projet séparé, hors périmètre.</li>
+  </ul>
+
+  <h2 id="public">3. Public et plateformes</h2>
+  <ul class="tight">
+    <li><b>Public :</b> tout le monde, enfants compris. Voir les <a href="personas.html">personas</a>.</li>
+    <li><b>Plateformes :</b> web et mobile. L'architecture (PWA, natif ou hybride) est à étudier, voir <a href="technical-stories.html#TS-014">TS-014</a>.</li>
+    <li><b>Aucun compte :</b> les préférences (langue d'interface) sont stockées uniquement sur l'appareil.</li>
+    <li><b>Interface multilingue :</b> l'utilisateur choisit sa langue par défaut, qui sert aussi de langue de référence pour les comparaisons de sons.</li>
+  </ul>
+
+  <h2 id="perimetre">4. Périmètre V1 et hors périmètre</h2>
+  <div class="cols2">
+    <div class="card"><h3>Dans la V1</h3><ul class="tight">
+      <li>Alphabets et écritures, avec 1 à 3 mots d'exemple par caractère</li>
+      <li>Objectif : reconnaître et prononcer</li>
+      <li>Consultation uniquement (atlas)</li>
+      <li>20 langues vérifiées, 15 écritures</li>
+      <li>Japonais : hiragana et katakana</li>
+      <li>Arabe et persan : les 4 formes contextuelles</li>
+      <li>Navigation par langue, par écriture et par son</li>
+      <li>Interface multilingue</li>
+    </ul></div>
+    <div class="card"><h3>Hors V1</h3><ul class="tight">
+      <li>Phrases de survie, vocabulaire, grammaire</li>
+      <li>Tracé et ordre des traits</li>
+      <li>Exercices, quiz, répétition espacée, progression</li>
+      <li>Comptes utilisateurs</li>
+      <li>Espace de contribution bénévole <span class="badge W">V2</span></li>
+      <li>IA dans l'appli <span class="badge W">V2+</span></li>
+      <li>Kanji, hanzi et écritures logographiques <span class="badge W">V2, à décider</span></li>
+      <li>Thème du voyage sous forme de jeu (passeport, tampons)</li>
+    </ul></div>
+  </div>
+
+  <h2 id="langues">5. Les 20 langues de lancement</h2>
+  <p>Le modèle est conçu pour <b>toutes les langues vivantes</b>. La sélection de lancement vise à couvrir les <b>5 types d'écriture</b> avec des langues très parlées.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Écriture</th><th>Type</th><th>Langues</th><th>Aperçu</th></tr></thead>
+    <tbody>
+      <tr><td>Latin</td><td>alphabet</td><td>français, anglais, espagnol, portugais, allemand, turc, vietnamien, swahili</td><td class="glyphs" lang="vi">a ç ñ ş ơ</td></tr>
+      <tr><td>Cyrillique</td><td>alphabet</td><td>russe</td><td class="glyphs" lang="ru">а б ж ы</td></tr>
+      <tr><td>Grec</td><td>alphabet</td><td>grec</td><td class="glyphs" lang="el">α β γ ω</td></tr>
+      <tr><td>Géorgien</td><td>alphabet</td><td>géorgien</td><td class="glyphs" lang="ka">ა ბ გ</td></tr>
+      <tr><td>Arabe</td><td>abjad</td><td>arabe standard, persan</td><td class="glyphs" lang="ar" dir="rtl">ا ب ش پ</td></tr>
+      <tr><td>Hébreu</td><td>abjad</td><td>hébreu</td><td class="glyphs" lang="he" dir="rtl">א ב ש</td></tr>
+      <tr><td>Devanagari</td><td>abugida</td><td>hindi</td><td class="glyphs" lang="hi">क कि की</td></tr>
+      <tr><td>Bengali</td><td>abugida</td><td>bengali</td><td class="glyphs" lang="bn">ক খ গ</td></tr>
+      <tr><td>Tamoul</td><td>abugida</td><td>tamoul</td><td class="glyphs" lang="ta">க ங ச</td></tr>
+      <tr><td>Thaï</td><td>abugida (tonal)</td><td>thaï</td><td class="glyphs" lang="th">ก ข ค</td></tr>
+      <tr><td>Hangeul</td><td>alphabet à traits</td><td>coréen</td><td class="glyphs" lang="ko">ㄱ ㅏ 가</td></tr>
+      <tr><td>Hiragana / Katakana</td><td>syllabaire</td><td>japonais</td><td class="glyphs" lang="ja">か カ し シ</td></tr>
+    </tbody>
+  </table></div>
+  <p class="meta">Les cinq types d'écriture : <b>alphabet</b> (consonnes et voyelles sont des lettres) · <b>abjad</b> (on écrit surtout les consonnes) · <b>abugida</b> (une consonne porte une voyelle, modifiée par des signes) · <b>syllabaire</b> (un signe correspond à une syllabe) · <b>alphabet à traits</b> (des lettres assemblées en blocs syllabiques). L'hiragana et le katakana comptent comme deux écritures, ce qui porte le total à 15.</p>
+
+  <h2 id="modele">6. Modèle conceptuel</h2>
+  <p>La prononciation dépend du <b>couple langue + graphème</b>, pas de l'écriture seule : <code>j</code> se prononce /ʒ/ en français, /dʒ/ en anglais et /x/ en espagnol.</p>
+  <div class="diagram">
+    <svg viewBox="0 0 780 270" width="780" role="img" aria-label="Modèle conceptuel : Langue utilise Écriture, Écriture contient Graphème, Prononciation relie Langue et Graphème et se réalise en Phonème IPA, Mot d'exemple illustre une prononciation">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+      <g>
+        <rect class="box" x="40" y="30" width="180" height="64" rx="8"/><text x="130" y="58" text-anchor="middle" font-weight="600">Langue</text><text class="sub" x="130" y="78" text-anchor="middle">ISO 639-3, endonyme</text>
+        <rect class="box" x="300" y="30" width="180" height="64" rx="8"/><text x="390" y="58" text-anchor="middle" font-weight="600">Écriture</text><text class="sub" x="390" y="78" text-anchor="middle">type, sens d'écriture</text>
+        <rect class="box" x="560" y="30" width="180" height="64" rx="8"/><text x="650" y="58" text-anchor="middle" font-weight="600">Graphème</text><text class="sub" x="650" y="78" text-anchor="middle">formes, composition</text>
+        <rect class="box" x="40" y="180" width="180" height="64" rx="8"/><text x="130" y="208" text-anchor="middle" font-weight="600">Mot d'exemple</text><text class="sub" x="130" y="228" text-anchor="middle">1 à 3, audio, traduction</text>
+        <rect class="box hl" x="300" y="180" width="180" height="64" rx="8"/><text x="390" y="208" text-anchor="middle" font-weight="600">Prononciation</text><text class="sub" x="390" y="228" text-anchor="middle">langue × graphème</text>
+        <rect class="box" x="560" y="180" width="180" height="64" rx="8"/><text x="650" y="208" text-anchor="middle" font-weight="600">Phonème IPA</text><text class="sub" x="650" y="228" text-anchor="middle">/ʃ/ · audio du son</text>
+      </g>
+      <g>
+        <line class="ln" x1="220" y1="62" x2="298" y2="62" marker-end="url(#ah)"/><text class="sub" x="259" y="54" text-anchor="middle">utilise</text>
+        <line class="ln" x1="480" y1="62" x2="558" y2="62" marker-end="url(#ah)"/><text class="sub" x="519" y="54" text-anchor="middle">contient</text>
+        <line class="ln" x1="170" y1="94" x2="330" y2="178" marker-end="url(#ah)"/><text class="sub" x="215" y="148" text-anchor="middle">dans une langue</text>
+        <line class="ln" x1="610" y1="94" x2="450" y2="178" marker-end="url(#ah)"/><text class="sub" x="570" y="148" text-anchor="middle">d'un graphème</text>
+        <line class="ln" x1="480" y1="212" x2="558" y2="212" marker-end="url(#ah)"/><text class="sub" x="519" y="204" text-anchor="middle">se réalise</text>
+        <line class="ln" x1="220" y1="212" x2="298" y2="212" marker-end="url(#ah)"/><text class="sub" x="259" y="204" text-anchor="middle">illustre</text>
+      </g>
+    </svg>
+  </div>
+  <p class="meta">Le modèle détaillé est l'objet de <a href="technical-stories.html#TS-001">TS-001</a>.</p>
+
+  <h2 id="ipa">7. L'IPA comme pivot</h2>
+  <p><b>Principe :</b> l'IPA (alphabet phonétique international) est utilisée <b>en interne et comme lien de navigation</b>, mais elle n'est pas affichée en premier. Le grand public découvre les sons par l'audio et par des comparaisons avec sa langue (« comme le <i>ch</i> de <i>chat</i> »).</p>
+  <div class="cols2">
+    <div class="card"><h3>Forces</h3><ul class="tight">
+      <li>Elle est universelle et ne privilégie aucune écriture.</li>
+      <li>Elle crée des ponts : /ʃ/ s'écrit ch, sh, ش, し, ш…</li>
+      <li>On peut partir de sa propre langue.</li>
+      <li>L'audio est mutualisé : environ 150 sons couvrent toutes les langues.</li>
+    </ul></div>
+    <div class="card"><h3>Limites et règles</h3><ul class="tight">
+      <li>Le grand public ne lit pas l'IPA : elle reste secondaire à l'écran.</li>
+      <li>Graphème et son ne correspondent pas un pour un : la prononciation principale est retenue, et les autres sont illustrées par des exemples.</li>
+      <li>La transcription est phonémique (/…/), avec une variante de référence par langue (<a href="technical-stories.html#TS-002">TS-002</a>).</li>
+      <li>Les tons et la longueur passent par des diacritiques IPA, et l'audio est indispensable.</li>
+    </ul></div>
+  </div>
+
+  <h2 id="parcours">8. Parcours et écrans</h2>
+  <ol class="tight">
+    <li><b>Premier lancement</b> : choix de la langue d'interface et de référence (<a href="user-stories.html#US-001">US-001</a>).</li>
+    <li><b>Accueil Atlas</b> avec trois portes d'entrée : Langues, Écritures, Sons (<a href="user-stories.html#US-003">US-003</a>).</li>
+    <li><b>Page Écriture</b> : présentation, type, sens d'écriture, langues qui l'utilisent, tableau des caractères (<a href="user-stories.html#US-006">US-006</a>, <a href="user-stories.html#US-007">US-007</a>).</li>
+    <li><b>Fiche Caractère</b> : glyphe, translittération, audio, formes ou composition, comparaison avec la langue de référence, mots d'exemple (<a href="user-stories.html#US-008">US-008</a> à <a href="user-stories.html#US-013">US-013</a>).</li>
+    <li><b>Page Son</b> : un son et ses graphies dans le monde (<a href="user-stories.html#US-014">US-014</a>).</li>
+    <li><b>Recherche</b> : par caractère, par nom de langue, par son (<a href="user-stories.html#US-016">US-016</a>, <a href="user-stories.html#US-017">US-017</a>).</li>
+    <li><b>Réglages et À propos</b> : langue, sources, licence (<a href="user-stories.html#US-002">US-002</a>, <a href="user-stories.html#US-022">US-022</a>).</li>
+  </ol>
+
+  <h2 id="contenu">9. Production du contenu</h2>
+  <p>Le contenu est produit <b>hors de l'appli</b>, puis publié sous forme de <b>fichiers statiques versionnés</b>. L'IA intervient dans la production, jamais dans l'appli V1.</p>
+  <div class="pipeline">
+    <div class="step"><b>1. Sources ouvertes</b>CLDR, PHOIBLE, Wiktionary…</div><span class="arrow">→</span>
+    <div class="step"><b>2. Agrégation par l'IA</b>descriptions, mots d'exemple</div><span class="arrow">→</span>
+    <div class="step"><b>3. Croisement</b>indice de confiance</div><span class="arrow">→</span>
+    <div class="step"><b>4. Relecture</b>bénévoles, hors appli</div><span class="arrow">→</span>
+    <div class="step"><b>5. Publication</b>contenu statique et audio</div>
+  </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Besoin</th><th>Sources envisagées</th><th>Licence (à vérifier)</th></tr></thead>
+    <tbody>
+      <tr><td>Référentiel des langues</td><td>ISO 639-3, Glottolog</td><td>libre / CC BY</td></tr>
+      <tr><td>Caractères par langue</td><td>Unicode CLDR (« exemplar characters »)</td><td>licence Unicode</td></tr>
+      <tr><td>Inventaires de phonèmes</td><td>PHOIBLE</td><td>CC BY-SA</td></tr>
+      <tr><td>Graphème → IPA</td><td>Epitran, Wiktionary</td><td>MIT / CC BY-SA</td></tr>
+      <tr><td>Mots d'exemple et IPA</td><td>Wiktionary, avec complément IA</td><td>CC BY-SA</td></tr>
+      <tr><td>Audio des phonèmes</td><td>Wikimedia Commons</td><td>variable (CC BY, CC BY-SA, domaine public)</td></tr>
+      <tr><td>Audio des mots</td><td>Lingua Libre, avec TTS en secours</td><td>CC BY-SA / selon moteur</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Vérification :</b> croisement automatique des sources (concordant / en écart / source unique), puis relecture par des contributeurs bénévoles en dehors de l'appli (tableur, échanges directs). L'espace de contribution intégré est prévu pour la V2.</p>
+  <p><b>Licence du contenu :</b> ouverte, <b>CC BY-SA</b> (imposée par la réutilisation de Wiktionary et PHOIBLE). La licence du code est une décision séparée.</p>
+
+  <h2 id="audio">10. Audio</h2>
+  <ul class="tight">
+    <li><b>Sons isolés (phonèmes)</b> : enregistrements humains de Wikimedia Commons.</li>
+    <li><b>Mots d'exemple et caractères</b> : Lingua Libre quand un enregistrement existe, sinon une synthèse vocale de qualité, choisie par langue (<a href="technical-stories.html#TS-012">TS-012</a>).</li>
+    <li>Tous les audios sont <b>générés à l'avance</b> et servis statiquement, sans synthèse en direct.</li>
+    <li>Les enregistrements humains par des contributeurs viendront en V2.</li>
+  </ul>
+
+  <h2 id="nfr">11. Exigences non fonctionnelles</h2>
+  <ul class="tight">
+    <li><b>Simplicité :</b> aucun compte, aucun serveur applicatif nécessaire en V1.</li>
+    <li><b>Vie privée :</b> aucune donnée personnelle collectée, ce qui compte aussi parce que le public inclut des enfants.</li>
+    <li><b>Accessibilité :</b> WCAG 2.2 AA, grandes zones tactiles, langage simple.</li>
+    <li><b>Typographie :</b> rendu correct des 15 écritures, du sens de droite à gauche, des formes contextuelles et des ligatures.</li>
+    <li><b>Traçabilité :</b> source, auteur et licence conservés pour chaque donnée et chaque audio.</li>
+    <li><b>Évolutivité :</b> le modèle et la chaîne de production doivent permettre d'ajouter une langue sans modifier l'appli.</li>
+  </ul>
+
+  <h2 id="archi">12. Architecture technique</h2>
+  <p>L'approche est <b>statique d'abord</b> : sans comptes ni données utilisateur, aucun serveur applicatif n'est nécessaire. Deux mondes sont séparés : la <b>chaîne de production du contenu</b> (hors ligne, en Python) et l'<b>appli</b> (site statique installable).</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Brique</th><th>Choix</th><th>Story</th></tr></thead>
+    <tbody>
+      <tr><td>Framework de l'appli</td><td><b>Astro</b> (génération statique) + TypeScript, composants <b>React</b> chargés seulement là où il en faut (audio, recherche, réglages)</td><td><a href="technical-stories.html#TS-020">TS-020</a></td></tr>
+      <tr><td>Mobile</td><td><b>PWA</b> installable via <code>@vite-pwa/astro</code>, sans hors-ligne en V1. <b>Capacitor</b> plus tard si une présence en magasins d'applications devient nécessaire</td><td><a href="technical-stories.html#TS-021">TS-021</a></td></tr>
+      <tr><td>Multilingue</td><td>Routage multilingue d'Astro + Paraglide (ou i18next), <code>dir="rtl"</code> pour les langues de droite à gauche</td><td><a href="technical-stories.html#TS-010">TS-010</a></td></tr>
+      <tr><td>Recherche</td><td><b>Pagefind</b> (index statique)</td><td><a href="technical-stories.html#TS-017">TS-017</a></td></tr>
+      <tr><td>Polices</td><td><b>Noto</b> auto-hébergée (Fontsource), découpée par écriture</td><td><a href="technical-stories.html#TS-015">TS-015</a></td></tr>
+      <tr><td>Hébergement et CI/CD</td><td>Cloudflare Pages ou GitHub Pages, GitHub Actions</td><td><a href="technical-stories.html#TS-019">TS-019</a></td></tr>
+      <tr><td>Chaîne de production</td><td><b>Python</b> : uv, <b>Pydantic</b> (schéma → JSON Schema), pytest. Sources : CLDR, PHOIBLE, Epitran, wiktextract / kaikki.org, API de Wikimedia Commons et de Lingua Libre</td><td><a href="technical-stories.html#TS-022">TS-022</a></td></tr>
+      <tr><td>LLM (hors appli)</td><td><b>Claude Haiku 5.5</b> (<code>claude-haiku-5-5</code>), le modèle le moins coûteux, utilisé via l'API Message Batches (−50 %), avec structured outputs et prompt caching. Ordre de grandeur : <b>quelques dollars</b> pour générer tout le contenu V1</td><td><a href="technical-stories.html#TS-023">TS-023</a></td></tr>
+      <tr><td>Synthèse vocale</td><td>À choisir par l'étude : de préférence un moteur qui accepte l'IPA en entrée (SSML <code>&lt;phoneme&gt;</code>)</td><td><a href="technical-stories.html#TS-012">TS-012</a></td></tr>
+      <tr><td>Audio</td><td>MP3 ou AAC pré-générés, volume normalisé (ffmpeg), stockés dans Cloudflare R2 ou Git LFS</td><td><a href="technical-stories.html#TS-013">TS-013</a>, <a href="technical-stories.html#TS-024">TS-024</a></td></tr>
+    </tbody>
+  </table></div>
+  <p class="meta">Options écartées : garder Flask (une API serveur est inutile pour un contenu statique) ; React Native ou Expo (référencement web faible, à reconsidérer si le mobile natif devient prioritaire) ; Flutter (référencement faible, rendu des écritures complexes risqué).</p>
+  <p><b>Garde-fou :</b> le LLM n'est jamais la source d'une donnée phonétique. Il agrège, rédige et propose, et toute transcription doit être confirmée par une source.</p>
+  <pre style="overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px">tongo/
+├── pipeline/   Python : sources → LLM → croisement → JSON + audio
+├── content/    données publiées (JSON versionnés + références audio)
+├── app/        site Astro (web + PWA)
+└── specs/      besoin et suivi (ce dossier)</pre>
+
+  <h2 id="decisions">13. Journal des décisions</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th>Date</th><th>Décision</th></tr></thead>
+    <tbody>
+      <tr><td>D01</td><td>2026-11-14</td><td>Le nom Tongo est retenu (tongue, prononciation facile, voyage).</td></tr>
+      <tr><td>D02</td><td>2026-11-14</td><td>La V1 se limite aux alphabets et écritures, avec quelques mots d'exemple et sans phrases de survie.</td></tr>
+      <tr><td>D03</td><td>2026-11-14</td><td>Objectif : reconnaître et prononcer, sans tracé.</td></tr>
+      <tr><td>D04</td><td>2026-11-14</td><td>Japonais sans kanji, arabe avec les 4 formes contextuelles.</td></tr>
+      <tr><td>D05</td><td>2026-11-14</td><td>La V1 est en consultation seule, sans exercices ni progression.</td></tr>
+      <tr><td>D06</td><td>2026-11-14</td><td>Public : tout le monde. Plateformes : web et mobile.</td></tr>
+      <tr><td>D07</td><td>2026-11-14</td><td>Pas d'IA dans l'appli V1. L'IA est autorisée pour produire le contenu, avec validation humaine.</td></tr>
+      <tr><td>D08</td><td>2026-11-14</td><td>Cible à terme : toutes les langues vivantes, avec l'IPA comme pivot (interne et lien de navigation).</td></tr>
+      <tr><td>D09</td><td>2026-11-14</td><td>Lancement avec 20 langues vérifiées. Les écritures logographiques sont reportées à la V2.</td></tr>
+      <tr><td>D10</td><td>2026-11-14</td><td>Interface multilingue, avec une langue par défaut au choix.</td></tr>
+      <tr><td>D11</td><td>2026-11-14</td><td>Le thème du voyage reste une ambiance visuelle.</td></tr>
+      <tr><td>D12</td><td>2026-11-14</td><td>La vérification combine bénévoles et croisement des sources. Aucun compte ni espace de contribution en V1.</td></tr>
+      <tr><td>D13</td><td>2026-11-14</td><td>Audio : TTS, Wikimedia Commons et Lingua Libre. Contenu sous licence CC BY-SA.</td></tr>
+      <tr><td>D14</td><td>2026-11-14</td><td>Méthode : Personas, User Stories, Technical Stories, Kanban simple, specs en HTML dans <code>specs/</code>.</td></tr>
+      <tr><td>D15</td><td>2026-11-14</td><td>Stack : site statique Astro + React (îlots) + PWA, chaîne de production en Python. Voir la <a href="#archi">section 12</a>.</td></tr>
+      <tr><td>D16</td><td>2026-11-14</td><td>Pas de mode hors ligne en V1 (Q02). La PWA permet de l'ajouter plus tard.</td></tr>
+      <tr><td>D17</td><td>2026-11-14</td><td>LLM : la solution la moins coûteuse pour la V1, Claude Haiku 5.5 via l'API Message Batches.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="questions">14. Questions ouvertes</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th>Question</th><th>Lien</th></tr></thead>
+    <tbody>
+      <tr><td>Q01</td><td>Quelles langues d'interface au lancement : les 20 langues, ou un sous-ensemble (français, anglais…) ?</td><td><a href="technical-stories.html#TS-010">TS-010</a></td></tr>
+      <tr><td>Q02</td><td><s>L'utilisation hors ligne est-elle exigée en V1 ?</s> <span class="badge done">Répondue : non (D16)</span></td><td><a href="#decisions">D16</a></td></tr>
+      <tr><td>Q03</td><td>Quelle variante de référence pour chaque langue (portugais du Brésil ou du Portugal, anglais britannique ou américain…) ?</td><td><a href="technical-stories.html#TS-002">TS-002</a></td></tr>
+      <tr><td>Q04</td><td>Les écritures logographiques (hanzi, kanji) entrent-elles en V2, et sous quelle forme (pinyin, zhuyin) ?</td><td>V2</td></tr>
+      <tr><td>Q05</td><td>Qui sont les premiers relecteurs bénévoles, et pour quelles langues ?</td><td><a href="technical-stories.html#TS-009">TS-009</a></td></tr>
+      <tr><td>Q06</td><td>Quelle licence pour le code (ouvert ou fermé) ?</td><td><a href="technical-stories.html#TS-016">TS-016</a></td></tr>
+      <tr><td>Q07</td><td>Faut-il afficher le niveau de confiance d'une donnée au visiteur, ou le garder en interne ?</td><td><a href="technical-stories.html#TS-009">TS-009</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <footer class="foot">Document tenu dans <code>specs/besoin.html</code>. Les décisions nouvelles s'ajoutent au journal (section 13).</footer>
+</main>
+</body>
+</html>

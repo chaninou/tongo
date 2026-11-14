@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tongo · Suivi du projet</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">Tong<span>o</span></a>
+  <nav class="main">
+    <a href="index.html" aria-current="page">Suivi</a>
+    <a href="besoin.html">Besoin</a>
+    <a href="personas.html">Personas</a>
+    <a href="user-stories.html">User Stories</a>
+    <a href="technical-stories.html">Technical Stories</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Suivi du projet <span class="stamp">V1</span></h1>
+  <p class="lede">Tongo est un atlas des écritures du monde : on apprend à reconnaître et prononcer les caractères de 20 langues, sur le web et le mobile, sans compte.</p>
+  <p class="meta">Dernière mise à jour du backlog : <span data-updated></span> · Phase actuelle : <b>définition du besoin fonctionnel</b></p>
+
+  <h2>Chiffres clés</h2>
+  <div id="stats"></div>
+
+  <h2>Kanban</h2>
+  <div id="kanban"></div>
+
+  <h2>Avancement par Epic</h2>
+  <div id="epics"></div>
+
+  <h2>Jalons du cadrage</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Étape</th><th>Statut</th><th>Date</th></tr></thead>
+    <tbody>
+      <tr><td>Analyse de l'existant (<code>Tongo_old</code>)</td><td><span class="badge done">Fait</span></td><td>2026-11-14</td></tr>
+      <tr><td>Vision, public, périmètre V1</td><td><span class="badge done">Fait</span></td><td>2026-11-14</td></tr>
+      <tr><td>Personas, User Stories, Technical Stories (première version)</td><td><span class="badge done">Fait</span></td><td>2026-11-14</td></tr>
+      <tr><td>Choix de la stack technique et du LLM (D15 à D17)</td><td><span class="badge done">Fait</span></td><td>2026-11-14</td></tr>
+      <tr><td>Revue et priorisation du backlog</td><td><span class="badge todo">À faire</span></td><td></td></tr>
+      <tr><td>Réponses aux questions ouvertes (voir <a href="besoin.html#questions">Besoin</a>)</td><td><span class="badge todo">À faire</span></td><td></td></tr>
+      <tr><td>Étude technique préalable (TS-012 : sources audio)</td><td><span class="badge todo">À faire</span></td><td></td></tr>
+    </tbody>
+  </table></div>
+
+  <footer class="foot">Les statuts sont tenus dans <code>specs/assets/backlog.js</code>, l'unique source des stories. Toutes les pages se génèrent à partir de ce fichier.</footer>
+</main>
+
+<script src="assets/backlog.js"></script>
+<script src="assets/app.js"></script>
+<script>
+  TongoSpecs.renderStats(document.getElementById("stats"));
+  TongoSpecs.renderKanban(document.getElementById("kanban"));
+  TongoSpecs.renderEpics(document.getElementById("epics"));
+</script>
+</body>
+</html>
