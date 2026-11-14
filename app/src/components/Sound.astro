@@ -1,0 +1,19 @@
+---
+/**
+ * Prononciation d'une entrée avec ses variantes régionales. Chaque variante est rendue,
+ * le sélecteur de pays masque celles qui ne s'appliquent pas.
+ */
+import type { Language, Pronunciation } from "@tongo/model";
+import type { UiLocale } from "../i18n/ui";
+import Ipa from "./Ipa.astro";
+interface Props { p: Pronunciation; language: Language; locale: UiLocale; big?: boolean }
+const { p, language, locale, big } = Astro.props;
+const def = language.variants.find((v) => v.default)!;
+const others = Object.entries(p.variants ?? {});
+---
+<span class="sound">
+  <span data-variant-for={language.id} data-variant="*"><Ipa sound={p.sound} locale={locale} big={big} /></span>
+  {others.map(([v, s]) => v !== def.id && (
+    <span data-variant-for={language.id} data-variant={v} hidden><Ipa sound={s} locale={locale} big={big} /></span>
+  ))}
+</span>

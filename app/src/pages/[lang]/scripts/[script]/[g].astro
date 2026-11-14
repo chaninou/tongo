@@ -1,0 +1,128 @@
+---
+/**
+ * Fiche caractère : reconnaître et prononcer (US-008), mots d'exemple (US-009), comparaison avec la
+ * langue de l'interface (US-010), formes arabes (US-011), équivalent kana (US-013), caractère
+ * suivant (US-018), confiance (US-023), pays (US-024).
+ */
+import Base from "../../../../layouts/Base.astro";
+import Confidence from "../../../../components/Confidence.astro";
+import Ipa from "../../../../components/Ipa.astro";
+import Sound from "../../../../components/Sound.astro";
+import VariantPicker from "../../../../components/VariantPicker.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../../../i18n/ui";
+import { content, index, splitRef } from "../../../../lib/content";
+import { scriptDir, scriptLang } from "../../../../lib/script-lang";
+
+export async function getStaticPaths() {
+  const c = await content();
+  return UI_LOCALES.flatMap((lang) =>
+    c.scripts.flatMap((s) => s.graphemes.map((g) => ({ params: { lang, script: s.id, g: g.id } }))),
+  );
+}
+const locale = Astro.params.lang as UiLocale;
+const idx = await index();
+const script = idx.script(Astro.params.script!)!;
+const pos = script.graphemes.findIndex((x) => x.id === Astro.params.g);
+const g = script.graphemes[pos]!;
+const prev = script.graphemes[pos - 1];
+const next = script.graphemes[pos + 1];
+const ref = `${script.id}:${g.id}`;
+const usages = idx.usages(ref);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const lang = scriptLang(script.id);
+const dir = scriptDir(script.id);
+const counterpart = g.counterpart ? (() => {
+  const [sid, gid] = splitRef(g.counterpart!);
+  const found = idx.grapheme(g.counterpart!);
+  return found && { sid, gid, char: found.grapheme.char, script: found.script };
+})() : undefined;
+const FORM_KEYS = ["isolated", "initial", "medial", "final"] as const;
+const forms = g.forms ? FORM_KEYS.filter((k) => g.forms![k]).map((k) => ({ k, v: g.forms![k]! })) : [];
+const title = `${g.char} · ${loc(locale, script.name)}`;
+---
+<Base locale={locale} section="scripts" title={title}>
+  <p class="crumbs">
+    <a href={`${base}/${locale}/scripts/`}>{t(locale, "nav.scripts")}</a> ›
+    <a href={`${base}/${locale}/scripts/${script.id}/`}>{loc(locale, script.name)}</a> ›
+  </p>
+
+  <div class="glyph-hero">
+    <div class="glyph-big" lang={lang} dir={dir}>{script.cased && g.upper ? `${g.upper}${g.char}` : g.char}</div>
+    <div>
+      <h1 style="margin-top:0"><bdi lang={lang}>{g.char}</bdi>{g.latin && <span class="muted" style="font-weight:400"> · {g.latin}</span>}</h1>
+      <dl class="facts">
+        {g.name && <><dt>{t(locale, "char.name")}</dt><dd>{g.name}</dd></>}
+        {g.latin && <><dt>{t(locale, "char.latin")}</dt><dd dir="ltr">{g.latin}</dd></>}
+        {script.cased && g.upper && <><dt>{t(locale, "char.upper")}</dt><dd lang={lang}>{g.upper}</dd></>}
+        {counterpart && <><dt>{t(locale, "char.counterpart")}</dt><dd>
+          <a href={`${base}/${locale}/scripts/${counterpart.sid}/${counterpart.gid}/`}><span lang={scriptLang(counterpart.sid)}>{counterpart.char}</span> · {loc(locale, counterpart.script.name)}</a>
+        </dd></>}
+      </dl>
+    </div>
+  </div>
+
+  {forms.length > 0 && (
+    <section>
+      <h2>{t(locale, "char.forms")}</h2>
+      <div class="forms" dir="rtl">
+        {forms.map(({ k, v }) => (
+          <figure><div class="g" lang={lang}>{v}</div><figcaption>{t(locale, `char.form.${k}`)}</figcaption></figure>
+        ))}
+      </div>
+      {forms.length === 2 && <p class="muted">{t(locale, "char.formsNote")}</p>}
+    </section>
+  )}
+
+  <section>
+    <h2>{t(locale, "char.pronunciation")}</h2>
+    {usages.length === 0 && <p class="muted">{t(locale, "char.notUsed")}</p>}
+    <div class="pron">
+      {usages.map(({ language, entry }) => {
+        const p = entry.pronunciation;
+        const like = p.like?.[locale];
+        return (
+          <article class="card pron-card">
+            <header>
+              <h3>{t(locale, "char.inLanguage", { lang: loc(locale, language.name) })}</h3>
+              <span style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+                <VariantPicker language={language} locale={locale} />
+                <Confidence level={p.confidence} locale={locale} />
+              </span>
+            </header>
+            <p style="margin:.4rem 0"><Sound p={p} language={language} locale={locale} big /></p>
+            {like && <p style="margin:.2rem 0">{t(locale, "char.like")} « {like} »</p>}
+            {p.note && <p class="muted" style="margin:.2rem 0">{loc(locale, p.note)}</p>}
+            {p.alternates && p.alternates.length > 0 && (
+              <div>
+                <strong>{t(locale, "char.otherwise")}</strong>
+                <ul style="margin:.2rem 0">
+                  {p.alternates.map((a) => <li><Ipa sound={a.sound} locale={locale} /> · {loc(locale, a.context)}</li>)}
+                </ul>
+              </div>
+            )}
+            {entry.examples.length > 0 && (
+              <div>
+                <strong>{t(locale, "char.examples")}</strong>
+                <ul class="examples">
+                  {entry.examples.map((ex) => (
+                    <li>
+                      <bdi class="w" lang={language.id}>{ex.word}</bdi>
+                      {ex.latin && <span class="muted" dir="ltr">{ex.latin}</span>}
+                      {ex.ipa && <bdi class="ipa muted" dir="ltr">/{ex.ipa}/</bdi>}
+                      <span>{loc(locale, ex.meaning)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <nav class="pager" aria-label={t(locale, "scripts.characters")}>
+    {prev ? <a href={`${base}/${locale}/scripts/${script.id}/${prev.id}/`} rel="prev">{locale === "ar" ? "→" : "←"} {t(locale, "char.prev")} <span lang={lang}>{prev.char}</span></a> : <span />}
+    {next ? <a href={`${base}/${locale}/scripts/${script.id}/${next.id}/`} rel="next">{t(locale, "char.next")} <span lang={lang}>{next.char}</span> {locale === "ar" ? "←" : "→"}</a> : <span />}
+  </nav>
+</Base>

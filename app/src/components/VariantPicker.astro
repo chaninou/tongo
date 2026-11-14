@@ -1,0 +1,49 @@
+---
+/**
+ * Choix du pays d'une langue (US-024, D22). Les éléments [data-variant-for] de la page affichent
+ * la prononciation de la variante choisie. Défaut : la région du navigateur si elle existe,
+ * sinon la variante la plus parlée. Le choix est mémorisé sur l'appareil.
+ */
+import type { Language } from "@tongo/model";
+import { loc, t, type UiLocale } from "../i18n/ui";
+interface Props { language: Language; locale: UiLocale }
+const { language, locale } = Astro.props;
+const def = language.variants.find((v) => v.default)!;
+---
+{language.variants.length > 1 && (
+  <label class="variant-picker">
+    <span>{t(locale, "variant.label")}</span>
+    <select data-variant-select={language.id} data-default={def.id}>
+      {language.variants.map((v) => (
+        <option value={v.id} data-region={v.region} selected={v.default}>{loc(locale, v.name)}</option>
+      ))}
+    </select>
+  </label>
+)}
+<script>
+  function apply(lang: string, variant: string) {
+    document.querySelectorAll<HTMLElement>(`[data-variant-for="${lang}"]`).forEach((el) => {
+      el.hidden = el.dataset.variant !== variant && !(el.dataset.variant === "*" && !el.parentElement?.querySelector(`[data-variant="${variant}"]`));
+    });
+    document.querySelectorAll<HTMLSelectElement>(`[data-variant-select="${lang}"]`).forEach((s) => (s.value = variant));
+  }
+  document.querySelectorAll<HTMLSelectElement>("[data-variant-select]").forEach((select) => {
+    const lang = select.dataset.variantSelect!;
+    const key = `tongo.variant.${lang}`;
+    let chosen: string | null = null;
+    try { chosen = localStorage.getItem(key); } catch {}
+    if (!chosen) {
+      for (const tag of navigator.languages ?? []) {
+        const [code, region] = tag.split("-");
+        if (code?.toLowerCase() !== lang || !region) continue;
+        const opt = [...select.options].find((o) => o.dataset.region === region.toUpperCase());
+        if (opt) { chosen = opt.value; break; }
+      }
+    }
+    if (chosen && [...select.options].some((o) => o.value === chosen)) apply(lang, chosen);
+    select.addEventListener("change", () => {
+      try { localStorage.setItem(key, select.value); } catch {}
+      apply(lang, select.value);
+    });
+  });
+</script>

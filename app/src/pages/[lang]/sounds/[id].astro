@@ -1,0 +1,49 @@
+---
+/** Page Son : un son et ses graphies dans le monde (US-014). */
+import Base from "../../../layouts/Base.astro";
+import Confidence from "../../../components/Confidence.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
+import { content, index } from "../../../lib/content";
+import { scriptLang } from "../../../lib/script-lang";
+
+export async function getStaticPaths() {
+  const c = await content();
+  return UI_LOCALES.flatMap((lang) => c.phonemes.map((p) => ({ params: { lang, id: p.id } })));
+}
+const locale = Astro.params.lang as UiLocale;
+const idx = await index();
+const phoneme = idx.c.phonemes.find((p) => p.id === Astro.params.id)!;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const spellings = idx.spellings(phoneme.ipa);
+const variantLabel = (l: (typeof spellings)[number]["language"], v: string) => {
+  if (v === "*") return "";
+  if (v === "alt") return t(locale, "char.otherwise").toLowerCase();
+  const x = l.variants.find((y) => y.id === v);
+  return x ? loc(locale, x.name) : v;
+};
+---
+<Base locale={locale} section="sounds" title={`/${phoneme.ipa}/`}>
+  <p class="crumbs"><a href={`${base}/${locale}/sounds/`}>{t(locale, "nav.sounds")}</a> ›</p>
+  <div class="glyph-hero">
+    <div class="glyph-big ipa" dir="ltr">/{phoneme.ipa}/</div>
+    <div>
+      <h1 style="margin-top:0">{loc(locale, phoneme.name)}</h1>
+      <Confidence level={phoneme.confidence} locale={locale} />
+    </div>
+  </div>
+  <h2>{t(locale, "sounds.spellings")}</h2>
+  {spellings.length === 0 ? <p class="muted">{t(locale, "sounds.none")}</p> : (
+    <div class="grid">
+      {spellings.map((s) => (
+        <a class="card" href={`${base}/${locale}/scripts/${s.script.id}/${s.grapheme.id}/`}>
+          <div class="sample" lang={scriptLang(s.script.id)}>{s.grapheme.char}</div>
+          <strong>{loc(locale, s.language.name)}</strong>
+          {s.variants.filter((v) => v !== "*").length > 0 && (
+            <div class="muted" style="font-size:.9rem">{s.variants.filter((v) => v !== "*").map((v) => variantLabel(s.language, v)).join(", ")}</div>
+          )}
+          {s.entry.examples[0] && <div class="muted"><bdi lang={s.language.id}>{s.entry.examples[0].word}</bdi> · {loc(locale, s.entry.examples[0].meaning)}</div>}
+        </a>
+      ))}
+    </div>
+  )}
+</Base>

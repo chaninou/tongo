@@ -1,0 +1,173 @@
+/* Tongo : ambiance « carnet de voyage » (D11). Propriétés logiques partout pour l'arabe (RTL). */
+:root {
+  --paper: #f7f1e6;
+  --paper-2: #efe5d3;
+  --card: #fffaf1;
+  --ink: #2b2420;
+  --ink-2: #5e534a;
+  --line: #ddcfb8;
+  --accent: #b5532e;
+  --accent-ink: #8f3d1f;
+  --sea: #2f6d80;
+  --ok: #2f7a4a;
+  --warn: #9a6a12;
+  --bad: #a3392f;
+  --radius: 14px;
+  --shadow: 0 1px 0 rgb(0 0 0 / 4%), 0 6px 18px rgb(60 40 20 / 8%);
+  --font: "Noto Sans", "Noto Sans Arabic", "Noto Sans JP", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1e1a17;
+    --paper-2: #27221e;
+    --card: #2a2420;
+    --ink: #f1e9dc;
+    --ink-2: #c5b8a6;
+    --line: #463c33;
+    --accent: #e08259;
+    --accent-ink: #f0a07c;
+    --sea: #7fb6c7;
+    --ok: #7cc493;
+    --warn: #e0b45a;
+    --bad: #ea8a7f;
+    --shadow: 0 1px 0 rgb(0 0 0 / 30%);
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1.0625rem/1.6 var(--font);
+}
+:lang(ar) body, [dir="rtl"] body { line-height: 1.8; }
+a { color: var(--accent-ink); text-underline-offset: 0.18em; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--sea); outline-offset: 2px; border-radius: 4px; }
+img { max-width: 100%; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; font-weight: 600; }
+:lang(ar) :is(h1, h2, h3) { font-family: var(--font); }
+h1 { font-size: clamp(1.8rem, 1.2rem + 2.5vw, 2.8rem); margin: 0.2em 0 0.4em; }
+h2 { font-size: 1.45rem; margin: 2rem 0 0.8rem; }
+h3 { font-size: 1.15rem; margin: 1.2rem 0 0.5rem; }
+
+.skip { position: absolute; inset-inline-start: -999px; top: 0; }
+.skip:focus { inset-inline-start: 1rem; background: var(--card); padding: 0.5rem 1rem; z-index: 10; }
+
+.wrap { max-width: 68rem; margin: 0 auto; padding-inline: 1rem; }
+
+/* En-tête */
+.site-header { border-block-end: 1px solid var(--line); background: var(--paper-2); }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; padding-block: 0.7rem; }
+.brand { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--ink); text-decoration: none; }
+.brand span { color: var(--accent); }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem; flex: 1; }
+.site-nav a {
+  padding: 0.45rem 0.8rem; border-radius: 999px; text-decoration: none; color: var(--ink-2); min-height: 44px;
+  display: inline-flex; align-items: center;
+}
+.site-nav a[aria-current="page"], .site-nav a:hover { background: var(--card); color: var(--ink); }
+.lang-switch { display: flex; gap: 0.25rem; align-items: center; }
+.lang-switch a {
+  padding: 0.3rem 0.6rem; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: var(--ink-2);
+  min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center;
+}
+.lang-switch a[aria-current="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+main { padding-block: 1.5rem 3rem; }
+.lead { font-size: 1.15rem; color: var(--ink-2); max-width: 46rem; }
+.muted { color: var(--ink-2); }
+.crumbs { font-size: 0.95rem; color: var(--ink-2); margin: 0; }
+.crumbs a { color: var(--ink-2); }
+
+/* Grilles et cartes */
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.2rem;
+  box-shadow: var(--shadow); color: inherit; text-decoration: none; display: block;
+}
+a.card:hover { border-color: var(--accent); color: inherit; }
+.card h2, .card h3 { margin-top: 0; }
+.card .sample { font-size: 2rem; line-height: 1.3; margin-block-end: 0.3rem; }
+.door { padding: 1.5rem; }
+.door .icon { font-size: 2.6rem; line-height: 1; display: block; margin-block-end: 0.5rem; }
+
+/* Badges */
+.badge {
+  display: inline-flex; align-items: center; gap: 0.35em; font-size: 0.82rem; padding: 0.15em 0.6em;
+  border-radius: 999px; border: 1px solid var(--line); background: var(--paper); color: var(--ink-2); white-space: nowrap;
+}
+.badge::before { content: ""; width: 0.55em; height: 0.55em; border-radius: 50%; background: currentColor; }
+.badge.conf-high { color: var(--ok); }
+.badge.conf-medium { color: var(--sea); }
+.badge.conf-low { color: var(--bad); }
+.badge.conf-draft { color: var(--warn); }
+.badge.plain::before { display: none; }
+
+.notice {
+  border: 1px dashed var(--warn); color: var(--ink); background: color-mix(in srgb, var(--warn) 8%, var(--card));
+  border-radius: var(--radius); padding: 0.7rem 1rem; font-size: 0.95rem;
+}
+
+/* Tableau des caractères */
+.chars { display: grid; gap: 0.5rem; grid-template-columns: repeat(auto-fill, minmax(4.6rem, 1fr)); }
+.char-tile {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.1rem;
+  aspect-ratio: 1; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  text-decoration: none; color: var(--ink);
+}
+.char-tile:hover { border-color: var(--accent); color: var(--ink); }
+.char-tile .g { font-size: 1.9rem; line-height: 1.2; }
+.char-tile .l { font-size: 0.78rem; color: var(--ink-2); }
+
+/* Fiche caractère */
+.glyph-hero { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; }
+.glyph-big {
+  font-size: clamp(5rem, 3rem + 10vw, 9rem); line-height: 1.1; min-width: 1.4em; text-align: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 0.15em 0.35em; box-shadow: var(--shadow);
+}
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 0.3rem 1rem; margin: 0; }
+.facts dt { color: var(--ink-2); }
+.facts dd { margin: 0; font-weight: 600; }
+.forms { display: grid; grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr)); gap: 0.6rem; }
+.forms figure { margin: 0; text-align: center; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0.6rem; }
+.forms .g { font-size: 2.6rem; line-height: 1.5; }
+.forms figcaption { font-size: 0.85rem; color: var(--ink-2); }
+
+.pron { display: grid; gap: 1rem; }
+.pron-card header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem; }
+.pron-card h3 { margin: 0; }
+.ipa { font-family: "Noto Sans", "Doulos SIL", "Charis SIL", serif; }
+.ipa-big { font-size: 1.6rem; font-weight: 600; }
+.ipa a { text-decoration: none; border-block-end: 1px dotted currentColor; }
+.examples { list-style: none; padding: 0; margin: 0.6rem 0 0; display: grid; gap: 0.4rem; }
+.examples li { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; align-items: baseline; }
+.examples .w { font-size: 1.35rem; }
+
+.variant-picker { display: inline-flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
+.variant-picker select { font: inherit; padding: 0.35rem 0.5rem; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); min-height: 44px; }
+
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-block-start: 2rem; }
+.pager a { padding: 0.6rem 1rem; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; background: var(--card); }
+
+/* Tableau des lettres d'une langue */
+.table-wrap { overflow-x: auto; }
+table.letters { width: 100%; border-collapse: collapse; background: var(--card); border-radius: var(--radius); overflow: hidden; }
+table.letters th, table.letters td { padding: 0.55rem 0.8rem; border-block-end: 1px solid var(--line); text-align: start; vertical-align: top; }
+table.letters th { background: var(--paper-2); font-weight: 600; font-size: 0.92rem; }
+table.letters .g { font-size: 1.6rem; }
+
+input[type="search"] {
+  font: inherit; width: 100%; max-width: 30rem; padding: 0.7rem 1rem; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--card); color: var(--ink); min-height: 48px;
+}
+
+.site-footer { border-block-start: 1px solid var(--line); padding-block: 1.2rem; color: var(--ink-2); font-size: 0.92rem; }
+.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; }
+
+bdi { unicode-bidi: isolate; }

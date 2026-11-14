@@ -1,0 +1,50 @@
+---
+/** Page Écriture : présentation (US-006) et tableau des caractères (US-007). */
+import Base from "../../../../layouts/Base.astro";
+import Confidence from "../../../../components/Confidence.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../../../i18n/ui";
+import { content, index } from "../../../../lib/content";
+import { scriptDir, scriptLang } from "../../../../lib/script-lang";
+
+export async function getStaticPaths() {
+  const c = await content();
+  return UI_LOCALES.flatMap((lang) => c.scripts.map((s) => ({ params: { lang, script: s.id } })));
+}
+const locale = Astro.params.lang as UiLocale;
+const idx = await index();
+const script = idx.script(Astro.params.script!)!;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const langs = idx.languagesOfScript(script.id);
+const groups = script.groups.length
+  ? script.groups.map((g) => ({ name: loc(locale, g.name), items: script.graphemes.filter((x) => x.group === g.id) }))
+  : [{ name: "", items: script.graphemes }];
+---
+<Base locale={locale} section="scripts" title={loc(locale, script.name)}>
+  <p class="crumbs"><a href={`${base}/${locale}/scripts/`}>{t(locale, "nav.scripts")}</a> ›</p>
+  <h1>{loc(locale, script.name)} {script.endonym && <bdi class="muted" lang={scriptLang(script.id)} style="font-weight:400">· {script.endonym}</bdi>}</h1>
+  <p style="display:flex;flex-wrap:wrap;gap:.5rem">
+    <span class="badge plain">{t(locale, `type.${script.type}`)}</span>
+    <span class="badge plain">{script.direction === "rtl" ? "←" : "→"} {t(locale, `scripts.direction.${script.direction}`)}</span>
+    <Confidence level={script.confidence} locale={locale} />
+  </p>
+  <p class="lead">{loc(locale, script.intro)}</p>
+  <p class="muted">{t(locale, `type.${script.type}.desc`)}</p>
+
+  <h2>{t(locale, "scripts.usedBy")}</h2>
+  <p>{langs.map((l, i) => <>{i > 0 && " · "}<a href={`${base}/${locale}/languages/${l.id}/`}>{loc(locale, l.name)}</a></>)}</p>
+
+  <h2>{t(locale, "scripts.characters")}</h2>
+  {groups.map((g) => g.items.length > 0 && (
+    <section>
+      {g.name && <h3>{g.name}</h3>}
+      <div class="chars" dir={scriptDir(script.id)}>
+        {g.items.map((x) => (
+          <a class="char-tile" href={`${base}/${locale}/scripts/${script.id}/${x.id}/`} aria-label={`${x.char}${x.latin ? ` (${x.latin})` : ""}`}>
+            <span class="g" lang={scriptLang(script.id)}>{script.cased && x.upper ? `${x.upper}${x.char}` : x.char}</span>
+            <span class="l" dir="ltr">{x.latin ?? x.name ?? ""}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

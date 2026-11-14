@@ -1,0 +1,71 @@
+---
+/** Une langue : ses lettres et leurs sons, pour le pays choisi (US-004, US-024, US-023). */
+import Base from "../../../layouts/Base.astro";
+import Confidence from "../../../components/Confidence.astro";
+import Sound from "../../../components/Sound.astro";
+import VariantPicker from "../../../components/VariantPicker.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
+import { content, index, splitRef } from "../../../lib/content";
+import { scriptLang } from "../../../lib/script-lang";
+import { weakest } from "@tongo/model";
+
+export async function getStaticPaths() {
+  const c = await content();
+  return UI_LOCALES.flatMap((lang) => c.languages.map((l) => ({ params: { lang, id: l.id } })));
+}
+const locale = Astro.params.lang as UiLocale;
+const idx = await index();
+const language = idx.c.languages.find((l) => l.id === Astro.params.id)!;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const conf = weakest([language.confidence, ...language.letters.map((e) => e.pronunciation.confidence)]);
+const byScript = language.scripts.map((sid) => ({
+  script: idx.script(sid)!,
+  entries: language.letters.filter((e) => e.grapheme.startsWith(`${sid}:`)),
+}));
+---
+<Base locale={locale} section="languages" title={loc(locale, language.name)}>
+  <p class="crumbs"><a href={`${base}/${locale}/languages/`}>{t(locale, "nav.languages")}</a> ›</p>
+  <h1>{loc(locale, language.name)} <bdi class="muted" lang={language.id} style="font-weight:400">· {language.endonym}</bdi></h1>
+  <p style="display:flex;flex-wrap:wrap;gap:.6rem;align-items:center">
+    <Confidence level={conf} locale={locale} />
+    {language.speakersM && <span class="badge plain">{t(locale, "languages.speakers", { n: language.speakersM })}</span>}
+    <VariantPicker language={language} locale={locale} />
+  </p>
+  {language.intro && <p class="lead">{loc(locale, language.intro)}</p>}
+  <p>{t(locale, "languages.writtenIn")}{t(locale, "punct.colon")}{language.scripts.map((sid, i) => (
+    <>{i > 0 && ", "}<a href={`${base}/${locale}/scripts/${sid}/`}>{loc(locale, idx.script(sid)!.name)}</a></>
+  ))}</p>
+
+  {byScript.map(({ script, entries }) => (
+    <section>
+      <h2>{t(locale, "languages.letters")}{byScript.length > 1 && ` · ${loc(locale, script.name)}`}</h2>
+      <div class="table-wrap">
+        <table class="letters">
+          <thead><tr>
+            <th scope="col">{t(locale, "scripts.characters")}</th>
+            <th scope="col">{t(locale, "char.pronunciation")}</th>
+            <th scope="col">{t(locale, "char.examples")}</th>
+          </tr></thead>
+          <tbody>
+            {entries.map((e) => {
+              const [sid, gid] = splitRef(e.grapheme);
+              const g = idx.grapheme(e.grapheme)!.grapheme;
+              const like = e.pronunciation.like?.[locale];
+              const first = e.examples[0];
+              return (
+                <tr>
+                  <td><a class="g" href={`${base}/${locale}/scripts/${sid}/${gid}/`} lang={scriptLang(sid)}>
+                    {g.upper && g.upper !== g.char ? `${g.upper} ${g.char}` : g.char}
+                  </a>{g.latin && <div class="muted" style="font-size:.85rem">{g.latin}</div>}</td>
+                  <td><Sound p={e.pronunciation} language={language} locale={locale} />
+                    {like && <div class="muted" style="font-size:.9rem">{t(locale, "char.like")} « {like} »</div>}</td>
+                  <td>{first && <span><bdi lang={language.id}>{first.word}</bdi> <span class="muted">· {loc(locale, first.meaning)}</span></span>}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+</Base>

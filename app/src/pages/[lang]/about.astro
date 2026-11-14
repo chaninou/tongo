@@ -1,0 +1,54 @@
+---
+/** À propos et réglages : langue d'interface (US-002), sources et licence (US-022, TS-016). */
+import Base from "../../layouts/Base.astro";
+import { LOCALE_META, UI_LOCALES, loc, t, type UiLocale } from "../../i18n/ui";
+import { content } from "../../lib/content";
+import { CONFIDENCE_LEVELS } from "@tongo/model";
+
+export function getStaticPaths() {
+  return UI_LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as UiLocale;
+const c = await content();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const hasDraft = [...c.languages, ...c.scripts].some((x) => x.confidence === "draft");
+---
+<Base locale={locale} section="about" title={t(locale, "about.title")}>
+  <h1>{t(locale, "about.title")}</h1>
+  <p class="lead">{t(locale, "about.lead")}</p>
+  {hasDraft && <p class="notice">{t(locale, "about.draftWarning")}</p>}
+
+  <h2>{t(locale, "about.language")}</h2>
+  <div class="lang-switch">
+    {UI_LOCALES.map((l) => (
+      <a href={`${base}/${l}/about/`} lang={l} hreflang={l} aria-current={l === locale ? "true" : undefined} data-set-locale={l}>{LOCALE_META[l].name}</a>
+    ))}
+  </div>
+
+  <h2>{t(locale, "about.sources")}</h2>
+  <p>{t(locale, "about.sourcesLead")}</p>
+  <div class="table-wrap">
+    <table class="letters">
+      <tbody>
+        {c.sources.map((s) => (
+          <tr>
+            <th scope="row"><a href={s.url} rel="noopener">{s.name}</a></th>
+            <td>{loc(locale, s.provides)}</td>
+            <td class="muted" dir="ltr">{s.license}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="confidence">{t(locale, "about.confidence")}</h2>
+  <dl class="facts" style="grid-template-columns:auto 1fr;gap:.7rem 1rem">
+    {CONFIDENCE_LEVELS.map((level) => (
+      <><dt><span class={`badge conf-${level}`}>{t(locale, `confidence.${level}`)}</span></dt>
+      <dd style="font-weight:400">{t(locale, `confidence.${level}.explain`)}</dd></>
+    ))}
+  </dl>
+
+  <h2>{t(locale, "about.license")}</h2>
+  <p>{t(locale, "about.licenseText")} <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener">CC BY-SA 4.0</a></p>
+</Base>

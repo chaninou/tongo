@@ -1,0 +1,33 @@
+---
+/** Les sons (IPA), porte d'entrée « par son ». */
+import Base from "../../../layouts/Base.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
+import { index } from "../../../lib/content";
+import { PHONEME_KINDS } from "@tongo/model";
+
+export function getStaticPaths() {
+  return UI_LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as UiLocale;
+const idx = await index();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const used = idx.c.phonemes.filter((p) => idx.spellings(p.ipa).length > 0);
+const groups = PHONEME_KINDS.map((kind) => ({ kind, items: used.filter((p) => p.kind === kind) })).filter((g) => g.items.length);
+---
+<Base locale={locale} section="sounds" title={t(locale, "sounds.title")}>
+  <h1>{t(locale, "sounds.title")}</h1>
+  <p class="lead">{t(locale, "sounds.lead")}</p>
+  {groups.map(({ kind, items }) => (
+    <section>
+      <h2>{t(locale, `sounds.kind.${kind}`)}</h2>
+      <div class="chars" dir="ltr" style="grid-template-columns:repeat(auto-fill,minmax(5.5rem,1fr))">
+        {items.map((p) => (
+          <a class="char-tile" href={`${base}/${locale}/sounds/${p.id}/`} title={loc(locale, p.name)}>
+            <span class="g ipa">/{p.ipa}/</span>
+            <span class="l">{idx.spellings(p.ipa).slice(0, 3).map((s) => s.grapheme.char).filter((v, i, a) => a.indexOf(v) === i).join(" ")}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

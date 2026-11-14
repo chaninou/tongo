@@ -1,0 +1,47 @@
+---
+/** Explorer par langue (US-004) avec recherche par nom (US-017), sans serveur. */
+import Base from "../../../layouts/Base.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
+import { content } from "../../../lib/content";
+
+export function getStaticPaths() {
+  return UI_LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as UiLocale;
+const c = await content();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const scriptName = (id: string) => { const s = c.scripts.find((x) => x.id === id); return s ? loc(locale, s.name) : id; };
+const langs = [...c.languages].sort((a, b) => loc(locale, a.name).localeCompare(loc(locale, b.name), locale));
+/** Texte de recherche : noms dans toutes les langues d'interface, nom natif, codes. Sans accents. */
+const norm = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+const haystack = (l: (typeof langs)[number]) =>
+  norm([l.name.fr, l.name.en, l.name.ar ?? "", l.endonym, l.id, l.iso639_3].join(" "));
+---
+<Base locale={locale} section="languages" title={t(locale, "languages.title")}>
+  <h1>{t(locale, "languages.title")}</h1>
+  <label for="q" style="display:block;margin-block-end:.3rem">{t(locale, "languages.search")}</label>
+  <input id="q" type="search" autocomplete="off" aria-describedby="q-hint" />
+  <p id="q-hint" class="muted" style="font-size:.9rem">{t(locale, "languages.searchHint")}</p>
+  <div class="grid" id="list" style="margin-block-start:1rem">
+    {langs.map((l) => (
+      <a class="card" href={`${base}/${locale}/languages/${l.id}/`} data-search={haystack(l)}>
+        <h2 style="font-size:1.25rem;margin:0">{loc(locale, l.name)}</h2>
+        <div class="sample" style="font-size:1.4rem" lang={l.id}><bdi>{l.endonym}</bdi></div>
+        <p class="muted" style="margin:0">{l.scripts.map(scriptName).join(", ")}</p>
+      </a>
+    ))}
+  </div>
+  <p id="none" class="muted" hidden aria-live="polite">{t(locale, "languages.none")}</p>
+  <script>
+    const q = document.querySelector<HTMLInputElement>("#q")!;
+    const cards = [...document.querySelectorAll<HTMLElement>("#list [data-search]")];
+    const none = document.querySelector<HTMLElement>("#none")!;
+    const norm = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();
+    q.addEventListener("input", () => {
+      const v = norm(q.value);
+      let shown = 0;
+      for (const c of cards) { const ok = !v || c.dataset.search!.includes(v); c.hidden = !ok; if (ok) shown++; }
+      none.hidden = shown > 0;
+    });
+  </script>
+</Base>

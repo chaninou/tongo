@@ -1,0 +1,92 @@
+---
+/**
+ * Gabarit commun : langue et sens d'écriture de l'interface (TS-010), navigation,
+ * changement de langue (US-002), polices Noto par écriture (TS-015).
+ */
+import "@fontsource/noto-sans/400.css";
+import "@fontsource/noto-sans/600.css";
+import "@fontsource/noto-sans-arabic/400.css";
+import "@fontsource/noto-sans-arabic/600.css";
+import "@fontsource/noto-sans-jp/400.css";
+import "@fontsource/noto-sans-hebrew/400.css";
+import "@fontsource/noto-sans-devanagari/400.css";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-tamil/400.css";
+import "@fontsource/noto-sans-thai/400.css";
+import "@fontsource/noto-sans-georgian/400.css";
+import "@fontsource/noto-sans-kr/400.css";
+import "@fontsource/fraunces/600.css";
+import "@fontsource/fraunces/700.css";
+import "../styles/global.css";
+import { LOCALE_META, UI_LOCALES, t, type UiLocale } from "../i18n/ui";
+
+interface Props {
+  locale: UiLocale;
+  title?: string;
+  description?: string;
+  /** Section active dans la navigation. */
+  section?: "home" | "languages" | "scripts" | "sounds" | "about";
+}
+const { locale, title, description, section } = Astro.props;
+const meta = LOCALE_META[locale];
+const pageTitle = title ? `${title} · Tongo` : `Tongo · ${t(locale, "site.tagline")}`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+/** Même page dans une autre langue d'interface : /fr/scripts/latn/ → /en/scripts/latn/. */
+const rest = Astro.url.pathname.slice(base.length).replace(/^\/(fr|en|ar)(?=\/)/, "");
+const href = (path: string) => `${base}/${locale}${path}`;
+const nav: [NonNullable<Props["section"]>, string, Parameters<typeof t>[1]][] = [
+  ["home", "/", "nav.home"],
+  ["languages", "/languages/", "nav.languages"],
+  ["scripts", "/scripts/", "nav.scripts"],
+  ["sounds", "/sounds/", "nav.sounds"],
+  ["about", "/about/", "nav.about"],
+];
+---
+<!doctype html>
+<html lang={locale} dir={meta.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description ?? t(locale, "site.tagline")} />
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    {UI_LOCALES.map((l) => <link rel="alternate" hreflang={l} href={`${base}/${l}${rest}`} />)}
+  </head>
+  <body>
+    <a class="skip" href="#main">{t(locale, "nav.skip")}</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={href("/")}>Ton<span>go</span></a>
+        <nav class="site-nav" aria-label="Navigation">
+          {nav.map(([id, path, key]) => (
+            <a href={href(path)} aria-current={section === id ? "page" : undefined}>{t(locale, key)}</a>
+          ))}
+        </nav>
+        <div class="lang-switch" role="group" aria-label={t(locale, "lang.switch")}>
+          {UI_LOCALES.map((l) => (
+            <a href={`${base}/${l}${rest}`} hreflang={l} lang={l} aria-current={l === locale ? "true" : undefined} data-set-locale={l}>
+              {l.toUpperCase()}
+            </a>
+          ))}
+        </div>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>Tongo · {t(locale, "site.tagline")}</span>
+        <a href={href("/about/")}>{t(locale, "footer.license")}</a>
+      </div>
+    </footer>
+    <script>
+      // Mémorise le choix explicite de langue d'interface (US-002), relu par la page d'accueil.
+      document.querySelectorAll<HTMLAnchorElement>("[data-set-locale]").forEach((a) =>
+        a.addEventListener("click", () => {
+          try { localStorage.setItem("tongo.locale", a.dataset.setLocale!); } catch {}
+        }),
+      );
+    </script>
+  </body>
+</html>

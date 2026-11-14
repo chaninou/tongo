@@ -1,0 +1,35 @@
+---
+/**
+ * Point d'entrée « / » : redirige vers la langue d'interface du navigateur (US-001, D18),
+ * ou vers celle choisie précédemment (US-002). Sans JavaScript, des liens sont proposés.
+ */
+import { LOCALE_META, UI_LOCALES } from "../i18n/ui";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tongo</title>
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    <script is:inline define:vars={{ locales: UI_LOCALES, base }}>
+      let target = null;
+      try { target = localStorage.getItem("tongo.locale"); } catch {}
+      if (!locales.includes(target)) {
+        target = "en";
+        for (const tag of navigator.languages || [navigator.language]) {
+          const code = String(tag).toLowerCase().split("-")[0];
+          if (locales.includes(code)) { target = code; break; }
+        }
+      }
+      location.replace(`${base}/${target}/`);
+    </script>
+  </head>
+  <body style="font-family:system-ui;padding:2rem">
+    <h1>Tongo</h1>
+    <ul>
+      {UI_LOCALES.map((l) => <li><a href={`${base}/${l}/`} lang={l}>{LOCALE_META[l].name}</a></li>)}
+    </ul>
+  </body>
+</html>

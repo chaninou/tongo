@@ -1,0 +1,42 @@
+---
+/** Accueil Atlas : trois portes d'entrée (US-003). */
+import Base from "../../layouts/Base.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../i18n/ui";
+import { content } from "../../lib/content";
+import { scriptLang } from "../../lib/script-lang";
+
+export function getStaticPaths() {
+  return UI_LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as UiLocale;
+const c = await content();
+const href = (p: string) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${locale}${p}`;
+const doors = [
+  { path: "/languages/", icon: "🗺️", title: t(locale, "home.door.languages"), desc: t(locale, "home.door.languages.desc"), sample: c.languages.map((l) => l.endonym).slice(0, 4).join(" · ") },
+  { path: "/scripts/", icon: "✍️", title: t(locale, "home.door.scripts"), desc: t(locale, "home.door.scripts.desc"), sample: c.scripts.map((s) => s.sample.split(" ")[0]).join(" ") },
+  { path: "/sounds/", icon: "👂", title: t(locale, "home.door.sounds"), desc: t(locale, "home.door.sounds.desc"), sample: "/ʃ/ /ʁ/ /θ/ /ɲ/" },
+];
+---
+<Base locale={locale} section="home">
+  <h1>{t(locale, "home.title")}</h1>
+  <p class="lead">{t(locale, "home.lead")}</p>
+  <div class="grid" style="margin-block-start:1.5rem">
+    {doors.map((d) => (
+      <a class="card door" href={href(d.path)}>
+        <span class="icon" aria-hidden="true">{d.icon}</span>
+        <h2>{d.title}</h2>
+        <p class="muted">{d.desc}</p>
+        <p class="sample" aria-hidden="true" style="font-size:1.3rem">{d.sample}</p>
+      </a>
+    ))}
+  </div>
+  <h2>{t(locale, "nav.scripts")}</h2>
+  <div class="grid">
+    {c.scripts.map((s) => (
+      <a class="card" href={href(`/scripts/${s.id}/`)}>
+        <div class="sample" lang={scriptLang(s.id)}>{s.sample}</div>
+        <strong>{loc(locale, s.name)}</strong> <span class="muted">· {t(locale, `type.${s.type}`)}</span>
+      </a>
+    ))}
+  </div>
+</Base>
