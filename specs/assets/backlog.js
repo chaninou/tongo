@@ -32,7 +32,7 @@ window.TONGO = {
   stories: [
     /* ───────────── USER STORIES ───────────── */
     {
-      id: "US-001", type: "US", epic: "E6", persona: "P1", priority: "M", points: 3, status: "todo",
+      id: "US-001", type: "US", epic: "E6", persona: "P1", priority: "M", points: 3, status: "done",
       title: "Interface dans la langue de mon navigateur",
       as: "visiteur qui ouvre Tongo pour la première fois",
       want: "que l'interface s'affiche directement dans la langue déclarée par mon navigateur",
@@ -45,7 +45,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-002", type: "US", epic: "E6", persona: "P4", priority: "M", points: 2, status: "todo",
+      id: "US-002", type: "US", epic: "E6", persona: "P4", priority: "M", points: 2, status: "done",
       title: "Changer de langue d'interface",
       as: "visiteur",
       want: "changer à tout moment la langue de l'interface et la langue de référence",
@@ -55,7 +55,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-003", type: "US", epic: "E1", persona: "P1", priority: "M", points: 3, status: "todo",
+      id: "US-003", type: "US", epic: "E1", persona: "P1", priority: "M", points: 3, status: "done",
       title: "Accueil Atlas avec trois portes d'entrée",
       as: "visiteur",
       want: "choisir dès l'accueil d'explorer par langue, par écriture ou par son",
@@ -66,7 +66,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-004", type: "US", epic: "E1", persona: "P1", priority: "M", points: 3, status: "todo",
+      id: "US-004", type: "US", epic: "E1", persona: "P1", priority: "M", points: 3, status: "doing",
       title: "Explorer par langue",
       as: "voyageuse qui prépare un séjour",
       want: "trouver la langue du pays où je vais",
@@ -77,7 +77,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-005", type: "US", epic: "E1", persona: "P4", priority: "M", points: 3, status: "todo",
+      id: "US-005", type: "US", epic: "E1", persona: "P4", priority: "M", points: 3, status: "done",
       title: "Explorer par écriture",
       as: "curieux de linguistique",
       want: "parcourir une galerie des écritures du monde",
@@ -88,7 +88,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-006", type: "US", epic: "E2", persona: "P4", priority: "M", points: 5, status: "todo",
+      id: "US-006", type: "US", epic: "E2", persona: "P4", priority: "M", points: 5, status: "done",
       title: "Page Écriture : présentation",
       as: "visiteur",
       want: "comprendre en quelques lignes comment fonctionne une écriture",
@@ -99,7 +99,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-007", type: "US", epic: "E2", persona: "P1", priority: "M", points: 5, status: "todo",
+      id: "US-007", type: "US", epic: "E2", persona: "P1", priority: "M", points: 5, status: "doing",
       title: "Tableau des caractères d'une écriture",
       as: "visiteur",
       want: "voir tous les caractères d'une écriture, organisés selon sa logique",
@@ -111,7 +111,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-008", type: "US", epic: "E3", persona: "P1", priority: "M", points: 5, status: "todo",
+      id: "US-008", type: "US", epic: "E3", persona: "P1", priority: "M", points: 5, status: "doing",
       title: "Fiche caractère : reconnaître et prononcer",
       as: "visiteur",
       want: "voir un caractère en grand, sa translittération et l'entendre",
@@ -124,7 +124,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-009", type: "US", epic: "E3", persona: "P2", priority: "M", points: 3, status: "todo",
+      id: "US-009", type: "US", epic: "E3", persona: "P2", priority: "M", points: 3, status: "doing",
       title: "Mots d'exemple",
       as: "enfant curieux",
       want: "voir des mots simples qui contiennent le caractère et les entendre",
@@ -135,7 +135,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-010", type: "US", epic: "E4", persona: "P1", priority: "S", points: 5, status: "todo",
+      id: "US-010", type: "US", epic: "E4", persona: "P1", priority: "S", points: 5, status: "doing",
       title: "Comparaison avec ma langue",
       as: "visiteur",
       want: "qu'on me dise à quel son de ma langue correspond le caractère",
@@ -146,7 +146,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-011", type: "US", epic: "E3", persona: "P3", priority: "M", points: 3, status: "todo",
+      id: "US-011", type: "US", epic: "E3", persona: "P3", priority: "M", points: 3, status: "doing",
       title: "Formes contextuelles arabes",
       as: "personne qui renoue avec l'écriture arabe",
       want: "voir les quatre formes d'une lettre (isolée, initiale, médiane, finale)",
@@ -168,7 +168,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-013", type: "US", epic: "E3", persona: "P1", priority: "S", points: 2, status: "todo",
+      id: "US-013", type: "US", epic: "E3", persona: "P1", priority: "S", points: 2, status: "done",
       title: "Correspondance hiragana / katakana",
       as: "voyageuse qui part au Japon",
       want: "voir le katakana équivalent d'un hiragana, et inversement",
@@ -178,7 +178,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-014", type: "US", epic: "E4", persona: "P4", priority: "S", points: 5, status: "todo",
+      id: "US-014", type: "US", epic: "E4", persona: "P4", priority: "S", points: 5, status: "doing",
       title: "Page Son : un son dans le monde",
       as: "curieux de linguistique",
       want: "voir comment un même son s'écrit dans toutes les langues",
@@ -211,7 +211,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-017", type: "US", epic: "E5", persona: "P2", priority: "M", points: 2, status: "todo",
+      id: "US-017", type: "US", epic: "E5", persona: "P2", priority: "M", points: 2, status: "done",
       title: "Rechercher une langue par son nom",
       as: "visiteur",
       want: "taper le nom d'une langue dans ma langue ou dans la sienne",
@@ -221,7 +221,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-018", type: "US", epic: "E3", persona: "P2", priority: "C", points: 1, status: "todo",
+      id: "US-018", type: "US", epic: "E3", persona: "P2", priority: "C", points: 1, status: "done",
       title: "Passer au caractère suivant",
       as: "visiteur",
       want: "passer au caractère précédent ou suivant depuis une fiche",
@@ -241,7 +241,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-020", type: "US", epic: "E9", persona: "P2", priority: "M", points: 3, status: "todo",
+      id: "US-020", type: "US", epic: "E9", persona: "P2", priority: "M", points: 3, status: "doing",
       title: "Une interface accessible à tous les âges",
       as: "enfant ou adulte peu à l'aise avec le numérique",
       want: "une interface simple, lisible, avec de grandes zones tactiles",
@@ -252,7 +252,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-021", type: "US", epic: "E9", persona: "P1", priority: "M", points: 3, status: "todo",
+      id: "US-021", type: "US", epic: "E9", persona: "P1", priority: "M", points: 3, status: "doing",
       title: "Utiliser Tongo sur web et mobile",
       as: "visiteur",
       want: "utiliser Tongo aussi bien sur ordinateur que sur téléphone",
@@ -262,7 +262,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-023", type: "US", epic: "E3", persona: "P4", priority: "M", points: 3, status: "todo",
+      id: "US-023", type: "US", epic: "E3", persona: "P4", priority: "M", points: 3, status: "done",
       title: "Voir le niveau de confiance d'une information",
       as: "visiteur",
       want: "savoir à quel point une prononciation ou un mot d'exemple est fiable",
@@ -274,7 +274,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-024", type: "US", epic: "E3", persona: "P1", priority: "S", points: 5, status: "todo",
+      id: "US-024", type: "US", epic: "E3", persona: "P1", priority: "S", points: 5, status: "doing",
       title: "Choisir le pays d'une langue",
       as: "voyageuse qui part au Portugal et non au Brésil",
       want: "choisir le pays dont j'entends la prononciation",
@@ -287,7 +287,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-022", type: "US", epic: "E9", persona: "P4", priority: "M", points: 1, status: "todo",
+      id: "US-022", type: "US", epic: "E9", persona: "P4", priority: "M", points: 1, status: "doing",
       title: "Sources et licence visibles",
       as: "visiteur",
       want: "savoir d'où viennent les contenus et sous quelle licence ils sont publiés",
@@ -299,7 +299,7 @@ window.TONGO = {
 
     /* ───────────── TECHNICAL STORIES ───────────── */
     {
-      id: "TS-001", type: "TS", epic: "E7", priority: "M", points: 5, status: "todo",
+      id: "TS-001", type: "TS", epic: "E7", priority: "M", points: 5, status: "done",
       title: "Modèle de données conceptuel",
       as: "équipe technique",
       want: "définir le modèle Langue → Écriture → Graphème → Phonème (IPA) → Mot d'exemple",
@@ -311,7 +311,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-002", type: "TS", epic: "E4", priority: "M", points: 2, status: "todo",
+      id: "TS-002", type: "TS", epic: "E4", priority: "M", points: 2, status: "doing",
       title: "Conventions IPA",
       as: "équipe technique",
       want: "fixer le niveau de transcription (phonémique /…/) et une variante de référence par langue",
@@ -322,7 +322,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-003", type: "TS", epic: "E7", priority: "M", points: 3, status: "todo",
+      id: "TS-003", type: "TS", epic: "E7", priority: "M", points: 3, status: "done",
       title: "Format des données statiques et schéma de validation",
       as: "équipe technique",
       want: "un format de fichiers de contenu versionnés, accompagné d'un schéma",
@@ -395,7 +395,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-010", type: "TS", epic: "E6", priority: "M", points: 5, status: "todo",
+      id: "TS-010", type: "TS", epic: "E6", priority: "M", points: 5, status: "doing",
       title: "Internationalisation (i18n)",
       as: "équipe technique",
       want: "externaliser tous les textes de l'interface et du contenu descriptif par langue, avec le français, l'anglais et l'arabe au lancement (D19)",
@@ -448,7 +448,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-015", type: "TS", epic: "E9", priority: "M", points: 5, status: "todo",
+      id: "TS-015", type: "TS", epic: "E9", priority: "M", points: 5, status: "doing",
       title: "Rendu typographique des 15 écritures",
       as: "équipe technique",
       want: "choisir des polices couvrant toutes les écritures (famille Noto par exemple)",
@@ -459,7 +459,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-016", type: "TS", epic: "E9", priority: "M", points: 2, status: "todo",
+      id: "TS-016", type: "TS", epic: "E9", priority: "M", points: 2, status: "doing",
       title: "Gestion des licences et des attributions",
       as: "équipe technique",
       want: "conserver la source, l'auteur et la licence de chaque donnée et de chaque audio",
@@ -500,10 +500,10 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-020", type: "TS", epic: "E9", priority: "M", points: 3, status: "todo",
-      title: "Initialisation de l'appli (Astro + React + TypeScript)",
+      id: "TS-020", type: "TS", epic: "E9", priority: "M", points: 3, status: "done",
+      title: "Initialisation de l'appli (Astro + TypeScript)",
       as: "équipe technique",
-      want: "un projet Astro en génération statique, avec des composants React chargés seulement là où c'est utile et un routage par langue",
+      want: "un projet Astro en génération statique, avec du JavaScript seulement là où c'est utile (React reste possible pour des îlots plus riches, D24) et un routage par langue",
       so: "poser le socle de l'appli web et mobile",
       criteria: [
         ["le projet est initialisé", "on lance le build", "une page par langue d'interface est générée (/fr/, /en/…), sans JavaScript chargé sur les pages qui n'en ont pas besoin"],
@@ -521,13 +521,14 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-022", type: "TS", epic: "E7", priority: "M", points: 3, status: "todo",
-      title: "Initialisation de la chaîne de production (Python)",
+      id: "TS-022", type: "TS", epic: "E7", priority: "M", points: 3, status: "doing",
+      title: "Initialisation de la chaîne de production (TypeScript)",
       as: "équipe technique",
-      want: "un projet Python (uv, Pydantic, pytest) avec une commande par étape : import, agrégation, croisement, export",
+      want: "un paquet TypeScript (tsx, Zod, Vitest) avec une commande par étape : import, agrégation, croisement, export (D24)",
       so: "produire le contenu de façon reproductible",
       criteria: [
-        ["le projet est initialisé", "on lance la chaîne complète sur une langue", "les étapes s'enchaînent et produisent des JSON valides au regard du schéma exporté depuis Pydantic"]
+        ["le projet est initialisé", "on lance la chaîne complète sur une langue", "les étapes s'enchaînent et produisent des JSON valides au regard du schéma Zod partagé avec l'appli"],
+        ["le contenu de départ est écrit à la main", "on lance « npm run seed » puis « npm run validate »", "les fichiers de content/ sont générés et validés ; ils restent marqués « brouillon » tant qu'aucune source ne les confirme"]
       ]
     },
     {

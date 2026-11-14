@@ -31,7 +31,7 @@
 <main class="wrap">
   <h1>Besoin fonctionnel V1</h1>
   <p class="lede">Ce document de cadrage rassemble les décisions prises pendant la phase de brainstorming. Le détail des besoins se trouve dans les <a href="user-stories.html">User Stories</a> et les <a href="technical-stories.html">Technical Stories</a>.</p>
-  <p class="meta">Version 0.7 · 2026-11-14 · statut : brouillon validé en atelier</p>
+  <p class="meta">Version 0.8 · 2026-11-14 · statut : brouillon validé en atelier</p>
 
   <ol class="toc">
     <li><a href="#vision">Vision et nom</a></li>
@@ -214,17 +214,17 @@
   </ul>
 
   <h2 id="archi">12. Architecture technique</h2>
-  <p>L'approche est <b>statique d'abord</b> : sans comptes ni données utilisateur, aucun serveur applicatif n'est nécessaire. Deux mondes sont séparés : la <b>chaîne de production du contenu</b> (hors ligne, en Python) et l'<b>appli</b> (site statique installable).</p>
+  <p>L'approche est <b>statique d'abord</b> : sans comptes ni données utilisateur, aucun serveur applicatif n'est nécessaire. Deux mondes sont séparés : la <b>chaîne de production du contenu</b> (hors ligne, en TypeScript, D24) et l'<b>appli</b> (site statique installable).</p>
   <div class="table-wrap"><table>
     <thead><tr><th>Brique</th><th>Choix</th><th>Story</th></tr></thead>
     <tbody>
-      <tr><td>Framework de l'appli</td><td><b>Astro</b> (génération statique) + TypeScript, composants <b>React</b> chargés seulement là où il en faut (audio, recherche, réglages)</td><td><a href="technical-stories.html#TS-020">TS-020</a></td></tr>
+      <tr><td>Framework de l'appli</td><td><b>Astro</b> (génération statique) + TypeScript, JavaScript seulement là où il en faut (recherche, choix du pays) ; <b>React</b> possible plus tard pour des îlots riches (D24)</td><td><a href="technical-stories.html#TS-020">TS-020</a></td></tr>
       <tr><td>Mobile</td><td><b>PWA</b> installable via <code>@vite-pwa/astro</code>, sans hors-ligne en V1. <b>Capacitor</b> plus tard si une présence en magasins d'applications devient nécessaire</td><td><a href="technical-stories.html#TS-021">TS-021</a></td></tr>
       <tr><td>Multilingue</td><td>Routage multilingue d'Astro + Paraglide (ou i18next), <code>dir="rtl"</code> pour les langues de droite à gauche</td><td><a href="technical-stories.html#TS-010">TS-010</a></td></tr>
       <tr><td>Recherche</td><td><b>Pagefind</b> (index statique)</td><td><a href="technical-stories.html#TS-017">TS-017</a></td></tr>
       <tr><td>Polices</td><td><b>Noto</b> auto-hébergée (Fontsource), découpée par écriture</td><td><a href="technical-stories.html#TS-015">TS-015</a></td></tr>
       <tr><td>Hébergement et CI/CD</td><td>Cloudflare Pages ou GitHub Pages, GitHub Actions</td><td><a href="technical-stories.html#TS-019">TS-019</a></td></tr>
-      <tr><td>Chaîne de production</td><td><b>Python</b> : uv, <b>Pydantic</b> (schéma → JSON Schema), pytest. Sources : CLDR, PHOIBLE, Epitran, wiktextract / kaikki.org, API de Wikimedia Commons et de Lingua Libre</td><td><a href="technical-stories.html#TS-022">TS-022</a></td></tr>
+      <tr><td>Chaîne de production</td><td><b>TypeScript</b> : tsx, <b>Zod</b> (schéma partagé avec l'appli, paquet <code>model/</code>), Vitest (D24). Sources : CLDR, PHOIBLE, Epitran, wiktextract / kaikki.org, API de Wikimedia Commons et de Lingua Libre</td><td><a href="technical-stories.html#TS-022">TS-022</a></td></tr>
       <tr><td>LLM (hors appli)</td><td><b>Claude Haiku 5.5</b> (<code>claude-haiku-5-5</code>), le modèle le moins coûteux, utilisé via l'API Message Batches (−50 %), avec structured outputs et prompt caching. Ordre de grandeur : <b>quelques dollars</b> pour générer tout le contenu V1</td><td><a href="technical-stories.html#TS-023">TS-023</a></td></tr>
       <tr><td>Synthèse vocale</td><td>À choisir par l'étude : de préférence un moteur qui accepte l'IPA en entrée (SSML <code>&lt;phoneme&gt;</code>)</td><td><a href="technical-stories.html#TS-012">TS-012</a></td></tr>
       <tr><td>Audio</td><td>MP3 ou AAC pré-générés, volume normalisé (ffmpeg), stockés dans Cloudflare R2 ou Git LFS</td><td><a href="technical-stories.html#TS-013">TS-013</a>, <a href="technical-stories.html#TS-024">TS-024</a></td></tr>
@@ -233,7 +233,8 @@
   <p class="meta">Options écartées : garder Flask (une API serveur est inutile pour un contenu statique) ; React Native ou Expo (référencement web faible, à reconsidérer si le mobile natif devient prioritaire) ; Flutter (référencement faible, rendu des écritures complexes risqué).</p>
   <p><b>Garde-fou :</b> le LLM n'est jamais la source d'une donnée phonétique. Il agrège, rédige et propose, et toute transcription doit être confirmée par une source.</p>
   <pre style="overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px">tongo/
-├── pipeline/   Python : sources → LLM → croisement → JSON + audio
+├── model/      schéma Zod partagé (types, validation, contrôles croisés)
+├── pipeline/   TypeScript : sources → LLM → croisement → JSON + audio
 ├── content/    données publiées (JSON versionnés + références audio)
 ├── app/        site Astro (web + PWA)
 └── specs/      besoin et suivi (ce dossier)</pre>
@@ -256,7 +257,7 @@
       <tr><td>D12</td><td>2026-11-14</td><td>La vérification combine bénévoles et croisement des sources. Aucun compte ni espace de contribution en V1.</td></tr>
       <tr><td>D13</td><td>2026-11-14</td><td>Audio : TTS, Wikimedia Commons et Lingua Libre. Contenu sous licence CC BY-SA.</td></tr>
       <tr><td>D14</td><td>2026-11-14</td><td>Méthode : Personas, User Stories, Technical Stories, Kanban simple, specs en HTML dans <code>specs/</code>.</td></tr>
-      <tr><td>D15</td><td>2026-11-14</td><td>Stack : site statique Astro + React (îlots) + PWA, chaîne de production en Python. Voir la <a href="#archi">section 12</a>.</td></tr>
+      <tr><td>D15</td><td>2026-11-14</td><td>Stack : site statique Astro + React (îlots) + PWA, chaîne de production en Python (remplacé par TypeScript, voir D24). Voir la <a href="#archi">section 12</a>.</td></tr>
       <tr><td>D16</td><td>2026-11-14</td><td>Pas de mode hors ligne en V1 (Q02). La PWA permet de l'ajouter plus tard.</td></tr>
       <tr><td>D17</td><td>2026-11-14</td><td>LLM : la solution la moins coûteuse pour la V1, Claude Haiku 5.5 via l'API Message Batches.</td></tr>
       <tr><td>D18</td><td>2026-11-14</td><td>Langue d'interface par défaut : celle déclarée par le navigateur, anglais en repli, modifiable dans les réglages (Q01).</td></tr>
@@ -265,6 +266,7 @@
       <tr><td>D21</td><td>2026-11-14</td><td>Le niveau de confiance d'une donnée est toujours affiché au visiteur (Q07).</td></tr>
       <tr><td>D22</td><td>2026-11-14</td><td>Le visiteur peut choisir le pays (la variante régionale) d'une langue. Par défaut : la variante régionale déclarée par le navigateur si elle existe, sinon la plus parlée (Q03).</td></tr>
       <tr><td>D23</td><td>2026-11-14</td><td>Variantes au lancement : anglais (États-Unis, Royaume-Uni), portugais (Brésil, Portugal), espagnol (Espagne, Mexique), français (France, Canada). Arabe standard moderne uniquement, les dialectes étant reportés. Les autres langues ont une seule variante (Q08).</td></tr>
+      <tr><td>D24</td><td>2026-11-14</td><td>La chaîne de production passe de Python à <b>TypeScript</b> (tsx, Zod, Vitest). Raison immédiate : PyPI est inaccessible depuis le poste de développement. Raison de fond : un seul langage et un seul schéma (Zod) partagés par la chaîne et l'appli, dans le paquet <code>model/</code>. React n'est pas installé tant qu'aucun îlot ne l'exige : les interactions actuelles (recherche, choix du pays) tiennent en quelques lignes de JavaScript. Remplace en partie D15.</td></tr>
     </tbody>
   </table></div>
 
