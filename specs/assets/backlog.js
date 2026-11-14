@@ -332,7 +332,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-004", type: "TS", epic: "E7", priority: "M", points: 3, status: "todo",
+      id: "TS-004", type: "TS", epic: "E7", priority: "M", points: 3, status: "doing",
       title: "Import des caractères (Unicode CLDR)",
       as: "équipe technique",
       want: "extraire les caractères utilisés par chacune des 20 langues depuis CLDR",
