@@ -119,7 +119,8 @@ window.TONGO = {
       criteria: [
         ["je suis sur la fiche d'un caractère", "elle s'affiche", "je vois le glyphe en grand, son nom, sa translittération et sa famille (voyelle, consonne…)"],
         ["je suis sur la fiche", "je touche le bouton audio", "j'entends la prononciation du caractère dans la langue choisie"],
-        ["le caractère se prononce différemment selon la langue (ex. « j »)", "je change de langue", "la prononciation et l'audio s'adaptent"]
+        ["le caractère se prononce différemment selon la langue (ex. « j »)", "je change de langue", "la prononciation et l'audio s'adaptent"],
+        ["j'ai choisi un pays pour cette langue (US-024)", "j'ouvre la fiche", "la prononciation, l'IPA et l'audio sont ceux de ce pays"]
       ]
     },
     {
@@ -273,6 +274,19 @@ window.TONGO = {
       ]
     },
     {
+      id: "US-024", type: "US", epic: "E3", persona: "P1", priority: "S", points: 5, status: "todo",
+      title: "Choisir le pays d'une langue",
+      as: "voyageuse qui part au Portugal et non au Brésil",
+      want: "choisir le pays dont j'entends la prononciation",
+      so: "apprendre les sons que j'entendrai sur place",
+      criteria: [
+        ["une langue a plusieurs variantes (ex. portugais : Brésil, Portugal)", "je suis sur sa page ou sur une fiche", "un sélecteur de pays affiche les variantes disponibles, la plus parlée étant sélectionnée par défaut"],
+        ["mon navigateur déclare une variante régionale (ex. en-GB)", "j'ouvre une langue qui a cette variante", "elle est présélectionnée"],
+        ["je choisis un autre pays", "", "l'IPA, l'audio et les mots d'exemple concernés basculent sur cette variante, et mon choix est mémorisé sur l'appareil pour cette langue"],
+        ["la prononciation est identique dans toutes les variantes", "j'ouvre la fiche", "aucune différence n'est signalée ; sinon, une note indique la prononciation dans les autres pays"]
+      ]
+    },
+    {
       id: "US-022", type: "US", epic: "E9", persona: "P4", priority: "M", points: 1, status: "todo",
       title: "Sources et licence visibles",
       as: "visiteur",
@@ -292,7 +306,7 @@ window.TONGO = {
       so: "représenter toutes les langues vivantes, même si la V1 n'en contient que 20",
       criteria: [
         ["le modèle est rédigé", "on y place les 5 types d'écriture", "alphabet, abjad, abugida, syllabaire et alphabet à traits s'y représentent sans cas particulier codé en dur"],
-        ["un graphème est partagé par plusieurs langues", "on modélise sa prononciation", "la prononciation est portée par le couple langue + graphème"],
+        ["un graphème est partagé par plusieurs langues", "on modélise sa prononciation", "la prononciation est portée par le couple variante régionale (pays) + graphème, chaque langue ayant au moins une variante, dont une par défaut"],
         ["une lettre a des formes contextuelles ou une composition", "on la modélise", "formes et compositions sont des attributs du modèle"]
       ]
     },
@@ -303,7 +317,7 @@ window.TONGO = {
       want: "fixer le niveau de transcription (phonémique /…/) et une variante de référence par langue",
       so: "que les ponts entre langues reposent sur des données cohérentes",
       criteria: [
-        ["la convention est rédigée", "on transcrit un graphème", "la transcription est phonémique, avec une variante de référence documentée pour chaque langue (ex. arabe standard moderne, portugais du Brésil ou du Portugal…)"]
+        ["la convention est rédigée", "on transcrit un graphème", "la transcription est phonémique ; chaque langue a une variante par défaut (la plus parlée) et éventuellement des variantes par pays, chacune identifiée par un code BCP 47 (pt-BR, pt-PT…) et documentée"]
       ]
     },
     {

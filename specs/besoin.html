@@ -31,7 +31,7 @@
 <main class="wrap">
   <h1>Besoin fonctionnel V1</h1>
   <p class="lede">Ce document de cadrage rassemble les décisions prises pendant la phase de brainstorming. Le détail des besoins se trouve dans les <a href="user-stories.html">User Stories</a> et les <a href="technical-stories.html">Technical Stories</a>.</p>
-  <p class="meta">Version 0.5 · 2026-11-14 · statut : brouillon validé en atelier</p>
+  <p class="meta">Version 0.6 · 2026-11-14 · statut : brouillon validé en atelier</p>
 
   <ol class="toc">
     <li><a href="#vision">Vision et nom</a></li>
@@ -119,16 +119,16 @@
   <p class="meta">Les cinq types d'écriture : <b>alphabet</b> (consonnes et voyelles sont des lettres) · <b>abjad</b> (on écrit surtout les consonnes) · <b>abugida</b> (une consonne porte une voyelle, modifiée par des signes) · <b>syllabaire</b> (un signe correspond à une syllabe) · <b>alphabet à traits</b> (des lettres assemblées en blocs syllabiques). L'hiragana et le katakana comptent comme deux écritures, ce qui porte le total à 15.</p>
 
   <h2 id="modele">6. Modèle conceptuel</h2>
-  <p>La prononciation dépend du <b>couple langue + graphème</b>, pas de l'écriture seule : <code>j</code> se prononce /ʒ/ en français, /dʒ/ en anglais et /x/ en espagnol.</p>
+  <p>La prononciation dépend du <b>couple langue + graphème</b>, pas de l'écriture seule : <code>j</code> se prononce /ʒ/ en français, /dʒ/ en anglais et /x/ en espagnol. Elle varie aussi selon le <b>pays</b> : chaque langue a une ou plusieurs <b>variantes régionales</b> (pt-BR, pt-PT…), dont une par défaut, et c'est la variante qui porte la prononciation (D22).</p>
   <div class="diagram">
     <svg viewBox="0 0 780 270" width="780" role="img" aria-label="Modèle conceptuel : Langue utilise Écriture, Écriture contient Graphème, Prononciation relie Langue et Graphème et se réalise en Phonème IPA, Mot d'exemple illustre une prononciation">
       <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
       <g>
-        <rect class="box" x="40" y="30" width="180" height="64" rx="8"/><text x="130" y="58" text-anchor="middle" font-weight="600">Langue</text><text class="sub" x="130" y="78" text-anchor="middle">ISO 639-3, endonyme</text>
+        <rect class="box" x="40" y="30" width="180" height="64" rx="8"/><text x="130" y="58" text-anchor="middle" font-weight="600">Langue</text><text class="sub" x="130" y="78" text-anchor="middle">variantes par pays</text>
         <rect class="box" x="300" y="30" width="180" height="64" rx="8"/><text x="390" y="58" text-anchor="middle" font-weight="600">Écriture</text><text class="sub" x="390" y="78" text-anchor="middle">type, sens d'écriture</text>
         <rect class="box" x="560" y="30" width="180" height="64" rx="8"/><text x="650" y="58" text-anchor="middle" font-weight="600">Graphème</text><text class="sub" x="650" y="78" text-anchor="middle">formes, composition</text>
         <rect class="box" x="40" y="180" width="180" height="64" rx="8"/><text x="130" y="208" text-anchor="middle" font-weight="600">Mot d'exemple</text><text class="sub" x="130" y="228" text-anchor="middle">1 à 3, audio, traduction</text>
-        <rect class="box hl" x="300" y="180" width="180" height="64" rx="8"/><text x="390" y="208" text-anchor="middle" font-weight="600">Prononciation</text><text class="sub" x="390" y="228" text-anchor="middle">langue × graphème</text>
+        <rect class="box hl" x="300" y="180" width="180" height="64" rx="8"/><text x="390" y="208" text-anchor="middle" font-weight="600">Prononciation</text><text class="sub" x="390" y="228" text-anchor="middle">variante × graphème</text>
         <rect class="box" x="560" y="180" width="180" height="64" rx="8"/><text x="650" y="208" text-anchor="middle" font-weight="600">Phonème IPA</text><text class="sub" x="650" y="228" text-anchor="middle">/ʃ/ · audio du son</text>
       </g>
       <g>
@@ -155,7 +155,7 @@
     <div class="card"><h3>Limites et règles</h3><ul class="tight">
       <li>Le grand public ne lit pas l'IPA : elle reste secondaire à l'écran.</li>
       <li>Graphème et son ne correspondent pas un pour un : la prononciation principale est retenue, et les autres sont illustrées par des exemples.</li>
-      <li>La transcription est phonémique (/…/), avec une variante de référence par langue (<a href="technical-stories.html#TS-002">TS-002</a>).</li>
+      <li>La transcription est phonémique (/…/). Chaque langue a une variante par défaut (la plus parlée), et le visiteur peut choisir le pays (<a href="technical-stories.html#TS-002">TS-002</a>, <a href="user-stories.html#US-024">US-024</a>).</li>
       <li>Les tons et la longueur passent par des diacritiques IPA, et l'audio est indispensable.</li>
     </ul></div>
   </div>
@@ -263,6 +263,7 @@
       <tr><td>D19</td><td>2026-11-14</td><td>Langues d'interface au lancement : français, anglais et arabe. L'arabe impose une interface de droite à gauche dès la V1. Les autres langues viendront ensuite (Q01).</td></tr>
       <tr><td>D20</td><td>2026-11-14</td><td>Pas de relecture humaine en V1 : la vérification repose uniquement sur le croisement automatique des sources. Les relecteurs bénévoles arrivent en V2 (Q05). Remplace en partie D12.</td></tr>
       <tr><td>D21</td><td>2026-11-14</td><td>Le niveau de confiance d'une donnée est toujours affiché au visiteur (Q07).</td></tr>
+      <tr><td>D22</td><td>2026-11-14</td><td>Le visiteur peut choisir le pays (la variante régionale) d'une langue. Par défaut : la variante régionale déclarée par le navigateur si elle existe, sinon la plus parlée (Q03).</td></tr>
     </tbody>
   </table></div>
 
@@ -272,7 +273,8 @@
     <tbody>
       <tr><td>Q01</td><td><s>Quelles langues d'interface, et laquelle par défaut ?</s> <span class="badge done">Répondue : français, anglais, arabe (D19) ; par défaut celle du navigateur (D18)</span></td><td><a href="technical-stories.html#TS-010">TS-010</a></td></tr>
       <tr><td>Q02</td><td><s>L'utilisation hors ligne est-elle exigée en V1 ?</s> <span class="badge done">Répondue : non (D16)</span></td><td><a href="#decisions">D16</a></td></tr>
-      <tr><td>Q03</td><td>Quelle variante de référence pour chaque langue (portugais du Brésil ou du Portugal, anglais britannique ou américain…) ?</td><td><a href="technical-stories.html#TS-002">TS-002</a></td></tr>
+      <tr><td>Q03</td><td><s>Quelle variante de référence pour chaque langue ?</s> <span class="badge done">Répondue : choix du pays par le visiteur, la plus parlée par défaut (D22)</span></td><td><a href="user-stories.html#US-024">US-024</a></td></tr>
+      <tr><td>Q08</td><td>Quelles variantes par pays au lancement ? Proposition : anglais (États-Unis, Royaume-Uni), portugais (Brésil, Portugal), espagnol (Espagne, Mexique), français (France, Canada) ; arabe standard moderne uniquement, les dialectes étant reportés.</td><td><a href="technical-stories.html#TS-002">TS-002</a></td></tr>
       <tr><td>Q04</td><td>Les écritures logographiques (hanzi, kanji) entrent-elles en V2, et sous quelle forme (pinyin, zhuyin) ?</td><td>V2</td></tr>
       <tr><td>Q05</td><td><s>Qui sont les premiers relecteurs bénévoles ?</s> <span class="badge done">Répondue : croisement seul en V1, bénévoles en V2 (D20)</span></td><td><a href="technical-stories.html#TS-009">TS-009</a></td></tr>
       <tr><td>Q06</td><td>Quelle licence pour le code (ouvert ou fermé) ? <span class="badge doing">Reportée : à décider avant la mise en ligne</span></td><td><a href="technical-stories.html#TS-016">TS-016</a></td></tr>
