@@ -1,0 +1,20 @@
+{
+  "name": "@tongo/pipeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "tsx src/validate.ts",
+    "seed": "tsx src/seed/build.ts"
+  },
+  "dependencies": {
+    "@tongo/model": "*",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "26.6.6"
+  },
+  "exports": {
+    "./content": "./src/content.ts"
+  }
+}

@@ -1,0 +1,972 @@
+{
+  "id": "es",
+  "iso639_3": "spa",
+  "name": {
+    "fr": "Espagnol",
+    "en": "Spanish",
+    "ar": "الإسبانية"
+  },
+  "endonym": "español",
+  "scripts": [
+    "latn"
+  ],
+  "variants": [
+    {
+      "id": "es-MX",
+      "region": "MX",
+      "name": {
+        "fr": "Mexique",
+        "en": "Mexico",
+        "ar": "المكسيك"
+      },
+      "default": true
+    },
+    {
+      "id": "es-ES",
+      "region": "ES",
+      "name": {
+        "fr": "Espagne",
+        "en": "Spain",
+        "ar": "إسبانيا"
+      },
+      "default": false
+    }
+  ],
+  "speakersM": 560,
+  "intro": {
+    "fr": "L'espagnol s'écrit presque comme il se prononce : une fois les règles connues, on peut lire n'importe quel mot. La lettre ñ et l'accent aigu, qui marque la syllabe accentuée, lui sont propres.",
+    "en": "Spanish is written almost exactly as it sounds: once you know the rules you can read any word. The letter ñ and the acute accent, which marks the stressed syllable, are its own.",
+    "ar": "تُكتب الإسبانية تقريبًا كما تُنطق، فبعد معرفة القواعد يمكن قراءة أي كلمة. حرف ñ والعلامة الحادة التي تحدد المقطع المنبور من خصائصها."
+  },
+  "letters": [
+    {
+      "grapheme": "latn:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "casa",
+          "ipa": "kasa",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:b",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "β"
+            ],
+            "context": {
+              "fr": "entre deux voyelles (lèvres qui se touchent à peine)",
+              "en": "between vowels (lips barely touch)"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "boca",
+          "ipa": "boka",
+          "meaning": {
+            "fr": "bouche",
+            "en": "mouth",
+            "ar": "فم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "s"
+            ],
+            "context": {
+              "fr": "devant e, i (Amérique latine)",
+              "en": "before e, i (Latin America)"
+            }
+          }
+        ],
+        "note": {
+          "fr": "Devant e et i, se prononce /θ/ (comme th anglais) en Espagne et /s/ en Amérique latine.",
+          "en": "Before e and i it is /θ/ (like English th) in Spain and /s/ in Latin America.",
+          "ar": "قبل e وi يُنطق /θ/ في إسبانيا و/s/ في أمريكا اللاتينية."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "casa",
+          "ipa": "kasa",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "cielo",
+          "ipa": "sjelo",
+          "meaning": {
+            "fr": "ciel",
+            "en": "sky",
+            "ar": "سماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:d",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "ð"
+            ],
+            "context": {
+              "fr": "entre deux voyelles",
+              "en": "between vowels"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "dedo",
+          "ipa": "deðo",
+          "meaning": {
+            "fr": "doigt",
+            "en": "finger",
+            "ar": "إصبع"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mesa",
+          "ipa": "mesa",
+          "meaning": {
+            "fr": "table",
+            "en": "table",
+            "ar": "طاولة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:f",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "fuego",
+          "ipa": "fweɡo",
+          "meaning": {
+            "fr": "feu",
+            "en": "fire",
+            "ar": "نار"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:g",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "x"
+            ],
+            "context": {
+              "fr": "devant e, i",
+              "en": "before e, i"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "gato",
+          "ipa": "ɡato",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "gente",
+          "ipa": "xente",
+          "meaning": {
+            "fr": "gens",
+            "en": "people",
+            "ar": "ناس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:h",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Toujours muet.",
+          "en": "Always silent.",
+          "ar": "لا يُنطق أبدًا."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "hola",
+          "ipa": "ola",
+          "meaning": {
+            "fr": "bonjour",
+            "en": "hello",
+            "ar": "مرحبًا"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "isla",
+          "ipa": "isla",
+          "meaning": {
+            "fr": "île",
+            "en": "island",
+            "ar": "جزيرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:j",
+      "pronunciation": {
+        "sound": [
+          "x"
+        ],
+        "note": {
+          "fr": "Plus doux, proche de /h/, dans les Caraïbes et en Andalousie.",
+          "en": "Softer, close to /h/, in the Caribbean and Andalusia.",
+          "ar": "أخف وقريب من /h/ في الكاريبي والأندلس."
+        },
+        "like": {
+          "fr": "un r raclé au fond de la gorge",
+          "en": "ch in Scottish loch"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "jamón",
+          "ipa": "xamon",
+          "meaning": {
+            "fr": "jambon",
+            "en": "ham",
+            "ar": "لحم خنزير مقدد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:k",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "kilo",
+          "ipa": "kilo",
+          "meaning": {
+            "fr": "kilo",
+            "en": "kilo",
+            "ar": "كيلو"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:l",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "luna",
+          "ipa": "luna",
+          "meaning": {
+            "fr": "lune",
+            "en": "moon",
+            "ar": "قمر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:m",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mano",
+          "ipa": "mano",
+          "meaning": {
+            "fr": "main",
+            "en": "hand",
+            "ar": "يد"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "noche",
+          "ipa": "not͡ʃe",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ojo",
+          "ipa": "oxo",
+          "meaning": {
+            "fr": "œil",
+            "en": "eye",
+            "ar": "عين"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:p",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "perro",
+          "ipa": "pero",
+          "meaning": {
+            "fr": "chien",
+            "en": "dog",
+            "ar": "كلب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:q",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "note": {
+          "fr": "Toujours suivi de u muet : que, qui.",
+          "en": "Always followed by a silent u: que, qui.",
+          "ar": "يليه دائمًا u لا يُنطق."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "queso",
+          "ipa": "keso",
+          "meaning": {
+            "fr": "fromage",
+            "en": "cheese",
+            "ar": "جبن"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:r",
+      "pronunciation": {
+        "sound": [
+          "ɾ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "r"
+            ],
+            "context": {
+              "fr": "en début de mot, après n, l, s, ou doublé (rr)",
+              "en": "word-initially, after n, l, s, or doubled (rr)"
+            }
+          }
+        ],
+        "like": {
+          "fr": "r roulé d'un seul coup de langue",
+          "en": "the tt in American butter"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "pero",
+          "ipa": "peɾo",
+          "meaning": {
+            "fr": "mais",
+            "en": "but",
+            "ar": "لكن"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "rosa",
+          "ipa": "rosa",
+          "meaning": {
+            "fr": "rose",
+            "en": "rose",
+            "ar": "وردة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:s",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "sol",
+          "ipa": "sol",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:t",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "taza",
+          "ipa": "tasa",
+          "meaning": {
+            "fr": "tasse",
+            "en": "cup",
+            "ar": "فنجان"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "like": {
+          "fr": "ou",
+          "en": "oo in food"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "uva",
+          "ipa": "uβa",
+          "meaning": {
+            "fr": "raisin",
+            "en": "grape",
+            "ar": "عنب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:v",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "note": {
+          "fr": "Se prononce exactement comme b.",
+          "en": "Pronounced exactly like b.",
+          "ar": "يُنطق تمامًا مثل b."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "vaca",
+          "ipa": "baka",
+          "meaning": {
+            "fr": "vache",
+            "en": "cow",
+            "ar": "بقرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:w",
+      "pronunciation": {
+        "sound": [
+          "w"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "web",
+          "ipa": "web",
+          "meaning": {
+            "fr": "web",
+            "en": "web",
+            "ar": "ويب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:x",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "s"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "x"
+            ],
+            "context": {
+              "fr": "dans México et quelques noms",
+              "en": "in México and some names"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "taxi",
+          "ipa": "taksi",
+          "meaning": {
+            "fr": "taxi",
+            "en": "taxi",
+            "ar": "سيارة أجرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:y",
+      "pronunciation": {
+        "sound": [
+          "ʝ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "i"
+            ],
+            "context": {
+              "fr": "seul ou en fin de mot",
+              "en": "alone or word-finally"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "yo",
+          "ipa": "ʝo",
+          "meaning": {
+            "fr": "je",
+            "en": "I",
+            "ar": "أنا"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:z",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "variants": {
+          "es-ES": [
+            "θ"
+          ]
+        },
+        "like": {
+          "en": "th in think (Spain)"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "zapato",
+          "ipa": "sapato",
+          "meaning": {
+            "fr": "chaussure",
+            "en": "shoe",
+            "ar": "حذاء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:a-acute",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "note": {
+          "fr": "L'accent marque la syllabe accentuée.",
+          "en": "The accent marks the stressed syllable.",
+          "ar": "العلامة تحدد المقطع المنبور."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "mamá",
+          "ipa": "mama",
+          "meaning": {
+            "fr": "maman",
+            "en": "mom",
+            "ar": "ماما"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e-acute",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "café",
+          "ipa": "kafe",
+          "meaning": {
+            "fr": "café",
+            "en": "coffee",
+            "ar": "قهوة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i-acute",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "día",
+          "ipa": "dia",
+          "meaning": {
+            "fr": "jour",
+            "en": "day",
+            "ar": "يوم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o-acute",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "canción",
+          "ipa": "kansjon",
+          "meaning": {
+            "fr": "chanson",
+            "en": "song",
+            "ar": "أغنية"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u-acute",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "menú",
+          "ipa": "menu",
+          "meaning": {
+            "fr": "menu",
+            "en": "menu",
+            "ar": "قائمة طعام"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "note": {
+          "fr": "Indique que le u se prononce entre g et e/i : pingüino.",
+          "en": "Shows that u is pronounced between g and e/i: pingüino.",
+          "ar": "يدل على نطق u بين g وe/i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "pingüino",
+          "ipa": "piŋɡwino",
+          "meaning": {
+            "fr": "pingouin",
+            "en": "penguin",
+            "ar": "بطريق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n-tilde",
+      "pronunciation": {
+        "sound": [
+          "ɲ"
+        ],
+        "like": {
+          "fr": "gn de montagne",
+          "en": "ny in canyon"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "niño",
+          "ipa": "niɲo",
+          "meaning": {
+            "fr": "enfant",
+            "en": "child",
+            "ar": "طفل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

@@ -1,0 +1,881 @@
+{
+  "id": "en",
+  "iso639_3": "eng",
+  "name": {
+    "fr": "Anglais",
+    "en": "English",
+    "ar": "الإنجليزية"
+  },
+  "endonym": "English",
+  "scripts": [
+    "latn"
+  ],
+  "variants": [
+    {
+      "id": "en-US",
+      "region": "US",
+      "name": {
+        "fr": "États-Unis",
+        "en": "United States",
+        "ar": "الولايات المتحدة"
+      },
+      "default": true
+    },
+    {
+      "id": "en-GB",
+      "region": "GB",
+      "name": {
+        "fr": "Royaume-Uni",
+        "en": "United Kingdom",
+        "ar": "المملكة المتحدة"
+      },
+      "default": false
+    }
+  ],
+  "speakersM": 1500,
+  "intro": {
+    "fr": "L'anglais utilise les 26 lettres latines sans accent, mais l'orthographe suit mal la prononciation : une même voyelle peut se lire de cinq façons. Les sons indiqués ici sont les plus fréquents.",
+    "en": "English uses the 26 Latin letters without accents, but spelling follows pronunciation loosely: one vowel letter can be read five ways. The sounds shown here are the most common ones.",
+    "ar": "تستخدم الإنجليزية الحروف اللاتينية الستة والعشرين دون علامات، لكن الإملاء لا يتبع النطق بدقة. الأصوات المذكورة هنا هي الأكثر شيوعًا."
+  },
+  "letters": [
+    {
+      "grapheme": "latn:a",
+      "pronunciation": {
+        "sound": [
+          "æ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "eɪ"
+            ],
+            "context": {
+              "fr": "a long (lettre suivie de consonne + e)",
+              "en": "long a (letter + consonant + e)"
+            }
+          }
+        ],
+        "like": {
+          "fr": "entre a et è"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "cat",
+          "ipa": "kæt",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "name",
+          "ipa": "neɪm",
+          "meaning": {
+            "fr": "nom",
+            "en": "name",
+            "ar": "اسم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:b",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "bed",
+          "ipa": "bɛd",
+          "meaning": {
+            "fr": "lit",
+            "en": "bed",
+            "ar": "سرير"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:c",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "s"
+            ],
+            "context": {
+              "fr": "devant e, i, y",
+              "en": "before e, i, y"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "cup",
+          "ipa": "kʌp",
+          "meaning": {
+            "fr": "tasse",
+            "en": "cup",
+            "ar": "فنجان"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "city",
+          "ipa": "sɪti",
+          "meaning": {
+            "fr": "ville",
+            "en": "city",
+            "ar": "مدينة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:d",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "dog",
+          "ipa": "dɔɡ",
+          "meaning": {
+            "fr": "chien",
+            "en": "dog",
+            "ar": "كلب"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:e",
+      "pronunciation": {
+        "sound": [
+          "ɛ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "iː"
+            ],
+            "context": {
+              "fr": "e long",
+              "en": "long e"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "egg",
+          "ipa": "ɛɡ",
+          "meaning": {
+            "fr": "œuf",
+            "en": "egg",
+            "ar": "بيضة"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "me",
+          "ipa": "miː",
+          "meaning": {
+            "fr": "moi",
+            "en": "me",
+            "ar": "أنا"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:f",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "fish",
+          "ipa": "fɪʃ",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:g",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "d͡ʒ"
+            ],
+            "context": {
+              "fr": "souvent devant e, i, y",
+              "en": "often before e, i, y"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "go",
+          "ipa": "ɡoʊ",
+          "meaning": {
+            "fr": "aller",
+            "en": "go",
+            "ar": "يذهب"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "giant",
+          "ipa": "d͡ʒaɪənt",
+          "meaning": {
+            "fr": "géant",
+            "en": "giant",
+            "ar": "عملاق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:h",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "like": {
+          "fr": "un souffle, comme pour faire de la buée"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "hat",
+          "ipa": "hæt",
+          "meaning": {
+            "fr": "chapeau",
+            "en": "hat",
+            "ar": "قبعة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:i",
+      "pronunciation": {
+        "sound": [
+          "ɪ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "aɪ"
+            ],
+            "context": {
+              "fr": "i long",
+              "en": "long i"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "sit",
+          "ipa": "sɪt",
+          "meaning": {
+            "fr": "s'asseoir",
+            "en": "sit",
+            "ar": "يجلس"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "time",
+          "ipa": "taɪm",
+          "meaning": {
+            "fr": "temps",
+            "en": "time",
+            "ar": "وقت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:j",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ"
+        ],
+        "like": {
+          "fr": "dj de djembé"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "jam",
+          "ipa": "d͡ʒæm",
+          "meaning": {
+            "fr": "confiture",
+            "en": "jam",
+            "ar": "مربى"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:k",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "king",
+          "ipa": "kɪŋ",
+          "meaning": {
+            "fr": "roi",
+            "en": "king",
+            "ar": "ملك"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:l",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "leg",
+          "ipa": "lɛɡ",
+          "meaning": {
+            "fr": "jambe",
+            "en": "leg",
+            "ar": "ساق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:m",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "moon",
+          "ipa": "muːn",
+          "meaning": {
+            "fr": "lune",
+            "en": "moon",
+            "ar": "قمر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:n",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "night",
+          "ipa": "naɪt",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:o",
+      "pronunciation": {
+        "sound": [
+          "ɑ"
+        ],
+        "variants": {
+          "en-GB": [
+            "ɒ"
+          ]
+        },
+        "alternates": [
+          {
+            "sound": [
+              "oʊ"
+            ],
+            "context": {
+              "fr": "o long",
+              "en": "long o"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "hot",
+          "ipa": "hɑt",
+          "meaning": {
+            "fr": "chaud",
+            "en": "hot",
+            "ar": "ساخن"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "home",
+          "ipa": "hoʊm",
+          "meaning": {
+            "fr": "maison",
+            "en": "home",
+            "ar": "بيت"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:p",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "pen",
+          "ipa": "pɛn",
+          "meaning": {
+            "fr": "stylo",
+            "en": "pen",
+            "ar": "قلم"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:q",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "note": {
+          "fr": "Presque toujours suivi de u, prononcé /w/ : qu = /kw/.",
+          "en": "Almost always followed by u, read /w/: qu = /kw/.",
+          "ar": "يليه غالبًا u فيُنطق qu مثل /kw/."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "queen",
+          "ipa": "kwiːn",
+          "meaning": {
+            "fr": "reine",
+            "en": "queen",
+            "ar": "ملكة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:r",
+      "pronunciation": {
+        "sound": [
+          "ɹ"
+        ],
+        "note": {
+          "fr": "En anglais britannique, ne se prononce pas en fin de syllabe (car = /kɑː/).",
+          "en": "In British English it is silent at the end of a syllable (car = /kɑː/).",
+          "ar": "في الإنجليزية البريطانية لا يُنطق في آخر المقطع."
+        },
+        "like": {
+          "fr": "r sans toucher le palais, langue recourbée"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "red",
+          "ipa": "ɹɛd",
+          "meaning": {
+            "fr": "rouge",
+            "en": "red",
+            "ar": "أحمر"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:s",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "z"
+            ],
+            "context": {
+              "fr": "souvent entre deux voyelles ou en fin de mot",
+              "en": "often between vowels or word-finally"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "sun",
+          "ipa": "sʌn",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "rose",
+          "ipa": "ɹoʊz",
+          "meaning": {
+            "fr": "rose",
+            "en": "rose",
+            "ar": "وردة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:t",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "tree",
+          "ipa": "tɹiː",
+          "meaning": {
+            "fr": "arbre",
+            "en": "tree",
+            "ar": "شجرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u",
+      "pronunciation": {
+        "sound": [
+          "ʌ"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "juː"
+            ],
+            "context": {
+              "fr": "u long",
+              "en": "long u"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "cup",
+          "ipa": "kʌp",
+          "meaning": {
+            "fr": "tasse",
+            "en": "cup",
+            "ar": "فنجان"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "cute",
+          "ipa": "kjuːt",
+          "meaning": {
+            "fr": "mignon",
+            "en": "cute",
+            "ar": "لطيف"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:v",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "van",
+          "ipa": "væn",
+          "meaning": {
+            "fr": "camionnette",
+            "en": "van",
+            "ar": "شاحنة صغيرة"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:w",
+      "pronunciation": {
+        "sound": [
+          "w"
+        ],
+        "like": {
+          "fr": "ou de oui"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "water",
+          "ipa": "wɔtəɹ",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:x",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "box",
+          "ipa": "bɑks",
+          "meaning": {
+            "fr": "boîte",
+            "en": "box",
+            "ar": "صندوق"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:y",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "aɪ"
+            ],
+            "context": {
+              "fr": "voyelle en fin de mot court",
+              "en": "vowel at the end of a short word"
+            }
+          },
+          {
+            "sound": [
+              "i"
+            ],
+            "context": {
+              "fr": "voyelle en fin de mot long",
+              "en": "vowel at the end of a longer word"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "yes",
+          "ipa": "jɛs",
+          "meaning": {
+            "fr": "oui",
+            "en": "yes",
+            "ar": "نعم"
+          },
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "my",
+          "ipa": "maɪ",
+          "meaning": {
+            "fr": "mon, ma",
+            "en": "my",
+            "ar": "لي"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:z",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "zoo",
+          "ipa": "zuː",
+          "meaning": {
+            "fr": "zoo",
+            "en": "zoo",
+            "ar": "حديقة حيوانات"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

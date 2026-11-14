@@ -1,0 +1,363 @@
+{
+  "id": "latn",
+  "name": {
+    "fr": "Latin",
+    "en": "Latin",
+    "ar": "اللاتينية"
+  },
+  "endonym": "Latina",
+  "type": "alphabet",
+  "direction": "ltr",
+  "cased": true,
+  "intro": {
+    "fr": "L'écriture la plus utilisée au monde. Chaque lettre note une consonne ou une voyelle, mais la même lettre se prononce différemment d'une langue à l'autre.",
+    "en": "The most widely used script in the world. Each letter stands for a consonant or a vowel, but the same letter sounds different from one language to another.",
+    "ar": "أكثر أنظمة الكتابة انتشارًا في العالم. يمثل كل حرف صامتًا أو صائتًا، لكن الحرف نفسه يُنطق بشكل مختلف من لغة إلى أخرى."
+  },
+  "sample": "a ç ñ é",
+  "font": "Noto Sans",
+  "groups": [
+    {
+      "id": "base",
+      "name": {
+        "fr": "Lettres de base",
+        "en": "Basic letters",
+        "ar": "الحروف الأساسية"
+      }
+    },
+    {
+      "id": "accents",
+      "name": {
+        "fr": "Lettres accentuées",
+        "en": "Accented letters",
+        "ar": "الحروف ذات العلامات"
+      }
+    }
+  ],
+  "graphemes": [
+    {
+      "id": "a",
+      "char": "a",
+      "upper": "A",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "b",
+      "char": "b",
+      "upper": "B",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "c",
+      "char": "c",
+      "upper": "C",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "d",
+      "char": "d",
+      "upper": "D",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "e",
+      "char": "e",
+      "upper": "E",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "f",
+      "char": "f",
+      "upper": "F",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "g",
+      "char": "g",
+      "upper": "G",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "h",
+      "char": "h",
+      "upper": "H",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "i",
+      "char": "i",
+      "upper": "I",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "j",
+      "char": "j",
+      "upper": "J",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "k",
+      "char": "k",
+      "upper": "K",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "l",
+      "char": "l",
+      "upper": "L",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "m",
+      "char": "m",
+      "upper": "M",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "n",
+      "char": "n",
+      "upper": "N",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "o",
+      "char": "o",
+      "upper": "O",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "p",
+      "char": "p",
+      "upper": "P",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "q",
+      "char": "q",
+      "upper": "Q",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "r",
+      "char": "r",
+      "upper": "R",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "s",
+      "char": "s",
+      "upper": "S",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "t",
+      "char": "t",
+      "upper": "T",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "u",
+      "char": "u",
+      "upper": "U",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "v",
+      "char": "v",
+      "upper": "V",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "w",
+      "char": "w",
+      "upper": "W",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "x",
+      "char": "x",
+      "upper": "X",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "y",
+      "char": "y",
+      "upper": "Y",
+      "kind": "vowel",
+      "group": "base"
+    },
+    {
+      "id": "z",
+      "char": "z",
+      "upper": "Z",
+      "kind": "consonant",
+      "group": "base"
+    },
+    {
+      "id": "a-grave",
+      "char": "à",
+      "upper": "À",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "a-circumflex",
+      "char": "â",
+      "upper": "Â",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "a-acute",
+      "char": "á",
+      "upper": "Á",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "c-cedilla",
+      "char": "ç",
+      "upper": "Ç",
+      "kind": "consonant",
+      "group": "accents"
+    },
+    {
+      "id": "e-acute",
+      "char": "é",
+      "upper": "É",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "e-grave",
+      "char": "è",
+      "upper": "È",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "e-circumflex",
+      "char": "ê",
+      "upper": "Ê",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "e-diaeresis",
+      "char": "ë",
+      "upper": "Ë",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "i-circumflex",
+      "char": "î",
+      "upper": "Î",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "i-diaeresis",
+      "char": "ï",
+      "upper": "Ï",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "i-acute",
+      "char": "í",
+      "upper": "Í",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "n-tilde",
+      "char": "ñ",
+      "upper": "Ñ",
+      "kind": "consonant",
+      "group": "accents"
+    },
+    {
+      "id": "o-circumflex",
+      "char": "ô",
+      "upper": "Ô",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "o-acute",
+      "char": "ó",
+      "upper": "Ó",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "oe",
+      "char": "œ",
+      "upper": "Œ",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "u-grave",
+      "char": "ù",
+      "upper": "Ù",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "u-circumflex",
+      "char": "û",
+      "upper": "Û",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "u-diaeresis",
+      "char": "ü",
+      "upper": "Ü",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "u-acute",
+      "char": "ú",
+      "upper": "Ú",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
+      "id": "y-diaeresis",
+      "char": "ÿ",
+      "upper": "Ÿ",
+      "kind": "vowel",
+      "group": "accents"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

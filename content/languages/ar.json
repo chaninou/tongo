@@ -1,0 +1,822 @@
+{
+  "id": "ar",
+  "iso639_3": "arb",
+  "name": {
+    "fr": "Arabe standard moderne",
+    "en": "Modern Standard Arabic",
+    "ar": "العربية الفصحى"
+  },
+  "endonym": "العربية",
+  "scripts": [
+    "arab"
+  ],
+  "variants": [
+    {
+      "id": "ar",
+      "name": {
+        "fr": "Arabe standard moderne",
+        "en": "Modern Standard Arabic",
+        "ar": "الفصحى"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 330,
+  "intro": {
+    "fr": "L'arabe standard moderne est la langue écrite commune à tout le monde arabe. Il possède des sons absents du français : consonnes emphatiques (ص ض ط ظ), sons de gorge (ح ع) et un q profond (ق).",
+    "en": "Modern Standard Arabic is the written language shared across the Arab world. It has sounds missing from English: emphatic consonants (ص ض ط ظ), throat sounds (ح ع) and a deep q (ق).",
+    "ar": "العربية الفصحى هي اللغة المكتوبة المشتركة في العالم العربي. فيها أصوات غير موجودة في الفرنسية والإنجليزية: الحروف المفخمة والحروف الحلقية والقاف."
+  },
+  "letters": [
+    {
+      "grapheme": "arab:alif",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "note": {
+          "fr": "Porte un a long, ou sert de support à la hamza (ء).",
+          "en": "Carries a long a, or serves as a seat for hamza (ء).",
+          "ar": "تدل على الألف الممدودة أو تكون كرسيًا للهمزة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "باب",
+          "ipa": "baːb",
+          "meaning": {
+            "fr": "porte",
+            "en": "door",
+            "ar": "باب"
+          },
+          "latin": "bāb",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ba",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "بيت",
+          "ipa": "bajt",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "latin": "bayt",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ta",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "تمر",
+          "ipa": "tamr",
+          "meaning": {
+            "fr": "dattes",
+            "en": "dates",
+            "ar": "تمر"
+          },
+          "latin": "tamr",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:tha",
+      "pronunciation": {
+        "sound": [
+          "θ"
+        ],
+        "like": {
+          "fr": "s zézayé, langue entre les dents",
+          "en": "th in think"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ثلاثة",
+          "ipa": "θalaːθa",
+          "meaning": {
+            "fr": "trois",
+            "en": "three",
+            "ar": "ثلاثة"
+          },
+          "latin": "thalātha",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:jim",
+      "pronunciation": {
+        "sound": [
+          "d͡ʒ"
+        ],
+        "note": {
+          "fr": "Prononcé /ʒ/ au Levant et au Maghreb, /ɡ/ en Égypte.",
+          "en": "Pronounced /ʒ/ in the Levant and Maghreb, /ɡ/ in Egypt.",
+          "ar": "يُنطق /ʒ/ في الشام والمغرب و/ɡ/ في مصر."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "جمل",
+          "ipa": "d͡ʒamal",
+          "meaning": {
+            "fr": "chameau",
+            "en": "camel",
+            "ar": "جمل"
+          },
+          "latin": "jamal",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ha",
+      "pronunciation": {
+        "sound": [
+          "ħ"
+        ],
+        "like": {
+          "fr": "un h soufflé du fond de la gorge, comme pour embuer une vitre",
+          "en": "a breathy h squeezed from the throat"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "حب",
+          "ipa": "ħubb",
+          "meaning": {
+            "fr": "amour",
+            "en": "love",
+            "ar": "حب"
+          },
+          "latin": "ḥubb",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:kha",
+      "pronunciation": {
+        "sound": [
+          "x"
+        ],
+        "like": {
+          "fr": "r raclé, comme le j espagnol",
+          "en": "ch in Scottish loch"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "خبز",
+          "ipa": "xubz",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "latin": "khubz",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:dal",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "دار",
+          "ipa": "daːr",
+          "meaning": {
+            "fr": "maison",
+            "en": "home",
+            "ar": "دار"
+          },
+          "latin": "dār",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:dhal",
+      "pronunciation": {
+        "sound": [
+          "ð"
+        ],
+        "like": {
+          "fr": "z zézayé, langue entre les dents",
+          "en": "th in this"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ذهب",
+          "ipa": "ðahab",
+          "meaning": {
+            "fr": "or",
+            "en": "gold",
+            "ar": "ذهب"
+          },
+          "latin": "dhahab",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ra",
+      "pronunciation": {
+        "sound": [
+          "r"
+        ],
+        "like": {
+          "fr": "r roulé",
+          "en": "rolled r"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "رجل",
+          "ipa": "rad͡ʒul",
+          "meaning": {
+            "fr": "homme",
+            "en": "man",
+            "ar": "رجل"
+          },
+          "latin": "rajul",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:zay",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "زيت",
+          "ipa": "zajt",
+          "meaning": {
+            "fr": "huile",
+            "en": "oil",
+            "ar": "زيت"
+          },
+          "latin": "zayt",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:sin",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "سلام",
+          "ipa": "salaːm",
+          "meaning": {
+            "fr": "paix",
+            "en": "peace",
+            "ar": "سلام"
+          },
+          "latin": "salām",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:shin",
+      "pronunciation": {
+        "sound": [
+          "ʃ"
+        ],
+        "like": {
+          "fr": "ch de chat",
+          "en": "sh in shop"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "شمس",
+          "ipa": "ʃams",
+          "meaning": {
+            "fr": "soleil",
+            "en": "sun",
+            "ar": "شمس"
+          },
+          "latin": "shams",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:sad",
+      "pronunciation": {
+        "sound": [
+          "sˤ"
+        ],
+        "note": {
+          "fr": "Emphatique : un s prononcé la langue reculée, qui assombrit la voyelle voisine.",
+          "en": "Emphatic: an s with the tongue pulled back, darkening the nearby vowel.",
+          "ar": "حرف مفخم."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "صبر",
+          "ipa": "sˤabr",
+          "meaning": {
+            "fr": "patience",
+            "en": "patience",
+            "ar": "صبر"
+          },
+          "latin": "ṣabr",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:dad",
+      "pronunciation": {
+        "sound": [
+          "dˤ"
+        ],
+        "note": {
+          "fr": "Emphatique. L'arabe est surnommé « la langue du ḍād ».",
+          "en": "Emphatic. Arabic is nicknamed “the language of ḍād”.",
+          "ar": "حرف مفخم، ولذلك تُسمى العربية « لغة الضاد »."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ضوء",
+          "ipa": "dˤawʔ",
+          "meaning": {
+            "fr": "lumière",
+            "en": "light",
+            "ar": "ضوء"
+          },
+          "latin": "ḍawʾ",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:tah",
+      "pronunciation": {
+        "sound": [
+          "tˤ"
+        ],
+        "note": {
+          "fr": "Emphatique.",
+          "en": "Emphatic.",
+          "ar": "حرف مفخم."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "طالب",
+          "ipa": "tˤaːlib",
+          "meaning": {
+            "fr": "étudiant",
+            "en": "student",
+            "ar": "طالب"
+          },
+          "latin": "ṭālib",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:zah",
+      "pronunciation": {
+        "sound": [
+          "ðˤ"
+        ],
+        "note": {
+          "fr": "Emphatique.",
+          "en": "Emphatic.",
+          "ar": "حرف مفخم."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ظهر",
+          "ipa": "ðˤuhr",
+          "meaning": {
+            "fr": "midi",
+            "en": "noon",
+            "ar": "ظهر"
+          },
+          "latin": "ẓuhr",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ayn",
+      "pronunciation": {
+        "sound": [
+          "ʕ"
+        ],
+        "like": {
+          "fr": "un a serré au fond de la gorge",
+          "en": "an a squeezed deep in the throat"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "عين",
+          "ipa": "ʕajn",
+          "meaning": {
+            "fr": "œil",
+            "en": "eye",
+            "ar": "عين"
+          },
+          "latin": "ʿayn",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ghayn",
+      "pronunciation": {
+        "sound": [
+          "ɣ"
+        ],
+        "like": {
+          "fr": "r grasseyé de Paris",
+          "en": "a French r"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "غرفة",
+          "ipa": "ɣurfa",
+          "meaning": {
+            "fr": "chambre",
+            "en": "room",
+            "ar": "غرفة"
+          },
+          "latin": "ghurfa",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:fa",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "فيل",
+          "ipa": "fiːl",
+          "meaning": {
+            "fr": "éléphant",
+            "en": "elephant",
+            "ar": "فيل"
+          },
+          "latin": "fīl",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:qaf",
+      "pronunciation": {
+        "sound": [
+          "q"
+        ],
+        "like": {
+          "fr": "un k prononcé tout au fond de la gorge",
+          "en": "a k made far back in the throat"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "قمر",
+          "ipa": "qamar",
+          "meaning": {
+            "fr": "lune",
+            "en": "moon",
+            "ar": "قمر"
+          },
+          "latin": "qamar",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:kaf",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "كتاب",
+          "ipa": "kitaːb",
+          "meaning": {
+            "fr": "livre",
+            "en": "book",
+            "ar": "كتاب"
+          },
+          "latin": "kitāb",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:lam",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ليل",
+          "ipa": "lajl",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "latin": "layl",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:mim",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ماء",
+          "ipa": "maːʔ",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "latin": "māʾ",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:nun",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "نور",
+          "ipa": "nuːr",
+          "meaning": {
+            "fr": "lumière",
+            "en": "light",
+            "ar": "نور"
+          },
+          "latin": "nūr",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:heh",
+      "pronunciation": {
+        "sound": [
+          "h"
+        ],
+        "like": {
+          "fr": "un souffle léger",
+          "en": "h in house"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "هواء",
+          "ipa": "hawaːʔ",
+          "meaning": {
+            "fr": "air",
+            "en": "air",
+            "ar": "هواء"
+          },
+          "latin": "hawāʾ",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:waw",
+      "pronunciation": {
+        "sound": [
+          "w"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "uː"
+            ],
+            "context": {
+              "fr": "voyelle longue",
+              "en": "long vowel"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ورد",
+          "ipa": "ward",
+          "meaning": {
+            "fr": "roses",
+            "en": "roses",
+            "ar": "ورد"
+          },
+          "latin": "ward",
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "نور",
+          "ipa": "nuːr",
+          "meaning": {
+            "fr": "lumière",
+            "en": "light",
+            "ar": "نور"
+          },
+          "latin": "nūr",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ya",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "iː"
+            ],
+            "context": {
+              "fr": "voyelle longue",
+              "en": "long vowel"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "يد",
+          "ipa": "jad",
+          "meaning": {
+            "fr": "main",
+            "en": "hand",
+            "ar": "يد"
+          },
+          "latin": "yad",
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "فيل",
+          "ipa": "fiːl",
+          "meaning": {
+            "fr": "éléphant",
+            "en": "elephant",
+            "ar": "فيل"
+          },
+          "latin": "fīl",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

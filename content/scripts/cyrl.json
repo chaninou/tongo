@@ -1,0 +1,313 @@
+{
+  "id": "cyrl",
+  "name": {
+    "fr": "Cyrillique",
+    "en": "Cyrillic",
+    "ar": "السيريلية"
+  },
+  "endonym": "Кириллица",
+  "type": "alphabet",
+  "direction": "ltr",
+  "cased": true,
+  "intro": {
+    "fr": "Créé au IXᵉ siècle à partir du grec, il sert à écrire le russe, l'ukrainien, le serbe ou le kazakh. Certaines lettres ressemblent au latin mais se prononcent autrement : р se dit r, н se dit n.",
+    "en": "Created in the 9th century from Greek, it is used for Russian, Ukrainian, Serbian and Kazakh. Some letters look Latin but sound different: р is r, н is n.",
+    "ar": "أُنشئت في القرن التاسع انطلاقًا من اليونانية، وتُكتب بها الروسية والأوكرانية والصربية والكازاخية. بعض حروفها تشبه اللاتينية لكنها تُنطق بشكل آخر."
+  },
+  "sample": "а б ж ы",
+  "font": "Noto Sans",
+  "groups": [
+    {
+      "id": "vowels",
+      "name": {
+        "fr": "Voyelles",
+        "en": "Vowels",
+        "ar": "الصوائت"
+      }
+    },
+    {
+      "id": "consonants",
+      "name": {
+        "fr": "Consonnes",
+        "en": "Consonants",
+        "ar": "الصوامت"
+      }
+    },
+    {
+      "id": "signs",
+      "name": {
+        "fr": "Signes",
+        "en": "Signs",
+        "ar": "علامات"
+      }
+    }
+  ],
+  "graphemes": [
+    {
+      "id": "a",
+      "char": "а",
+      "upper": "А",
+      "kind": "vowel",
+      "latin": "a",
+      "group": "vowels"
+    },
+    {
+      "id": "be",
+      "char": "б",
+      "upper": "Б",
+      "kind": "consonant",
+      "latin": "b",
+      "group": "consonants"
+    },
+    {
+      "id": "ve",
+      "char": "в",
+      "upper": "В",
+      "kind": "consonant",
+      "latin": "v",
+      "group": "consonants"
+    },
+    {
+      "id": "ge",
+      "char": "г",
+      "upper": "Г",
+      "kind": "consonant",
+      "latin": "g",
+      "group": "consonants"
+    },
+    {
+      "id": "de",
+      "char": "д",
+      "upper": "Д",
+      "kind": "consonant",
+      "latin": "d",
+      "group": "consonants"
+    },
+    {
+      "id": "ye",
+      "char": "е",
+      "upper": "Е",
+      "kind": "vowel",
+      "latin": "e",
+      "group": "vowels"
+    },
+    {
+      "id": "yo",
+      "char": "ё",
+      "upper": "Ё",
+      "kind": "vowel",
+      "latin": "ë",
+      "group": "vowels"
+    },
+    {
+      "id": "zhe",
+      "char": "ж",
+      "upper": "Ж",
+      "kind": "consonant",
+      "latin": "ž",
+      "group": "consonants"
+    },
+    {
+      "id": "ze",
+      "char": "з",
+      "upper": "З",
+      "kind": "consonant",
+      "latin": "z",
+      "group": "consonants"
+    },
+    {
+      "id": "i",
+      "char": "и",
+      "upper": "И",
+      "kind": "vowel",
+      "latin": "i",
+      "group": "vowels"
+    },
+    {
+      "id": "i-short",
+      "char": "й",
+      "upper": "Й",
+      "kind": "consonant",
+      "latin": "j",
+      "group": "consonants"
+    },
+    {
+      "id": "ka",
+      "char": "к",
+      "upper": "К",
+      "kind": "consonant",
+      "latin": "k",
+      "group": "consonants"
+    },
+    {
+      "id": "el",
+      "char": "л",
+      "upper": "Л",
+      "kind": "consonant",
+      "latin": "l",
+      "group": "consonants"
+    },
+    {
+      "id": "em",
+      "char": "м",
+      "upper": "М",
+      "kind": "consonant",
+      "latin": "m",
+      "group": "consonants"
+    },
+    {
+      "id": "en",
+      "char": "н",
+      "upper": "Н",
+      "kind": "consonant",
+      "latin": "n",
+      "group": "consonants"
+    },
+    {
+      "id": "o",
+      "char": "о",
+      "upper": "О",
+      "kind": "vowel",
+      "latin": "o",
+      "group": "vowels"
+    },
+    {
+      "id": "pe",
+      "char": "п",
+      "upper": "П",
+      "kind": "consonant",
+      "latin": "p",
+      "group": "consonants"
+    },
+    {
+      "id": "er",
+      "char": "р",
+      "upper": "Р",
+      "kind": "consonant",
+      "latin": "r",
+      "group": "consonants"
+    },
+    {
+      "id": "es",
+      "char": "с",
+      "upper": "С",
+      "kind": "consonant",
+      "latin": "s",
+      "group": "consonants"
+    },
+    {
+      "id": "te",
+      "char": "т",
+      "upper": "Т",
+      "kind": "consonant",
+      "latin": "t",
+      "group": "consonants"
+    },
+    {
+      "id": "u",
+      "char": "у",
+      "upper": "У",
+      "kind": "vowel",
+      "latin": "u",
+      "group": "vowels"
+    },
+    {
+      "id": "ef",
+      "char": "ф",
+      "upper": "Ф",
+      "kind": "consonant",
+      "latin": "f",
+      "group": "consonants"
+    },
+    {
+      "id": "kha",
+      "char": "х",
+      "upper": "Х",
+      "kind": "consonant",
+      "latin": "h",
+      "group": "consonants"
+    },
+    {
+      "id": "tse",
+      "char": "ц",
+      "upper": "Ц",
+      "kind": "consonant",
+      "latin": "c",
+      "group": "consonants"
+    },
+    {
+      "id": "che",
+      "char": "ч",
+      "upper": "Ч",
+      "kind": "consonant",
+      "latin": "č",
+      "group": "consonants"
+    },
+    {
+      "id": "sha",
+      "char": "ш",
+      "upper": "Ш",
+      "kind": "consonant",
+      "latin": "š",
+      "group": "consonants"
+    },
+    {
+      "id": "shcha",
+      "char": "щ",
+      "upper": "Щ",
+      "kind": "consonant",
+      "latin": "šč",
+      "group": "consonants"
+    },
+    {
+      "id": "hard-sign",
+      "char": "ъ",
+      "upper": "Ъ",
+      "kind": "sign",
+      "latin": "ʺ",
+      "group": "signs"
+    },
+    {
+      "id": "yery",
+      "char": "ы",
+      "upper": "Ы",
+      "kind": "vowel",
+      "latin": "y",
+      "group": "vowels"
+    },
+    {
+      "id": "soft-sign",
+      "char": "ь",
+      "upper": "Ь",
+      "kind": "sign",
+      "latin": "ʹ",
+      "group": "signs"
+    },
+    {
+      "id": "e",
+      "char": "э",
+      "upper": "Э",
+      "kind": "vowel",
+      "latin": "è",
+      "group": "vowels"
+    },
+    {
+      "id": "yu",
+      "char": "ю",
+      "upper": "Ю",
+      "kind": "vowel",
+      "latin": "ju",
+      "group": "vowels"
+    },
+    {
+      "id": "ya",
+      "char": "я",
+      "upper": "Я",
+      "kind": "vowel",
+      "latin": "ja",
+      "group": "vowels"
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

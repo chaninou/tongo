@@ -1,0 +1,412 @@
+{
+  "id": "arab",
+  "name": {
+    "fr": "Arabe",
+    "en": "Arabic",
+    "ar": "العربية"
+  },
+  "endonym": "الأبجدية العربية",
+  "type": "abjad",
+  "direction": "rtl",
+  "intro": {
+    "fr": "Un abjad : on écrit surtout les consonnes, les voyelles brèves sont le plus souvent omises. L'écriture va de droite à gauche et les lettres se lient : chacune change de forme selon sa place dans le mot.",
+    "en": "An abjad: mostly consonants are written and short vowels are usually left out. It runs right to left and letters join up, each changing shape with its position in the word.",
+    "ar": "أبجدية تُكتب فيها الصوامت أساسًا وتُحذف الحركات القصيرة غالبًا. تُكتب من اليمين إلى اليسار وتتصل الحروف، فيتغير شكل كل حرف حسب موضعه في الكلمة."
+  },
+  "sample": "ا ب ش ع",
+  "font": "Noto Sans Arabic",
+  "groups": [
+    {
+      "id": "letters",
+      "name": {
+        "fr": "Lettres",
+        "en": "Letters",
+        "ar": "الحروف"
+      }
+    }
+  ],
+  "graphemes": [
+    {
+      "id": "alif",
+      "char": "ا",
+      "name": "alif",
+      "latin": "ā",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ا",
+        "final": "‍ا"
+      }
+    },
+    {
+      "id": "ba",
+      "char": "ب",
+      "name": "bāʾ",
+      "latin": "b",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ب",
+        "initial": "ب‍",
+        "medial": "‍ب‍",
+        "final": "‍ب"
+      }
+    },
+    {
+      "id": "ta",
+      "char": "ت",
+      "name": "tāʾ",
+      "latin": "t",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ت",
+        "initial": "ت‍",
+        "medial": "‍ت‍",
+        "final": "‍ت"
+      }
+    },
+    {
+      "id": "tha",
+      "char": "ث",
+      "name": "thāʾ",
+      "latin": "th",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ث",
+        "initial": "ث‍",
+        "medial": "‍ث‍",
+        "final": "‍ث"
+      }
+    },
+    {
+      "id": "jim",
+      "char": "ج",
+      "name": "jīm",
+      "latin": "j",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ج",
+        "initial": "ج‍",
+        "medial": "‍ج‍",
+        "final": "‍ج"
+      }
+    },
+    {
+      "id": "ha",
+      "char": "ح",
+      "name": "ḥāʾ",
+      "latin": "ḥ",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ح",
+        "initial": "ح‍",
+        "medial": "‍ح‍",
+        "final": "‍ح"
+      }
+    },
+    {
+      "id": "kha",
+      "char": "خ",
+      "name": "khāʾ",
+      "latin": "kh",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "خ",
+        "initial": "خ‍",
+        "medial": "‍خ‍",
+        "final": "‍خ"
+      }
+    },
+    {
+      "id": "dal",
+      "char": "د",
+      "name": "dāl",
+      "latin": "d",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "د",
+        "final": "‍د"
+      }
+    },
+    {
+      "id": "dhal",
+      "char": "ذ",
+      "name": "dhāl",
+      "latin": "dh",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ذ",
+        "final": "‍ذ"
+      }
+    },
+    {
+      "id": "ra",
+      "char": "ر",
+      "name": "rāʾ",
+      "latin": "r",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ر",
+        "final": "‍ر"
+      }
+    },
+    {
+      "id": "zay",
+      "char": "ز",
+      "name": "zāy",
+      "latin": "z",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ز",
+        "final": "‍ز"
+      }
+    },
+    {
+      "id": "sin",
+      "char": "س",
+      "name": "sīn",
+      "latin": "s",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "س",
+        "initial": "س‍",
+        "medial": "‍س‍",
+        "final": "‍س"
+      }
+    },
+    {
+      "id": "shin",
+      "char": "ش",
+      "name": "shīn",
+      "latin": "sh",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ش",
+        "initial": "ش‍",
+        "medial": "‍ش‍",
+        "final": "‍ش"
+      }
+    },
+    {
+      "id": "sad",
+      "char": "ص",
+      "name": "ṣād",
+      "latin": "ṣ",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ص",
+        "initial": "ص‍",
+        "medial": "‍ص‍",
+        "final": "‍ص"
+      }
+    },
+    {
+      "id": "dad",
+      "char": "ض",
+      "name": "ḍād",
+      "latin": "ḍ",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ض",
+        "initial": "ض‍",
+        "medial": "‍ض‍",
+        "final": "‍ض"
+      }
+    },
+    {
+      "id": "tah",
+      "char": "ط",
+      "name": "ṭāʾ",
+      "latin": "ṭ",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ط",
+        "initial": "ط‍",
+        "medial": "‍ط‍",
+        "final": "‍ط"
+      }
+    },
+    {
+      "id": "zah",
+      "char": "ظ",
+      "name": "ẓāʾ",
+      "latin": "ẓ",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ظ",
+        "initial": "ظ‍",
+        "medial": "‍ظ‍",
+        "final": "‍ظ"
+      }
+    },
+    {
+      "id": "ayn",
+      "char": "ع",
+      "name": "ʿayn",
+      "latin": "ʿ",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ع",
+        "initial": "ع‍",
+        "medial": "‍ع‍",
+        "final": "‍ع"
+      }
+    },
+    {
+      "id": "ghayn",
+      "char": "غ",
+      "name": "ghayn",
+      "latin": "gh",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "غ",
+        "initial": "غ‍",
+        "medial": "‍غ‍",
+        "final": "‍غ"
+      }
+    },
+    {
+      "id": "fa",
+      "char": "ف",
+      "name": "fāʾ",
+      "latin": "f",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ف",
+        "initial": "ف‍",
+        "medial": "‍ف‍",
+        "final": "‍ف"
+      }
+    },
+    {
+      "id": "qaf",
+      "char": "ق",
+      "name": "qāf",
+      "latin": "q",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ق",
+        "initial": "ق‍",
+        "medial": "‍ق‍",
+        "final": "‍ق"
+      }
+    },
+    {
+      "id": "kaf",
+      "char": "ك",
+      "name": "kāf",
+      "latin": "k",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ك",
+        "initial": "ك‍",
+        "medial": "‍ك‍",
+        "final": "‍ك"
+      }
+    },
+    {
+      "id": "lam",
+      "char": "ل",
+      "name": "lām",
+      "latin": "l",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ل",
+        "initial": "ل‍",
+        "medial": "‍ل‍",
+        "final": "‍ل"
+      }
+    },
+    {
+      "id": "mim",
+      "char": "م",
+      "name": "mīm",
+      "latin": "m",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "م",
+        "initial": "م‍",
+        "medial": "‍م‍",
+        "final": "‍م"
+      }
+    },
+    {
+      "id": "nun",
+      "char": "ن",
+      "name": "nūn",
+      "latin": "n",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ن",
+        "initial": "ن‍",
+        "medial": "‍ن‍",
+        "final": "‍ن"
+      }
+    },
+    {
+      "id": "heh",
+      "char": "ه",
+      "name": "hāʾ",
+      "latin": "h",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ه",
+        "initial": "ه‍",
+        "medial": "‍ه‍",
+        "final": "‍ه"
+      }
+    },
+    {
+      "id": "waw",
+      "char": "و",
+      "name": "wāw",
+      "latin": "w / ū",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "و",
+        "final": "‍و"
+      }
+    },
+    {
+      "id": "ya",
+      "char": "ي",
+      "name": "yāʾ",
+      "latin": "y / ī",
+      "kind": "consonant",
+      "group": "letters",
+      "forms": {
+        "isolated": "ي",
+        "initial": "ي‍",
+        "medial": "‍ي‍",
+        "final": "‍ي"
+      }
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

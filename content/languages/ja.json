@@ -1,0 +1,1725 @@
+{
+  "id": "ja",
+  "iso639_3": "jpn",
+  "name": {
+    "fr": "Japonais",
+    "en": "Japanese",
+    "ar": "اليابانية"
+  },
+  "endonym": "日本語",
+  "scripts": [
+    "hira",
+    "kana"
+  ],
+  "variants": [
+    {
+      "id": "ja-JP",
+      "region": "JP",
+      "name": {
+        "fr": "Japon",
+        "en": "Japan",
+        "ar": "اليابان"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 125,
+  "intro": {
+    "fr": "Le japonais combine trois écritures. Tongo présente les deux syllabaires, hiragana et katakana, qui notent exactement les mêmes sons. Les kanji, d'origine chinoise, sont prévus pour la V2.",
+    "en": "Japanese combines three scripts. Tongo covers the two syllabaries, hiragana and katakana, which spell exactly the same sounds. Kanji, of Chinese origin, are planned for V2.",
+    "ar": "تجمع اليابانية بين ثلاث كتابات. يعرض تونغو المقطعيتين هيراغانا وكاتاكانا اللتين تمثلان الأصوات نفسها، أما الكانجي فمؤجلة إلى الإصدار الثاني."
+  },
+  "letters": [
+    {
+      "grapheme": "hira:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "あめ",
+          "ipa": "ame",
+          "meaning": {
+            "fr": "pluie",
+            "en": "rain",
+            "ar": "مطر"
+          },
+          "latin": "ame",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "いぬ",
+          "ipa": "inɯ",
+          "meaning": {
+            "fr": "chien",
+            "en": "dog",
+            "ar": "كلب"
+          },
+          "latin": "inu",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:u",
+      "pronunciation": {
+        "sound": [
+          "ɯ"
+        ],
+        "like": {
+          "fr": "ou, lèvres non arrondies",
+          "en": "oo in food, lips unrounded"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "うみ",
+          "ipa": "ɯmi",
+          "meaning": {
+            "fr": "mer",
+            "en": "sea",
+            "ar": "بحر"
+          },
+          "latin": "umi",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "えき",
+          "ipa": "eki",
+          "meaning": {
+            "fr": "gare",
+            "en": "station",
+            "ar": "محطة"
+          },
+          "latin": "eki",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "おちゃ",
+          "ipa": "ot͡ɕa",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "latin": "ocha",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ka",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "かさ",
+          "ipa": "kasa",
+          "meaning": {
+            "fr": "parapluie",
+            "en": "umbrella",
+            "ar": "مظلة"
+          },
+          "latin": "kasa",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ki",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "き",
+          "ipa": "ki",
+          "meaning": {
+            "fr": "arbre",
+            "en": "tree",
+            "ar": "شجرة"
+          },
+          "latin": "ki",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ku",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "くも",
+          "ipa": "kɯmo",
+          "meaning": {
+            "fr": "nuage",
+            "en": "cloud",
+            "ar": "سحابة"
+          },
+          "latin": "kumo",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ke",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ko",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:sa",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "さくら",
+          "ipa": "sakɯɾa",
+          "meaning": {
+            "fr": "cerisier",
+            "en": "cherry blossom",
+            "ar": "زهر الكرز"
+          },
+          "latin": "sakura",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:shi",
+      "pronunciation": {
+        "sound": [
+          "ɕ",
+          "i"
+        ],
+        "like": {
+          "fr": "chi",
+          "en": "she"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "しお",
+          "ipa": "ɕio",
+          "meaning": {
+            "fr": "sel",
+            "en": "salt",
+            "ar": "ملح"
+          },
+          "latin": "shio",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:su",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "すし",
+          "ipa": "sɯɕi",
+          "meaning": {
+            "fr": "sushi",
+            "en": "sushi",
+            "ar": "سوشي"
+          },
+          "latin": "sushi",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:se",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:so",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ta",
+      "pronunciation": {
+        "sound": [
+          "t",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "たまご",
+          "ipa": "tamaɡo",
+          "meaning": {
+            "fr": "œuf",
+            "en": "egg",
+            "ar": "بيضة"
+          },
+          "latin": "tamago",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:chi",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕ",
+          "i"
+        ],
+        "like": {
+          "fr": "tchi",
+          "en": "chee"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ちず",
+          "ipa": "t͡ɕizɯ",
+          "meaning": {
+            "fr": "carte",
+            "en": "map",
+            "ar": "خريطة"
+          },
+          "latin": "chizu",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:tsu",
+      "pronunciation": {
+        "sound": [
+          "t͡s",
+          "ɯ"
+        ],
+        "like": {
+          "fr": "tsou",
+          "en": "ts in cats + oo"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "つき",
+          "ipa": "t͡sɯki",
+          "meaning": {
+            "fr": "lune",
+            "en": "moon",
+            "ar": "قمر"
+          },
+          "latin": "tsuki",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:te",
+      "pronunciation": {
+        "sound": [
+          "t",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "て",
+          "ipa": "te",
+          "meaning": {
+            "fr": "main",
+            "en": "hand",
+            "ar": "يد"
+          },
+          "latin": "te",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:to",
+      "pronunciation": {
+        "sound": [
+          "t",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:na",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "なつ",
+          "ipa": "nat͡sɯ",
+          "meaning": {
+            "fr": "été",
+            "en": "summer",
+            "ar": "صيف"
+          },
+          "latin": "natsu",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ni",
+      "pronunciation": {
+        "sound": [
+          "ɲ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "にく",
+          "ipa": "ɲikɯ",
+          "meaning": {
+            "fr": "viande",
+            "en": "meat",
+            "ar": "لحم"
+          },
+          "latin": "niku",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:nu",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ne",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ねこ",
+          "ipa": "neko",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قطة"
+          },
+          "latin": "neko",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:no",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ha",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "a"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "w",
+              "a"
+            ],
+            "context": {
+              "fr": "particule de thème は",
+              "en": "topic particle は"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "はな",
+          "ipa": "hana",
+          "meaning": {
+            "fr": "fleur",
+            "en": "flower",
+            "ar": "زهرة"
+          },
+          "latin": "hana",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:hi",
+      "pronunciation": {
+        "sound": [
+          "ç",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ひ",
+          "ipa": "çi",
+          "meaning": {
+            "fr": "feu",
+            "en": "fire",
+            "ar": "نار"
+          },
+          "latin": "hi",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:fu",
+      "pronunciation": {
+        "sound": [
+          "ɸ",
+          "ɯ"
+        ],
+        "like": {
+          "fr": "un f soufflé entre les lèvres, sans les dents",
+          "en": "an f blown between the lips, no teeth"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ふね",
+          "ipa": "ɸɯne",
+          "meaning": {
+            "fr": "bateau",
+            "en": "ship",
+            "ar": "سفينة"
+          },
+          "latin": "fune",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:he",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ho",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ma",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "まど",
+          "ipa": "mado",
+          "meaning": {
+            "fr": "fenêtre",
+            "en": "window",
+            "ar": "نافذة"
+          },
+          "latin": "mado",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:mi",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "みず",
+          "ipa": "mizɯ",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "latin": "mizu",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:mu",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:me",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:mo",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ya",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "やま",
+          "ipa": "jama",
+          "meaning": {
+            "fr": "montagne",
+            "en": "mountain",
+            "ar": "جبل"
+          },
+          "latin": "yama",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:yu",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ゆき",
+          "ipa": "jɯki",
+          "meaning": {
+            "fr": "neige",
+            "en": "snow",
+            "ar": "ثلج"
+          },
+          "latin": "yuki",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:yo",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "よる",
+          "ipa": "joɾɯ",
+          "meaning": {
+            "fr": "nuit",
+            "en": "night",
+            "ar": "ليل"
+          },
+          "latin": "yoru",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ra",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "a"
+        ],
+        "like": {
+          "fr": "entre r, l et d, d'un seul coup de langue",
+          "en": "between r, l and d, a single tap"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "そら",
+          "ipa": "soɾa",
+          "meaning": {
+            "fr": "ciel",
+            "en": "sky",
+            "ar": "سماء"
+          },
+          "latin": "sora",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ri",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "りんご",
+          "ipa": "ɾiŋɡo",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "latin": "ringo",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:ru",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:re",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ro",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:wa",
+      "pronunciation": {
+        "sound": [
+          "ɰ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "わたし",
+          "ipa": "ɰataɕi",
+          "meaning": {
+            "fr": "je, moi",
+            "en": "I, me",
+            "ar": "أنا"
+          },
+          "latin": "watashi",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:wo",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "note": {
+          "fr": "Se prononce o. Ne sert presque qu'à marquer le complément d'objet.",
+          "en": "Pronounced o. Almost only used to mark the object.",
+          "ar": "يُنطق o، ويُستعمل غالبًا لتحديد المفعول به."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:n",
+      "pronunciation": {
+        "sound": [
+          "ɴ"
+        ],
+        "note": {
+          "fr": "Seul kana qui note une consonne sans voyelle. Sa prononciation s'adapte à la consonne suivante.",
+          "en": "The only kana for a consonant without a vowel. It adapts to the next consonant.",
+          "ar": "الكانا الوحيدة التي تمثل صامتًا بلا صائت."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ほん",
+          "ipa": "hoɴ",
+          "meaning": {
+            "fr": "livre",
+            "en": "book",
+            "ar": "كتاب"
+          },
+          "latin": "hon",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "アイス",
+          "ipa": "aisɯ",
+          "meaning": {
+            "fr": "glace",
+            "en": "ice cream",
+            "ar": "مثلجات"
+          },
+          "latin": "aisu",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:u",
+      "pronunciation": {
+        "sound": [
+          "ɯ"
+        ],
+        "like": {
+          "fr": "ou, lèvres non arrondies",
+          "en": "oo in food, lips unrounded"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ka",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "カメラ",
+          "ipa": "kameɾa",
+          "meaning": {
+            "fr": "appareil photo",
+            "en": "camera",
+            "ar": "كاميرا"
+          },
+          "latin": "kamera",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:ki",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ku",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ke",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ko",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "コーヒー",
+          "ipa": "koːçiː",
+          "meaning": {
+            "fr": "café",
+            "en": "coffee",
+            "ar": "قهوة"
+          },
+          "latin": "kōhī",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:sa",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:shi",
+      "pronunciation": {
+        "sound": [
+          "ɕ",
+          "i"
+        ],
+        "like": {
+          "fr": "chi",
+          "en": "she"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:su",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "スープ",
+          "ipa": "sɯːpɯ",
+          "meaning": {
+            "fr": "soupe",
+            "en": "soup",
+            "ar": "حساء"
+          },
+          "latin": "sūpu",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:se",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:so",
+      "pronunciation": {
+        "sound": [
+          "s",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ta",
+      "pronunciation": {
+        "sound": [
+          "t",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:chi",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕ",
+          "i"
+        ],
+        "like": {
+          "fr": "tchi",
+          "en": "chee"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:tsu",
+      "pronunciation": {
+        "sound": [
+          "t͡s",
+          "ɯ"
+        ],
+        "like": {
+          "fr": "tsou",
+          "en": "ts in cats + oo"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:te",
+      "pronunciation": {
+        "sound": [
+          "t",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "テレビ",
+          "ipa": "teɾebi",
+          "meaning": {
+            "fr": "télévision",
+            "en": "television",
+            "ar": "تلفاز"
+          },
+          "latin": "terebi",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:to",
+      "pronunciation": {
+        "sound": [
+          "t",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "トマト",
+          "ipa": "tomato",
+          "meaning": {
+            "fr": "tomate",
+            "en": "tomato",
+            "ar": "طماطم"
+          },
+          "latin": "tomato",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:na",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ni",
+      "pronunciation": {
+        "sound": [
+          "ɲ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:nu",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ne",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:no",
+      "pronunciation": {
+        "sound": [
+          "n",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ha",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "a"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "w",
+              "a"
+            ],
+            "context": {
+              "fr": "particule de thème は",
+              "en": "topic particle は"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ハンバーガー",
+          "ipa": "hambaːɡaː",
+          "meaning": {
+            "fr": "hamburger",
+            "en": "hamburger",
+            "ar": "برغر"
+          },
+          "latin": "hanbāgā",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:hi",
+      "pronunciation": {
+        "sound": [
+          "ç",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:fu",
+      "pronunciation": {
+        "sound": [
+          "ɸ",
+          "ɯ"
+        ],
+        "like": {
+          "fr": "un f soufflé entre les lèvres, sans les dents",
+          "en": "an f blown between the lips, no teeth"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:he",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ho",
+      "pronunciation": {
+        "sound": [
+          "h",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ma",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:mi",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:mu",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:me",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:mo",
+      "pronunciation": {
+        "sound": [
+          "m",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ya",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:yu",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:yo",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ra",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "a"
+        ],
+        "like": {
+          "fr": "entre r, l et d, d'un seul coup de langue",
+          "en": "between r, l and d, a single tap"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ラジオ",
+          "ipa": "ɾad͡ʑio",
+          "meaning": {
+            "fr": "radio",
+            "en": "radio",
+            "ar": "راديو"
+          },
+          "latin": "rajio",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:ri",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ru",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:re",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ro",
+      "pronunciation": {
+        "sound": [
+          "ɾ",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:wa",
+      "pronunciation": {
+        "sound": [
+          "ɰ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:wo",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "note": {
+          "fr": "Se prononce o. Ne sert presque qu'à marquer le complément d'objet.",
+          "en": "Pronounced o. Almost only used to mark the object.",
+          "ar": "يُنطق o، ويُستعمل غالبًا لتحديد المفعول به."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:n",
+      "pronunciation": {
+        "sound": [
+          "ɴ"
+        ],
+        "note": {
+          "fr": "Seul kana qui note une consonne sans voyelle. Sa prononciation s'adapte à la consonne suivante.",
+          "en": "The only kana for a consonant without a vowel. It adapts to the next consonant.",
+          "ar": "الكانا الوحيدة التي تمثل صامتًا بلا صائت."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "パン",
+          "ipa": "paɴ",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "latin": "pan",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}

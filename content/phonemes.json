@@ -1,0 +1,926 @@
+[
+  {
+    "ipa": "p",
+    "id": "p",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive bilabiale sourde",
+      "en": "voiceless bilabial plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "b",
+    "id": "b",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive bilabiale sonore",
+      "en": "voiced bilabial plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t",
+    "id": "t",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive alvéolaire sourde",
+      "en": "voiceless alveolar plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "d",
+    "id": "d",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive alvéolaire sonore",
+      "en": "voiced alveolar plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "k",
+    "id": "k",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive vélaire sourde",
+      "en": "voiceless velar plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɡ",
+    "id": "g",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive vélaire sonore",
+      "en": "voiced velar plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "q",
+    "id": "q",
+    "kind": "consonant",
+    "name": {
+      "fr": "occlusive uvulaire sourde",
+      "en": "voiceless uvular plosive"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʔ",
+    "id": "glottal-stop",
+    "kind": "consonant",
+    "name": {
+      "fr": "coup de glotte",
+      "en": "glottal stop"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "tˤ",
+    "id": "t-pharyngealized",
+    "kind": "consonant",
+    "name": {
+      "fr": "t emphatique (pharyngalisé)",
+      "en": "pharyngealized t"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "dˤ",
+    "id": "d-pharyngealized",
+    "kind": "consonant",
+    "name": {
+      "fr": "d emphatique (pharyngalisé)",
+      "en": "pharyngealized d"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "m",
+    "id": "m",
+    "kind": "consonant",
+    "name": {
+      "fr": "nasale bilabiale",
+      "en": "bilabial nasal"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "n",
+    "id": "n",
+    "kind": "consonant",
+    "name": {
+      "fr": "nasale alvéolaire",
+      "en": "alveolar nasal"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɲ",
+    "id": "palatal-nasal",
+    "kind": "consonant",
+    "name": {
+      "fr": "nasale palatale",
+      "en": "palatal nasal"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ŋ",
+    "id": "eng",
+    "kind": "consonant",
+    "name": {
+      "fr": "nasale vélaire",
+      "en": "velar nasal"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɴ",
+    "id": "uvular-nasal",
+    "kind": "consonant",
+    "name": {
+      "fr": "nasale uvulaire (n final japonais)",
+      "en": "uvular nasal (Japanese final n)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "f",
+    "id": "f",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative labiodentale sourde",
+      "en": "voiceless labiodental fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "v",
+    "id": "v",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative labiodentale sonore",
+      "en": "voiced labiodental fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "θ",
+    "id": "theta",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative dentale sourde",
+      "en": "voiceless dental fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ð",
+    "id": "eth",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative dentale sonore",
+      "en": "voiced dental fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "s",
+    "id": "s",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative alvéolaire sourde",
+      "en": "voiceless alveolar fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "z",
+    "id": "z",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative alvéolaire sonore",
+      "en": "voiced alveolar fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "sˤ",
+    "id": "s-pharyngealized",
+    "kind": "consonant",
+    "name": {
+      "fr": "s emphatique (pharyngalisé)",
+      "en": "pharyngealized s"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ðˤ",
+    "id": "eth-pharyngealized",
+    "kind": "consonant",
+    "name": {
+      "fr": "dh emphatique (pharyngalisé)",
+      "en": "pharyngealized eth"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʃ",
+    "id": "esh",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative post-alvéolaire sourde",
+      "en": "voiceless postalveolar fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʒ",
+    "id": "ezh",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative post-alvéolaire sonore",
+      "en": "voiced postalveolar fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɕ",
+    "id": "s-curl",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative alvéolo-palatale sourde",
+      "en": "voiceless alveolo-palatal fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʂ",
+    "id": "s-retroflex",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative rétroflexe sourde",
+      "en": "voiceless retroflex fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʐ",
+    "id": "z-retroflex",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative rétroflexe sonore",
+      "en": "voiced retroflex fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ç",
+    "id": "c-cedilla",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative palatale sourde",
+      "en": "voiceless palatal fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʝ",
+    "id": "j-curl",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative palatale sonore",
+      "en": "voiced palatal fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "x",
+    "id": "x",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative vélaire sourde",
+      "en": "voiceless velar fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɣ",
+    "id": "gamma",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative vélaire sonore",
+      "en": "voiced velar fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "χ",
+    "id": "chi",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative uvulaire sourde",
+      "en": "voiceless uvular fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʁ",
+    "id": "r-uvular",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative uvulaire sonore (r français)",
+      "en": "voiced uvular fricative (French r)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ħ",
+    "id": "h-pharyngeal",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative pharyngale sourde",
+      "en": "voiceless pharyngeal fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʕ",
+    "id": "ain",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative pharyngale sonore",
+      "en": "voiced pharyngeal fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "h",
+    "id": "h",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative glottale sourde",
+      "en": "voiceless glottal fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɸ",
+    "id": "phi",
+    "kind": "consonant",
+    "name": {
+      "fr": "fricative bilabiale sourde",
+      "en": "voiceless bilabial fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡s",
+    "id": "ts",
+    "kind": "consonant",
+    "name": {
+      "fr": "affriquée alvéolaire sourde",
+      "en": "voiceless alveolar affricate"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "d͡z",
+    "id": "dz",
+    "kind": "consonant",
+    "name": {
+      "fr": "affriquée alvéolaire sonore",
+      "en": "voiced alveolar affricate"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡ʃ",
+    "id": "tsh",
+    "kind": "consonant",
+    "name": {
+      "fr": "affriquée post-alvéolaire sourde",
+      "en": "voiceless postalveolar affricate"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "d͡ʒ",
+    "id": "dzh",
+    "kind": "consonant",
+    "name": {
+      "fr": "affriquée post-alvéolaire sonore",
+      "en": "voiced postalveolar affricate"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "t͡ɕ",
+    "id": "tc",
+    "kind": "consonant",
+    "name": {
+      "fr": "affriquée alvéolo-palatale sourde",
+      "en": "voiceless alveolo-palatal affricate"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "d͡ʑ",
+    "id": "dz-curl",
+    "kind": "consonant",
+    "name": {
+      "fr": "affriquée alvéolo-palatale sonore",
+      "en": "voiced alveolo-palatal affricate"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "β",
+    "id": "beta",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante bilabiale sonore",
+      "en": "voiced bilabial approximant/fricative"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɾ",
+    "id": "r-tap",
+    "kind": "consonant",
+    "name": {
+      "fr": "battue alvéolaire",
+      "en": "alveolar tap"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "r",
+    "id": "r",
+    "kind": "consonant",
+    "name": {
+      "fr": "roulée alvéolaire",
+      "en": "alveolar trill"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɹ",
+    "id": "r-turned",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante alvéolaire (r anglais)",
+      "en": "alveolar approximant (English r)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "l",
+    "id": "l",
+    "kind": "consonant",
+    "name": {
+      "fr": "latérale alvéolaire",
+      "en": "alveolar lateral"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʎ",
+    "id": "l-palatal",
+    "kind": "consonant",
+    "name": {
+      "fr": "latérale palatale",
+      "en": "palatal lateral"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "j",
+    "id": "j",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante palatale (y de yaourt)",
+      "en": "palatal approximant (y of yes)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "w",
+    "id": "w",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante labio-vélaire",
+      "en": "labial-velar approximant"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɥ",
+    "id": "turned-h",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante labio-palatale (u de huit)",
+      "en": "labial-palatal approximant"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɰ",
+    "id": "turned-m-leg",
+    "kind": "consonant",
+    "name": {
+      "fr": "spirante vélaire (w japonais)",
+      "en": "velar approximant (Japanese w)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "i",
+    "id": "i",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle fermée antérieure",
+      "en": "close front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "y",
+    "id": "y",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle fermée antérieure arrondie (u français)",
+      "en": "close front rounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɨ",
+    "id": "i-bar",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle fermée centrale (ы russe)",
+      "en": "close central vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "u",
+    "id": "u",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle fermée postérieure (ou)",
+      "en": "close back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɯ",
+    "id": "u-unrounded",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle fermée postérieure non arrondie",
+      "en": "close back unrounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɪ",
+    "id": "small-i",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle pré-fermée antérieure",
+      "en": "near-close front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʊ",
+    "id": "upsilon",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle pré-fermée postérieure",
+      "en": "near-close back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "e",
+    "id": "e",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-fermée antérieure (é)",
+      "en": "close-mid front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ø",
+    "id": "o-slash",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-fermée antérieure arrondie (eu de peu)",
+      "en": "close-mid front rounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "o",
+    "id": "o",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-fermée postérieure (o de eau)",
+      "en": "close-mid back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ə",
+    "id": "schwa",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle centrale (e muet)",
+      "en": "mid central vowel (schwa)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɛ",
+    "id": "epsilon",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-ouverte antérieure (è)",
+      "en": "open-mid front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "œ",
+    "id": "oe",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-ouverte antérieure arrondie (eu de peur)",
+      "en": "open-mid front rounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɔ",
+    "id": "open-o",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-ouverte postérieure (o de porte)",
+      "en": "open-mid back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ʌ",
+    "id": "wedge",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle mi-ouverte postérieure non arrondie",
+      "en": "open-mid back unrounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "æ",
+    "id": "ash",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle pré-ouverte antérieure",
+      "en": "near-open front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "a",
+    "id": "a",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle ouverte antérieure",
+      "en": "open front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɑ",
+    "id": "script-a",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle ouverte postérieure",
+      "en": "open back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɒ",
+    "id": "turned-script-a",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle ouverte postérieure arrondie",
+      "en": "open back rounded vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɛ̃",
+    "id": "epsilon-nasal",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle nasale (in de vin)",
+      "en": "nasal open-mid front vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɑ̃",
+    "id": "script-a-nasal",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle nasale (an de vent)",
+      "en": "nasal open back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "ɔ̃",
+    "id": "open-o-nasal",
+    "kind": "vowel",
+    "name": {
+      "fr": "voyelle nasale (on de bon)",
+      "en": "nasal open-mid back vowel"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "aː",
+    "id": "a-long",
+    "kind": "vowel",
+    "name": {
+      "fr": "a long",
+      "en": "long a"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "iː",
+    "id": "i-long",
+    "kind": "vowel",
+    "name": {
+      "fr": "i long",
+      "en": "long i"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "uː",
+    "id": "u-long",
+    "kind": "vowel",
+    "name": {
+      "fr": "ou long",
+      "en": "long u"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "eɪ",
+    "id": "ei",
+    "kind": "diphthong",
+    "name": {
+      "fr": "diphtongue éi",
+      "en": "diphthong ei"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "aɪ",
+    "id": "ai",
+    "kind": "diphthong",
+    "name": {
+      "fr": "diphtongue aï",
+      "en": "diphthong ai"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "oʊ",
+    "id": "ou",
+    "kind": "diphthong",
+    "name": {
+      "fr": "diphtongue ow (américain)",
+      "en": "diphthong ow (American)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "əʊ",
+    "id": "schwa-u",
+    "kind": "diphthong",
+    "name": {
+      "fr": "diphtongue eu-ou (britannique)",
+      "en": "diphthong ow (British)"
+    },
+    "confidence": "draft",
+    "sources": []
+  },
+  {
+    "ipa": "juː",
+    "id": "ju-long",
+    "kind": "diphthong",
+    "name": {
+      "fr": "you",
+      "en": "you"
+    },
+    "confidence": "draft",
+    "sources": []
+  }
+]

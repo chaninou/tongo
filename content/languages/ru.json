@@ -1,0 +1,936 @@
+{
+  "id": "ru",
+  "iso639_3": "rus",
+  "name": {
+    "fr": "Russe",
+    "en": "Russian",
+    "ar": "الروسية"
+  },
+  "endonym": "русский",
+  "scripts": [
+    "cyrl"
+  ],
+  "variants": [
+    {
+      "id": "ru-RU",
+      "region": "RU",
+      "name": {
+        "fr": "Russie",
+        "en": "Russia",
+        "ar": "روسيا"
+      },
+      "default": true
+    }
+  ],
+  "speakersM": 255,
+  "intro": {
+    "fr": "Le russe s'écrit en cyrillique, de façon assez régulière. Deux points demandent de l'attention : les voyelles « molles » (я, е, ё, ю) adoucissent la consonne qui les précède, et le о non accentué se prononce presque a.",
+    "en": "Russian is written in Cyrillic, fairly regularly. Two things need care: the “soft” vowels (я, е, ё, ю) soften the consonant before them, and unstressed о sounds close to a.",
+    "ar": "تُكتب الروسية بالسيريلية بانتظام نسبي. الصوائت « اللينة » (я، е، ё، ю) تليّن الصامت الذي قبلها، وحرف о غير المنبور يُنطق قريبًا من a."
+  },
+  "letters": [
+    {
+      "grapheme": "cyrl:a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "мама",
+          "ipa": "mama",
+          "meaning": {
+            "fr": "maman",
+            "en": "mom",
+            "ar": "ماما"
+          },
+          "latin": "mama",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:be",
+      "pronunciation": {
+        "sound": [
+          "b"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "банк",
+          "ipa": "bank",
+          "meaning": {
+            "fr": "banque",
+            "en": "bank",
+            "ar": "مصرف"
+          },
+          "latin": "bank",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:ve",
+      "pronunciation": {
+        "sound": [
+          "v"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "вода",
+          "ipa": "vada",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "latin": "voda",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:ge",
+      "pronunciation": {
+        "sound": [
+          "ɡ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "город",
+          "ipa": "ɡorət",
+          "meaning": {
+            "fr": "ville",
+            "en": "city",
+            "ar": "مدينة"
+          },
+          "latin": "gorod",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:de",
+      "pronunciation": {
+        "sound": [
+          "d"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "дом",
+          "ipa": "dom",
+          "meaning": {
+            "fr": "maison",
+            "en": "house",
+            "ar": "بيت"
+          },
+          "latin": "dom",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:ye",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "e"
+        ],
+        "note": {
+          "fr": "Après une consonne, se prononce e et adoucit la consonne.",
+          "en": "After a consonant it is read e and softens the consonant.",
+          "ar": "بعد صامت يُنطق e ويليّن الصامت."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "есть",
+          "ipa": "jesʲtʲ",
+          "meaning": {
+            "fr": "manger",
+            "en": "to eat",
+            "ar": "يأكل"
+          },
+          "latin": "est'",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:yo",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "o"
+        ],
+        "note": {
+          "fr": "Toujours accentué. Les deux points sont souvent omis à l'écrit.",
+          "en": "Always stressed. The two dots are often left out in writing.",
+          "ar": "منبور دائمًا. غالبًا ما تُحذف النقطتان في الكتابة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ёж",
+          "ipa": "joʂ",
+          "meaning": {
+            "fr": "hérisson",
+            "en": "hedgehog",
+            "ar": "قنفذ"
+          },
+          "latin": "ëž",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:zhe",
+      "pronunciation": {
+        "sound": [
+          "ʐ"
+        ],
+        "like": {
+          "fr": "j de jour, langue plus en arrière",
+          "en": "s in measure, tongue further back"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "жук",
+          "ipa": "ʐuk",
+          "meaning": {
+            "fr": "scarabée",
+            "en": "beetle",
+            "ar": "خنفساء"
+          },
+          "latin": "žuk",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:ze",
+      "pronunciation": {
+        "sound": [
+          "z"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "зима",
+          "ipa": "zʲima",
+          "meaning": {
+            "fr": "hiver",
+            "en": "winter",
+            "ar": "شتاء"
+          },
+          "latin": "zima",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "игра",
+          "ipa": "iɡra",
+          "meaning": {
+            "fr": "jeu",
+            "en": "game",
+            "ar": "لعبة"
+          },
+          "latin": "igra",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:i-short",
+      "pronunciation": {
+        "sound": [
+          "j"
+        ],
+        "like": {
+          "fr": "y de yaourt",
+          "en": "y in boy"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "чай",
+          "ipa": "t͡ɕaj",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "latin": "čaj",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:ka",
+      "pronunciation": {
+        "sound": [
+          "k"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "кот",
+          "ipa": "kot",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قط"
+          },
+          "latin": "kot",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:el",
+      "pronunciation": {
+        "sound": [
+          "l"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "луна",
+          "ipa": "luna",
+          "meaning": {
+            "fr": "lune",
+            "en": "moon",
+            "ar": "قمر"
+          },
+          "latin": "luna",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:em",
+      "pronunciation": {
+        "sound": [
+          "m"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "мир",
+          "ipa": "mʲir",
+          "meaning": {
+            "fr": "paix, monde",
+            "en": "peace, world",
+            "ar": "سلام، عالم"
+          },
+          "latin": "mir",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:en",
+      "pronunciation": {
+        "sound": [
+          "n"
+        ],
+        "note": {
+          "fr": "Ressemble à un H latin.",
+          "en": "Looks like a Latin H.",
+          "ar": "يشبه حرف H اللاتيني."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "нос",
+          "ipa": "nos",
+          "meaning": {
+            "fr": "nez",
+            "en": "nose",
+            "ar": "أنف"
+          },
+          "latin": "nos",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "a"
+            ],
+            "context": {
+              "fr": "hors de la syllabe accentuée",
+              "en": "outside the stressed syllable"
+            }
+          }
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "кот",
+          "ipa": "kot",
+          "meaning": {
+            "fr": "chat",
+            "en": "cat",
+            "ar": "قط"
+          },
+          "latin": "kot",
+          "confidence": "draft",
+          "sources": []
+        },
+        {
+          "word": "вода",
+          "ipa": "vada",
+          "meaning": {
+            "fr": "eau",
+            "en": "water",
+            "ar": "ماء"
+          },
+          "latin": "voda",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:pe",
+      "pronunciation": {
+        "sound": [
+          "p"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "папа",
+          "ipa": "papa",
+          "meaning": {
+            "fr": "papa",
+            "en": "dad",
+            "ar": "بابا"
+          },
+          "latin": "papa",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:er",
+      "pronunciation": {
+        "sound": [
+          "r"
+        ],
+        "note": {
+          "fr": "Ressemble à un P latin.",
+          "en": "Looks like a Latin P.",
+          "ar": "يشبه حرف P اللاتيني."
+        },
+        "like": {
+          "fr": "r roulé",
+          "en": "rolled r"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "рыба",
+          "ipa": "rɨba",
+          "meaning": {
+            "fr": "poisson",
+            "en": "fish",
+            "ar": "سمكة"
+          },
+          "latin": "ryba",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:es",
+      "pronunciation": {
+        "sound": [
+          "s"
+        ],
+        "note": {
+          "fr": "Ressemble à un C latin.",
+          "en": "Looks like a Latin C.",
+          "ar": "يشبه حرف C اللاتيني."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "сок",
+          "ipa": "sok",
+          "meaning": {
+            "fr": "jus",
+            "en": "juice",
+            "ar": "عصير"
+          },
+          "latin": "sok",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:te",
+      "pronunciation": {
+        "sound": [
+          "t"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "там",
+          "ipa": "tam",
+          "meaning": {
+            "fr": "là-bas",
+            "en": "there",
+            "ar": "هناك"
+          },
+          "latin": "tam",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:u",
+      "pronunciation": {
+        "sound": [
+          "u"
+        ],
+        "note": {
+          "fr": "Ressemble à un y latin.",
+          "en": "Looks like a Latin y.",
+          "ar": "يشبه حرف y اللاتيني."
+        },
+        "like": {
+          "fr": "ou",
+          "en": "oo in food"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "утро",
+          "ipa": "utrə",
+          "meaning": {
+            "fr": "matin",
+            "en": "morning",
+            "ar": "صباح"
+          },
+          "latin": "utro",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:ef",
+      "pronunciation": {
+        "sound": [
+          "f"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "фото",
+          "ipa": "fota",
+          "meaning": {
+            "fr": "photo",
+            "en": "photo",
+            "ar": "صورة"
+          },
+          "latin": "foto",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:kha",
+      "pronunciation": {
+        "sound": [
+          "x"
+        ],
+        "note": {
+          "fr": "Ressemble à un X latin.",
+          "en": "Looks like a Latin X.",
+          "ar": "يشبه حرف X اللاتيني."
+        },
+        "like": {
+          "fr": "j espagnol, un souffle raclé",
+          "en": "ch in Scottish loch"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "хлеб",
+          "ipa": "xlʲep",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "latin": "hleb",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:tse",
+      "pronunciation": {
+        "sound": [
+          "t͡s"
+        ],
+        "like": {
+          "fr": "ts de tsar",
+          "en": "ts in cats"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "царь",
+          "ipa": "t͡sarʲ",
+          "meaning": {
+            "fr": "tsar",
+            "en": "tsar",
+            "ar": "قيصر"
+          },
+          "latin": "car'",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:che",
+      "pronunciation": {
+        "sound": [
+          "t͡ɕ"
+        ],
+        "like": {
+          "fr": "tch de tchèque, en plus doux",
+          "en": "ch in cheese"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "чай",
+          "ipa": "t͡ɕaj",
+          "meaning": {
+            "fr": "thé",
+            "en": "tea",
+            "ar": "شاي"
+          },
+          "latin": "čaj",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:sha",
+      "pronunciation": {
+        "sound": [
+          "ʂ"
+        ],
+        "like": {
+          "fr": "ch de chat, langue plus en arrière",
+          "en": "sh in shop, tongue further back"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "шапка",
+          "ipa": "ʂapkə",
+          "meaning": {
+            "fr": "bonnet",
+            "en": "hat",
+            "ar": "قبعة"
+          },
+          "latin": "šapka",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:shcha",
+      "pronunciation": {
+        "sound": [
+          "ɕ"
+        ],
+        "note": {
+          "fr": "Un ch long et doux.",
+          "en": "A long, soft sh.",
+          "ar": "صوت ش طويل ولين."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "борщ",
+          "ipa": "borɕ",
+          "meaning": {
+            "fr": "bortsch",
+            "en": "borscht",
+            "ar": "حساء البورش"
+          },
+          "latin": "borŝ",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:hard-sign",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Signe dur : ne se prononce pas, il sépare la consonne de la voyelle qui suit.",
+          "en": "Hard sign: not pronounced, it separates the consonant from the following vowel.",
+          "ar": "علامة القساوة: لا تُنطق، تفصل الصامت عن الصائت التالي."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "объект",
+          "ipa": "abjekt",
+          "meaning": {
+            "fr": "objet",
+            "en": "object",
+            "ar": "شيء"
+          },
+          "latin": "ob\"ekt",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:yery",
+      "pronunciation": {
+        "sound": [
+          "ɨ"
+        ],
+        "like": {
+          "fr": "un i prononcé la langue en arrière",
+          "en": "i in bit, with the tongue pulled back"
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "мы",
+          "ipa": "mɨ",
+          "meaning": {
+            "fr": "nous",
+            "en": "we",
+            "ar": "نحن"
+          },
+          "latin": "my",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:soft-sign",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Signe mou : ne se prononce pas, il adoucit la consonne précédente.",
+          "en": "Soft sign: not pronounced, it softens the preceding consonant.",
+          "ar": "علامة اللين: لا تُنطق، تليّن الصامت السابق."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "соль",
+          "ipa": "solʲ",
+          "meaning": {
+            "fr": "sel",
+            "en": "salt",
+            "ar": "ملح"
+          },
+          "latin": "sol'",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "это",
+          "ipa": "etə",
+          "meaning": {
+            "fr": "ceci, c'est",
+            "en": "this",
+            "ar": "هذا"
+          },
+          "latin": "èto",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:yu",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "u"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "юг",
+          "ipa": "juk",
+          "meaning": {
+            "fr": "sud",
+            "en": "south",
+            "ar": "جنوب"
+          },
+          "latin": "jug",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "cyrl:ya",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "яблоко",
+          "ipa": "jabləkə",
+          "meaning": {
+            "fr": "pomme",
+            "en": "apple",
+            "ar": "تفاحة"
+          },
+          "latin": "jabloko",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "confidence": "draft",
+  "sources": []
+}
