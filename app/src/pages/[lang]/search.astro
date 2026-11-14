@@ -1,0 +1,93 @@
+---
+/**
+ * Recherche côté client (US-016, US-017) : un caractère collé, un nom de langue ou un son IPA.
+ * L'index est petit (quelques centaines d'entrées) et embarqué dans la page : pas de serveur.
+ */
+import Base from "../../layouts/Base.astro";
+import { UI_LOCALES, loc, t, type UiLocale } from "../../i18n/ui";
+import { index } from "../../lib/content";
+import { scriptLang } from "../../lib/script-lang";
+
+export function getStaticPaths() {
+  return UI_LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as UiLocale;
+const idx = await index();
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${locale}`;
+const norm = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+
+const data = {
+  chars: idx.c.scripts.flatMap((s) =>
+    s.graphemes.map((g) => ({
+      keys: [g.char, g.upper, ...Object.values(g.forms ?? {}).map((f) => f.replace(/\u200D/g, ""))]
+        .filter((x): x is string => !!x).map((x) => x.normalize("NFC")),
+      latin: g.latin ? norm(g.latin) : undefined,
+      label: g.char, sub: `${loc(locale, s.name)}${g.latin ? ` · ${g.latin}` : ""}`,
+      lang: scriptLang(s.id), href: `${base}/scripts/${s.id}/${g.id}/`,
+    })),
+  ),
+  languages: idx.c.languages.map((l) => ({
+    key: norm([l.name.fr, l.name.en, l.name.ar ?? "", l.endonym, l.id, l.iso639_3].join(" ")),
+    label: loc(locale, l.name), sub: l.endonym, href: `${base}/languages/${l.id}/`,
+  })),
+  sounds: idx.c.phonemes.filter((p) => idx.spellings(p.ipa).length).map((p) => ({
+    key: p.ipa, name: norm(`${p.name.fr} ${p.name.en}`), label: `/${p.ipa}/`, sub: loc(locale, p.name), href: `${base}/sounds/${p.id}/`,
+  })),
+  /** Plages Unicode des écritures non couvertes, pour orienter le visiteur (US-016). */
+  ranges: [
+    [0x0370, 0x03ff, "Grec / Greek / اليونانية"], [0x0530, 0x058f, "Arménien / Armenian / الأرمنية"],
+    [0x0590, 0x05ff, "Hébreu / Hebrew / العبرية"], [0x0900, 0x097f, "Devanagari / ديفاناغاري"],
+    [0x0980, 0x09ff, "Bengali / البنغالية"], [0x0b80, 0x0bff, "Tamoul / Tamil / التاميلية"],
+    [0x0e00, 0x0e7f, "Thaï / Thai / التايلاندية"], [0x10a0, 0x10ff, "Géorgien / Georgian / الجورجية"],
+    [0x1100, 0x11ff, "Hangeul / Hangul / الهانغول"], [0xac00, 0xd7af, "Hangeul / Hangul / الهانغول"],
+    [0x4e00, 0x9fff, "Kanji / Hanzi / الصينية"],
+  ],
+};
+const labels = {
+  chars: t(locale, "search.characters"), languages: t(locale, "search.languages"), sounds: t(locale, "search.sounds"),
+  none: t(locale, "search.none"), unknown: t(locale, "search.unknownScript"),
+};
+---
+<Base locale={locale} section="search" title={t(locale, "search.title")}>
+  <h1>{t(locale, "search.title")}</h1>
+  <label for="q" style="display:block;margin-block-end:.3rem">{t(locale, "search.label")}</label>
+  <input id="q" type="search" autocomplete="off" spellcheck="false" aria-describedby="q-hint" aria-controls="results" />
+  <p id="q-hint" class="muted" style="font-size:.9rem">{t(locale, "search.hint")}</p>
+  <div id="results" aria-live="polite"></div>
+  <script is:inline type="application/json" id="search-data" set:html={JSON.stringify({ data, labels }).replace(/</g, "\\u003c")}></script>
+  <script>
+    type Item = { label: string; sub: string; href: string; lang?: string };
+    const { data, labels } = JSON.parse(document.getElementById("search-data")!.textContent!);
+    const q = document.querySelector<HTMLInputElement>("#q")!;
+    const out = document.querySelector<HTMLElement>("#results")!;
+    const norm = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+
+    function section(title: string, items: Item[]) {
+      if (!items.length) return "";
+      return `<h2>${esc(title)}</h2><div class="grid">${items.slice(0, 24).map((i) =>
+        `<a class="card" href="${i.href}"><div class="sample"${i.lang ? ` lang="${i.lang}"` : ""}><bdi>${esc(i.label)}</bdi></div><span class="muted">${esc(i.sub)}</span></a>`).join("")}</div>`;
+    }
+    function run() {
+      // NFKC ramène les formes de présentation arabes (ﺵ) et les kana demi-chasse (ｼ) à la lettre de base ;
+      // on retire aussi le tatweel et les liants collés avec une forme contextuelle.
+      const raw = q.value.trim().normalize("NFKC").replace(/[\u0640\u200C\u200D]/g, "");
+      if (!raw) { out.innerHTML = ""; return; }
+      const n = norm(raw);
+      const ipa = raw.replace(/^\/|\/$/g, "");
+      const chars = data.chars.filter((c: any) => c.keys.includes(raw) || c.keys.includes(raw.toLowerCase()) || (n.length > 1 && c.latin === n));
+      const languages = n.length > 1 ? data.languages.filter((l: any) => l.key.includes(n)) : [];
+      const sounds = data.sounds.filter((s: any) => s.key === ipa || (n.length > 2 && s.name.includes(n)));
+      let html = section(labels.chars, chars) + section(labels.languages, languages) + section(labels.sounds, sounds);
+      if (!html) {
+        const cp = raw.codePointAt(0)!;
+        const range = data.ranges.find(([a, b]: [number, number]) => cp >= a && cp <= b);
+        html = `<p class="muted">${esc(range ? labels.unknown.replace("{script}", range[2]) : labels.none)}</p>`;
+      }
+      out.innerHTML = html;
+    }
+    q.addEventListener("input", run);
+    const initial = new URLSearchParams(location.search).get("q");
+    if (initial) { q.value = initial; run(); }
+  </script>
+</Base>
