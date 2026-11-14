@@ -261,6 +261,18 @@ window.TONGO = {
       ]
     },
     {
+      id: "US-023", type: "US", epic: "E3", persona: "P4", priority: "M", points: 3, status: "todo",
+      title: "Voir le niveau de confiance d'une information",
+      as: "visiteur",
+      want: "savoir à quel point une prononciation ou un mot d'exemple est fiable",
+      so: "faire confiance au contenu en connaissance de cause",
+      criteria: [
+        ["je suis sur une fiche caractère", "je regarde la prononciation et les mots d'exemple", "chaque information porte un indicateur de confiance (sources concordantes / source unique / à vérifier), toujours visible"],
+        ["je ne comprends pas l'indicateur", "je le touche", "une explication courte et sans jargon s'affiche, compréhensible par un enfant"],
+        ["j'utilise un lecteur d'écran", "je parcours la fiche", "le niveau de confiance est annoncé en texte, pas seulement par une couleur"]
+      ]
+    },
+    {
       id: "US-022", type: "US", epic: "E9", persona: "P4", priority: "M", points: 1, status: "todo",
       title: "Sources et licence visibles",
       as: "visiteur",
@@ -364,7 +376,7 @@ window.TONGO = {
       so: "cibler les relectures humaines en priorité",
       criteria: [
         ["les données d'une langue sont agrégées", "on lance le croisement", "chaque donnée est classée concordante, en écart ou source unique, et un rapport liste les écarts"],
-        ["une donnée a été relue par un bénévole (hors appli)", "on l'enregistre", "son statut passe à « vérifiée »"]
+        ["une donnée est publiée", "", "son niveau de confiance est inclus dans le contenu publié pour être affiché (US-023). La relecture humaine est reportée à la V2 (D20)"]
       ]
     },
     {

@@ -31,7 +31,7 @@
 <main class="wrap">
   <h1>Besoin fonctionnel V1</h1>
   <p class="lede">Ce document de cadrage rassemble les décisions prises pendant la phase de brainstorming. Le détail des besoins se trouve dans les <a href="user-stories.html">User Stories</a> et les <a href="technical-stories.html">Technical Stories</a>.</p>
-  <p class="meta">Version 0.4 · 2026-11-14 · statut : brouillon validé en atelier</p>
+  <p class="meta">Version 0.5 · 2026-11-14 · statut : brouillon validé en atelier</p>
 
   <ol class="toc">
     <li><a href="#vision">Vision et nom</a></li>
@@ -78,7 +78,8 @@
       <li>Alphabets et écritures, avec 1 à 3 mots d'exemple par caractère</li>
       <li>Objectif : reconnaître et prononcer</li>
       <li>Consultation uniquement (atlas)</li>
-      <li>20 langues vérifiées, 15 écritures</li>
+      <li>20 langues, 15 écritures, contenu vérifié par croisement des sources</li>
+      <li>Niveau de confiance affiché sur chaque fiche</li>
       <li>Japonais : hiragana et katakana</li>
       <li>Arabe et persan : les 4 formes contextuelles</li>
       <li>Navigation par langue, par écriture et par son</li>
@@ -89,7 +90,7 @@
       <li>Tracé et ordre des traits</li>
       <li>Exercices, quiz, répétition espacée, progression</li>
       <li>Comptes utilisateurs</li>
-      <li>Espace de contribution bénévole <span class="badge W">V2</span></li>
+      <li>Relecture humaine et espace de contribution bénévole <span class="badge W">V2</span></li>
       <li>IA dans l'appli <span class="badge W">V2+</span></li>
       <li>Kanji, hanzi et écritures logographiques <span class="badge W">V2, à décider</span></li>
       <li>Thème du voyage sous forme de jeu (passeport, tampons)</li>
@@ -176,7 +177,7 @@
     <div class="step"><b>1. Sources ouvertes</b>CLDR, PHOIBLE, Wiktionary…</div><span class="arrow">→</span>
     <div class="step"><b>2. Agrégation par l'IA</b>descriptions, mots d'exemple</div><span class="arrow">→</span>
     <div class="step"><b>3. Croisement</b>indice de confiance</div><span class="arrow">→</span>
-    <div class="step"><b>4. Relecture</b>bénévoles, hors appli</div><span class="arrow">→</span>
+    <div class="step"><b>4. Contrôle</b>écarts traités, confiance attribuée</div><span class="arrow">→</span>
     <div class="step"><b>5. Publication</b>contenu statique et audio</div>
   </div>
   <div class="table-wrap"><table>
@@ -191,7 +192,7 @@
       <tr><td>Audio des mots</td><td>Lingua Libre, avec TTS en secours</td><td>CC BY-SA / selon moteur</td></tr>
     </tbody>
   </table></div>
-  <p><b>Vérification :</b> croisement automatique des sources (concordant / en écart / source unique), puis relecture par des contributeurs bénévoles en dehors de l'appli (tableur, échanges directs). L'espace de contribution intégré est prévu pour la V2.</p>
+  <p><b>Vérification en V1 :</b> uniquement le <b>croisement automatique des sources</b> (concordant / en écart / source unique), sans relecture humaine (D20). Le niveau de confiance qui en résulte est <b>affiché au visiteur sur chaque fiche</b> (D21, <a href="user-stories.html#US-023">US-023</a>). La relecture par des bénévoles natifs et l'espace de contribution sont prévus pour la V2.</p>
   <p><b>Licence du contenu :</b> ouverte, <b>CC BY-SA</b> (imposée par la réutilisation de Wiktionary et PHOIBLE). La licence du code est une décision séparée.</p>
 
   <h2 id="audio">10. Audio</h2>
@@ -260,6 +261,8 @@
       <tr><td>D17</td><td>2026-11-14</td><td>LLM : la solution la moins coûteuse pour la V1, Claude Haiku 5.5 via l'API Message Batches.</td></tr>
       <tr><td>D18</td><td>2026-11-14</td><td>Langue d'interface par défaut : celle déclarée par le navigateur, anglais en repli, modifiable dans les réglages (Q01).</td></tr>
       <tr><td>D19</td><td>2026-11-14</td><td>Langues d'interface au lancement : français, anglais et arabe. L'arabe impose une interface de droite à gauche dès la V1. Les autres langues viendront ensuite (Q01).</td></tr>
+      <tr><td>D20</td><td>2026-11-14</td><td>Pas de relecture humaine en V1 : la vérification repose uniquement sur le croisement automatique des sources. Les relecteurs bénévoles arrivent en V2 (Q05). Remplace en partie D12.</td></tr>
+      <tr><td>D21</td><td>2026-11-14</td><td>Le niveau de confiance d'une donnée est toujours affiché au visiteur (Q07).</td></tr>
     </tbody>
   </table></div>
 
@@ -271,9 +274,9 @@
       <tr><td>Q02</td><td><s>L'utilisation hors ligne est-elle exigée en V1 ?</s> <span class="badge done">Répondue : non (D16)</span></td><td><a href="#decisions">D16</a></td></tr>
       <tr><td>Q03</td><td>Quelle variante de référence pour chaque langue (portugais du Brésil ou du Portugal, anglais britannique ou américain…) ?</td><td><a href="technical-stories.html#TS-002">TS-002</a></td></tr>
       <tr><td>Q04</td><td>Les écritures logographiques (hanzi, kanji) entrent-elles en V2, et sous quelle forme (pinyin, zhuyin) ?</td><td>V2</td></tr>
-      <tr><td>Q05</td><td>Qui sont les premiers relecteurs bénévoles, et pour quelles langues ?</td><td><a href="technical-stories.html#TS-009">TS-009</a></td></tr>
-      <tr><td>Q06</td><td>Quelle licence pour le code (ouvert ou fermé) ?</td><td><a href="technical-stories.html#TS-016">TS-016</a></td></tr>
-      <tr><td>Q07</td><td>Faut-il afficher le niveau de confiance d'une donnée au visiteur, ou le garder en interne ?</td><td><a href="technical-stories.html#TS-009">TS-009</a></td></tr>
+      <tr><td>Q05</td><td><s>Qui sont les premiers relecteurs bénévoles ?</s> <span class="badge done">Répondue : croisement seul en V1, bénévoles en V2 (D20)</span></td><td><a href="technical-stories.html#TS-009">TS-009</a></td></tr>
+      <tr><td>Q06</td><td>Quelle licence pour le code (ouvert ou fermé) ? <span class="badge doing">Reportée : à décider avant la mise en ligne</span></td><td><a href="technical-stories.html#TS-016">TS-016</a></td></tr>
+      <tr><td>Q07</td><td><s>Faut-il afficher le niveau de confiance au visiteur ?</s> <span class="badge done">Répondue : toujours affiché (D21)</span></td><td><a href="user-stories.html#US-023">US-023</a></td></tr>
     </tbody>
   </table></div>
 
