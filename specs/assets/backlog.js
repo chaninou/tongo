@@ -66,7 +66,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-004", type: "US", epic: "E1", persona: "P1", priority: "M", points: 3, status: "doing",
+      id: "US-004", type: "US", epic: "E1", persona: "P1", priority: "M", points: 3, status: "done",
       title: "Explorer par langue",
       as: "voyageuse qui prépare un séjour",
       want: "trouver la langue du pays où je vais",
@@ -311,7 +311,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-002", type: "TS", epic: "E4", priority: "M", points: 2, status: "doing",
+      id: "TS-002", type: "TS", epic: "E4", priority: "M", points: 2, status: "done",
       title: "Conventions IPA",
       as: "équipe technique",
       want: "fixer le niveau de transcription (phonémique /…/) et une variante de référence par langue",
@@ -332,7 +332,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-004", type: "TS", epic: "E7", priority: "M", points: 3, status: "doing",
+      id: "TS-004", type: "TS", epic: "E7", priority: "M", points: 3, status: "done",
       title: "Import des caractères (Unicode CLDR)",
       as: "équipe technique",
       want: "extraire les caractères utilisés par chacune des 20 langues depuis CLDR",

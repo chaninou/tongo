@@ -31,7 +31,7 @@
 <main class="wrap">
   <h1>Besoin fonctionnel V1</h1>
   <p class="lede">Ce document de cadrage rassemble les décisions prises pendant la phase de brainstorming. Le détail des besoins se trouve dans les <a href="user-stories.html">User Stories</a> et les <a href="technical-stories.html">Technical Stories</a>.</p>
-  <p class="meta">Version 0.9 · 2026-11-14 · statut : brouillon validé en atelier</p>
+  <p class="meta">Version 0.10 · 2026-11-14 · statut : brouillon validé en atelier</p>
 
   <ol class="toc">
     <li><a href="#vision">Vision et nom</a></li>
@@ -268,6 +268,7 @@
       <tr><td>D23</td><td>2026-11-14</td><td>Variantes au lancement : anglais (États-Unis, Royaume-Uni), portugais (Brésil, Portugal), espagnol (Espagne, Mexique), français (France, Canada). Arabe standard moderne uniquement, les dialectes étant reportés. Les autres langues ont une seule variante (Q08).</td></tr>
       <tr><td>D24</td><td>2026-11-14</td><td>La chaîne de production passe de Python à <b>TypeScript</b> (tsx, Zod, Vitest). Raison immédiate : PyPI est inaccessible depuis le poste de développement. Raison de fond : un seul langage et un seul schéma (Zod) partagés par la chaîne et l'appli, dans le paquet <code>model/</code>. React n'est pas installé tant qu'aucun îlot ne l'exige : les interactions actuelles (recherche, choix du pays) tiennent en quelques lignes de JavaScript. Remplace en partie D15.</td></tr>
       <tr><td>D25</td><td>2026-11-14</td><td>Recherche : un <b>index embarqué</b> dans la page de recherche (caractères, langues, sons), normalisé (NFKC, sans accents), suffit pour la V1. Pagefind n'est pas utilisé tant que le volume reste de quelques milliers d'entrées. Déploiement par GitHub Actions sur GitHub Pages, le site acceptant un sous-chemin (<code>BASE_PATH</code>).</td></tr>
+      <tr><td>D26</td><td>2026-11-14</td><td>Les 20 langues de lancement sont décrites en brouillon (13 écritures). La liste de leurs caractères est confirmée par CLDR 48.2 : un caractère est couvert s'il est décrit ou s'il se décompose en éléments décrits (lettres vietnamiennes à tons, syllabes hangeul, conjointes indiennes). Les prononciations restent « brouillon » jusqu'au croisement avec PHOIBLE et le Wiktionary.</td></tr>
     </tbody>
   </table></div>
 
