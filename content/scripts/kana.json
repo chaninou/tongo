@@ -103,6 +103,46 @@
         "en": "Final N",
         "ar": "النون الختامية"
       }
+    },
+    {
+      "id": "dakuten",
+      "name": {
+        "fr": "Sons voisés (dakuten ゛)",
+        "en": "Voiced sounds (dakuten ゛)",
+        "ar": "الأصوات المجهورة (داكوتن)"
+      }
+    },
+    {
+      "id": "handakuten",
+      "name": {
+        "fr": "Son p (handakuten ゜)",
+        "en": "P sound (handakuten ゜)",
+        "ar": "صوت p (هانداكوتن)"
+      }
+    },
+    {
+      "id": "small",
+      "name": {
+        "fr": "Petits kana",
+        "en": "Small kana",
+        "ar": "الكانا الصغيرة"
+      }
+    },
+    {
+      "id": "archaic",
+      "name": {
+        "fr": "Kana anciens",
+        "en": "Archaic kana",
+        "ar": "كانا قديمة"
+      }
+    },
+    {
+      "id": "marks",
+      "name": {
+        "fr": "Signes de répétition",
+        "en": "Iteration marks",
+        "ar": "علامات التكرار"
+      }
     }
   ],
   "graphemes": [
@@ -473,6 +513,337 @@
       "kind": "consonant",
       "group": "n-final",
       "counterpart": "hira:n"
+    },
+    {
+      "id": "ga",
+      "char": "ガ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:ga",
+      "latin": "ga"
+    },
+    {
+      "id": "gi",
+      "char": "ギ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:gi",
+      "latin": "gi"
+    },
+    {
+      "id": "gu",
+      "char": "グ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:gu",
+      "latin": "gu"
+    },
+    {
+      "id": "ge",
+      "char": "ゲ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:ge",
+      "latin": "ge"
+    },
+    {
+      "id": "go",
+      "char": "ゴ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:go",
+      "latin": "go"
+    },
+    {
+      "id": "za",
+      "char": "ザ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:za",
+      "latin": "za"
+    },
+    {
+      "id": "ji",
+      "char": "ジ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:ji",
+      "latin": "ji"
+    },
+    {
+      "id": "zu",
+      "char": "ズ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:zu",
+      "latin": "zu"
+    },
+    {
+      "id": "ze",
+      "char": "ゼ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:ze",
+      "latin": "ze"
+    },
+    {
+      "id": "zo",
+      "char": "ゾ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:zo",
+      "latin": "zo"
+    },
+    {
+      "id": "da",
+      "char": "ダ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:da",
+      "latin": "da"
+    },
+    {
+      "id": "di",
+      "char": "ヂ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:di",
+      "latin": "di"
+    },
+    {
+      "id": "du",
+      "char": "ヅ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:du",
+      "latin": "du"
+    },
+    {
+      "id": "de",
+      "char": "デ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:de",
+      "latin": "de"
+    },
+    {
+      "id": "do",
+      "char": "ド",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:do",
+      "latin": "do"
+    },
+    {
+      "id": "ba",
+      "char": "バ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:ba",
+      "latin": "ba"
+    },
+    {
+      "id": "bi",
+      "char": "ビ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:bi",
+      "latin": "bi"
+    },
+    {
+      "id": "bu",
+      "char": "ブ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:bu",
+      "latin": "bu"
+    },
+    {
+      "id": "be",
+      "char": "ベ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:be",
+      "latin": "be"
+    },
+    {
+      "id": "bo",
+      "char": "ボ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "counterpart": "hira:bo",
+      "latin": "bo"
+    },
+    {
+      "id": "pa",
+      "char": "パ",
+      "kind": "syllable",
+      "group": "handakuten",
+      "counterpart": "hira:pa",
+      "latin": "pa"
+    },
+    {
+      "id": "pi",
+      "char": "ピ",
+      "kind": "syllable",
+      "group": "handakuten",
+      "counterpart": "hira:pi",
+      "latin": "pi"
+    },
+    {
+      "id": "pu",
+      "char": "プ",
+      "kind": "syllable",
+      "group": "handakuten",
+      "counterpart": "hira:pu",
+      "latin": "pu"
+    },
+    {
+      "id": "pe",
+      "char": "ペ",
+      "kind": "syllable",
+      "group": "handakuten",
+      "counterpart": "hira:pe",
+      "latin": "pe"
+    },
+    {
+      "id": "po",
+      "char": "ポ",
+      "kind": "syllable",
+      "group": "handakuten",
+      "counterpart": "hira:po",
+      "latin": "po"
+    },
+    {
+      "id": "small-a",
+      "char": "ァ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-a",
+      "latin": "a"
+    },
+    {
+      "id": "small-i",
+      "char": "ィ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-i",
+      "latin": "i"
+    },
+    {
+      "id": "small-u",
+      "char": "ゥ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-u",
+      "latin": "u"
+    },
+    {
+      "id": "small-e",
+      "char": "ェ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-e",
+      "latin": "e"
+    },
+    {
+      "id": "small-o",
+      "char": "ォ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-o",
+      "latin": "o"
+    },
+    {
+      "id": "small-ya",
+      "char": "ャ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-ya",
+      "latin": "ya"
+    },
+    {
+      "id": "small-yu",
+      "char": "ュ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-yu",
+      "latin": "yu"
+    },
+    {
+      "id": "small-yo",
+      "char": "ョ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-yo",
+      "latin": "yo"
+    },
+    {
+      "id": "small-wa",
+      "char": "ヮ",
+      "kind": "syllable",
+      "group": "small",
+      "counterpart": "hira:small-wa",
+      "latin": "wa"
+    },
+    {
+      "id": "small-tsu",
+      "char": "ッ",
+      "kind": "sign",
+      "group": "small",
+      "counterpart": "hira:small-tsu",
+      "latin": "tsu"
+    },
+    {
+      "id": "wi",
+      "char": "ヰ",
+      "kind": "syllable",
+      "group": "archaic",
+      "counterpart": "hira:wi",
+      "latin": "wi"
+    },
+    {
+      "id": "we",
+      "char": "ヱ",
+      "kind": "syllable",
+      "group": "archaic",
+      "counterpart": "hira:we",
+      "latin": "we"
+    },
+    {
+      "id": "iteration",
+      "char": "ヽ",
+      "kind": "sign",
+      "group": "marks",
+      "counterpart": "hira:iteration"
+    },
+    {
+      "id": "iteration-voiced",
+      "char": "ヾ",
+      "kind": "sign",
+      "group": "marks",
+      "counterpart": "hira:iteration-voiced"
+    },
+    {
+      "id": "vu",
+      "char": "ヴ",
+      "kind": "syllable",
+      "group": "dakuten",
+      "latin": "vu"
+    },
+    {
+      "id": "small-ka",
+      "char": "ヵ",
+      "kind": "syllable",
+      "group": "small",
+      "latin": "ka"
+    },
+    {
+      "id": "small-ke",
+      "char": "ヶ",
+      "kind": "syllable",
+      "group": "small",
+      "latin": "ke"
     }
   ],
   "confidence": "draft",

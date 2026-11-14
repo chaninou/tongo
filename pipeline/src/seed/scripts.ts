@@ -22,7 +22,7 @@ const latinExtra: [id: string, char: string, kind: "vowel" | "consonant"][] = [
   ["e-acute", "é", "vowel"], ["e-grave", "è", "vowel"], ["e-circumflex", "ê", "vowel"], ["e-diaeresis", "ë", "vowel"],
   ["i-circumflex", "î", "vowel"], ["i-diaeresis", "ï", "vowel"], ["i-acute", "í", "vowel"],
   ["n-tilde", "ñ", "consonant"],
-  ["o-circumflex", "ô", "vowel"], ["o-acute", "ó", "vowel"], ["oe", "œ", "vowel"],
+  ["o-circumflex", "ô", "vowel"], ["o-acute", "ó", "vowel"], ["oe", "œ", "vowel"], ["ae", "æ", "vowel"],
   ["u-grave", "ù", "vowel"], ["u-circumflex", "û", "vowel"], ["u-diaeresis", "ü", "vowel"], ["u-acute", "ú", "vowel"],
   ["y-diaeresis", "ÿ", "vowel"],
 ];
@@ -104,6 +104,17 @@ const AR: [string, string, string, string, boolean][] = [
   ["nun", "ن", "nūn", "n", true], ["heh", "ه", "hāʾ", "h", true], ["waw", "و", "wāw", "w / ū", false],
   ["ya", "ي", "yāʾ", "y / ī", true],
 ];
+/** Hamza et lettres de fin de mot. [id, lettre, nom, translittération, se lie à la suivante, se lie à la précédente] */
+const AR_EXTRA: [string, string, string, string, boolean, boolean][] = [
+  ["hamza", "ء", "hamza", "ʾ", false, false],
+  ["alif-hamza-above", "أ", "alif hamza", "ʾa / ʾu", false, true],
+  ["alif-hamza-below", "إ", "alif hamza", "ʾi", false, true],
+  ["alif-madda", "آ", "alif madda", "ʾā", false, true],
+  ["waw-hamza", "ؤ", "wāw hamza", "ʾ", false, true],
+  ["ya-hamza", "ئ", "yāʾ hamza", "ʾ", true, true],
+  ["ta-marbuta", "ة", "tāʾ marbūṭa", "a / at", false, true],
+  ["alif-maqsura", "ى", "alif maqṣūra", "ā", false, true],
+];
 const arabic: Script = {
   id: "arab",
   name: { fr: "Arabe", en: "Arabic", ar: "العربية" },
@@ -117,13 +128,24 @@ const arabic: Script = {
   },
   sample: "ا ب ش ع",
   font: "Noto Sans Arabic",
-  groups: [{ id: "letters", name: { fr: "Lettres", en: "Letters", ar: "الحروف" } }],
-  graphemes: AR.map(([id, char, name, latin, joins]) => ({
-    id, char, name, latin, kind: "consonant" as const, group: "letters",
-    forms: joins
-      ? { isolated: char, initial: char + ZWJ, medial: ZWJ + char + ZWJ, final: ZWJ + char }
-      : { isolated: char, final: ZWJ + char },
-  })),
+  groups: [
+    { id: "letters", name: { fr: "Lettres", en: "Letters", ar: "الحروف" } },
+    { id: "hamza", name: { fr: "Hamza et lettres de fin de mot", en: "Hamza and word-final letters", ar: "الهمزة وأحرف آخر الكلمة" } },
+  ],
+  graphemes: [
+    ...AR.map(([id, char, name, latin, joins]) => ({
+      id, char, name, latin, kind: "consonant" as const, group: "letters",
+      forms: joins
+        ? { isolated: char, initial: char + ZWJ, medial: ZWJ + char + ZWJ, final: ZWJ + char }
+        : { isolated: char, final: ZWJ + char },
+    })),
+    ...AR_EXTRA.map(([id, char, name, latin, joinsNext, joinsPrev]) => ({
+      id, char, name, latin, kind: (id === "hamza" ? "sign" : "consonant") as Grapheme["kind"], group: "hamza",
+      forms: joinsNext
+        ? { isolated: char, initial: char + ZWJ, medial: ZWJ + char + ZWJ, final: ZWJ + char }
+        : joinsPrev ? { isolated: char, final: ZWJ + char } : { isolated: char },
+    })),
+  ],
   ...draft,
 };
 
@@ -141,8 +163,35 @@ const KANA: [string, string, string, string][] = [
   ["ra", "ら", "ラ", "r"], ["ri", "り", "リ", "r"], ["ru", "る", "ル", "r"], ["re", "れ", "レ", "r"], ["ro", "ろ", "ロ", "r"],
   ["wa", "わ", "ワ", "w"], ["wo", "を", "ヲ", "w"], ["n", "ん", "ン", "n-final"],
 ];
+/** Kana dérivés : sons voisés (dakuten ゛), semi-voisés (handakuten ゜), petits kana et signes. */
+// [id, hiragana, katakana, groupe, nature]
+const KANA_EXTRA: [string, string, string, string, Grapheme["kind"]][] = [
+  ...(["ga","gi","gu","ge","go","za","ji","zu","ze","zo","da","di","du","de","do","ba","bi","bu","be","bo"] as const).map(
+    (id, i): [string, string, string, string, Grapheme["kind"]] => [id, "がぎぐげござじずぜぞだぢづでどばびぶべぼ"[i]!, "ガギグゲゴザジズゼゾダヂヅデドバビブベボ"[i]!, "dakuten", "syllable"]),
+  ...(["pa","pi","pu","pe","po"] as const).map(
+    (id, i): [string, string, string, string, Grapheme["kind"]] => [id, "ぱぴぷぺぽ"[i]!, "パピプペポ"[i]!, "handakuten", "syllable"]),
+  ...(["small-a","small-i","small-u","small-e","small-o","small-ya","small-yu","small-yo","small-wa","small-tsu"] as const).map(
+    (id, i): [string, string, string, string, Grapheme["kind"]] => [id, "ぁぃぅぇぉゃゅょゎっ"[i]!, "ァィゥェォャュョヮッ"[i]!, "small", id === "small-tsu" ? "sign" : "syllable"]),
+  ["wi", "ゐ", "ヰ", "archaic", "syllable"],
+  ["we", "ゑ", "ヱ", "archaic", "syllable"],
+  ["iteration", "ゝ", "ヽ", "marks", "sign"],
+  ["iteration-voiced", "ゞ", "ヾ", "marks", "sign"],
+];
+/** Propres aux katakana. */
+const KATA_ONLY: [string, string, string, Grapheme["kind"]][] = [
+  ["vu", "ヴ", "dakuten", "syllable"],
+  ["small-ka", "ヵ", "small", "syllable"],
+  ["small-ke", "ヶ", "small", "syllable"],
+];
 const KANA_ROWS: [string, string][] = [
   ["a", "∅"], ["k", "k"], ["s", "s"], ["t", "t"], ["n", "n"], ["h", "h"], ["m", "m"], ["y", "y"], ["r", "r"], ["w", "w"], ["n-final", "ん"],
+];
+const KANA_EXTRA_GROUPS = [
+  { id: "dakuten", name: { fr: "Sons voisés (dakuten ゛)", en: "Voiced sounds (dakuten ゛)", ar: "الأصوات المجهورة (داكوتن)" } },
+  { id: "handakuten", name: { fr: "Son p (handakuten ゜)", en: "P sound (handakuten ゜)", ar: "صوت p (هانداكوتن)" } },
+  { id: "small", name: { fr: "Petits kana", en: "Small kana", ar: "الكانا الصغيرة" } },
+  { id: "archaic", name: { fr: "Kana anciens", en: "Archaic kana", ar: "كانا قديمة" } },
+  { id: "marks", name: { fr: "Signes de répétition", en: "Iteration marks", ar: "علامات التكرار" } },
 ];
 const kanaRows = KANA_ROWS.map(([id, label]) => ({
   id,
@@ -175,15 +224,22 @@ function kanaScript(id: "hira" | "kana"): Script {
         },
     sample: isHira ? "あ か し つ" : "ア カ シ ツ",
     font: "Noto Sans JP",
-    groups: kanaRows,
-    graphemes: KANA.map(([romaji, h, k, row]) => ({
-      id: romaji,
-      char: isHira ? h : k,
-      latin: romaji,
-      kind: romaji === "n" ? ("consonant" as const) : ("syllable" as const),
-      group: row,
-      counterpart: `${other}:${romaji}`,
-    })),
+    groups: [...kanaRows, ...KANA_EXTRA_GROUPS],
+    graphemes: [
+      ...KANA.map(([romaji, h, k, row]) => ({
+        id: romaji,
+        char: isHira ? h : k,
+        latin: romaji,
+        kind: romaji === "n" ? ("consonant" as const) : ("syllable" as const),
+        group: row,
+        counterpart: `${other}:${romaji}`,
+      })),
+      ...KANA_EXTRA.map(([id, h, k, group, kind]) => ({
+        id, char: isHira ? h : k, kind, group, counterpart: `${other}:${id}`,
+        ...(group === "marks" ? {} : { latin: id.replace(/^small-/, "") }),
+      })),
+      ...(isHira ? [] : KATA_ONLY.map(([id, k, group, kind]) => ({ id, char: k, kind, group, latin: id.replace(/^small-/, "") }))),
+    ],
     ...draft,
   };
 }

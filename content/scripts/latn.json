@@ -323,6 +323,13 @@
       "group": "accents"
     },
     {
+      "id": "ae",
+      "char": "æ",
+      "upper": "Æ",
+      "kind": "vowel",
+      "group": "accents"
+    },
+    {
       "id": "u-grave",
       "char": "ù",
       "upper": "Ù",

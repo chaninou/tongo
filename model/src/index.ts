@@ -157,10 +157,13 @@ export const Variant = z.object({
 });
 export type Variant = z.infer<typeof Variant>;
 
+/** Transcription d'un mot ou d'une expression : les espaces séparent les mots. */
+export const IpaText = z.string().min(1).regex(/^[^/\[\]]+$/, "IPA sans / ni [ ]");
+
 export const ExampleWord = z.object({
   word: z.string().min(1),
   /** Transcription du mot entier. */
-  ipa: Ipa.optional(),
+  ipa: IpaText.optional(),
   /** Translittération latine, pour les écritures non latines. */
   latin: z.string().optional(),
   meaning: Localized,
@@ -213,6 +216,13 @@ export const Language = z.object({
   /** Ordre de grandeur des locuteurs (L1 + L2), en millions. */
   speakersM: z.number().positive().optional(),
   intro: Localized.optional(),
+  /**
+   * Caractères de la langue selon une source de référence (CLDR, TS-004) : principaux et
+   * auxiliaires (mots d'emprunt, noms propres). Sert à repérer les lettres manquantes.
+   */
+  characters: z
+    .object({ main: z.array(z.string().min(1)), auxiliary: z.array(z.string().min(1)), source: SourceRef })
+    .optional(),
   letters: z.array(LetterEntry).min(1),
   ...Provenance.shape,
 });
@@ -280,6 +290,7 @@ export function crossCheck(c: Content): string[] {
   for (const l of c.languages) {
     const where = `langue ${l.id}`;
     checkSources(l.sources, where);
+    if (l.characters) checkSources([l.characters.source], `${where}, caractères`);
     for (const sc of l.scripts) if (!scriptIds.has(sc)) errors.push(`${where} : écriture ${sc} inconnue`);
     const defaults = l.variants.filter((v) => v.default).length;
     if (defaults !== 1) errors.push(`${where} : ${defaults} variantes par défaut (exactement 1 attendue)`);

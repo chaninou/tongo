@@ -1012,6 +1012,604 @@
       ]
     },
     {
+      "grapheme": "hira:ga",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "がっこう",
+          "ipa": "ɡakkoː",
+          "meaning": {
+            "fr": "école",
+            "en": "school",
+            "ar": "مدرسة"
+          },
+          "latin": "gakkō",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:gi",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:gu",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ge",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:go",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:za",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ji",
+      "pronunciation": {
+        "sound": [
+          "d͡ʑ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "じかん",
+          "ipa": "d͡ʑikaɴ",
+          "meaning": {
+            "fr": "temps, heure",
+            "en": "time",
+            "ar": "وقت"
+          },
+          "latin": "jikan",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:zu",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ze",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:zo",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:da",
+      "pronunciation": {
+        "sound": [
+          "d",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "だいがく",
+          "ipa": "daiɡakɯ",
+          "meaning": {
+            "fr": "université",
+            "en": "university",
+            "ar": "جامعة"
+          },
+          "latin": "daigaku",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:di",
+      "pronunciation": {
+        "sound": [
+          "d͡ʑ",
+          "i"
+        ],
+        "note": {
+          "fr": "Se prononce comme じ (ji). Rare.",
+          "en": "Pronounced like じ (ji). Rare.",
+          "ar": "يُنطق مثل じ (ji). نادر."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:du",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "ɯ"
+        ],
+        "note": {
+          "fr": "Se prononce comme ず (zu). Rare.",
+          "en": "Pronounced like ず (zu). Rare.",
+          "ar": "يُنطق مثل ず (zu). نادر."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:de",
+      "pronunciation": {
+        "sound": [
+          "d",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:do",
+      "pronunciation": {
+        "sound": [
+          "d",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:ba",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ばら",
+          "ipa": "baɾa",
+          "meaning": {
+            "fr": "rose",
+            "en": "rose",
+            "ar": "وردة"
+          },
+          "latin": "bara",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:bi",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:bu",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:be",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:bo",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:pa",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ぱん",
+          "ipa": "paɴ",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "latin": "pan",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:pi",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:pu",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:pe",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:po",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "note": {
+          "fr": "Sert surtout à noter des sons étrangers : ファ (fa).",
+          "en": "Mostly used for foreign sounds: ファ (fa).",
+          "ar": "يُستعمل خاصة لكتابة الأصوات الأجنبية."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-u",
+      "pronunciation": {
+        "sound": [
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-ya",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "a"
+        ],
+        "note": {
+          "fr": "S'accole à un kana en i pour former une seule syllabe : き + ゃ = きゃ (kya).",
+          "en": "Joins a kana ending in i to make one syllable: き + ゃ = きゃ (kya).",
+          "ar": "يلتصق بكانا تنتهي بـ i لتكوين مقطع واحد."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "きゃく",
+          "ipa": "kʲakɯ",
+          "meaning": {
+            "fr": "client",
+            "en": "guest",
+            "ar": "ضيف"
+          },
+          "latin": "kyaku",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:small-yu",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "ɯ"
+        ],
+        "note": {
+          "fr": "S'accole à un kana en i : し + ゅ = しゅ (shu).",
+          "en": "Joins a kana ending in i: し + ゅ = しゅ (shu).",
+          "ar": "يلتصق بكانا تنتهي بـ i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-yo",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "o"
+        ],
+        "note": {
+          "fr": "S'accole à un kana en i : ち + ょ = ちょ (cho).",
+          "en": "Joins a kana ending in i: ち + ょ = ちょ (cho).",
+          "ar": "يلتصق بكانا تنتهي بـ i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-wa",
+      "pronunciation": {
+        "sound": [
+          "ɰ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:small-tsu",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Ne se prononce pas seul : il double la consonne qui suit (きって, kitte).",
+          "en": "Not pronounced on its own: it doubles the next consonant (きって, kitte).",
+          "ar": "لا يُنطق وحده بل يضاعف الصامت التالي."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "きって",
+          "ipa": "kitte",
+          "meaning": {
+            "fr": "timbre",
+            "en": "stamp",
+            "ar": "طابع بريدي"
+          },
+          "latin": "kitte",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "hira:wi",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "note": {
+          "fr": "Kana ancien, remplacé par い.",
+          "en": "Archaic kana, replaced by い.",
+          "ar": "كانا قديمة حلت محلها い."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:we",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "note": {
+          "fr": "Kana ancien, remplacé par え.",
+          "en": "Archaic kana, replaced by え.",
+          "ar": "كانا قديمة حلت محلها え."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:iteration",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Répète le kana précédent : こゝろ = こころ.",
+          "en": "Repeats the previous kana: こゝろ = こころ.",
+          "ar": "يكرر الكانا السابقة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "hira:iteration-voiced",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Répète le kana précédent en le voisant : いすゞ = いすず.",
+          "en": "Repeats the previous kana, voiced: いすゞ = いすず.",
+          "ar": "يكرر الكانا السابقة مجهورة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
       "grapheme": "kana:a",
       "pronunciation": {
         "sound": [
@@ -1718,8 +2316,805 @@
           "sources": []
         }
       ]
+    },
+    {
+      "grapheme": "kana:ga",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:gi",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:gu",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ge",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:go",
+      "pronunciation": {
+        "sound": [
+          "ɡ",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:za",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ji",
+      "pronunciation": {
+        "sound": [
+          "d͡ʑ",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:zu",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ze",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:zo",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:da",
+      "pronunciation": {
+        "sound": [
+          "d",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:di",
+      "pronunciation": {
+        "sound": [
+          "d͡ʑ",
+          "i"
+        ],
+        "note": {
+          "fr": "Se prononce comme じ (ji). Rare.",
+          "en": "Pronounced like じ (ji). Rare.",
+          "ar": "يُنطق مثل じ (ji). نادر."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:du",
+      "pronunciation": {
+        "sound": [
+          "z",
+          "ɯ"
+        ],
+        "note": {
+          "fr": "Se prononce comme ず (zu). Rare.",
+          "en": "Pronounced like ず (zu). Rare.",
+          "ar": "يُنطق مثل ず (zu). نادر."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:de",
+      "pronunciation": {
+        "sound": [
+          "d",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:do",
+      "pronunciation": {
+        "sound": [
+          "d",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:ba",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "バス",
+          "ipa": "basɯ",
+          "meaning": {
+            "fr": "bus",
+            "en": "bus",
+            "ar": "حافلة"
+          },
+          "latin": "basu",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:bi",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:bu",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:be",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:bo",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:pa",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "パン",
+          "ipa": "paɴ",
+          "meaning": {
+            "fr": "pain",
+            "en": "bread",
+            "ar": "خبز"
+          },
+          "latin": "pan",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:pi",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:pu",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:pe",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:po",
+      "pronunciation": {
+        "sound": [
+          "p",
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-a",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "note": {
+          "fr": "Sert surtout à noter des sons étrangers : ファ (fa).",
+          "en": "Mostly used for foreign sounds: ファ (fa).",
+          "ar": "يُستعمل خاصة لكتابة الأصوات الأجنبية."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ファン",
+          "ipa": "ɸaɴ",
+          "meaning": {
+            "fr": "fan, admirateur",
+            "en": "fan",
+            "ar": "معجب"
+          },
+          "latin": "fan",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:small-i",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-u",
+      "pronunciation": {
+        "sound": [
+          "ɯ"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-e",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-o",
+      "pronunciation": {
+        "sound": [
+          "o"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-ya",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "a"
+        ],
+        "note": {
+          "fr": "S'accole à un kana en i pour former une seule syllabe : き + ゃ = きゃ (kya).",
+          "en": "Joins a kana ending in i to make one syllable: き + ゃ = きゃ (kya).",
+          "ar": "يلتصق بكانا تنتهي بـ i لتكوين مقطع واحد."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-yu",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "ɯ"
+        ],
+        "note": {
+          "fr": "S'accole à un kana en i : し + ゅ = しゅ (shu).",
+          "en": "Joins a kana ending in i: し + ゅ = しゅ (shu).",
+          "ar": "يلتصق بكانا تنتهي بـ i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-yo",
+      "pronunciation": {
+        "sound": [
+          "j",
+          "o"
+        ],
+        "note": {
+          "fr": "S'accole à un kana en i : ち + ょ = ちょ (cho).",
+          "en": "Joins a kana ending in i: ち + ょ = ちょ (cho).",
+          "ar": "يلتصق بكانا تنتهي بـ i."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-wa",
+      "pronunciation": {
+        "sound": [
+          "ɰ",
+          "a"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-tsu",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Ne se prononce pas seul : il double la consonne qui suit (きって, kitte).",
+          "en": "Not pronounced on its own: it doubles the next consonant (きって, kitte).",
+          "ar": "لا يُنطق وحده بل يضاعف الصامت التالي."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:wi",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "note": {
+          "fr": "Kana ancien, remplacé par い.",
+          "en": "Archaic kana, replaced by い.",
+          "ar": "كانا قديمة حلت محلها い."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:we",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "note": {
+          "fr": "Kana ancien, remplacé par え.",
+          "en": "Archaic kana, replaced by え.",
+          "ar": "كانا قديمة حلت محلها え."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:iteration",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Répète le kana précédent : こゝろ = こころ.",
+          "en": "Repeats the previous kana: こゝろ = こころ.",
+          "ar": "يكرر الكانا السابقة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:iteration-voiced",
+      "pronunciation": {
+        "sound": [],
+        "note": {
+          "fr": "Répète le kana précédent en le voisant : いすゞ = いすず.",
+          "en": "Repeats the previous kana, voiced: いすゞ = いすず.",
+          "ar": "يكرر الكانا السابقة مجهورة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:vu",
+      "pronunciation": {
+        "sound": [
+          "b",
+          "ɯ"
+        ],
+        "note": {
+          "fr": "Note le v des mots étrangers, prononcé le plus souvent b.",
+          "en": "Spells the v of foreign words, usually pronounced b.",
+          "ar": "يكتب صوت v في الكلمات الأجنبية ويُنطق غالبًا b."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ヴァイオリン",
+          "ipa": "baioɾiɴ",
+          "meaning": {
+            "fr": "violon",
+            "en": "violin",
+            "ar": "كمان"
+          },
+          "latin": "vaiorin",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "kana:small-ka",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "a"
+        ],
+        "note": {
+          "fr": "Se lit ka ou ga dans les noms de lieux et les compteurs : 三ヵ月.",
+          "en": "Read ka or ga in place names and counters: 三ヵ月.",
+          "ar": "يُقرأ ka أو ga في أسماء الأماكن والعدادات."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
+    },
+    {
+      "grapheme": "kana:small-ke",
+      "pronunciation": {
+        "sound": [
+          "k",
+          "e"
+        ],
+        "note": {
+          "fr": "Se lit ka, ga ou ke : 霞ヶ関 (Kasumigaseki).",
+          "en": "Read ka, ga or ke: 霞ヶ関 (Kasumigaseki).",
+          "ar": "يُقرأ ka أو ga أو ke."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": []
     }
   ],
   "confidence": "draft",
-  "sources": []
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ja.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "ゝ",
+      "ヽ",
+      "ゞ",
+      "ヾ",
+      "ぁ",
+      "ァ",
+      "あ",
+      "ア",
+      "ぃ",
+      "ィ",
+      "い",
+      "イ",
+      "ぅ",
+      "ゥ",
+      "う",
+      "ウ",
+      "ヴ",
+      "ぇ",
+      "ェ",
+      "え",
+      "エ",
+      "ぉ",
+      "ォ",
+      "お",
+      "オ",
+      "ヵ",
+      "か",
+      "カ",
+      "が",
+      "ガ",
+      "き",
+      "キ",
+      "ぎ",
+      "ギ",
+      "く",
+      "ク",
+      "ぐ",
+      "グ",
+      "ヶ",
+      "け",
+      "ケ",
+      "げ",
+      "ゲ",
+      "こ",
+      "コ",
+      "ご",
+      "ゴ",
+      "さ",
+      "サ",
+      "ざ",
+      "ザ",
+      "し",
+      "シ",
+      "じ",
+      "ジ",
+      "す",
+      "ス",
+      "ず",
+      "ズ",
+      "せ",
+      "セ",
+      "ぜ",
+      "ゼ",
+      "そ",
+      "ソ",
+      "ぞ",
+      "ゾ",
+      "た",
+      "タ",
+      "だ",
+      "ダ",
+      "ち",
+      "チ",
+      "ぢ",
+      "ヂ",
+      "っ",
+      "ッ",
+      "つ",
+      "ツ",
+      "づ",
+      "ヅ",
+      "て",
+      "テ",
+      "で",
+      "デ",
+      "と",
+      "ト",
+      "ど",
+      "ド",
+      "な",
+      "ナ",
+      "に",
+      "ニ",
+      "ぬ",
+      "ヌ",
+      "ね",
+      "ネ",
+      "の",
+      "ノ",
+      "は",
+      "ハ",
+      "ば",
+      "バ",
+      "ぱ",
+      "パ",
+      "ひ",
+      "ヒ",
+      "び",
+      "ビ",
+      "ぴ",
+      "ピ",
+      "ふ",
+      "フ",
+      "ぶ",
+      "ブ",
+      "ぷ",
+      "プ",
+      "へ",
+      "ヘ",
+      "べ",
+      "ベ",
+      "ぺ",
+      "ペ",
+      "ほ",
+      "ホ",
+      "ぼ",
+      "ボ",
+      "ぽ",
+      "ポ",
+      "ま",
+      "マ",
+      "み",
+      "ミ",
+      "む",
+      "ム",
+      "め",
+      "メ",
+      "も",
+      "モ",
+      "ゃ",
+      "ャ",
+      "や",
+      "ヤ",
+      "ゅ",
+      "ュ",
+      "ゆ",
+      "ユ",
+      "ょ",
+      "ョ",
+      "よ",
+      "ヨ",
+      "ら",
+      "ラ",
+      "り",
+      "リ",
+      "る",
+      "ル",
+      "れ",
+      "レ",
+      "ろ",
+      "ロ",
+      "ゎ",
+      "ヮ",
+      "わ",
+      "ワ",
+      "ゐ",
+      "ヰ",
+      "ゑ",
+      "ヱ",
+      "を",
+      "ヲ",
+      "ん",
+      "ン"
+    ],
+    "auxiliary": [],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ja.xml"
+    }
+  }
 }

@@ -1085,6 +1085,90 @@
       ]
     },
     {
+      "grapheme": "latn:ae",
+      "pronunciation": {
+        "sound": [
+          "e"
+        ],
+        "note": {
+          "fr": "Rare, dans quelques mots savants.",
+          "en": "Rare, found in a few learned words.",
+          "ar": "نادر، في بعض الكلمات العلمية."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "ex æquo",
+          "ipa": "ɛɡzeko",
+          "meaning": {
+            "fr": "à égalité",
+            "en": "tied",
+            "ar": "متعادل"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:u-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "y"
+        ],
+        "note": {
+          "fr": "Rare : le tréma indique que le u se prononce séparément.",
+          "en": "Rare: the diaeresis shows that u is pronounced separately.",
+          "ar": "نادر: تدل النقطتان على نطق u منفصلًا."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "capharnaüm",
+          "ipa": "kafaʁnaɔm",
+          "meaning": {
+            "fr": "bric-à-brac",
+            "en": "shambles",
+            "ar": "فوضى"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "latn:y-diaeresis",
+      "pronunciation": {
+        "sound": [
+          "i"
+        ],
+        "note": {
+          "fr": "Très rare, surtout dans des noms de lieux.",
+          "en": "Very rare, mostly in place names.",
+          "ar": "نادر جدًا، خاصة في أسماء الأماكن."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "L'Haÿ-les-Roses",
+          "ipa": "lai le ʁoz",
+          "meaning": {
+            "fr": "L'Haÿ-les-Roses (ville)",
+            "en": "L'Haÿ-les-Roses (town)",
+            "ar": "لاي لي روز (مدينة)"
+          },
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
       "grapheme": "latn:oe",
       "pronunciation": {
         "sound": [
@@ -1120,5 +1204,85 @@
     }
   ],
   "confidence": "draft",
-  "sources": []
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/fr.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "a",
+      "à",
+      "â",
+      "æ",
+      "b",
+      "c",
+      "ç",
+      "d",
+      "e",
+      "é",
+      "è",
+      "ê",
+      "ë",
+      "f",
+      "g",
+      "h",
+      "i",
+      "î",
+      "ï",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "ô",
+      "œ",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "ù",
+      "û",
+      "ü",
+      "v",
+      "w",
+      "x",
+      "y",
+      "ÿ",
+      "z"
+    ],
+    "auxiliary": [
+      "á",
+      "å",
+      "ä",
+      "ã",
+      "ā",
+      "ć",
+      "ē",
+      "í",
+      "ì",
+      "ī",
+      "ĳ",
+      "ñ",
+      "ó",
+      "ò",
+      "ö",
+      "õ",
+      "ø",
+      "ř",
+      "š",
+      "ſ",
+      "ß",
+      "ú",
+      "ǔ"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/fr.xml"
+    }
+  }
 }

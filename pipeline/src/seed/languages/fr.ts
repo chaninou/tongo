@@ -65,6 +65,9 @@ export default lang({
     ["o-circumflex", "o", { ex: [["hôtel", "otɛl", "hôtel", "hotel", "فندق"]] }],
     ["u-grave", "y", { note: ["N'apparaît que dans « où ».", "Only appears in « où » (where).", "لا يظهر إلا في كلمة « où »."], ex: [["où", "u", "où", "where", "أين"]] }],
     ["u-circumflex", "y", { ex: [["sûr", "syʁ", "sûr", "sure", "متأكد"]] }],
+    ["ae", "e", { note: ["Rare, dans quelques mots savants.", "Rare, found in a few learned words.", "نادر، في بعض الكلمات العلمية."], ex: [["ex æquo", "ɛɡzeko", "à égalité", "tied", "متعادل"]] }],
+    ["u-diaeresis", "y", { note: ["Rare : le tréma indique que le u se prononce séparément.", "Rare: the diaeresis shows that u is pronounced separately.", "نادر: تدل النقطتان على نطق u منفصلًا."], ex: [["capharnaüm", "kafaʁnaɔm", "bric-à-brac", "shambles", "فوضى"]] }],
+    ["y-diaeresis", "i", { note: ["Très rare, surtout dans des noms de lieux.", "Very rare, mostly in place names.", "نادر جدًا، خاصة في أسماء الأماكن."], ex: [["L'Haÿ-les-Roses", "lai le ʁoz", "L'Haÿ-les-Roses (ville)", "L'Haÿ-les-Roses (town)", "لاي لي روز (مدينة)"]] }],
     ["oe", "œ", { alt: [["ø", "dans œufs, vœux", "in œufs, vœux"]], ex: [["cœur", "kœʁ", "cœur", "heart", "قلب"]] }],
   ]),
 });

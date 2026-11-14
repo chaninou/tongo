@@ -22,3 +22,15 @@ describe("contenu publié", () => {
         if (e.pronunciation.confidence !== "draft") expect(e.pronunciation.sources.length, `${l.id} ${e.grapheme}`).toBeGreaterThan(0);
   });
 });
+
+describe("couverture CLDR (TS-004)", () => {
+  it("chaque caractère principal selon CLDR est décrit par la langue", async () => {
+    const { content } = await loadContent();
+    const chars = new Map(content.scripts.flatMap((s) => s.graphemes.map((g) => [`${s.id}:${g.id}`, g.char] as const)));
+    for (const l of content.languages) {
+      if (!l.characters) continue;
+      const described = new Set(l.letters.map((e) => chars.get(e.grapheme)));
+      expect(l.characters.main.filter((c) => !described.has(c)), l.id).toEqual([]);
+    }
+  });
+});

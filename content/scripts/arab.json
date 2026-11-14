@@ -23,6 +23,14 @@
         "en": "Letters",
         "ar": "الحروف"
       }
+    },
+    {
+      "id": "hamza",
+      "name": {
+        "fr": "Hamza et lettres de fin de mot",
+        "en": "Hamza and word-final letters",
+        "ar": "الهمزة وأحرف آخر الكلمة"
+      }
     }
   ],
   "graphemes": [
@@ -404,6 +412,103 @@
         "initial": "ي‍",
         "medial": "‍ي‍",
         "final": "‍ي"
+      }
+    },
+    {
+      "id": "hamza",
+      "char": "ء",
+      "name": "hamza",
+      "latin": "ʾ",
+      "kind": "sign",
+      "group": "hamza",
+      "forms": {
+        "isolated": "ء"
+      }
+    },
+    {
+      "id": "alif-hamza-above",
+      "char": "أ",
+      "name": "alif hamza",
+      "latin": "ʾa / ʾu",
+      "kind": "consonant",
+      "group": "hamza",
+      "forms": {
+        "isolated": "أ",
+        "final": "‍أ"
+      }
+    },
+    {
+      "id": "alif-hamza-below",
+      "char": "إ",
+      "name": "alif hamza",
+      "latin": "ʾi",
+      "kind": "consonant",
+      "group": "hamza",
+      "forms": {
+        "isolated": "إ",
+        "final": "‍إ"
+      }
+    },
+    {
+      "id": "alif-madda",
+      "char": "آ",
+      "name": "alif madda",
+      "latin": "ʾā",
+      "kind": "consonant",
+      "group": "hamza",
+      "forms": {
+        "isolated": "آ",
+        "final": "‍آ"
+      }
+    },
+    {
+      "id": "waw-hamza",
+      "char": "ؤ",
+      "name": "wāw hamza",
+      "latin": "ʾ",
+      "kind": "consonant",
+      "group": "hamza",
+      "forms": {
+        "isolated": "ؤ",
+        "final": "‍ؤ"
+      }
+    },
+    {
+      "id": "ya-hamza",
+      "char": "ئ",
+      "name": "yāʾ hamza",
+      "latin": "ʾ",
+      "kind": "consonant",
+      "group": "hamza",
+      "forms": {
+        "isolated": "ئ",
+        "initial": "ئ‍",
+        "medial": "‍ئ‍",
+        "final": "‍ئ"
+      }
+    },
+    {
+      "id": "ta-marbuta",
+      "char": "ة",
+      "name": "tāʾ marbūṭa",
+      "latin": "a / at",
+      "kind": "consonant",
+      "group": "hamza",
+      "forms": {
+        "isolated": "ة",
+        "final": "‍ة"
+      }
+    },
+    {
+      "id": "alif-maqsura",
+      "char": "ى",
+      "name": "alif maqṣūra",
+      "latin": "ā",
+      "kind": "consonant",
+      "group": "hamza",
+      "forms": {
+        "isolated": "ى",
+        "final": "‍ى"
       }
     }
   ],

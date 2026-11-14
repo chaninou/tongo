@@ -770,6 +770,245 @@
       ]
     },
     {
+      "grapheme": "arab:hamza",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Coup de glotte, la petite coupure entre les deux « oh » de « oh-oh ». Seule, elle s'écrit sur la ligne ; sinon elle se pose sur un support (أ إ ؤ ئ).",
+          "en": "Glottal stop, the catch in “uh-oh”. On its own it sits on the line; otherwise on a seat (أ إ ؤ ئ).",
+          "ar": "همزة القطع، تُكتب على السطر أو على كرسي (أ إ ؤ ئ)."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "سماء",
+          "ipa": "samaːʔ",
+          "meaning": {
+            "fr": "ciel",
+            "en": "sky",
+            "ar": "سماء"
+          },
+          "latin": "samāʾ",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:alif-hamza-above",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Hamza sur alif, suivie de a ou u.",
+          "en": "Hamza on alif, followed by a or u.",
+          "ar": "همزة على الألف تليها فتحة أو ضمة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "أب",
+          "ipa": "ʔab",
+          "meaning": {
+            "fr": "père",
+            "en": "father",
+            "ar": "أب"
+          },
+          "latin": "ʾab",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:alif-hamza-below",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Hamza sous alif, suivie de i.",
+          "en": "Hamza under alif, followed by i.",
+          "ar": "همزة تحت الألف تليها كسرة."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "إسلام",
+          "ipa": "ʔislaːm",
+          "meaning": {
+            "fr": "islam",
+            "en": "Islam",
+            "ar": "إسلام"
+          },
+          "latin": "ʾislām",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:alif-madda",
+      "pronunciation": {
+        "sound": [
+          "ʔ",
+          "aː"
+        ],
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "آخر",
+          "ipa": "ʔaːxir",
+          "meaning": {
+            "fr": "dernier",
+            "en": "last",
+            "ar": "آخر"
+          },
+          "latin": "ʾāxir",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:waw-hamza",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Hamza portée par un wāw.",
+          "en": "Hamza carried by a wāw.",
+          "ar": "همزة على الواو."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "سؤال",
+          "ipa": "suʔaːl",
+          "meaning": {
+            "fr": "question",
+            "en": "question",
+            "ar": "سؤال"
+          },
+          "latin": "suʾāl",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ya-hamza",
+      "pronunciation": {
+        "sound": [
+          "ʔ"
+        ],
+        "note": {
+          "fr": "Hamza portée par un yāʾ sans points.",
+          "en": "Hamza carried by a dotless yāʾ.",
+          "ar": "همزة على الياء."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "بئر",
+          "ipa": "biʔr",
+          "meaning": {
+            "fr": "puits",
+            "en": "well",
+            "ar": "بئر"
+          },
+          "latin": "biʾr",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:ta-marbuta",
+      "pronunciation": {
+        "sound": [
+          "a"
+        ],
+        "alternates": [
+          {
+            "sound": [
+              "t"
+            ],
+            "context": {
+              "fr": "quand le mot est lié au suivant",
+              "en": "when the word is linked to the next one"
+            }
+          }
+        ],
+        "note": {
+          "fr": "Ne se trouve qu'en fin de mot, souvent pour le féminin.",
+          "en": "Only found at the end of a word, often marking the feminine.",
+          "ar": "لا تكون إلا في آخر الكلمة، وتدل غالبًا على التأنيث."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "مدرسة",
+          "ipa": "madrasa",
+          "meaning": {
+            "fr": "école",
+            "en": "school",
+            "ar": "مدرسة"
+          },
+          "latin": "madrasa",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "grapheme": "arab:alif-maqsura",
+      "pronunciation": {
+        "sound": [
+          "aː"
+        ],
+        "note": {
+          "fr": "Un a long en fin de mot, écrit comme un yāʾ sans points.",
+          "en": "A long a at the end of a word, written like a dotless yāʾ.",
+          "ar": "ألف ممدودة في آخر الكلمة تُكتب كالياء بلا نقطتين."
+        },
+        "confidence": "draft",
+        "sources": []
+      },
+      "examples": [
+        {
+          "word": "مستشفى",
+          "ipa": "mustaʃfaː",
+          "meaning": {
+            "fr": "hôpital",
+            "en": "hospital",
+            "ar": "مستشفى"
+          },
+          "latin": "mustashfā",
+          "confidence": "draft",
+          "sources": []
+        }
+      ]
+    },
+    {
       "grapheme": "arab:ya",
       "pronunciation": {
         "sound": [
@@ -818,5 +1057,69 @@
     }
   ],
   "confidence": "draft",
-  "sources": []
+  "sources": [
+    {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ar.xml"
+    }
+  ],
+  "characters": {
+    "main": [
+      "ء",
+      "أ",
+      "ؤ",
+      "إ",
+      "ئ",
+      "ا",
+      "آ",
+      "ب",
+      "ة",
+      "ت",
+      "ث",
+      "ج",
+      "ح",
+      "خ",
+      "د",
+      "ذ",
+      "ر",
+      "ز",
+      "س",
+      "ش",
+      "ص",
+      "ض",
+      "ط",
+      "ظ",
+      "ع",
+      "غ",
+      "ف",
+      "ق",
+      "ك",
+      "ل",
+      "م",
+      "ن",
+      "ه",
+      "و",
+      "ى",
+      "ي"
+    ],
+    "auxiliary": [
+      "پ",
+      "چ",
+      "ژ",
+      "ڜ",
+      "ڢ",
+      "ڤ",
+      "ڥ",
+      "ٯ",
+      "ڧ",
+      "ڨ",
+      "ک",
+      "گ",
+      "ی"
+    ],
+    "source": {
+      "source": "cldr",
+      "locator": "CLDR 48.2, common/main/ar.xml"
+    }
+  }
 }

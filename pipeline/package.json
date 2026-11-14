@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "validate": "tsx src/validate.ts",
-    "seed": "tsx src/seed/build.ts"
+    "seed": "tsx src/seed/build.ts",
+    "import:cldr": "tsx src/import/cldr.ts",
+    "report": "tsx src/report.ts"
   },
   "dependencies": {
     "@tongo/model": "*",
