@@ -371,10 +371,13 @@ window.TONGO = {
       id: "TS-010", type: "TS", epic: "E6", priority: "M", points: 5, status: "todo",
       title: "Internationalisation (i18n)",
       as: "équipe technique",
-      want: "externaliser tous les textes de l'interface et du contenu descriptif par langue",
-      so: "proposer une interface multilingue",
+      want: "externaliser tous les textes de l'interface et du contenu descriptif par langue, avec le français, l'anglais et l'arabe au lancement (D19)",
+      so: "proposer une interface multilingue, extensible ensuite aux autres langues",
       criteria: [
-        ["une langue d'interface est ajoutée", "on fournit ses traductions", "aucun texte n'est codé en dur, et les langues de droite à gauche inversent correctement la mise en page"]
+        ["la V1 est livrée", "on parcourt l'appli en français, en anglais et en arabe", "tous les textes de l'interface et du contenu descriptif sont traduits dans ces trois langues"],
+        ["l'interface est en arabe", "on affiche n'importe quel écran", "la mise en page est inversée (dir=\"rtl\"), et les glyphes et mots des écritures de gauche à droite restent lisibles dans leur sens (isolation bidirectionnelle)"],
+        ["la langue de référence est le français, l'anglais ou l'arabe", "on ouvre une fiche caractère", "la comparaison de son (US-010) utilise un mot de cette langue"],
+        ["une nouvelle langue d'interface est ajoutée", "on fournit ses traductions", "aucun code n'est modifié : aucun texte n'est codé en dur"]
       ]
     },
     {
