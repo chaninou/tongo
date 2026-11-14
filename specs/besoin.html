@@ -31,7 +31,7 @@
 <main class="wrap">
   <h1>Besoin fonctionnel V1</h1>
   <p class="lede">Ce document de cadrage rassemble les décisions prises pendant la phase de brainstorming. Le détail des besoins se trouve dans les <a href="user-stories.html">User Stories</a> et les <a href="technical-stories.html">Technical Stories</a>.</p>
-  <p class="meta">Version 0.2 · 2026-11-14 · statut : brouillon validé en atelier</p>
+  <p class="meta">Version 0.3 · 2026-11-14 · statut : brouillon validé en atelier</p>
 
   <ol class="toc">
     <li><a href="#vision">Vision et nom</a></li>
@@ -69,7 +69,7 @@
     <li><b>Public :</b> tout le monde, enfants compris. Voir les <a href="personas.html">personas</a>.</li>
     <li><b>Plateformes :</b> web et mobile. L'architecture (PWA, natif ou hybride) est à étudier, voir <a href="technical-stories.html#TS-014">TS-014</a>.</li>
     <li><b>Aucun compte :</b> les préférences (langue d'interface) sont stockées uniquement sur l'appareil.</li>
-    <li><b>Interface multilingue :</b> l'utilisateur choisit sa langue par défaut, qui sert aussi de langue de référence pour les comparaisons de sons.</li>
+    <li><b>Interface multilingue :</b> la langue par défaut est celle déclarée par le navigateur (anglais en repli). Elle sert aussi de langue de référence pour les comparaisons de sons et peut être changée dans les réglages.</li>
   </ul>
 
   <h2 id="perimetre">4. Périmètre V1 et hors périmètre</h2>
@@ -161,7 +161,7 @@
 
   <h2 id="parcours">8. Parcours et écrans</h2>
   <ol class="tight">
-    <li><b>Premier lancement</b> : choix de la langue d'interface et de référence (<a href="user-stories.html#US-001">US-001</a>).</li>
+    <li><b>Premier lancement</b> : l'interface s'affiche directement dans la langue du navigateur, sans écran de choix (<a href="user-stories.html#US-001">US-001</a>).</li>
     <li><b>Accueil Atlas</b> avec trois portes d'entrée : Langues, Écritures, Sons (<a href="user-stories.html#US-003">US-003</a>).</li>
     <li><b>Page Écriture</b> : présentation, type, sens d'écriture, langues qui l'utilisent, tableau des caractères (<a href="user-stories.html#US-006">US-006</a>, <a href="user-stories.html#US-007">US-007</a>).</li>
     <li><b>Fiche Caractère</b> : glyphe, translittération, audio, formes ou composition, comparaison avec la langue de référence, mots d'exemple (<a href="user-stories.html#US-008">US-008</a> à <a href="user-stories.html#US-013">US-013</a>).</li>
@@ -258,6 +258,7 @@
       <tr><td>D15</td><td>2026-11-14</td><td>Stack : site statique Astro + React (îlots) + PWA, chaîne de production en Python. Voir la <a href="#archi">section 12</a>.</td></tr>
       <tr><td>D16</td><td>2026-11-14</td><td>Pas de mode hors ligne en V1 (Q02). La PWA permet de l'ajouter plus tard.</td></tr>
       <tr><td>D17</td><td>2026-11-14</td><td>LLM : la solution la moins coûteuse pour la V1, Claude Haiku 5.5 via l'API Message Batches.</td></tr>
+      <tr><td>D18</td><td>2026-11-14</td><td>Langue d'interface par défaut : celle déclarée par le navigateur, anglais en repli, modifiable dans les réglages (Q01).</td></tr>
     </tbody>
   </table></div>
 
@@ -265,7 +266,7 @@
   <div class="table-wrap"><table>
     <thead><tr><th>#</th><th>Question</th><th>Lien</th></tr></thead>
     <tbody>
-      <tr><td>Q01</td><td>Quelles langues d'interface au lancement : les 20 langues, ou un sous-ensemble (français, anglais…) ?</td><td><a href="technical-stories.html#TS-010">TS-010</a></td></tr>
+      <tr><td>Q01</td><td><s>Quelle langue d'interface par défaut ?</s> <span class="badge done">Répondue : celle du navigateur (D18)</span>. Reste à confirmer : l'interface est-elle traduite dans les 20 langues dès le lancement ?</td><td><a href="technical-stories.html#TS-010">TS-010</a></td></tr>
       <tr><td>Q02</td><td><s>L'utilisation hors ligne est-elle exigée en V1 ?</s> <span class="badge done">Répondue : non (D16)</span></td><td><a href="#decisions">D16</a></td></tr>
       <tr><td>Q03</td><td>Quelle variante de référence pour chaque langue (portugais du Brésil ou du Portugal, anglais britannique ou américain…) ?</td><td><a href="technical-stories.html#TS-002">TS-002</a></td></tr>
       <tr><td>Q04</td><td>Les écritures logographiques (hanzi, kanji) entrent-elles en V2, et sous quelle forme (pinyin, zhuyin) ?</td><td>V2</td></tr>

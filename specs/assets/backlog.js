@@ -33,14 +33,15 @@ window.TONGO = {
     /* ───────────── USER STORIES ───────────── */
     {
       id: "US-001", type: "US", epic: "E6", persona: "P1", priority: "M", points: 3, status: "todo",
-      title: "Choisir sa langue au premier lancement",
+      title: "Interface dans la langue de mon navigateur",
       as: "visiteur qui ouvre Tongo pour la première fois",
-      want: "choisir la langue de l'interface",
-      so: "comprendre l'application et obtenir des comparaisons de sons dans une langue que je connais",
+      want: "que l'interface s'affiche directement dans la langue déclarée par mon navigateur",
+      so: "comprendre l'application sans rien régler et obtenir des comparaisons de sons dans une langue que je connais",
       criteria: [
-        ["c'est mon premier lancement", "j'ouvre Tongo", "un écran me propose la liste des langues d'interface, la langue de mon appareil étant présélectionnée"],
-        ["j'ai choisi une langue", "je valide", "toute l'interface s'affiche dans cette langue et elle devient ma langue de référence"],
-        ["j'ai déjà fait ce choix", "je rouvre Tongo", "l'écran de choix ne réapparaît pas (préférence mémorisée sur l'appareil, sans compte)"]
+        ["mon navigateur déclare une langue d'interface disponible", "j'ouvre Tongo pour la première fois", "l'interface s'affiche dans cette langue, qui devient ma langue de référence, sans écran de choix"],
+        ["mon navigateur déclare plusieurs langues", "j'ouvre Tongo", "la première langue disponible dans l'ordre de mes préférences est utilisée"],
+        ["aucune langue déclarée n'est disponible", "j'ouvre Tongo", "l'interface s'affiche dans la langue de repli (anglais)"],
+        ["j'ai changé de langue dans les réglages", "je rouvre Tongo", "mon choix est conservé sur l'appareil, sans compte, et prime sur la langue du navigateur"]
       ]
     },
     {
