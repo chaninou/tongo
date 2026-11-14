@@ -200,7 +200,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-016", type: "US", epic: "E5", persona: "P1", priority: "S", points: 3, status: "todo",
+      id: "US-016", type: "US", epic: "E5", persona: "P1", priority: "S", points: 3, status: "done",
       title: "Rechercher un caractère vu quelque part",
       as: "voyageuse",
       want: "coller ou taper un caractère pour retrouver sa fiche",
@@ -469,8 +469,8 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-017", type: "TS", epic: "E5", priority: "S", points: 3, status: "todo",
-      title: "Index de recherche côté client (Pagefind)",
+      id: "TS-017", type: "TS", epic: "E5", priority: "S", points: 3, status: "done",
+      title: "Index de recherche côté client",
       as: "équipe technique",
       want: "un index de recherche statique généré par Pagefind (langues, endonymes, caractères, sons)",
       so: "chercher sans serveur",
@@ -489,7 +489,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-019", type: "TS", epic: "E9", priority: "S", points: 2, status: "todo",
+      id: "TS-019", type: "TS", epic: "E9", priority: "S", points: 2, status: "doing",
       title: "CI/CD : build, validation et déploiement statiques",
       as: "équipe technique",
       want: "une chaîne GitHub Actions qui valide le contenu, construit le site et le déploie (Cloudflare Pages ou GitHub Pages)",
@@ -511,7 +511,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-021", type: "TS", epic: "E9", priority: "S", points: 2, status: "todo",
+      id: "TS-021", type: "TS", epic: "E9", priority: "S", points: 2, status: "doing",
       title: "PWA installable (sans hors-ligne)",
       as: "équipe technique",
       want: "un manifeste et un service worker minimal (@vite-pwa/astro)",
