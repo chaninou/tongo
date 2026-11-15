@@ -32,6 +32,8 @@ jobs:
         env:
           SITE_URL: https://${{ github.repository_owner }}.github.io
           BASE_PATH: /${{ github.event.repository.name }}/
+      - name: Audit d'accessibilité des pages générées (TS-018)
+        run: npm run audit -w app
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:
