@@ -6,14 +6,19 @@
 import type { Language, Pronunciation } from "@tongo/model";
 import type { UiLocale } from "../i18n/ui";
 import Ipa from "./Ipa.astro";
+import PlayButton from "./PlayButton.astro";
+import { index } from "../lib/content";
 interface Props { p: Pronunciation; language: Language; locale: UiLocale; big?: boolean }
 const { p, language, locale, big } = Astro.props;
 const def = language.variants.find((v) => v.default)!;
 const others = Object.entries(p.variants ?? {});
+const idx = await index();
+/** Écoute directe quand la prononciation tient en un seul son enregistré. */
+const single = (s: string[]) => (s.length === 1 ? idx.phoneme(s[0]!)?.audio : undefined);
 ---
 <span class="sound">
-  <span data-variant-for={language.id} data-variant="*"><Ipa sound={p.sound} locale={locale} big={big} /></span>
+  <span data-variant-for={language.id} data-variant="*"><Ipa sound={p.sound} locale={locale} big={big} />{big && single(p.sound) && <> <PlayButton audio={single(p.sound)!} locale={locale} /></>}</span>
   {others.map(([v, s]) => v !== def.id && (
-    <span data-variant-for={language.id} data-variant={v} hidden><Ipa sound={s} locale={locale} big={big} /></span>
+    <span data-variant-for={language.id} data-variant={v} hidden><Ipa sound={s} locale={locale} big={big} />{big && single(s) && <> <PlayButton audio={single(s)!} locale={locale} /></>}</span>
   ))}
 </span>

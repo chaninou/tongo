@@ -10,7 +10,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 {sound.length === 0
   ? <span class="muted">{t(locale, "char.silent")}</span>
-  : <bdi class:list={["ipa", { "ipa-big": big }]} dir="ltr">/{sound.map((ipa) => {
+  : <bdi class:list={["ipa", { "ipa-big": big }]} dir="ltr" lang="und-fonipa">/{sound.map((ipa) => {
       const p = idx.phoneme(ipa);
       return p ? <a href={`${base}/${locale}/sounds/${p.id}/`}>{ipa}</a> : <span>{ipa}</span>;
     })}/</bdi>}

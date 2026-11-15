@@ -1,0 +1,8 @@
+---
+/** Texte d'interface dont les citations dans une autre écriture portent leur balise lang (TS-018). */
+import type { UiLocale } from "../i18n/ui";
+import { runs } from "../lib/mixed";
+interface Props { text: string; locale: UiLocale }
+const { text, locale } = Astro.props;
+---
+{runs(text, locale).map((r) => (r.lang ? <span lang={r.lang} dir={r.lang === "ar" || r.lang === "he" ? "rtl" : undefined}>{r.text}</span> : r.text))}

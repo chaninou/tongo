@@ -1,0 +1,38 @@
+---
+/**
+ * Bouton d'écoute (E8) et bouton « lent » (US-019). Un seul son joue à la fois ; aucun audio n'est
+ * chargé avant le clic. La lecture lente garde la hauteur du son (preservesPitch, actif par défaut).
+ */
+import type { Audio } from "@tongo/model";
+import { t, type UiLocale } from "../i18n/ui";
+interface Props { audio: Audio; locale: UiLocale; label?: string }
+const { audio, locale, label } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const src = `${base}${audio.src}`;
+const name = label ?? t(locale, "audio.play");
+---
+<span class="play-group">
+  <button type="button" class="play" data-audio={src} aria-label={name}>
+    <span aria-hidden="true">▶</span>
+  </button>
+  <button type="button" class="play slow" data-audio={src} data-rate="0.6" aria-label={`${name}, ${t(locale, "audio.slow")}`}>
+    <span aria-hidden="true">{t(locale, "audio.slowShort")}</span>
+  </button>
+</span>
+<script>
+  let current: HTMLAudioElement | undefined;
+  let playing: HTMLButtonElement | undefined;
+  const stop = () => { current?.pause(); playing?.classList.remove("playing"); };
+  document.querySelectorAll<HTMLButtonElement>("button.play[data-audio]").forEach((b) =>
+    b.addEventListener("click", () => {
+      stop();
+      const a = new Audio(b.dataset.audio);
+      a.playbackRate = Number(b.dataset.rate ?? 1);
+      a.preservesPitch = true;
+      current = a; playing = b;
+      b.classList.add("playing");
+      a.addEventListener("ended", () => { if (playing === b) stop(); });
+      a.play().catch(() => b.classList.remove("playing"));
+    }),
+  );
+</script>

@@ -1,0 +1,69 @@
+---
+/**
+ * Composition syllabique (US-012) :
+ * - consonne d'abugida : la consonne avec chaque signe vocalique de la langue, et sa prononciation ;
+ * - jamo coréen : quelques blocs syllabiques où il apparaît.
+ */
+import type { Grapheme, Script } from "@tongo/model";
+import { t, type UiLocale } from "../i18n/ui";
+import { index } from "../lib/content";
+import { compose, FINAL_SOUND, INITIALS, VOWELS } from "../lib/hangul";
+import { scriptLang } from "../lib/script-lang";
+import Ipa from "./Ipa.astro";
+interface Props { script: Script; g: Grapheme; locale: UiLocale }
+const { script, g, locale } = Astro.props;
+const idx = await index();
+const lang = scriptLang(script.id);
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${locale}`;
+const usage = idx.usages(`${script.id}:${g.id}`)[0];
+const soundOf = (char: string) => {
+  const gr = script.graphemes.find((x) => x.char === char);
+  const e = gr && usage?.language.letters.find((l) => l.grapheme === `${script.id}:${gr.id}`);
+  return e?.pronunciation.sound ?? [];
+};
+
+/** Voyelles thaïes écrites avant la consonne (ordre logique Unicode). */
+const PREPOSED = new Set([..."เแโใไ"]);
+type Combo = { text: string; sound: string[]; href?: string };
+let combos: Combo[] = [];
+if (script.type === "abugida" && g.kind === "consonant" && usage) {
+  const own = usage.entry.pronunciation.sound;
+  const isVowel = (ipa: string) => ["vowel", "diphthong"].includes(idx.phoneme(ipa)?.kind ?? "");
+  const core = own.length > 1 && isVowel(own.at(-1)!) ? own.slice(0, -1) : own;
+  // Signes vocaliques de la langue, sauf ceux notés comme rares.
+  const signs = script.graphemes.filter((x) => {
+    const e = usage.language.letters.find((l) => l.grapheme === `${script.id}:${x.id}`);
+    return x.kind === "vowel-sign" && e && !/rare/i.test(e.pronunciation.note?.fr ?? "");
+  });
+  combos = [{ text: g.char, sound: own }, ...signs.slice(0, 16).map((s) => ({
+    text: PREPOSED.has(s.char) ? s.char + g.char : g.char + s.char,
+    sound: [...core, ...soundOf(s.char)],
+    href: `${base}/scripts/${script.id}/${s.id}/`,
+  }))];
+}
+if (script.id === "hang") {
+  const sound = (l: string, v: string, f = "") => [...(l === "ㅇ" ? [] : soundOf(l)), ...soundOf(v), ...(f ? [FINAL_SOUND[f]!] : [])];
+  if (INITIALS.includes(g.char)) {
+    combos = ["ㅏ", "ㅗ", "ㅜ", "ㅣ", "ㅡ"].map((v) => ({ text: compose(g.char, v), sound: sound(g.char, v) }));
+    if (FINAL_SOUND[g.char]) combos.push({ text: compose("ㅇ", "ㅏ", g.char), sound: sound("ㅇ", "ㅏ", g.char) });
+  } else if (VOWELS.includes(g.char)) {
+    combos = ["ㅇ", "ㄱ", "ㄴ", "ㅁ", "ㅅ"].map((l) => ({ text: compose(l, g.char), sound: sound(l, g.char) }));
+    combos.push({ text: compose("ㅎ", g.char, "ㄴ"), sound: sound("ㅎ", g.char, "ㄴ") });
+  }
+}
+---
+{combos.length > 0 && (
+  <section>
+    <h2>{t(locale, "compose.title")}</h2>
+    <p class="muted">{t(locale, script.id === "hang" ? "compose.hangul" : "compose.abugida")}</p>
+    <div class="chars" style="grid-template-columns:repeat(auto-fill,minmax(6.5rem,1fr))">
+      {combos.map((c) => (
+        <div class="char-tile" style="aspect-ratio:auto;padding:.6rem">
+          <span class="g" lang={lang}>{c.text}</span>
+          <span class="l"><Ipa sound={c.sound} locale={locale} /></span>
+        </div>
+      ))}
+    </div>
+    {script.id === "hang" && <p><a href={`${base}/scripts/hang/#composer`}>{t(locale, "compose.try")}</a></p>}
+  </section>
+)}

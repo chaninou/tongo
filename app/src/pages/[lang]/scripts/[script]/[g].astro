@@ -5,8 +5,10 @@
  * suivant (US-018), confiance (US-023), pays (US-024).
  */
 import Base from "../../../../layouts/Base.astro";
+import Composition from "../../../../components/Composition.astro";
 import Confidence from "../../../../components/Confidence.astro";
 import Ipa from "../../../../components/Ipa.astro";
+import Mixed from "../../../../components/Mixed.astro";
 import Sound from "../../../../components/Sound.astro";
 import VariantPicker from "../../../../components/VariantPicker.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../../i18n/ui";
@@ -91,12 +93,12 @@ const title = `${glyph(g.char)} · ${loc(locale, script.name)}`;
             </header>
             <p style="margin:.4rem 0"><Sound p={p} language={language} locale={locale} big /></p>
             {like && <p style="margin:.2rem 0">{t(locale, "char.like")} « {like} »</p>}
-            {p.note && <p class="muted" style="margin:.2rem 0">{loc(locale, p.note)}</p>}
+            {p.note && <p class="muted" style="margin:.2rem 0"><Mixed text={loc(locale, p.note)} locale={locale} /></p>}
             {p.alternates && p.alternates.length > 0 && (
               <div>
                 <strong>{t(locale, "char.otherwise")}</strong>
                 <ul style="margin:.2rem 0">
-                  {p.alternates.map((a) => <li><Ipa sound={a.sound} locale={locale} /> · {loc(locale, a.context)}</li>)}
+                  {p.alternates.map((a) => <li><Ipa sound={a.sound} locale={locale} /> · <Mixed text={loc(locale, a.context)} locale={locale} /></li>)}
                 </ul>
               </div>
             )}
@@ -108,7 +110,7 @@ const title = `${glyph(g.char)} · ${loc(locale, script.name)}`;
                     <li>
                       <bdi class="w" lang={language.id}>{ex.word}</bdi>
                       {ex.latin && <span class="muted" dir="ltr">{ex.latin}</span>}
-                      {ex.ipa && <bdi class="ipa muted" dir="ltr">/{ex.ipa}/</bdi>}
+                      {ex.ipa && <bdi class="ipa muted" dir="ltr" lang="und-fonipa">/{ex.ipa}/</bdi>}
                       <span>{loc(locale, ex.meaning)}</span>
                     </li>
                   ))}
@@ -120,6 +122,8 @@ const title = `${glyph(g.char)} · ${loc(locale, script.name)}`;
       })}
     </div>
   </section>
+
+  <Composition script={script} g={g} locale={locale} />
 
   <nav class="pager" aria-label={t(locale, "scripts.characters")}>
     {prev ? <a href={`${base}/${locale}/scripts/${script.id}/${prev.id}/`} rel="prev">{locale === "ar" ? "→" : "←"} {t(locale, "char.prev")} <span lang={lang}>{glyph(prev.char)}</span></a> : <span />}

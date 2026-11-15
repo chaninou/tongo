@@ -4,7 +4,7 @@ import Base from "../../../layouts/Base.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
 import { index } from "../../../lib/content";
 import { PHONEME_KINDS } from "@tongo/model";
-import { glyph } from "../../../lib/script-lang";
+import { glyph, scriptLang } from "../../../lib/script-lang";
 
 export function getStaticPaths() {
   return UI_LOCALES.map((lang) => ({ params: { lang } }));
@@ -24,8 +24,8 @@ const groups = PHONEME_KINDS.map((kind) => ({ kind, items: used.filter((p) => p.
       <div class="chars" dir="ltr" style="grid-template-columns:repeat(auto-fill,minmax(5.5rem,1fr))">
         {items.map((p) => (
           <a class="char-tile" href={`${base}/${locale}/sounds/${p.id}/`} title={loc(locale, p.name)}>
-            <span class="g ipa">/{p.ipa}/</span>
-            <span class="l">{idx.spellings(p.ipa).slice(0, 3).map((s) => glyph(s.grapheme.char)).filter((v, i, a) => a.indexOf(v) === i).join(" ")}</span>
+            <span class="g ipa" lang="und-fonipa">/{p.ipa}/</span>
+            <span class="l">{[...new Map(idx.spellings(p.ipa).map((s) => [s.grapheme.char, s.script.id])).entries()].slice(0, 3).map(([ch, sc], i) => <>{i > 0 && " "}<span lang={scriptLang(sc)}>{glyph(ch)}</span></>)}</span>
           </a>
         ))}
       </div>

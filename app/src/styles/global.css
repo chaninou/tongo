@@ -9,8 +9,8 @@
   --accent: #b5532e;
   --accent-ink: #8f3d1f;
   --sea: #2f6d80;
-  --ok: #2f7a4a;
-  --warn: #9a6a12;
+  --ok: #2a6e43;
+  --warn: #80590c;
   --bad: #a3392f;
   --radius: 14px;
   --shadow: 0 1px 0 rgb(0 0 0 / 4%), 0 6px 18px rgb(60 40 20 / 8%);
@@ -171,3 +171,23 @@ input[type="search"] {
 .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; }
 
 bdi { unicode-bidi: isolate; }
+
+/* Écoute */
+button.play {
+  inline-size: 44px; block-size: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--card);
+  color: var(--accent-ink); font-size: 1rem; cursor: pointer; display: inline-grid; place-items: center; vertical-align: middle;
+}
+button.play:hover { border-color: var(--accent); }
+button.play.playing { background: var(--accent); color: var(--card); }
+.play-group { display: inline-flex; gap: 0.35rem; vertical-align: middle; }
+button.play.slow { inline-size: auto; min-inline-size: 44px; padding-inline: 0.7rem; border-radius: 999px; font-size: 0.85rem; }
+.credit { font-size: 0.85rem; color: var(--ink-2); }
+
+/* Filtre par langue (US-007) */
+.filter-langs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-block-end: 0.8rem; }
+.filter-langs button {
+  font: inherit; font-size: 0.92rem; padding: 0.35rem 0.8rem; min-height: 44px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink-2); cursor: pointer;
+}
+.filter-langs button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.char-tile.only { border: 2px solid var(--accent); }

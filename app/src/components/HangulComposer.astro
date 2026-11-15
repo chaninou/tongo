@@ -1,0 +1,48 @@
+---
+/** Assembleur de syllabes hangeul (US-012) : choisir les lettres, voir le bloc et sa prononciation. */
+import { t, type UiLocale } from "../i18n/ui";
+import { index } from "../lib/content";
+import { FINAL_SOUND, FINALS, INITIALS, VOWELS } from "../lib/hangul";
+interface Props { locale: UiLocale }
+const { locale } = Astro.props;
+const idx = await index();
+const ko = idx.c.languages.find((l) => l.id === "ko");
+const hang = idx.script("hang");
+const sounds: Record<string, string[]> = {};
+for (const g of hang?.graphemes ?? []) {
+  const e = ko?.letters.find((l) => l.grapheme === `hang:${g.id}`);
+  if (e) sounds[g.char] = e.pronunciation.sound;
+}
+const data = { sounds, finals: FINAL_SOUND };
+---
+<section id="composer">
+  <h2>{t(locale, "compose.try")}</h2>
+  <div class="card" style="display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center">
+    <div style="display:grid;gap:.5rem">
+      <label>{t(locale, "compose.initial")} <select data-part="l" lang="ko">{INITIALS.map((c) => <option selected={c === "ㅎ"}>{c}</option>)}</select></label>
+      <label>{t(locale, "compose.vowel")} <select data-part="v" lang="ko">{VOWELS.map((c) => <option>{c}</option>)}</select></label>
+      <label>{t(locale, "compose.final")} <select data-part="t" lang="ko">{FINALS.map((c) => <option value={c} selected={c === "ㄴ"} lang={c ? undefined : locale}>{c || t(locale, "compose.none")}</option>)}</select></label>
+    </div>
+    <div class="glyph-big" lang="ko" data-out aria-live="polite">한</div>
+    <div class="ipa ipa-big" dir="ltr" lang="und-fonipa" data-ipa>/han/</div>
+  </div>
+  <script is:inline type="application/json" id="hangul-data" set:html={JSON.stringify(data)}></script>
+  <script>
+    import { compose } from "../lib/hangul";
+    const data = JSON.parse(document.getElementById("hangul-data")!.textContent!) as { sounds: Record<string, string[]>; finals: Record<string, string> };
+    const root = document.getElementById("composer")!;
+    const get = (p: string) => root.querySelector<HTMLSelectElement>(`[data-part="${p}"]`)!.value;
+    const update = () => {
+      const l = get("l"), v = get("v"), f = get("t");
+      root.querySelector("[data-out]")!.textContent = compose(l, v, f);
+      const ipa = [...(l === "ㅇ" ? [] : data.sounds[l] ?? []), ...(data.sounds[v] ?? []), ...(f ? [data.finals[f]] : [])].join("");
+      root.querySelector("[data-ipa]")!.textContent = `/${ipa}/`;
+    };
+    root.querySelectorAll("select").forEach((s) => s.addEventListener("change", update));
+    update();
+  </script>
+</section>
+<style>
+  #composer select { font: inherit; font-size: 1.3rem; padding: .3rem .5rem; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); min-height: 44px; margin-inline-start: .5rem; }
+  #composer label { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+</style>

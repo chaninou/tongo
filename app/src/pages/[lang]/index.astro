@@ -1,6 +1,7 @@
 ---
 /** Accueil Atlas : trois portes d'entrée (US-003). */
 import Base from "../../layouts/Base.astro";
+import Mixed from "../../components/Mixed.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../i18n/ui";
 import { content } from "../../lib/content";
 import { scriptLang } from "../../lib/script-lang";
@@ -26,7 +27,7 @@ const doors = [
         <span class="icon" aria-hidden="true">{d.icon}</span>
         <h2>{d.title}</h2>
         <p class="muted">{d.desc}</p>
-        <p class="sample" aria-hidden="true" style="font-size:1.3rem">{d.sample}</p>
+        <p class="sample" aria-hidden="true" style="font-size:1.3rem"><Mixed text={d.sample} locale={locale} /></p>
       </a>
     ))}
   </div>

@@ -11,6 +11,7 @@ export function getStaticPaths() {
 const locale = Astro.params.lang as UiLocale;
 const c = await content();
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const recordings = c.phonemes.filter((p) => p.audio).sort((a, b) => a.ipa.localeCompare(b.ipa));
 const hasDraft = [...c.languages, ...c.scripts].some((x) => x.confidence === "draft");
 ---
 <Base locale={locale} section="about" title={t(locale, "about.title")}>
@@ -48,6 +49,25 @@ const hasDraft = [...c.languages, ...c.scripts].some((x) => x.confidence === "dr
       <dd style="font-weight:400">{t(locale, `confidence.${level}.explain`)}</dd></>
     ))}
   </dl>
+
+  {recordings.length > 0 && <>
+    <h2 id="recordings">{t(locale, "about.audio")}</h2>
+    <p>{t(locale, "about.audioLead")}</p>
+    <div class="table-wrap">
+      <table class="letters">
+        <tbody>
+          {recordings.map((p) => (
+            <tr>
+              <th scope="row"><a href={`${base}/${locale}/sounds/${p.id}/`} class="ipa" dir="ltr" lang="und-fonipa">/{p.ipa}/</a></th>
+              <td><bdi>{p.audio!.author === "inconnu" ? t(locale, "audio.unknownAuthor") : p.audio!.author}</bdi></td>
+              <td class="muted" dir="ltr">{p.audio!.license}</td>
+              <td><a href={p.audio!.url} rel="noopener" dir="ltr">{p.audio!.title}</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </>}
 
   <h2>{t(locale, "about.license")}</h2>
   <p>{t(locale, "about.licenseText")} <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener">CC BY-SA 4.0</a></p>

@@ -1,7 +1,9 @@
 ---
 /** Page Son : un son et ses graphies dans le monde (US-014). */
 import Base from "../../../layouts/Base.astro";
+import Mixed from "../../../components/Mixed.astro";
 import Confidence from "../../../components/Confidence.astro";
+import PlayButton from "../../../components/PlayButton.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../i18n/ui";
 import { content, index } from "../../../lib/content";
 import { glyph, scriptLang } from "../../../lib/script-lang";
@@ -25,10 +27,19 @@ const variantLabel = (l: (typeof spellings)[number]["language"], v: string) => {
 <Base locale={locale} section="sounds" title={`/${phoneme.ipa}/`}>
   <p class="crumbs"><a href={`${base}/${locale}/sounds/`}>{t(locale, "nav.sounds")}</a> ›</p>
   <div class="glyph-hero">
-    <div class="glyph-big ipa" dir="ltr">/{phoneme.ipa}/</div>
+    <div class="glyph-big ipa" dir="ltr" lang="und-fonipa">/{phoneme.ipa}/</div>
     <div>
-      <h1 style="margin-top:0">{loc(locale, phoneme.name)}</h1>
-      <Confidence level={phoneme.confidence} locale={locale} />
+      <h1 style="margin-top:0"><Mixed text={loc(locale, phoneme.name)} locale={locale} /></h1>
+      <p style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap">
+        {phoneme.audio && <PlayButton audio={phoneme.audio} locale={locale} label={`${t(locale, "audio.play")} /${phoneme.ipa}/`} />}
+        <Confidence level={phoneme.confidence} locale={locale} />
+      </p>
+      {phoneme.audio && (
+        <p class="credit">
+          {t(locale, "audio.credit", { author: phoneme.audio.author === "inconnu" ? t(locale, "audio.unknownAuthor") : phoneme.audio.author, license: phoneme.audio.license })}
+          {" "}{t(locale, "audio.changes")} <a href={phoneme.audio.url} rel="noopener">{phoneme.audio.title}</a>
+        </p>
+      )}
     </div>
   </div>
   <h2>{t(locale, "sounds.spellings")}</h2>

@@ -2,6 +2,8 @@
 /** Page Écriture : présentation (US-006) et tableau des caractères (US-007). */
 import Base from "../../../../layouts/Base.astro";
 import Confidence from "../../../../components/Confidence.astro";
+import Mixed from "../../../../components/Mixed.astro";
+import HangulComposer from "../../../../components/HangulComposer.astro";
 import { UI_LOCALES, loc, t, type UiLocale } from "../../../../i18n/ui";
 import { content, index } from "../../../../lib/content";
 import { glyph, scriptDir, scriptLang } from "../../../../lib/script-lang";
@@ -15,6 +17,8 @@ const idx = await index();
 const script = idx.script(Astro.params.script!)!;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const langs = idx.languagesOfScript(script.id);
+/** Langues de chaque caractère, pour le filtre par langue (US-007). */
+const langsOf = (gid: string) => idx.usages(`${script.id}:${gid}`).map((u) => u.language.id);
 const groups = script.groups.length
   ? script.groups.map((g) => ({ name: loc(locale, g.name), items: script.graphemes.filter((x) => x.group === g.id) }))
   : [{ name: "", items: script.graphemes }];
@@ -27,19 +31,28 @@ const groups = script.groups.length
     <span class="badge plain">{script.direction === "rtl" ? "←" : "→"} {t(locale, `scripts.direction.${script.direction}`)}</span>
     <Confidence level={script.confidence} locale={locale} />
   </p>
-  <p class="lead">{loc(locale, script.intro)}</p>
+  <p class="lead"><Mixed text={loc(locale, script.intro)} locale={locale} /></p>
   <p class="muted">{t(locale, `type.${script.type}.desc`)}</p>
 
   <h2>{t(locale, "scripts.usedBy")}</h2>
   <p>{langs.map((l, i) => <>{i > 0 && " · "}<a href={`${base}/${locale}/languages/${l.id}/`}>{loc(locale, l.name)}</a></>)}</p>
 
+  {script.id === "hang" && <HangulComposer locale={locale} />}
+
   <h2>{t(locale, "scripts.characters")}</h2>
+  {langs.length > 1 && (
+    <div class="filter-langs" role="group" aria-label={t(locale, "scripts.filter")}>
+      <button type="button" aria-pressed="true" data-lang="">{t(locale, "scripts.allLanguages")}</button>
+      {langs.map((l) => <button type="button" aria-pressed="false" data-lang={l.id}>{loc(locale, l.name)}</button>)}
+    </div>
+  )}
+  <p class="muted" data-only-hint hidden>{t(locale, "scripts.onlyHint")}</p>
   {groups.map((g) => g.items.length > 0 && (
     <section>
       {g.name && <h3>{g.name}</h3>}
       <div class="chars" dir={scriptDir(script.id)}>
         {g.items.map((x) => (
-          <a class="char-tile" href={`${base}/${locale}/scripts/${script.id}/${x.id}/`} aria-label={`${glyph(x.char)}${x.latin ? ` (${x.latin})` : ""}`}>
+          <a class="char-tile" data-langs={langsOf(x.id).join(" ")} href={`${base}/${locale}/scripts/${script.id}/${x.id}/`} aria-label={`${glyph(x.char)}${x.latin ? ` (${x.latin})` : ""}`}>
             <span class="g" lang={scriptLang(script.id)}>{script.cased && x.upper ? `${x.upper}${x.char}` : glyph(x.char)}</span>
             <span class="l" dir="ltr">{x.latin ?? x.name ?? ""}</span>
           </a>
@@ -47,4 +60,24 @@ const groups = script.groups.length
       </div>
     </section>
   ))}
+  <script>
+    // Filtre par langue : n'affiche que les caractères d'une langue et met en évidence ceux qui lui sont propres.
+    const buttons = [...document.querySelectorAll<HTMLButtonElement>(".filter-langs button")];
+    const tiles = [...document.querySelectorAll<HTMLElement>(".char-tile[data-langs]")];
+    const hint = document.querySelector<HTMLElement>("[data-only-hint]");
+    buttons.forEach((b) => b.addEventListener("click", () => {
+      const lang = b.dataset.lang!;
+      buttons.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      for (const tile of tiles) {
+        const langs = tile.dataset.langs!.split(" ").filter(Boolean);
+        tile.hidden = !!lang && !langs.includes(lang);
+        tile.classList.toggle("only", !!lang && langs.length === 1 && langs[0] === lang);
+      }
+      document.querySelectorAll<HTMLElement>(".chars").forEach((grid) => {
+        const section = grid.closest("section");
+        if (section) section.hidden = ![...grid.children].some((c) => !(c as HTMLElement).hidden);
+      });
+      if (hint) hint.hidden = !lang;
+    }));
+  </script>
 </Base>
