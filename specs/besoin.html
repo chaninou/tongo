@@ -31,7 +31,7 @@
 <main class="wrap">
   <h1>Besoin fonctionnel V1</h1>
   <p class="lede">Ce document de cadrage rassemble les décisions prises pendant la phase de brainstorming. Le détail des besoins se trouve dans les <a href="user-stories.html">User Stories</a> et les <a href="technical-stories.html">Technical Stories</a>.</p>
-  <p class="meta">Version 0.10 · 2026-11-14 · statut : brouillon validé en atelier</p>
+  <p class="meta">Version 0.12 · 2026-11-15 · statut : brouillon validé en atelier</p>
 
   <ol class="toc">
     <li><a href="#vision">Vision et nom</a></li>
@@ -269,6 +269,8 @@
       <tr><td>D24</td><td>2026-11-14</td><td>La chaîne de production passe de Python à <b>TypeScript</b> (tsx, Zod, Vitest). Raison immédiate : PyPI est inaccessible depuis le poste de développement. Raison de fond : un seul langage et un seul schéma (Zod) partagés par la chaîne et l'appli, dans le paquet <code>model/</code>. React n'est pas installé tant qu'aucun îlot ne l'exige : les interactions actuelles (recherche, choix du pays) tiennent en quelques lignes de JavaScript. Remplace en partie D15.</td></tr>
       <tr><td>D25</td><td>2026-11-14</td><td>Recherche : un <b>index embarqué</b> dans la page de recherche (caractères, langues, sons), normalisé (NFKC, sans accents), suffit pour la V1. Pagefind n'est pas utilisé tant que le volume reste de quelques milliers d'entrées. Déploiement par GitHub Actions sur GitHub Pages, le site acceptant un sous-chemin (<code>BASE_PATH</code>).</td></tr>
       <tr><td>D26</td><td>2026-11-14</td><td>Les 20 langues de lancement sont décrites en brouillon (13 écritures). La liste de leurs caractères est confirmée par CLDR 48.2 : un caractère est couvert s'il est décrit ou s'il se décompose en éléments décrits (lettres vietnamiennes à tons, syllabes hangeul, conjointes indiennes). Les prononciations restent « brouillon » jusqu'au croisement avec PHOIBLE et le Wiktionary.</td></tr>
+      <tr><td>D27</td><td>2026-11-14</td><td>Audio des phonèmes : enregistrements des tableaux IPA de Wikipédia, hébergés sur Wikimedia Commons, choisis dans une table relue à la main (<code>pipeline/data/phoneme-audio.json</code>) puis vérifiés par l'API (licence libre exigée). Ils sont convertis en MP3 mono au volume normalisé, dans <code>content/audio/</code> (versionnés depuis D28). L'attribution (auteur, licence, lien, modification) est affichée sur chaque page Son. Les sons sans article dédié (aspirées, longues, tons, diphtongues) restent sans audio pour l'instant.</td></tr>
+      <tr><td>D28</td><td>2026-11-15</td><td>Les MP3 des phonèmes sont versionnés dans le dépôt (environ 16 Ko chacun, 1,5 Mo au total), au lieu d'être téléchargés à chaque build. Commons limite fortement le débit des téléchargements (HTTP 429), d'autant plus depuis les adresses partagées des runners CI : un build pouvait publier un site aux audios manquants. Un test vérifie que chaque audio référencé existe et porte son attribution. TS-024 reste ouverte pour les volumes plus lourds (audio des mots et des syllabes).</td></tr>
     </tbody>
   </table></div>
 

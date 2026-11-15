@@ -99,7 +99,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-007", type: "US", epic: "E2", persona: "P1", priority: "M", points: 5, status: "doing",
+      id: "US-007", type: "US", epic: "E2", persona: "P1", priority: "M", points: 5, status: "done",
       title: "Tableau des caractères d'une écriture",
       as: "visiteur",
       want: "voir tous les caractères d'une écriture, organisés selon sa logique",
@@ -157,7 +157,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-012", type: "US", epic: "E3", persona: "P4", priority: "S", points: 8, status: "todo",
+      id: "US-012", type: "US", epic: "E3", persona: "P4", priority: "S", points: 8, status: "doing",
       title: "Composition syllabique (abugidas, hangeul)",
       as: "visiteur",
       want: "comprendre comment une consonne et un signe vocalique forment une syllabe",
@@ -231,7 +231,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-019", type: "US", epic: "E8", persona: "P2", priority: "C", points: 2, status: "todo",
+      id: "US-019", type: "US", epic: "E8", persona: "P2", priority: "C", points: 2, status: "done",
       title: "Réécouter lentement",
       as: "enfant",
       want: "réécouter une prononciation plus lentement",
@@ -287,7 +287,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "US-022", type: "US", epic: "E9", persona: "P4", priority: "M", points: 1, status: "doing",
+      id: "US-022", type: "US", epic: "E9", persona: "P4", priority: "M", points: 1, status: "done",
       title: "Sources et licence visibles",
       as: "visiteur",
       want: "savoir d'où viennent les contenus et sous quelle licence ils sont publiés",
@@ -408,7 +408,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-011", type: "TS", epic: "E8", priority: "M", points: 3, status: "todo",
+      id: "TS-011", type: "TS", epic: "E8", priority: "M", points: 3, status: "doing",
       title: "Audio des phonèmes (Wikimedia Commons)",
       as: "équipe technique",
       want: "récupérer l'enregistrement de chaque phonème IPA utilisé",
@@ -428,7 +428,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-013", type: "TS", epic: "E8", priority: "S", points: 3, status: "todo",
+      id: "TS-013", type: "TS", epic: "E8", priority: "S", points: 3, status: "doing",
       title: "Pré-génération et stockage des audios",
       as: "équipe technique",
       want: "générer tous les audios à l'avance et les publier avec le contenu statique",
@@ -459,7 +459,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-016", type: "TS", epic: "E9", priority: "M", points: 2, status: "doing",
+      id: "TS-016", type: "TS", epic: "E9", priority: "M", points: 2, status: "done",
       title: "Gestion des licences et des attributions",
       as: "équipe technique",
       want: "conserver la source, l'auteur et la licence de chaque donnée et de chaque audio",
@@ -479,7 +479,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-018", type: "TS", epic: "E9", priority: "S", points: 3, status: "todo",
+      id: "TS-018", type: "TS", epic: "E9", priority: "S", points: 3, status: "done",
       title: "Accessibilité (WCAG 2.2 AA)",
       as: "équipe technique",
       want: "respecter les critères WCAG 2.2 de niveau AA",
@@ -543,7 +543,7 @@ window.TONGO = {
       ]
     },
     {
-      id: "TS-024", type: "TS", epic: "E8", priority: "S", points: 2, status: "todo",
+      id: "TS-024", type: "TS", epic: "E8", priority: "S", points: 2, status: "doing",
       title: "Stockage des fichiers audio",
       as: "équipe technique",
       want: "stocker les audios hors du dépôt git (Cloudflare R2 ou Git LFS)",
