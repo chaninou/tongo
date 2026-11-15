@@ -70,6 +70,21 @@ export const Ipa = z.string().min(1).regex(/^[^/\[\]\s]+$/, "IPA sans / ni [ ] n
 
 export const PHONEME_KINDS = ["consonant", "vowel", "diphthong", "tone"] as const;
 
+/** Enregistrement audio publié, avec son attribution (TS-016, US-022). */
+export const Audio = z.object({
+  /** Chemin du fichier publié, relatif à la racine du site : « audio/phonemes/esh.mp3 ». */
+  src: z.string().regex(/^audio\/[a-z0-9/._-]+\.mp3$/),
+  /** Titre de l'œuvre d'origine. */
+  title: z.string(),
+  author: z.string(),
+  license: z.string(),
+  /** Page de l'œuvre d'origine (attribution). */
+  url: z.url(),
+  /** Modification apportée (conversion, normalisation du volume). */
+  changes: z.string().optional(),
+});
+export type Audio = z.infer<typeof Audio>;
+
 export const Phoneme = z.object({
   ipa: Ipa,
   /** Identifiant d'URL stable (les symboles IPA ne sont pas tous lisibles dans une URL). */
@@ -77,7 +92,7 @@ export const Phoneme = z.object({
   kind: z.enum(PHONEME_KINDS),
   /** Description articulatoire courte : « fricative post-alvéolaire sourde ». */
   name: Localized,
-  audio: z.string().optional(),
+  audio: Audio.optional(),
   ...Provenance.shape,
 });
 export type Phoneme = z.infer<typeof Phoneme>;

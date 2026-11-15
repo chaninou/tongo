@@ -15,8 +15,8 @@ node_modules/
 dist/
 .astro/
 
-# Audio et caches générés (stockés hors du dépôt, voir TS-024)
-content/audio/
+# Copie de content/audio pour le site, et caches des imports (D28)
+app/public/audio/
 pipeline/.cache/
 
 # Système / éditeurs

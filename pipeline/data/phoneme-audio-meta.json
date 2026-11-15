@@ -1,0 +1,370 @@
+{
+  "p": {
+    "src": "audio/phonemes/p.mp3",
+    "title": "Voiceless bilabial plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_bilabial_plosive.ogg",
+    "author": "Joni",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "b": {
+    "src": "audio/phonemes/b.mp3",
+    "title": "Voiced bilabial plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_bilabial_plosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "t": {
+    "src": "audio/phonemes/t.mp3",
+    "title": "Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_plosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "d": {
+    "src": "audio/phonemes/d.mp3",
+    "title": "Voiced alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_alveolar_plosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "k": {
+    "src": "audio/phonemes/k.mp3",
+    "title": "Voiceless velar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_velar_plosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "g": {
+    "src": "audio/phonemes/g.mp3",
+    "title": "Voiced velar plosive 02.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_velar_plosive_02.ogg",
+    "author": "inconnu",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "q": {
+    "src": "audio/phonemes/q.mp3",
+    "title": "Voiceless uvular plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_uvular_plosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "glottal-stop": {
+    "src": "audio/phonemes/glottal-stop.mp3",
+    "title": "Glottal stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Glottal_stop.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "m": {
+    "src": "audio/phonemes/m.mp3",
+    "title": "Bilabial nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Bilabial_nasal.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "n": {
+    "src": "audio/phonemes/n.mp3",
+    "title": "Alveolar nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Alveolar_nasal.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "palatal-nasal": {
+    "src": "audio/phonemes/palatal-nasal.mp3",
+    "title": "Palatal nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Palatal_nasal.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "eng": {
+    "src": "audio/phonemes/eng.mp3",
+    "title": "Velar nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Velar_nasal.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "uvular-nasal": {
+    "src": "audio/phonemes/uvular-nasal.mp3",
+    "title": "Uvular nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Uvular_nasal.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "f": {
+    "src": "audio/phonemes/f.mp3",
+    "title": "Voiceless labiodental fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_labiodental_fricative.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "theta": {
+    "src": "audio/phonemes/theta.mp3",
+    "title": "Voiceless dental fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_dental_fricative.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "z": {
+    "src": "audio/phonemes/z.mp3",
+    "title": "Voiced alveolar sibilant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_alveolar_sibilant.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "s-retroflex": {
+    "src": "audio/phonemes/s-retroflex.mp3",
+    "title": "Voiceless retroflex sibilant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_retroflex_sibilant.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "x": {
+    "src": "audio/phonemes/x.mp3",
+    "title": "Voiceless velar fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_velar_fricative.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "r-uvular": {
+    "src": "audio/phonemes/r-uvular.mp3",
+    "title": "Voiced uvular fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_uvular_fricative.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "ain": {
+    "src": "audio/phonemes/ain.mp3",
+    "title": "Voiced pharyngeal fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_pharyngeal_fricative.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "r-turned": {
+    "src": "audio/phonemes/r-turned.mp3",
+    "title": "Alveolar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg",
+    "author": "Erutuon",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "l": {
+    "src": "audio/phonemes/l.mp3",
+    "title": "Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Alveolar_lateral_approximant.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "l-palatal": {
+    "src": "audio/phonemes/l-palatal.mp3",
+    "title": "Palatal lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Palatal_lateral_approximant.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "w": {
+    "src": "audio/phonemes/w.mp3",
+    "title": "Voiced labio-velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_labio-velar_approximant.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "v-approximant": {
+    "src": "audio/phonemes/v-approximant.mp3",
+    "title": "Labiodental approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Labiodental_approximant.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "y": {
+    "src": "audio/phonemes/y.mp3",
+    "title": "Close front rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Close_front_rounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "i-bar": {
+    "src": "audio/phonemes/i-bar.mp3",
+    "title": "Close central unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Close_central_unrounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "u-unrounded": {
+    "src": "audio/phonemes/u-unrounded.mp3",
+    "title": "Close back unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Close_back_unrounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "upsilon": {
+    "src": "audio/phonemes/upsilon.mp3",
+    "title": "Near-close near-back rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "o-slash": {
+    "src": "audio/phonemes/o-slash.mp3",
+    "title": "Close-mid front rounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Close-mid_front_rounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "rams-horn": {
+    "src": "audio/phonemes/rams-horn.mp3",
+    "title": "Close-mid back unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Close-mid_back_unrounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "epsilon": {
+    "src": "audio/phonemes/epsilon.mp3",
+    "title": "Open-mid front unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Open-mid_front_unrounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "open-o": {
+    "src": "audio/phonemes/open-o.mp3",
+    "title": "PR-open-mid back rounded vowel.ogg",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:PR-open-mid_back_rounded_vowel.ogg",
+    "author": "RoachPeter",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "ash": {
+    "src": "audio/phonemes/ash.mp3",
+    "title": "Near-open front unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Near-open_front_unrounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "a": {
+    "src": "audio/phonemes/a.mp3",
+    "title": "Open front unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg",
+    "author": "Denelson83",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "turned-script-a": {
+    "src": "audio/phonemes/turned-script-a.mp3",
+    "title": "PR-open back rounded vowel.ogg",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:PR-open_back_rounded_vowel.ogg",
+    "author": "RoachPeter",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "b-implosive": {
+    "src": "audio/phonemes/b-implosive.mp3",
+    "title": "Voiced bilabial implosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_bilabial_implosive.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "d-implosive": {
+    "src": "audio/phonemes/d-implosive.mp3",
+    "title": "Voiced alveolar implosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_alveolar_implosive.ogg",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "g-implosive": {
+    "src": "audio/phonemes/g-implosive.mp3",
+    "title": "Voiced velar implosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_velar_implosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "j-implosive": {
+    "src": "audio/phonemes/j-implosive.mp3",
+    "title": "Voiced palatal implosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_palatal_implosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "t-ejective": {
+    "src": "audio/phonemes/t-ejective.mp3",
+    "title": "Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Alveolar_ejective_plosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "q-ejective": {
+    "src": "audio/phonemes/q-ejective.mp3",
+    "title": "Uvular ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Uvular_ejective_plosive.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "t-retroflex": {
+    "src": "audio/phonemes/t-retroflex.mp3",
+    "title": "Voiceless retroflex stop.oga",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiceless_retroflex_stop.oga",
+    "author": "Peter Isotalo",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "n-retroflex": {
+    "src": "audio/phonemes/n-retroflex.mp3",
+    "title": "Retroflex nasal.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Retroflex_nasal.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "r-retroflex": {
+    "src": "audio/phonemes/r-retroflex.mp3",
+    "title": "Retroflex approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Retroflex_approximant.ogg",
+    "author": "Karmosin",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  },
+  "d-dental": {
+    "src": "audio/phonemes/d-dental.mp3",
+    "title": "Voiced dental stop.ogg",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Voiced_dental_stop.ogg",
+    "author": "Adamsa123",
+    "changes": "converti en MP3 mono, volume normalisé (EBU R128)"
+  }
+}

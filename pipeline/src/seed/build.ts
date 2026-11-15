@@ -8,6 +8,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { Language, Phoneme } from "@tongo/model";
 import { CLDR_DATA, type CldrData } from "../import/cldr.ts";
+import { AUDIO_META } from "../import/audio.ts";
 import { CONTENT_DIR } from "../content.ts";
 import { PHONEMES } from "./phonemes.ts";
 import { SCRIPTS } from "./scripts.ts";
@@ -76,8 +77,11 @@ for (const row of [...PHONEMES, ...modules.flatMap((m) => m.phonemes ?? [])]) {
   if (prev && prev[1] !== row[1]) throw new Error(`Phonème /${row[0]}/ : identifiants ${prev[1]} et ${row[1]}`);
   phonemeRows.set(row[0], row);
 }
+/** Attribution des enregistrements importés de Wikimedia Commons (npm run import:audio). */
+const audio: Record<string, Phoneme["audio"]> = existsSync(AUDIO_META) ? JSON.parse(await readFile(AUDIO_META, "utf8")) : {};
 const phonemes: Phoneme[] = [...phonemeRows.values()].map(([ipa, id, kind, fr, en]) => ({
-  ipa, id, kind, name: { fr, en }, confidence: "draft", sources: [],
+  ipa, id, kind, name: { fr, en }, confidence: "draft",
+  ...(audio[id] ? { audio: audio[id], sources: [{ source: "wikimedia-commons", locator: audio[id]!.url }] } : { sources: [] }),
 }));
 await writeFile(join(CONTENT_DIR, "phonemes.json"), json(phonemes));
 await writeFile(join(CONTENT_DIR, "sources.json"), json(SOURCES));

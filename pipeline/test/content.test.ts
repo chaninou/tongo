@@ -1,5 +1,7 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { loadContent } from "../src/content.ts";
+import { CONTENT_DIR, loadContent } from "../src/content.ts";
 import { coveredIn } from "../src/coverage.ts";
 
 describe("contenu publié", () => {
@@ -21,6 +23,16 @@ describe("contenu publié", () => {
     for (const l of content.languages)
       for (const e of l.letters)
         if (e.pronunciation.confidence !== "draft") expect(e.pronunciation.sources.length, `${l.id} ${e.grapheme}`).toBeGreaterThan(0);
+  });
+
+  it("fournit le fichier de chaque audio référencé, avec son attribution", async () => {
+    const { content } = await loadContent();
+    const audios = content.phonemes.flatMap((p) => (p.audio ? [p.audio] : []));
+    expect(audios.length).toBeGreaterThan(0);
+    for (const a of audios) {
+      expect(existsSync(join(CONTENT_DIR, a.src)), a.src).toBe(true);
+      expect(a.author && a.license && a.url, a.src).toBeTruthy();
+    }
   });
 });
 
